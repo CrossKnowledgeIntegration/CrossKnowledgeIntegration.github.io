@@ -1,11 +1,11 @@
 ---
-title: Prerequis FR
+title: Prerequisites EN
 keywords: ...
 last_updated: December 14, 2016
 tags: [getting_started]
 summary: "blah blan"
 sidebar: home_sidebar
-permalink: prerequisitesFR.html
+permalink: prerequisites-en.html
 folder: overview
 ---
 
