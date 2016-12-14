@@ -62,6 +62,8 @@ Other codes can be returned by specific commands.
 
 ### /Content:GET
 
+table
+
 bbb |vvv
 --- | -------------
 **URL** | API/ADMIN/v1/REST/Training/{training_guid}/Content/
@@ -81,6 +83,8 @@ Name | Type | Mandatory | Comment
 training_guid | string | yes | The associated training course GUID sent in the URL
 
 #### Response
+
+toble
 
 Name | Type | Comment   | Sample
 ---- | ---- | --------- | --------
