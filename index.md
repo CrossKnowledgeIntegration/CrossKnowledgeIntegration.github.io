@@ -29,5 +29,7 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 ## rendering
 
-{% site.pages.API.xmlrpc %}
+{% for page in site.pages %}
+{%page.title%}
+{%endfor}
 
