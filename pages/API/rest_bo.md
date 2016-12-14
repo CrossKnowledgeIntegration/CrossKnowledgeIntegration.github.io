@@ -62,7 +62,7 @@ Other codes can be returned by specific commands.
 
 ### /Content:GET
 
-table
+
 &nbsp; |&nbsp;
 --- | -------------
 **URL** | API/ADMIN/v1/REST/Training/{training_guid}/Content/
@@ -83,7 +83,7 @@ training_guid | string | yes | The associated training course GUID sent in the U
 
 #### Response
 
-toble
+
 Name | Type | Comment   | Sample
 ---- | ---- | --------- | --------
 guid | string | GUID of the learning object | 133da3aa-7f95-49e1-83df-27e3986c0fa5
