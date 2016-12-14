@@ -1,3 +1,5 @@
+
+
 &nbsp; |&nbsp;
 --- | -------------
 **URL** | API/ADMIN/v1/REST/Training/{training_guid}/Content/
