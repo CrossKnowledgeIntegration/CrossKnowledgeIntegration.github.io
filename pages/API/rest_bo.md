@@ -61,7 +61,7 @@ Other codes can be returned by specific commands.
 ## Commands
 
 ### /Content:GET
-&nbsp; | &nbsp;
+.|.   
 ------------ | -------------
 **URL** | API/ADMIN/v1/REST/Training/{training_guid}/Content/
 **Method** | GET
@@ -80,7 +80,7 @@ Name | Type | Mandatory | Comment
 training_guid | string | yes | The associated training course GUID sent in the URL
 
 #### Response
-Name | Type | Comment | Sample
+Name | Type | Comment   | Sample
 ---- | ---- | --------- | --------
 guid | string | GUID of the learning object | 133da3aa-7f95-49e1-83df-27e3986c0fa5
 _links | array | URI to related object | /API/ADMIN/v1/REST/Content/2F9B175C-5A14-A709-AB61-3703C7CD5981/
