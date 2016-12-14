@@ -61,8 +61,8 @@ Other codes can be returned by specific commands.
 ## Commands
 
 ### /Content:GET
-[]()|[]()
------------- | -------------
+bbb |vvv
+--- | -------------
 **URL** | API/ADMIN/v1/REST/Training/{training_guid}/Content/
 **Method** | GET
 **Header** | API-KEY (ex. 23467C0D36E15C0E1D3B55391C8ED860)
