@@ -8,3 +8,5 @@ sidebar: home_sidebar
 permalink: xmlrpc.html
 folder: API
 ---
+
+xmlrpc blahblah

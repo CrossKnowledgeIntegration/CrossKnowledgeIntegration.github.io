@@ -27,3 +27,7 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
     * [REST front office](/rest_fo.html)
     * [Deprecated XMLRPC](/xmlrpc.html)
 
+## rendering
+
+{% include /xmlrpc.html %}
+
