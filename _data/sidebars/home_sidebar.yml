@@ -1,5 +1,3 @@
-# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
-
 entries:
 - title: Sidebar
   levels: one
@@ -13,4 +11,33 @@ entries:
       output: web
     - title: Prerequis (FR)
       url: /prerequisites-fr.html
+      output: web
+
+  - title: IO
+    output: web
+    folderitems:
+    - title: Overview
+      url: /overview.html
+      output: web
+    - title: Import
+      url: /import.html
+      output: web
+    - title: Export
+      url: /export.html
+      output: web
+  
+  - title: API
+    output: web
+    folderitems:
+    - title: Overview
+      url: /overview.html
+      output: web
+    - title: REST back office
+      url: /rest_bo.html
+      output: web
+    - title: REST front office
+      url: /rest_fo.html
+      output: web
+    - title: XMLRPC (deprecated)
+      url: /xmlrpc.html
       output: web
