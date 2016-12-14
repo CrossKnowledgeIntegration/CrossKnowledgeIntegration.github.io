@@ -29,7 +29,5 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 ## rendering
 
-{% for page in site.pages %}
-{%page.title%}
-{%endfor}
+{% include custom/md-loader.html %}
 
