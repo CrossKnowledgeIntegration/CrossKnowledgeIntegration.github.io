@@ -3,15 +3,13 @@
 topnav:
 - title: Topnav
   items:
-    - title: News
-      url: /news
-
-#Topnav dropdowns
-topnav_dropdowns:
-- title: Topnav dropdowns
-  folders:
     - title: CrossKnowledge Corporate site
       external_url: https://www.crossknowledge.com
+
+#Topnav dropdowns
+# topnav_dropdowns:
+# - title: Topnav dropdowns
+#   folders:
     # - title: Jekyll Resources
     #   folderitems:
     #     - title: Github Repo
