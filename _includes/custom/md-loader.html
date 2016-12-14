@@ -1,6 +1,6 @@
 <ul>
         {% assign pages = site.pages  %}
         {% for p in pages %}
-            <li>{{p}}</li>
+            <li>{{p.content}}</li>
         {% endfor %}
 </ul>
