@@ -1,1 +1,6 @@
-<div>hello world</div>
+<ul>
+        {% assign pages = site.pages  %}
+        {% for p in pages %}
+            <li>{{p.title}}</li>
+        {% endfor %}
+</ul>
