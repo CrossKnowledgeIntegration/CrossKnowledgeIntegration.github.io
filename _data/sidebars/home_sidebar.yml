@@ -6,6 +6,9 @@ entries:
   - title: Overview
     output: web
     folderitems:
+    - title: About 
+      url: /index.html
+      output: web
     - title: Prerequisites (EN)
       url: /prerequisites-en.html
       output: web
