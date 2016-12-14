@@ -9,8 +9,8 @@ entries:
     output: web
     folderitems:
     - title: Prerequisites (EN)
-      url: /PrerequisitesEN.html
+      url: /prerequisites-en.html
       output: web
     - title: Prerequis (FR)
-      url: /PrerequisitesFR.html
+      url: /prerequisites-fr.html
       output: web
