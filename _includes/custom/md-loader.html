@@ -1,7 +1,6 @@
 
 {% assign pages = site.pages  %}
 {% for p in pages %}
-    {{p.url}} <br />
     {% if p.url == include.linkedPage %}
         {{p.content}}
     {% endif %}
