@@ -4,19 +4,19 @@ sidebar: home_sidebar
 permalink: index.html
 ---
 
-# About
+## About
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
-# Services
+## Services
 
 * SSO
 * Import & export
 * SCORM audit
 * ...
 
-# Documenation
+## Documenation
 
 * [Prerequisites](/prerequisites-en.html)
 * [Import](/import.html)
