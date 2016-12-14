@@ -29,5 +29,5 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 ## rendering
 
-{% include custom/md-loader.html %}
+{% include custom/md-loader.html linkedPage="/xmlrpc.html" %}
 
