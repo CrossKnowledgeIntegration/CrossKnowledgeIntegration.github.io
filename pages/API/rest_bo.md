@@ -61,7 +61,7 @@ Other codes can be returned by specific commands.
 ## Commands
 
 ### /Content:GET
-.|.   
+[]()|[]()
 ------------ | -------------
 **URL** | API/ADMIN/v1/REST/Training/{training_guid}/Content/
 **Method** | GET
