@@ -9,18 +9,20 @@ entries:
     - title: About 
       url: /index.html
       output: web
-    - title: Prerequisites (EN)
+
+  - title: Prerequisites 
+    - title: EN
       url: /prerequisites-en.html
       output: web
-    - title: Prerequis (FR)
+    - title: FR
       url: /prerequisites-fr.html
       output: web
 
-  - title: IO
+  - title: I/O
     output: web
     folderitems:
     - title: Overview
-      url: /overview.html
+      url: /io-overview.html
       output: web
     - title: Import
       url: /import.html
@@ -33,7 +35,7 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /overview.html
+      url: /api-overview.html
       output: web
     - title: REST back office
       url: /rest_bo.html

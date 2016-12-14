@@ -6,7 +6,7 @@ tags: [getting_started]
 summary: "blah blan"
 sidebar: home_sidebar
 permalink: prerequisites-en.html
-folder: overview
+folder: prerequisites
 ---
 
 # Lorem
