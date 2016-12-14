@@ -11,12 +11,14 @@ entries:
       output: web
 
   - title: Prerequisites 
-    - title: EN
-      url: /prerequisites-en.html
       output: web
-    - title: FR
-      url: /prerequisites-fr.html
-      output: web
+      folderitems:
+      - title: EN
+        url: /prerequisites-en.html
+        output: web
+      - title: FR
+        url: /prerequisites-fr.html
+        output: web
 
   - title: I/O
     output: web
