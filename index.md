@@ -29,5 +29,5 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 ## rendering
 
-{% include /xmlrpc.md %}
+{% site.pages.API.xmlrpc %}
 
