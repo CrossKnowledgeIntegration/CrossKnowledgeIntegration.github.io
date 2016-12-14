@@ -1,3 +1,4 @@
+#### Description
 
 
 &nbsp; |&nbsp;
@@ -6,7 +7,6 @@
 **Method** | GET
 **Header** | API-KEY (ex. 23467C0D36E15C0E1D3B55391C8ED860)
 
-#### Description
 This web service returns the learning objects list (pedagogical content) for a given training path.
 
 Please **note** that this service only works so far with "blended", "elearning" and "campus" modalities 
