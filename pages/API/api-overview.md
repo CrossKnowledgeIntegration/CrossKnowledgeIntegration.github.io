@@ -26,10 +26,10 @@ Legacy API, deprecated ...
 
 Mostly used for mobile & desktop apps
 
-[More info](/rest_fo.html)
+[More info](/rest-fo.html)
 
 ### REST back Office
 
 All the administrative tasks
 
-[More info](/rest_bo.html)
+[More info](/rest-bo.html)

@@ -40,10 +40,10 @@ entries:
       url: /api-overview.html
       output: web
     - title: REST back office
-      url: /rest_bo.html
+      url: /rest-bo.html
       output: web
     - title: REST front office
-      url: /rest_fo.html
+      url: /rest-fo.html
       output: web
     - title: XMLRPC (deprecated)
       url: /xmlrpc.html

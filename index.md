@@ -26,8 +26,3 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
     * [REST back office](/rest_bo.html)
     * [REST front office](/rest_fo.html)
     * [Deprecated XMLRPC](/xmlrpc.html)
-
-## rendering
-
-{% include custom/md-loader.html linkedPage="/xmlrpc.html" %}
-
