@@ -18,7 +18,7 @@ Please note that this site is still under construction, some information will st
 * [SSO](/SSO.html)
 * [Scorm audit](/Scorm-audit.html)
 
-## Documenation
+## Documentation
 
 * [Prerequisites](/prerequisites-en.html)
 * [Import](/import.html)
