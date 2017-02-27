@@ -62,4 +62,4 @@ Other codes can be returned by specific commands.
 
 ### /Content:GET
 
-{% include custom/md-loader.html linkedPage="/pages/API/bo/rest-bo-content-get.html" %}
+[link](/pages/API/bo/rest-bo-content-get.html)
