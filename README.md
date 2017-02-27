@@ -7,4 +7,5 @@ You can access this site here:
 
 Template used: [http://idratherbewriting.com/documentation-theme-jekyll](http://idratherbewriting.com/documentation-theme-jekyll/index.html)
 
-- The integration team...
+
+The integration team!
