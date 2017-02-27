@@ -21,6 +21,6 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 * [Import](/import.html)
 * [Export](/export.html)
 * API
-    * [REST back office](/rest_bo.html)
-    * [REST front office](/rest_fo.html)
+    * [REST back office](/rest-bo.html)
+    * [REST front office](/rest-fo.html)
     * [Deprecated XMLRPC](/xmlrpc.html)

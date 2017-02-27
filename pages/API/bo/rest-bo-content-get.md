@@ -8,7 +8,7 @@ sidebar: home_sidebar
 permalink: rest-bo-content-get.html
 ---
 
-[< Back to commands list](/rest_bo.html#commands)
+[< Back to commands list](/rest-bo.html#commands)
 
 #### Description
 
