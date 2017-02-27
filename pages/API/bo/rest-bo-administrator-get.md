@@ -5,7 +5,7 @@ last_updated: February 27, 2017
 tags: 
 summary: "Describe the /administrator/autoconnectionurl:get web service"
 sidebar: home_sidebar
-permalink: rest-bo-administrator.html
+permalink: rest-bo-administrator-get.html
 ---
 
 [< Back to commands list](/rest-bo.html#commands)
