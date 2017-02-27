@@ -1,9 +1,9 @@
 ---
 title: API Overview
-keywords: ...
-last_updated: December 14, 2016
+keywords: API, REST, XMLRPC
+last_updated: February 27, 2017
 tags: 
-summary: "blah blan"
+summary: "List of APIs available"
 sidebar: home_sidebar
 permalink: api-overview.html
 folder: API
@@ -11,25 +11,25 @@ folder: API
 
 ## Overview
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+CrossKnowledge has 3 kind of APIs
 
 ## Available APIs
 
 ### XMLRPC
 
-Legacy API, deprecated ...
+Our legacy API, in XMLRPC, is deprecated. This API will not evolve anymore - but will remain available.
 
-[More info](/xmlrpx.html)
+[More info](/xmlrpc.html)
 
 ### REST Front Office
 
-Mostly used for mobile & desktop apps
+Our front office REST API has been originally built for our mobile applications. This API is contextualized to the learner logged during the call.
 
 [More info](/rest-fo.html)
 
 ### REST back Office
 
-All the administrative tasks
+Our latest API, that will replace the XMLRPC one. This API is back office, that means that it allows administrative tasks and it is not contextualized to the leaner 
+as an administrator executes it.
 
 [More info](/rest-bo.html)

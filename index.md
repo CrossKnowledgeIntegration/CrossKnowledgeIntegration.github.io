@@ -7,8 +7,11 @@ summary: "About integration, their services and the available documentation. If 
 
 ## About
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+This site's purpose is to present the Integration @ Crossknowledge services, tools and available API
+
+Please note that this site is still under construction, some information will still be on our legacy one:
+
+[Legacy Integration wiki](http://integration.crossknowledge.com/)
 
 ## Services
 

@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: CrossKnowledge Corporate site 
-      external_url: https://www.crossknowledge.com
+      external_url: http://www.crossknowledge.com
 
 #Topnav dropdowns
 # topnav_dropdowns:

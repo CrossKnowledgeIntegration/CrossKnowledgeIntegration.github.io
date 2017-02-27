@@ -1,12 +1,14 @@
 ---
-title: XMLRPEC API (Deprecated)
-keywords: ...
-last_updated: December 14, 2016
+title: XMLRPC API (Deprecated)
+keywords: web service, XMLRPC
+last_updated: February 27, 2017
 tags: 
-summary: "blah blan"
+summary: "This XMLRPC API is deprecated"
 sidebar: home_sidebar
 permalink: xmlrpc.html
 folder: API
 ---
 
-xmlrpc blahblah
+The documentation for these web services is on our old wiki:
+
+[XMLPRC legacy documentation](http://integration.crossknowledge.com/Category:Web_services_description)
