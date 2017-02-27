@@ -62,4 +62,4 @@ Other codes can be returned by specific commands.
 
 ### /Content:GET
 
-[link](/pages/API/bo/rest-bo-content-get.html)
+[link](/rest-bo-content-get.html)
