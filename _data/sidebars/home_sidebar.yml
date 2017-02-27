@@ -48,3 +48,13 @@ entries:
     - title: XMLRPC (deprecated)
       url: /xmlrpc.html
       output: web
+
+  - title: Services
+    output: web
+    folderitems:
+    - title: SSO
+      url: /SSO.html
+      output: web
+    - title: Scorm Audit
+      url: /Scorm-audit.html
+      output: web
