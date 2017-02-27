@@ -6,6 +6,7 @@ tags:
 summary: "Descript the /content:get web service"
 sidebar: home_sidebar
 permalink: rest-bo-content-get.html
+folder: API
 ---
 
 [< Back to commands list](/rest-bo.html#commands)
