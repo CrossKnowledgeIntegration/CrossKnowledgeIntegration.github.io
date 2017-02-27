@@ -6,7 +6,6 @@ tags:
 summary: "Descript the /content:get web service"
 sidebar: home_sidebar
 permalink: rest-bo-content-get.html
-folder: API
 ---
 
 [< Back to commands list](/rest-bo.html#commands)
@@ -24,7 +23,8 @@ This web service returns the learning objects list (pedagogical content) for a g
 Please **note** that this service only works so far with "blended", "elearning" and "campus" modalities 
 
 #### Request
-Here are the parameters
+
+Here are the parameters: 
 
 Name | Type | Mandatory | Comment
 ---- | ---- | --------- | --------
@@ -32,6 +32,7 @@ training_guid | string | yes | The associated training course GUID sent in the U
 
 #### Response
 
+Here is the response: 
 
 Name | Type | Comment   | Sample
 ---- | ---- | --------- | --------
@@ -68,9 +69,10 @@ Code | Message | Comments
 ---- | ------- | --------
 200 | OK | &nbsp;
 401 | Unauthorized | Missing or invalid API-KEY
-204 | no content in the traning | $nbsp;
+204 | no content in the training | $nbsp;
 
 #### Sample
+
 The sample below retrieves all content (learning objects) for training **1DDD634E-D03B-8AA4-32EC-77EBFE6CC084**
 
 ##### Request
