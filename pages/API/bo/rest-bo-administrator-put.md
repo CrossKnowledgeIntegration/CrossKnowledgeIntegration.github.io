@@ -47,7 +47,7 @@ login |string | Administrator's login | admin
 entityGuid | string | Entity Guid the admnistrator is attached to | D0E19488-A8CC-7933-BBE8-0E1E615E7DA9
 _links | array | URI to related object |
 
-##### JSON for verb GET
+##### JSON for verb PUT
 
     {
         "message": "OK",
