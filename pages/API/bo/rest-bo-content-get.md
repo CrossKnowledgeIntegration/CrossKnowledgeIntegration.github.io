@@ -24,15 +24,11 @@ Please **note** that this service only works so far with "blended", "elearning" 
 
 #### Request
 
-Here are the parameters: 
-
 Name | Type | Mandatory | Comment
 ---- | ---- | --------- | --------
 training_guid | string | yes | The associated training course GUID sent in the URL
 
 #### Response
-
-Here is the response: 
 
 Name | Type | Comment   | Sample
 ---- | ---- | --------- | --------

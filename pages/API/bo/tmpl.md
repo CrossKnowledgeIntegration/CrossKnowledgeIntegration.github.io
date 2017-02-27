@@ -22,15 +22,11 @@ XXX
 
 #### Request
 
-Here are the parameters:
-
 Name | Type | Mandatory | Comment
 ---- | ---- | --------- | --------
 XXX | string | yes | XXX
 
 #### Response
-
-Here is the response:
 
 Name | Type | Comment   | Sample
 ---- | ---- | --------- | --------
