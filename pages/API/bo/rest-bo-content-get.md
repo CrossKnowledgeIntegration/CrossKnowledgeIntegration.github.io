@@ -1,9 +1,9 @@
 ---
-title: REST back office API - get content
-keywords: ...
-last_updated: December 14, 2016
+title: Get Content
+keywords: web service, REST, back office
+last_updated: February 27, 2017
 tags: 
-summary: "blah blan"
+summary: "Descript the /content:get web service"
 sidebar: home_sidebar
 permalink: rest-bo-content-get.html
 ---

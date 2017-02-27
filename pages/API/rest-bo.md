@@ -60,6 +60,4 @@ Other codes can be returned by specific commands.
 
 ## Commands
 
-### /Content:GET
-
-[link](/rest-bo-content-get.html)
+* [/Content:get](/rest-bo-content-get.html)
