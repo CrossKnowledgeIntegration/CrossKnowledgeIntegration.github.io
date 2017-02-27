@@ -12,10 +12,8 @@ Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 ## Services
 
-* SSO
-* Import & export
-* SCORM audit
-* ...
+* [SSO](/SSO.html)
+* [Scorm audit](/Scorm-audit.html)
 
 ## Documenation
 
