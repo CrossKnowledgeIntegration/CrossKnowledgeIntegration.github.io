@@ -2,10 +2,12 @@
 
 You can access this site here:
 
-[https://crossknowledgeintegration.github.io] (https://crossknowledgeintegration.github.io/index.html)
+[https://crossknowledgeintegration.github.io](https://crossknowledgeintegration.github.io/index.html)
 
+Thanks to:
 
-Template used: [http://idratherbewriting.com/documentation-theme-jekyll](http://idratherbewriting.com/documentation-theme-jekyll/index.html)
+* [Template used](http://idratherbewriting.com/documentation-theme-jekyll/index.html)
+* Contributors
 
 
 The integration team!
