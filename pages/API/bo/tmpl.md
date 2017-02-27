@@ -40,7 +40,7 @@ _links | array | URI to related object | XXX
         "success": true,
         "totalCount": 1,
         "count": 1,
-        "_links": "XXX"
+        "_links": "XXX",
         "value": [XXX]
     }
 
@@ -53,7 +53,7 @@ Code | Message | Comments
 
 #### Sample
 
-XXX
+The sample below retrieves XXX
 
 ##### Request
 

@@ -1,9 +1,9 @@
 ---
-title: Get Content
+title: Retrieve content list
 keywords: web service, REST, back office
 last_updated: February 27, 2017
 tags: 
-summary: "Descript the /content:get web service"
+summary: "Describe the /content:get web service"
 sidebar: home_sidebar
 permalink: rest-bo-content-get.html
 ---
@@ -42,7 +42,7 @@ _links | array | URI to related object | /API/ADMIN/v1/REST/Content/2F9B175C-5A1
         "success": true,
         "totalCount": 1,
         "count": 1,
-        "_links": "/API/ADMIN/v1/REST/Training/2F9B175C-5A14-A709-AB61-3703C7CD5981/Content/"
+        "_links": "/API/ADMIN/v1/REST/Training/2F9B175C-5A14-A709-AB61-3703C7CD5981/Content/",
         "value": [
             {
                 "guid": "2F9B175C-5A14-A709-AB61-3703C7CD5981",

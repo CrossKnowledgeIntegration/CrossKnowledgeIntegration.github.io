@@ -60,4 +60,5 @@ Other codes can be returned by specific commands.
 
 ## Commands
 
-* [/Content:get](/rest-bo-content-get.html)
+* [/content:get](/rest-bo-content-get.html)
+* [/administrator/autoconnectionurl:get](rest-bo-administrator.html)
