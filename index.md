@@ -7,7 +7,7 @@ summary: "About integration, their services and the available documentation. If 
 
 ## About
 
-This site's purpose is to present the Integration @ Crossknowledge services, tools and available API
+This site's purpose is to present the Integration @ Crossknowledge services, tools and available API !!!
 
 Please note that this site is still under construction, some information will still be on our legacy one:
 
