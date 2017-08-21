@@ -23,15 +23,27 @@ entries:
   - title: I/O
     output: web
     folderitems:
+
     - title: Overview
       url: /io-overview.html
       output: web
-    - title: Import
-      url: /import.html
-      output: web
-    - title: Export
-      url: /export.html
-      output: web
+
+      subfolders:
+      - title: Import
+        url: /import.html
+        output: web
+
+      - title: Data export
+        output: web
+        subfolderitems:
+        - title: Tracking 
+          url: /tracking-provider.html
+          output: web
+        - title: Training Audit Metadata
+          url: /training-audit-metadata-provider.html
+          output: web
+
+
   
   - title: API
     output: web

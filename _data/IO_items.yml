@@ -1,0 +1,592 @@
+col:
+  badge:
+    desc: "Localized label of the badge."
+
+  badgeCategory:
+    desc: "Localized badge category."
+
+  badgeCode:
+    desc: "unique ID/code for a badge."
+
+  badgeDateTime:
+    desc: "Date time the badge was acquired."
+
+  candidateAccountActivated:
+    desc: "The status of the learner's account (actived/disabled)."
+
+  candidateAccountActivatedFrom:
+    desc: "If the learner's account is only active during a limited period of time, the first date for which it is active."
+
+  candidateAccountActivatedUntil:
+    desc: "If the learner's account is only active during a limited period of time, the last date for which it is active."
+
+  candidateBadges:
+    desc: "Total amont of badges acquired by the learner."
+
+  candidateCustomFieldGuid:
+    desc: "GUID for one of the learner's possible custom fields."
+
+  candidateEmail:
+    desc: "The learner's e-mail address."
+
+  candidateEntityAncestors:
+    desc: "The learner's entity ancestors."
+
+  candidateEntityId:
+    desc: "The ID used in the database to reference the learner's entity."
+
+  candidateEntityName:
+    desc: "The learner's entity name."
+
+  candidateFirstname:
+    desc: "The learner's first name."
+
+  candidateFollowLinkedin:
+    desc: "The learner's LinkedIn username."
+    url: /candidateFollowLinkedin.html
+
+  candidateFollowTwitter:
+    desc: "The learner's Twitter handle."
+
+  candidateFollowWeb:
+    desc: "The learner's web page."
+
+  candidateGroupAncestors:
+    desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityAncestors` instead."
+
+  candidateGroupId:
+    desc: "The ID used in the database to reference the learner's group."
+
+  candidateGroupName:
+    desc: "The learner's group name."
+
+  candidateGuid:
+    desc: "The learner's GUID."
+
+  candidateId:
+    desc: "The database ID used to identify the learner."
+
+  candidateLocale:
+    desc: "The chosen display locale for the learner, based on the available locales on the instance and their preferences."
+
+  candidateLocales:
+    desc: "The ordered list of chosen locales for the learner."
+
+  candidateLogin:
+    desc: "The learner's login."
+
+  candidateName:
+    desc: "The learner's name (family name/surname)."
+
+  candidatePoints:
+    desc: "Total amont of points acquired by the learner."
+
+  candidatePresentation:
+    desc: "The candidate's presentation text."
+
+  candidateRefNumber:
+    desc: "The learner's reference number."
+
+  candidateTimeZone:
+    desc: "The candidate's timezone."
+
+  catalogVisibility:
+    desc: "\"Y\" if the training course associated with the current context is visible in the public catalogue, \"N\" otherwise."
+
+  completionTime:
+    desc: "The date at which the content referenced by the tracking row has been completed [JULIEN] WRONG => the last access date"
+
+  constantValue:
+    desc: "Return the constant value specified in this column's child elements."
+
+  contentGuid:
+    desc: "The GUID of the learning object version."
+
+  contentLocale:
+    desc: "The locale of the learning object version."
+
+  contentRefNumber:
+    desc: "The reference number of the learning object version."
+
+  contentTitle:
+    desc: "The title of the learning object version."
+
+  creationDate:
+    desc: "The date at which the object (learner, training course or training session) was created."
+
+  description:
+    desc: "The description of the training course. /!\ Other contexts maybe"
+
+  endDate:
+    desc: "The end date of the session."
+
+  eventAllDay:
+    desc: "Every days for this event."
+
+  eventClassRoomCapacity:
+    desc: "The room capacity of the event."
+
+  eventClassRoomDescription:
+    desc: "The room description of the event."
+
+  eventClassRoomEquipments:
+    desc: "The room equipments of the event."
+
+  eventClassRoomTitle:
+    desc: "The room title of the event."
+
+  eventClassRoomType:
+    desc: "The room type of the event."
+
+  eventDescription:
+    desc: "The description of the event."
+
+  eventDuration:
+    desc: "The duration of the event."
+
+  eventEndDate:
+    desc: "The end date of the event."
+
+  eventStartDate:
+    desc: "The start date of the event."
+
+  eventStatus:
+    desc: "The status of the event."
+
+  eventTeacher:
+    desc: "The teacher of the event."
+
+  eventTitle:
+    desc: "The title of the event."
+
+  eventVirtualRoomLink:
+    desc: "Link to the virtual room of the event."
+
+  firstCompletionDate:
+    desc: "The date at which the content referenced by the training has been completed for the first time."
+
+  firstLaunchDate:
+    desc: "The date at which the content referenced by the tracking row has been launched for the first time."
+
+  gamificationAction:
+    desc: "Label localized of the action."
+
+  gamificationActionCode:
+    desc: "unique ID/code for an action."
+
+  gamificationDateTime:
+    desc: "Date time when this action occured."
+
+  gamificationPoints:
+    desc: "The number of points acquired for this action."
+
+  lastPlatformAccessDate:
+    desc: "The last date at which the learner has accessed the platform."
+
+  learningObjectAssignements:
+    desc: "The number of tracking rows associated with this learning object."
+
+  learningObjectAuthorFirstName:
+    desc: "The first name of the author of the learning object."
+
+  learningObjectAuthorId:
+    desc: "The ID used by the database to identify the author of the learning object."
+
+  learningObjectAuthorLastName:
+    desc: "The last name of the author of the learning object."
+
+  learningObjectAverageCompletionTime:
+    desc: "The average completion time of the learning object."
+
+  learningObjectAverageScore:
+    desc: "The average rating of the learning object."
+
+  learningObjectCode:
+    desc: "The reference number of the learning object."
+
+  learningObjectCompletions:
+    desc: "The number of tracking rows associated with the learning object which are completed."
+
+  learningObjectCreationDate:
+    desc: "The creation date of the learning object."
+
+  learningObjectDisplayedType:
+    desc: "The type (interactive content, audio, image, ...) of the learning object."
+
+  learningObjectDuration:
+    desc: "The duration of the learning object."
+
+  learningObjectFirstLaunchDate:
+    desc: "The date at which the learning object has been launched for the first time."
+
+  learningObjectGuid:
+    desc: "The GUID of the learning object."
+
+  learningObjectId:
+    desc: "The ID used by the database to identify the learning object."
+
+  learningObjectIncludedInLO:
+    desc: "What is included in the learning object."
+
+  learningObjectLastLaunchDate:
+    desc: "The date at which the learning object has been launched for the last time."
+
+  learningObjectLearningPoints:
+    desc: "The learning points of the learning object."
+
+  learningObjectLevel:
+    desc: "The level of the learning object."
+
+  learningObjectLocales:
+    desc: "The locales in which the learning object is available."
+
+  learningObjectModificationDate:
+    desc: "The last modification date of the learning object."
+
+  learningObjectNbOfComments:
+    desc: "The number of comments for the learning object."
+
+  learningObjectNbTimesFavorited:
+    desc: "The number of times the learning object has been added to a favorite list by a learner."
+
+  learningObjectPublisher:
+    desc: "The publisher of the learning object."
+
+  learningObjectRatingByLearners:
+    desc: "The rating given by the learners on the learning object."
+
+  learningObjectRatingDisplayed:
+    desc: "The rating that is displayed on the learning object."
+
+  learningObjectRatingNbByLearners:
+    desc: "The number of rating votes by learners on the learning object."
+
+  learningObjectRatingNbDisplayed:
+    desc: "The displayed number of rating votes by learners on the learning object."
+
+  learningObjectSummary:
+    desc: "The summar of the learning object."
+
+  learningObjectTags:
+    desc: "The tags associated to the learning object."
+
+  learningObjectTargetAudience:
+    desc: "The target audience of the learning object."
+
+  learningObjectThemes:
+    desc: "The themes of the learning object."
+
+  learningObjectThumbnailLarge:
+    desc: "The URL to the large-sized thumbnail of the learning object."
+
+  learningObjectThumbnailMedium:
+    desc: "The URL to the medium-sized thumbnail of the learning object."
+
+  learningObjectThumbnailSmall:
+    desc: "The URL to the small-sized thumbnail of the learning object."
+
+  learningObjectTitle:
+    desc: "The title of the learning object."
+
+  learningObjectTotalTimeSpent:
+    desc: "The total time spent on the learning object by all learners of the platform."
+
+  learningObjectType:
+    desc: "The runtime (SCORM, MP4, AICC, ...) of the learning object."
+
+  learningObjectVersionAssignements:
+    desc: "The number of tracking rows associated with this learning object version."
+
+  learningObjectVersionAuthorFirstName:
+    desc: "The first name of the author of the learning object version."
+
+  learningObjectVersionAuthorId:
+    desc: "The ID used by the database to identify the author of the learning object version."
+
+  learningObjectVersionAuthorLastName:
+    desc: "The last name of the author of the learning object version."
+
+  learningObjectVersionAverageCompletionTime:
+    desc: "The average completion time of the learning object version."
+
+  learningObjectVersionAverageScore:
+    desc: "The average rating of the learning object version."
+
+  learningObjectVersionCode:
+    desc: "The reference number of the learning object version."
+
+  learningObjectVersionCompletions:
+    desc: "The number of tracking rows associated with the learning object version which are completed."
+
+  learningObjectVersionCreationDate:
+    desc: "The date at which the learning object version was created."
+
+  learningObjectVersionDisplayedType:
+    desc: "The type (interactive content, audio, image, ...) of the learning object version."
+
+  learningObjectVersionDuration:
+    desc: "The duration of the learning object version."
+
+  learningObjectVersionFirstLaunchDate:
+    desc: "The date at which the learning object version was launched for the first time."
+
+  learningObjectVersionGuid:
+    desc: "The GUID used by the database to identify the learning object version."
+
+  learningObjectVersionId:
+    desc: "The ID used by the database to identify the learning object version."
+
+  learningObjectVersionIncludedInLO:
+    desc: "What is included in the learning object version."
+
+  learningObjectVersionLastLaunchDate:
+    desc: "The date at which the learning object version was launched for the last time."
+
+  learningObjectVersionLearningPoints:
+    desc: "The learning points of the learning object version."
+
+  learningObjectVersionLevel:
+    desc: "The level of the learning object version."
+
+  learningObjectVersionLocale:
+    desc: "The locale of the learning object version."
+
+  learningObjectVersionLoGuid:
+    desc: "The GUID of the original learning object."
+
+  learningObjectVersionLoId:
+    desc: "The ID used by the database to identify the original learning object."
+
+  learningObjectVersionModificationDate:
+    desc: "The date at which the learning object version was modified for the last time."
+
+  learningObjectVersionPublisher:
+    desc: "The publisher of the learning object version."
+
+  learningObjectVersionSummary:
+    desc: "The summary of the learning object version."
+
+  learningObjectVersionTags:
+    desc: "The tags associated with the learning object version."
+
+  learningObjectVersionTargetAudience:
+    desc: "The target audience of the learning object version."
+
+  learningObjectVersionThemes:
+    desc: "A comma separated list of the themes of the learning object version."
+
+  learningObjectVersionThumbnailLarge:
+    desc: "The URL to the large-sized thumbnail of the learning object version."
+
+  learningObjectVersionThumbnailMedium:
+    desc: "The URL to the medium-sized thumbnail of the learning object version."
+
+  learningObjectVersionThumbnailSmall:
+    desc: "The URL to the small-sized thumbnail of the learning object version."
+
+  learningObjectVersionTitle:
+    desc: "The title of the learning object version."
+
+  learningObjectVersionTotalTimeSpent:
+    desc: "The total time spent on the learning object version by all learners of the platform."
+
+  learningObjectVersionType:
+    desc: "The runtime (SCORM, MP4, AICC, ...) of the learning object version."
+
+  learningObjectVersionVersion:
+    desc: "The version of the learning object version."
+
+  learningObjectViewsByLearners:
+    desc: "The number of views of the learning object."
+
+  learningObjectViewsDisplayed:
+    desc: "The displayed number of views of the learning object."
+
+  locale:
+    desc: "Local of the label."
+
+  logDate:
+    desc: "The date at which the tracking log was created."
+
+  managerLogin:
+    desc: "The manager's login."
+
+  maxNbLearners:
+    desc: "The maximum number of learners that can enroll to the training session."
+
+  modality:
+    desc: "The modality of the associated training course."
+
+  modificationDate:
+    desc: "The date at which the object (training course, training session) was last modified."
+
+  Name:
+    desc: "Description"
+
+  nbLO:
+    desc: "The total number of learning objects in the same session as the learning object referenced by the tracking row."
+
+  nbLOFinished:
+    desc: "The total number of learning objects that the learner has finished in the same session as the learning object referenced by the tracking row."
+
+  nbLOStarted:
+    desc: "The total number of learning objects that the learner has started in the same session as the learning object referenced by the tracking row."
+
+  pathModificationDate:
+    desc: "The date at which the associated training course was last modified (learning object added, folders reorganized,...)."
+
+  platformAccessDate:
+    desc: "A date at which the learner has accessed the platform."
+
+  progression:
+    desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
+
+  progressionMandatory:
+    desc: "The total progress of the learner (on the mandatory learning objects) in the current session."
+
+  registeredLearners:
+    desc: "The number of learners that have enrolled to the training session."
+
+  registrationDate:
+    desc: "The date of the registration."
+
+  registrationGuid:
+    desc: "The GUID of the registration."
+
+  score:
+    desc: "The score the learner has achieved on the content."
+
+  sessionEndDate:
+    desc: "The end date of the session."
+
+  sessionGuid:
+    desc: "The GUID of the session."
+
+  sessionId:
+    desc: "The database ID used to identify the session."
+
+  sessionStartDate:
+    desc: "The start date of the session."
+
+  sessionTitle:
+    desc: "The title of the session."
+
+  startDate:
+    desc: "The start date of the session."
+
+  status:
+    desc: "The progress status (completed, incomplete or not started) of the content referenced by the tracking row."
+
+  thresholdReachedDate:
+    desc: "The date on which the learner has reached the success threshold of the training course."
+
+  timeGlobal:
+    desc: "The total time the learner spent on the content."
+
+  title:
+    desc: "The title of the training course. /!\ Other contexts maybe"
+
+  trainingAudience:
+    desc: "The target audience of the training course."
+
+  trainingBenefits:
+    desc: "The benefits of the training course."
+
+  trainingBOLink:
+    desc: "The URL to the record page of the training course."
+
+  trainingChapters:
+    desc: "The chapter hierarchy of the training course."
+
+  trainingContentAuthor:
+    desc: "The author of the learning object."
+
+  trainingContentCatalog:
+    desc: "The catalog to which the learning object belongs."
+
+  trainingContentCode:
+    desc: "The reference number of the learning object."
+
+  trainingContentFolder:
+    desc: "The name of the folder in which the learning object is placed (inside the training course)."
+
+  trainingContentGuid:
+    desc: "The GUID of the learning object."
+
+  trainingContentMandatory:
+    desc: "The flag (Y or N) indicating if the learning object is mandatory in the context of the training course."
+
+  trainingContentOrder:
+    desc: "The order of the learning object in the training course."
+
+  trainingContentRuntime:
+    desc: "The runtime of the learning object (SCORM content, CrossKnowledge learning product,...)."
+
+  trainingContentSubtype:
+    desc: "The subtype of the learning object (Business review, custom, session,...)."
+
+  trainingContentTitle:
+    desc: "The title of the learning object."
+
+  trainingContentType:
+    desc: "The type of the learning object (Reading document, interactive document,...)."
+
+  trainingDescription:
+    desc: "The description of the training course."
+
+  trainingDigestSettings:
+    desc: "The digest settings of the training course."
+
+  trainingDuration:
+    desc: "The duration of the training course."
+
+  trainingFolderDescription:
+    desc: "The descriptions of the folders in the training course, separated by commas."
+
+  trainingFurtherInformation:
+    desc: "Further information on the training course."
+
+  trainingGoals:
+    desc: "The goals of the training course."
+
+  trainingGuid:
+    desc: "The GUID of the training course."
+
+  trainingId:
+    desc: "The database ID used to identify the training course."
+
+  trainingLearningPath:
+    desc: "The overview of the training course."
+
+  trainingLocale:
+    desc: "The main locale of the training course."
+
+  trainingModality:
+    desc: "The modality of the training course."
+
+  trainingPathCode:
+    desc: "The reference number of the training course."
+
+  trainingPrice:
+    desc: "The price of the training course."
+
+  trainingPublisher:
+    desc: "The publisher of the training course."
+
+  trainingStatus:
+    desc: "The status (published, archived or under construction) of the training course. The values displayed in this column can be configured via the trainingStatusFormatparameter."
+
+  trainingTitle:
+    desc: "The title of the training course."
+
+  trainingWelcomeText:
+    desc: "The welcome text of the training course."
+
+param:
+  timeGlobalFormat:
+    desc: "Time format in which the `timeGlobal` column should be exported"
+    url: /timeGlobalFormat.html
+
+
+
+filter:
