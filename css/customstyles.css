@@ -779,6 +779,9 @@ pre, table code {
 
 pre {
     margin: 25px 0px;
+    -moz-tab-size: 2;
+    -o-tab-size:   2;
+    tab-size:      2;
 }
 
 #json-box-container pre {
