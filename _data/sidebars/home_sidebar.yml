@@ -42,6 +42,9 @@ entries:
         - title: Training Audit Metadata
           url: /training-audit-metadata-provider.html
           output: web
+        - title: Tracking Log
+          url: /training-log-provider.html
+          output: web
 
 
   
