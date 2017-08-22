@@ -587,6 +587,26 @@ param:
     desc: "Time format in which the `timeGlobal` column should be exported"
     url: /timeGlobalFormat.html
 
+  ancestorsWithCurrent:
+    desc: "For each tracking data row, the learner's hierarchy can be exported with the other data. This parameter tells the provider whether to include the learner's group in the hierarchy or not. If set to `yes`, the learner's current group will be included. Otherwise, it will be removed from the exported hierarchy."
+    type: "Yes/No  element"
 
+  catalogVisibility:
+    desc:
+    type: "Y/N element"
 
-filter:
+  connectionStatusFormat:
+    desc: "The format in which to display the connection status."
+    type: "custom"
+
+  timeFramesScale:
+    desc: "Once a learner has completed a learning object, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFrames`."
+    type: "timeFrameScale"
+
+  timeFrames:
+    desc: "Once a learner has completed a learning object, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFramesScale.`"
+    type: "int"
+
+  groupIds:
+    desc: "<i class='fa fa-exclamation-circle preference'></i> This parameter is deprecated in the CKLS 14.1 version, please use `entityIds` instead. A comma-separated list of the group ids to filter on. If multiple group ids are provided, then the export will return data about learners who belong to at least one of those groups."
+    type: "string"

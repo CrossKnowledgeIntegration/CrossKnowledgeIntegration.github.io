@@ -45,6 +45,9 @@ entries:
         - title: Tracking Log
           url: /training-log-provider.html
           output: web
+        - title: Platform Candidates
+          url: /candidates-provider.html
+          output: web
 
 
   
