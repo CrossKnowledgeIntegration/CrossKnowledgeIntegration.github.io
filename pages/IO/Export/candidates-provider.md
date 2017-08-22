@@ -1,8 +1,8 @@
 ---
 title: Candidates provider
-keywords: ...
+keywords: candidates, learners, export, data, report
 last_updated: 22 August, 2017
-tags: candidates, learners, export, data, report
+tags:
 summary: ""
 sidebar: home_sidebar
 permalink: candidates-provider.html
