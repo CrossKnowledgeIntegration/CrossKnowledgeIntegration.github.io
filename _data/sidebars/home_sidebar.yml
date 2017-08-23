@@ -36,6 +36,12 @@ entries:
       - title: Data export
         output: web
         subfolderitems:
+        - title: Learning Object Metadata
+          url: /lo-metadata-provider.html
+          output: web
+        - title: Platform Candidates
+          url: /candidates-provider.html
+          output: web
         - title: Tracking 
           url: /tracking-provider.html
           output: web
@@ -45,10 +51,6 @@ entries:
         - title: Tracking Log
           url: /training-log-provider.html
           output: web
-        - title: Platform Candidates
-          url: /candidates-provider.html
-          output: web
-
 
   
   - title: API
