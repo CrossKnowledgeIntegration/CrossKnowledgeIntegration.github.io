@@ -1,5 +1,5 @@
 ---
-title: Learning Object Version metadata
+title: Learning Object Version Metadata
 keywords: LOV, learning object version, learning object, metadata, report, export
 last_updated: 24 August, 2017
 tags: 
@@ -10,7 +10,7 @@ folder: Export
 ---
 
 
-### Available columns
+### Available columnsge
 
 Name | Description
 ---|---

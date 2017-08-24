@@ -574,7 +574,7 @@ col:
     desc: "The publisher of the training course."
 
   trainingStatus:
-    desc: "The status (published, archived or under construction) of the training course. The values displayed in this column can be configured via the trainingStatusFormatparameter."
+    desc: "The status (published, archived or under construction) of the training course. The values displayed in this column can be configured via the `trainingStatusFormat` parameter."
 
   trainingTitle:
     desc: "The title of the training course."
@@ -713,7 +713,7 @@ param:
     type: "string"
 
   trainingStatus:
-    desc: "Only export training courses that have the specified statuses. This parameter contains a comma-separated list of training statuses (see the default values in trainingStatus)."
+    desc: "Only export training courses that have the specified statuses. This parameter contains a comma-separated list of training statuses (see the default values in `trainingStatus`)."
     type: "trainingStatusFormat"
 
   trainingStatusFormat:
