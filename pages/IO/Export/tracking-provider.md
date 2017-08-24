@@ -1,5 +1,5 @@
 ---
-title: Tracking provider
+title: Tracking
 keywords: tracking, completion, progression
 last_updated: 21 August, 2017
 tags: 
@@ -80,34 +80,41 @@ Name | Description
 ### Example
 
 ```xml
-<columns>
-	<candidateId/>
-	<candidateName/>
-	<candidateFirstname/>
-	<candidateLogin/>
-	<candidateEmail/>
-	<candidateRefNumber/>
-	<candidateGuid/>
-	<candidateEntityName/>
-	<candidateCustomFieldGuid label="Department">8345C0A3-B8AB-7F65-0638-39B0E1244AA8</candidateCustomFieldGuid>
-	<trainingId/>
-	<trainingTitle/>
-	<trainingPathCode/>
-	<trainingGuid/>
-	<sessionId/>
-	<sessionTitle/>
-	<sessionGuid/>
-	<sessionStartDate/>
-	<sessionEndDate/>
-	<contentGuid/>
-	<contentRefNumber/>
-	<contentTitle/>
-	<contentLocale/>
-	<firstLaunchDate/>
-	<completionTime/>
-	<score/>
-	<timeGlobal/>
-	<progression/>
-	<status/>
-</columns>
+<providers>
+    <trackingProvider>
+		<columns>
+			<candidateId/>
+			<candidateName/>
+			<candidateFirstname/>
+			<candidateLogin/>
+			<candidateEmail/>
+			<candidateRefNumber/>
+			<candidateGuid/>
+			<candidateEntityName/>
+			<candidateCustomFieldGuid label="Department">8345C0A3-B8AB-7F65-0638-39B0E1244AA8</candidateCustomFieldGuid>
+			<trainingId/>
+			<trainingTitle/>
+			<trainingPathCode/>
+			<trainingGuid/>
+			<sessionId/>
+			<sessionTitle/>
+			<sessionGuid/>
+			<sessionStartDate/>
+			<sessionEndDate/>
+			<contentGuid/>
+			<contentRefNumber/>
+			<contentTitle/>
+			<contentLocale/>
+			<firstLaunchDate/>
+			<completionTime/>
+			<score/>
+			<timeGlobal/>
+			<progression/>
+			<status/>
+		</columns>
+        <parameters>
+            <dateFormat>MM-DD-YYYY</dateFormat>
+        </parameters>
+    </trackingProvider>
+</providers>
 ```

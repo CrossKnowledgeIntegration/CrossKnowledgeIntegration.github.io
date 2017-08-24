@@ -1,5 +1,5 @@
 ---
-title: Candidates provider
+title: Platform Candidates
 keywords: candidates, learners, export, data, report
 last_updated: 22 August, 2017
 tags:

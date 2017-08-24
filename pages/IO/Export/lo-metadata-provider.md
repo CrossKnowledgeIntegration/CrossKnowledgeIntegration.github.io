@@ -1,5 +1,5 @@
 ---
-title: Learning Object metadata
+title: Learning Object Metadata
 keywords: learning object, LO, metadata
 last_updated: 23 August, 2017
 tags: 
@@ -27,7 +27,7 @@ Name | Description
 `learningObjectPublisher` | {{site.data.IO_items.col.learningObjectPublisher.desc}}
 `learningObjectSummary` | {{site.data.IO_items.col.learningObjectSummary.desc}}
 `learningObjectTags` | {{site.data.IO_items.col.learningObjectTags.desc}}
-`learningObjectTargetAudience` | {{site.data.IO_items.col.learningObjectTargetAudience.desc}}
+`learningObjecthoTargetAudience` | {{site.data.IO_items.col.learningObjectTargetAudience.desc}}
 `learningObjectTitle` | {{site.data.IO_items.col.learningObjectTitle.desc}}
 `learningObjectThemes` | {{site.data.IO_items.col.learningObjectThemes.desc}}
 `learningObjectThumbnailSmall` | {{site.data.IO_items.col.learningObjectThumbnailSmall.desc}}

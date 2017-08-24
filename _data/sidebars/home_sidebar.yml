@@ -36,6 +36,27 @@ entries:
       - title: Data export
         output: web
         subfolderitems:
+        - title: Tracking 
+          url: /tracking-provider.html
+          output: web
+        - title: Consolidated Tracking
+          url: /consolidated-tracking-provider.html
+          output: web
+        - title: Tracking Log
+          url: /training-log-provider.html
+          output: web
+        - title: Training Audit Content
+          url: /training-audit-content-provider.html
+          output: web
+        - title: Training Audit Metadata
+          url: /training-audit-metadata-provider.html
+          output: web
+        - title: Training Course Metadata
+          url: /training-course-metadata-provider.html
+          output: web
+          title: Training Session Metadata
+          url: /training-session-metadata-provider.html
+          output: web
         - title: Learning Object Metadata
           url: /lo-metadata-provider.html
           output: web
@@ -45,17 +66,25 @@ entries:
         - title: Platform Candidates
           url: /candidates-provider.html
           output: web
-        - title: Tracking 
-          url: /tracking-provider.html
+        - title: Platform Candidates Access
+          url: /candidates-access-provider.html
           output: web
-        - title: Training Audit Metadata
-          url: /training-audit-metadata-provider.html
+        - title: Event Learner Metadata
+          url: /event-learner-metadata-provider.html
           output: web
-        - title: Tracking Log
-          url: /training-log-provider.html
+        - title: Event Session Metadata
+          url: /event-session-metadata-provider.html
+          output: web
+        - title: Event Training Metadata
+          url: /event-training-metadata-provider.html
+          output: web
+        - title: Consolidated Gamification Badges
+          url: /consolidated-gamification-badges-provider.html
+          output: web
+        - title: Consolidated Gamification Events
+          url: /consolidated-gamification-events-provider.html
           output: web
 
-  
   - title: API
     output: web
     folderitems:

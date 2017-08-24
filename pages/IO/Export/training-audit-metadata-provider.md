@@ -1,5 +1,5 @@
 ---
-title: Training Audit Metadata provider
+title: Training Audit Metadata
 keywords: training metadata, training course, training path
 last_updated: 21 August, 2017
 tags: 
@@ -51,51 +51,37 @@ Name | Description
 
 ### Examples
 ```xml
-<export>
-    <providers>
-        <trainingAuditMetadataProvider>
-            <columns>
-				<trainingAudience/>
-				<trainingId/>
-				<trainingBenefits/>
-				<trainingBOLink/>
-				<trainingChapters/>
-				<description/>
-				<trainingDescription/>
-				<trainingDigestSettings/>
-				<trainingDuration/>
-				<trainingFolderDescription/>
-				<trainingFurtherInformation/>
-				<trainingGoals/>
-				<trainingGuid/>
-				<trainingLearningPath/>
-				<trainingLocale/>
-				<modality/>
-				<trainingPathCode/>
-				<trainingPrice/>
-				<title/>
-				<trainingTitle/>
-				<trainingWelcomeText/>
-				<catalogVisibility/>
-				<trainingStatus/>
-				<constantValue/>
-            </columns>
-            <parameters>
-                <trainingStatus>P</trainingStatus>
-            </parameters>
-        </trainingAuditMetadataProvider>
-    </providers>
-    <actions>
-        <fileExportAction>
-            <format>CSV</format>
-            <encoding>UTF-8</encoding>
-            <delimiter>semicolon</delimiter>
-            <showHeaders>yes</showHeaders>
-        </fileExportAction>
-    </actions>
-    <consolidators>
-        <moveToFolder>
-            <fileName>Training_Audit_metadata.csv</fileName>
-    </consolidators>
-</export>           
+<providers>
+	<trainingAuditMetadataProvider>
+		<columns>
+			<trainingAudience/>
+			<trainingId/>
+			<trainingBenefits/>
+			<trainingBOLink/>
+			<trainingChapters/>
+			<description/>
+			<trainingDescription/>
+			<trainingDigestSettings/>
+			<trainingDuration/>
+			<trainingFolderDescription/>
+			<trainingFurtherInformation/>
+			<trainingGoals/>
+			<trainingGuid/>
+			<trainingLearningPath/>
+			<trainingLocale/>
+			<modality/>
+			<trainingPathCode/>
+			<trainingPrice/>
+			<title/>
+			<trainingTitle/>
+			<trainingWelcomeText/>
+			<catalogVisibility/>
+			<trainingStatus/>
+			<constantValue/>
+		</columns>
+		<parameters>
+			<trainingStatus>P</trainingStatus>
+		</parameters>
+	</trainingAuditMetadataProvider>
+</providers> 
 ```
