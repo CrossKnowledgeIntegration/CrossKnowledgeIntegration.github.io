@@ -39,6 +39,9 @@ entries:
         - title: Learning Object Metadata
           url: /lo-metadata-provider.html
           output: web
+        - title: Learning Object Version Metadata
+          url: /lov-metadata-provider.html
+          output: web
         - title: Platform Candidates
           url: /candidates-provider.html
           output: web
