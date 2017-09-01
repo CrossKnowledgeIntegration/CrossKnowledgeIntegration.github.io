@@ -2,38 +2,80 @@ entries:
 - title: Sidebar
   levels: one
   folders:
+  - title: About
+    output: web
+    folderitems:
+    - title: About 
+    url: /index.html
+    output: web
 
-  - title: Overview
+  - title: Our solutions
+    output: web
+    folderitems:
+    - title: CrossKnowledge Learning Suite
+      url: /prerequisites-fr.html
+      output: web
+    - title: Authentication Protocols
+      url: /prerequisites-en.html
+      output: web
+
+    - title: Data Exchange Module
+      url: /prerequisites-fr.html
+      output: web
+
+    - title: Integration Tools
+      url: /prerequisites-en.html
+      output: web
+
+    - title: CrossKnowledge Hub
+      url: /prerequisites-fr.html
+      output: web
+    - title: CrossKnowledge Hub UI
+      url: /prerequisites-fr.html
+      output: web
+
+  - title: Our references
     output: web
     folderitems:
     - title: About 
       url: /index.html
       output: web
-
-  - title: Prerequisites 
-    output: web
-    folderitems:
-    - title: EN
-      url: /prerequisites-en.html
-      output: web
-    - title: FR
-      url: /prerequisites-fr.html
+    - title: Customer cases
+      external_url: https://www.crossknowledge.com/clients-case-studies
       output: web
 
-  - title: I/O
+  - title: Develop
     output: web
     folderitems:
+    - title: API Guide
+      url: /api_getting_started.html
+      output: web
 
-    - title: Overview
-      url: /io-overview.html
+    - title: API Web-services
+      url: /api_web_services_list_and_details.html
+      output: web
+
+    - title: Tools
+      url: /api_tools.html
+      output: web
+    
+      subfolders:
+      - title: Samples
+        output: web
+        subfolderitems:
+        - title: Integration GitHub
+          external_url: https://github.com/CrossKnowledgeIntegration
+          output: web
+        - title: CKTechno GitHub
+          external_url: https://github.com/CrossKnowledge
+          output: web
+
+    - title: Data Import Module
+      url: /api_tools.html
       output: web
 
       subfolders:
-      - title: Import
-        url: /import.html
-        output: web
-
-      - title: Data export
+      - title: Data Export Module
         output: web
         subfolderitems:
         - title: Tracking 
@@ -54,7 +96,7 @@ entries:
         - title: Training Course Metadata
           url: /training-course-metadata-provider.html
           output: web
-          title: Training Session Metadata
+        - title: Training Session Metadata
           url: /training-session-metadata-provider.html
           output: web
         - title: Learning Object Metadata
@@ -85,28 +127,31 @@ entries:
           url: /consolidated-gamification-events-provider.html
           output: web
 
-  - title: API
+  - title: Publish
     output: web
     folderitems:
-    - title: Overview
-      url: /api-overview.html
-      output: web
-    - title: REST back office
-      url: /rest-bo.html
-      output: web
-    - title: REST front office
-      url: /rest-fo.html
-      output: web
-    - title: XMLRPC (deprecated)
-      url: /xmlrpc.html
+    - title: CrossKnowledge Market Place
+      url: /index.html
       output: web
 
-  - title: Services
+  - title: Community
     output: web
     folderitems:
-    - title: SSO
-      url: /SSO.html
+    - title: About 
+      url: /index.html
       output: web
-    - title: Scorm Audit
-      url: /Scorm-audit.html
+
+      subfolders:
+      - title: Articles
+        output: web
+        subfolderitems:
+        - title: Blog
+          external_url: http://crossknowledge.github.io/
+          output: web
+
+  - title: Support
+    output: web
+    folderitems:
+    - title: About 
+      url: /index.html
       output: web
