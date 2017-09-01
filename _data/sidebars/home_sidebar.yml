@@ -139,8 +139,5 @@ entries:
       output: web
 
   - title: Support
+    url: /index.html
     output: web
-    folderitems:
-    - title: About 
-      url: /index.html
-      output: web
