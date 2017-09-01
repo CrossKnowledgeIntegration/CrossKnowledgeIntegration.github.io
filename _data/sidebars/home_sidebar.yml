@@ -37,9 +37,6 @@ entries:
   - title: Our references
     output: web
     folderitems:
-    - title: About 
-      url: /index.html
-      output: web
     - title: Customer cases
       external_url: https://www.crossknowledge.com/clients-case-studies
       output: web
@@ -130,24 +127,16 @@ entries:
   - title: Publish
     output: web
     folderitems:
-    - title: CrossKnowledge Market Place
-      url: /index.html
+    - title: CrossKnowledge MarketPlace
+      external_url: http://hub.crossknowledge.com
       output: web
 
   - title: Community
     output: web
     folderitems:
-    - title: About 
-      url: /index.html
+    - title: Blog 
+      external_url: http://crossknowledge.github.io/
       output: web
-
-      subfolders:
-      - title: Articles
-        output: web
-        subfolderitems:
-        - title: Blog
-          external_url: http://crossknowledge.github.io/
-          output: web
 
   - title: Support
     output: web
