@@ -1,5 +1,5 @@
 ---
-title: About Integation @ CrossKnowledge
+title: About Integration @ CrossKnowledge
 sidebar: home_sidebar
 permalink: index.html
 summary: "About integration, their services and the available documentation. If you are CrossKnowledge clients, get in touch with your IT consultant for more details"
