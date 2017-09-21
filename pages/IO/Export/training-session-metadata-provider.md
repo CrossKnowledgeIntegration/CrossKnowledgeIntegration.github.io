@@ -33,20 +33,20 @@ Name | Description
 
 Name | Description
 ---|---
-`exportAllSessions` | {site.data.IO_items.param.exportAllSessions.desc}
-`modality` | {site.data.IO_items.param.modality.desc}
-`trainingGuid` | {site.data.IO_items.param.trainingGuid.desc}
-`sessionGuid` | {site.data.IO_items.param.sessionGuid.desc}
-`trainingTitle` | {site.data.IO_items.param.trainingTitle.desc}
-`sessionTitle` | {site.data.IO_items.param.sessionTitle.desc}
-`trainingPathCode` | {site.data.IO_items.param.trainingPathCode.desc}
-`trainingStatus` | {site.data.IO_items.param.trainingStatus.desc}
-`trainingStatusFormat` | {site.data.IO_items.param.trainingStatusFormat.desc}
-`catalogVisibility` | {site.data.IO_items.param.catalogVisibility.desc}
-`dateFormat` | {site.data.IO_items.param.dateFormat.desc}
-`dateTimeFormat` | {site.data.IO_items.param.dateTimeFormat.desc}
-`timeFrames` | {site.data.IO_items.param.timeFrames.desc}
-`timeFramesScale` | {site.data.IO_items.param.timeFramesScale.desc}
+`exportAllSessions` | {{site.data.IO_items.param.exportAllSessions.desc}}
+`modality` | {{site.data.IO_items.param.modality.desc}}
+`trainingGuid` | {{site.data.IO_items.param.trainingGuid.desc}}
+`sessionGuid` | {{site.data.IO_items.param.sessionGuid.desc}}
+`trainingTitle` | {{site.data.IO_items.param.trainingTitle.desc}}
+`sessionTitle` | {{site.data.IO_items.param.sessionTitle.desc}}
+`trainingPathCode` | {{site.data.IO_items.param.trainingPathCode.desc}}
+`trainingStatus` | {{site.data.IO_items.param.trainingStatus.desc}}
+`trainingStatusFormat` | {{site.data.IO_items.param.trainingStatusFormat.desc}}
+`catalogVisibility` | {{site.data.IO_items.param.catalogVisibility.desc}}
+`dateFormat` | {{site.data.IO_items.param.dateFormat.desc}}
+`dateTimeFormat` | {{site.data.IO_items.param.dateTimeFormat.desc}}
+`timeFrames` | {{site.data.IO_items.param.timeFrames.desc}}
+`timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}
 
 ### Examples
 ```xml
