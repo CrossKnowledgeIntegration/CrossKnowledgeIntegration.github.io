@@ -3,7 +3,28 @@ $('#mysidebar').height($(".nav").height());
 
 
 $( document ).ready(function() {
+    
+    //adds copy to clipboard button to all <pre> elements
+    if( Clipboard.isSupported() ){
+        $('.highlight').each(function (index) {
+            var btn = $(this).before('<button class="btn btn-xs btn-default btn-clipboard">Copy</button>').tooltip({
+                placement: 'top'
+              });
+        });
+    
+        var clipboard = new Clipboard('.btn-clipboard', {
+            target: function(trigger) {
+                return trigger.nextElementSibling;
+            }
+        });
+    
+        clipboard.on('success', function(e) {
+            $(e.trigger).attr('title', 'Copied!').tooltip('fixTitle').tooltip('show').removeAttr('data-original-title')
+        });
 
+    }
+
+ 
     //this script says, if the height of the viewport is greater than 800px, then insert affix class, which makes the nav bar float in a fixed
     // position as your scroll. if you have a lot of nav items, this height may not work for you.
     var h = $(window).height();
