@@ -10,7 +10,9 @@ folder: Authentication
 
 ## The Goal
 
+
 This document aims to explain you the functionning of CrossKnowledge Single Sign-On link and help you to build your own SSO link in the best way.
+
 
 ## General information
 
@@ -36,7 +38,6 @@ The following lines are the important ones. We will explain you the parameters r
 
 We will consider 3 sections:
 
-
 * Learner's datas section: datas to provide to identify a leaner for an authentication.
 * Actions's datas section: datas to provide to execute an action on the authenticated learner.
 * Security's datas section: How to build your hash key to securise your SSO link.
@@ -59,7 +60,7 @@ Parameters | Description
 `activation` | values are D for disabled, a date for the date until the learner is active. Any other values will set the learner to active.
 `group_name` | 	the name of the group the learner will be attached to. If the group doesn’t exist, the group will be created.
 `group_id` | 	id or GUID of the group. The group must exist or an error will occur.
-`guid` | to set values of learner's custom field, format is "guid/value/guid2/othervalue etc...
+`guid` | to set values of learner's custom field, format is guid/value/guid2/othervalue etc...
 
 When Register (action which creates a user if he does not exists) is set to yes, you can set the value @ for Name, Firstname, Email, Language, Guids. 
 If the learner is not found, a form will allow the learner to enter the values for the parameters set with an @.
@@ -127,7 +128,6 @@ Parameters | Description
 
 ### How to build your hash key ?
 
-
 The hash key guarantees the security of your SSO link. It is built in a simple and specific way. See below for an example.
 If we take our last query example, with our learner John doe. We can see that the security part, so the hash key, is missing:
 
@@ -141,7 +141,7 @@ The string parameters in our previous link is:
 `identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 The public key is the API Key of your CKLS plateform. 
-The API Key a is valid API key set in the configuration of your CKLS
+The API Key a is valid API key set in the configuration of your CKLS.
 
 In this example, to build our Hash Key, we will proceed as below:
 
