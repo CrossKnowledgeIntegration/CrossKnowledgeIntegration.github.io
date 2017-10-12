@@ -13,28 +13,40 @@ folder: Authentication
 This document aims to explain you the functionning of CrossKnowledge Single Sign-On link and help you to build your own SSO link in the best way.
 
 ## General information
-The SSO (Single Sign-On) allows to authenticate automatically a user or learner in the CrossKnowledge Learning Suite. Besides, it allows to execute several actions on the authenticated learner as:
+
+The SSO (Single Sign-On) allows to authenticate automatically a user or learner in the CrossKnowledge Learning Suite. 
+Besides, it allows to execute several actions on the authenticated learner as:
+
 
 * Register to a training Path
 * Enroll to a training session
 * Redirect to learning course page.
 
+
 The SSO works both in HTTP and HTTPS. You can write it from 2 ways :
+
 
 * With pretty url: firstname/John/name/Doe (parameters are not case sensitive, you can write Name, NAME etc)
 * With POST parameters: If you want to hide information sent to CKLS instead of send everything by GET values, you can use POST parameters/values. You can also use both POST and GET, and in this case the GET overwrites the POST when the same parameter/value is found.
 
+
 As described earlier, the SSO link allow to authenticate a learner and execute several actions beside the authentication - You can also build a SSO link without any actions, so your learner will be authenticate and redirect to the CKLS homepage.
 The following lines are the important ones. We will explain you the parameters required to build your SSO.
+
+
 We will consider 3 sections:
+
 
 * Learner's datas section: datas to provide to identify a leaner for an authentication.
 * Actions's datas section: datas to provide to execute an action on the authenticated learner.
 * Security's datas section: How to build your hash key to securise your SSO link.
 
+
 ## Learner’s data
 
+
 You can set a couple of parameters for a learner. Below is an exhaustive list of parameters available for a learner. (they are not case sensitive).
+
 
 Parameters | Description
 --- | ---
@@ -56,9 +68,12 @@ For example if the parameters of the SSO are register/yes/name/@/firstname/@/ref
 For languages, a select list will be displayed with the list of locales available in the LMS (like the login page). 
 Others parameters are available when asking the learner to complete his data, see the part 6 Loginbox.
 
+
 ### Identity search field
 
-identity_field : This mandatory field allows to specify which learner data, into your SSO link, will be used to identify a learner in the Crossknowledge Learning Suite (CKLS).
+
+`identity_field` : This mandatory field allows to specify which learner data, into your SSO link, will be used to identify a learner in the Crossknowledge Learning Suite (CKLS).
+
 The fields below can be used as a value for this parameter (key/value format) :
 
 * `login`
@@ -67,16 +82,20 @@ The fields below can be used as a value for this parameter (key/value format) :
 * `ref_number`
 * `email`
 
-login and learner_login are both alias of candidate_login parameter.
+`login` and `learner_login` are both alias of `candidate_login` parameter.
+
 
 Example of use:
 
-Query | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
+
+`Query` | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 The query above (without the security part) means that we are identifying a learner with his login, therefore, if no learner is found with the specified login value, it will be created, thanks to the parameter register/yes.
 But if the learner is found with the specified login value, his datas will be only updated.
 
+
 ## Actions' datas
+
 
 Parameters | Description
 --- | ---
@@ -92,6 +111,7 @@ Training, session and content can all be in the url.
 The SSO system will verify the consistency between those parameters. 
 If there is no consistency, for example the session and the training specified are not related, the learner will be redirected to the homepage with an error message. 
 More generally, if the SSO can’t calculate the landing page, the learner will be redirected to the homepage with an error message.
+
 
 ## Security
 
@@ -109,29 +129,30 @@ Parameters | Description
 
 ### How to build your hash key ?
 
+
 The hash key guarantees the security of your SSO link. It is built in a simple and specific way. See below for an example.
 If we take our last query example, with our learner John doe. We can see that the security part, so the hash key, is missing:
 
-Query | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
+`Query` | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 We will add the hash key in this link by using the parameter hash. 
 The hash key is built with the concatenation of the string parameters of your SSO link + the public key. All encrypted with **MD5 algorithm**.
 
 The string parameters in our previous link is:
 
-String parameters | `identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
+`String parameters` | `identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 The public key is the API Key of your CKLS plateform. 
 The API Key a is valid API key set in the configuration of your CKLS
 
 In this example, to build our Hash Key, we will proceed as below:
 
-hash | `md5(API KEY + "identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/")`
+`hash` | `md5(API KEY + "identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/")`
 
 **The last / at the end of your string parameters is mandatory.**
 
 Finally, our SSO link will looks like this:
 
-query | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/hash/defba1320fe55f97330c25e803193ca2`
+`query` | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/hash/defba1320fe55f97330c25e803193ca2`
 
 Note: If a timestamp is set in your SSO link (parameter TS), you must include the timestamp in the hash.
