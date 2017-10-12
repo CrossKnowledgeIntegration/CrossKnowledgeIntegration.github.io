@@ -84,11 +84,9 @@ The fields below can be used as a value for this parameter (key/value format) :
 
 `login` and `learner_login` are both alias of `candidate_login` parameter.
 
-
 Example of use:
 
-
-`Query` | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
+`https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 The query above (without the security part) means that we are identifying a learner with his login, therefore, if no learner is found with the specified login value, it will be created, thanks to the parameter register/yes.
 But if the learner is found with the specified login value, his datas will be only updated.
@@ -133,26 +131,26 @@ Parameters | Description
 The hash key guarantees the security of your SSO link. It is built in a simple and specific way. See below for an example.
 If we take our last query example, with our learner John doe. We can see that the security part, so the hash key, is missing:
 
-`Query` | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
+`https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 We will add the hash key in this link by using the parameter hash. 
 The hash key is built with the concatenation of the string parameters of your SSO link + the public key. All encrypted with **MD5 algorithm**.
 
 The string parameters in our previous link is:
 
-`String parameters` | `identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
+`identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 The public key is the API Key of your CKLS plateform. 
 The API Key a is valid API key set in the configuration of your CKLS
 
 In this example, to build our Hash Key, we will proceed as below:
 
-`hash` | `md5(API KEY + "identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/")`
+`md5(API KEY + "identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/")`
 
 **The last / at the end of your string parameters is mandatory.**
 
 Finally, our SSO link will looks like this:
 
-`query` | `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/hash/defba1320fe55f97330c25e803193ca2`
+`https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/hash/defba1320fe55f97330c25e803193ca2`
 
 Note: If a timestamp is set in your SSO link (parameter TS), you must include the timestamp in the hash.
