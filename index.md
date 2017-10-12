@@ -21,7 +21,7 @@ Please note that this site is still under construction, some information will st
 ## Documentation
 
 * [Prerequisites](/prerequisites-en.html)
-* [SSO Smarlink] (/sso-smartlink.html)
+* [Smartlinks](/sso-smartlink.html)
 * [Import](/import.html)
 * [Export](/export.html)
 * API
