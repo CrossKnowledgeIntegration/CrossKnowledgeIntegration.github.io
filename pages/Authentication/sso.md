@@ -4,7 +4,7 @@ keywords: ...
 last_updated: October 12, 2017
 tags:
 sidebar: home_sidebar
-permalink: sso.html
+permalink: sso-smartlink.html
 folder: Authentication
 ---
 
