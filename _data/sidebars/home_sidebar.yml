@@ -51,6 +51,17 @@ entries:
     - title: API Web-services
       url: /api_web_services_list_and_details.html
       output: web
+      
+       subfolders:
+      - title: Authentication
+        output: web
+        subfolderitems:
+        - title: Smartlinks
+          url: /sso-smartlink.html
+          output: web
+        - title: SAML
+          url: https://github.com/CrossKnowledge
+          output: web
 
     - title: Tools
       url: /api_tools.html
