@@ -12,7 +12,7 @@ entries:
   - title: Our solutions
     output: web
     folderitems:
-    - title: CrossKnowledge Learning Suite
+    - title: Prerequisites
       url: /prerequisites-fr.html
       output: web
     - title: Authentication Protocols
