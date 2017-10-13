@@ -52,7 +52,7 @@ entries:
       url: /api_web_services_list_and_details.html
       output: web
       
-       subfolders:
+      subfolders:
       - title: Authentication
         output: web
         subfolderitems:
