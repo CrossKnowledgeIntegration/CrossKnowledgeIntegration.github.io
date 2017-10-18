@@ -970,7 +970,7 @@ pre code {
     width: 16.666666666666664%;
   }
   .col-md-3 {
-    width: 25%;
+    width: 20%;
   }
   .col-md-4 {
     width: 33.33333333333333%;
@@ -988,7 +988,8 @@ pre code {
     width: 66.66666666666666%;
   }
   .col-md-9 {
-    width: 75%;
+    width: 80%;
+    margin-top: 0%;
   }
   .col-md-10 {
     width: 83.33333333333334%;
@@ -3585,7 +3586,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     margin-left: -15px;
   }
   .navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
+    margin-right: -26px;
   }
   .navbar-collapse .navbar-text:last-child {
     margin-right: 0;
@@ -3645,6 +3646,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
     margin-left: -15px;
+    content:url(../images/ckhublogov2.png)
   }
 }
 .navbar-toggle {
