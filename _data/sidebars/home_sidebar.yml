@@ -210,7 +210,7 @@ entries:
           url: /api_web_services_list_and_details_admins.html#offline_entity_list
           output: web
       
-      subfolders:
+
       - title: Authentication
         output: web
         subfolderitems:

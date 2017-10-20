@@ -255,7 +255,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_administrator_login_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_administrator_login_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -483,7 +483,7 @@ entityGuid=XXXXX-289D-2D56-24DE-AC7140E412AA
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_administrator_update_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_administrator_update_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -684,7 +684,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_learning_objects_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_learning_objects_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -1035,7 +1035,7 @@ Cache-Control: no-cache
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_learning_object_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_learning_object_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -1349,7 +1349,7 @@ Cache-Control: no-cache
 	 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_trainings_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_trainings_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -1770,7 +1770,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -2447,7 +2447,7 @@ type=learningChannel&title=Tofu+Fighter!&status=P&cost=300%24&language=en-GB&dur
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_post" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_post" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -3126,7 +3126,7 @@ translations%5Ben-US%5D%5Btitle%5D=Plant+based+fighter!
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -3365,7 +3365,7 @@ Cache-Control: no-cache
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_sessions_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_sessions_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -3646,7 +3646,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_session_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_session_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -4003,7 +4003,7 @@ title=Tofu+Fighter!&start=2017-09-27&end=2018-09-27
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_session_post" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_session_post" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -4366,7 +4366,7 @@ title=Tofu+Fighter!&start=2017-09-27&end=2018-10-31
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_session_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_session_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -4694,7 +4694,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_training_session_register_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_training_session_register_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -4909,7 +4909,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_registration_report_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_registration_report_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>-->
@@ -5230,7 +5230,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_registration_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_registration_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -5349,7 +5349,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_registration_delete" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_registration_delete" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -5719,7 +5719,7 @@ Cache-Control: no-cache
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_learner_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_learner_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -6183,7 +6183,7 @@ login=richard.roe%40tofufighter.com&name=Roe&firstname=Richard&status=U&start=20
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_learner_post" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_learner_post" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -6383,7 +6383,7 @@ Cache-Control: no-cache
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#learner_learning_objects_themes_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#learner_learning_objects_themes_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -6555,7 +6555,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_administrator_login_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_administrator_login_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -7024,7 +7024,7 @@ login=richard.roe%40kale.com&enabled=false&status=N
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_learner_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_learner_put" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -7264,7 +7264,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_learner_registration_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_learner_registration_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -7477,7 +7477,7 @@ Cache-Control: no-cache
 
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_entity" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_entity" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -7731,7 +7731,7 @@ Cache-Control: no-cache
 </div>
 <div class="panel-footer">
 
-<a href="/samples.html#offline_entity_get_2" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_entity_get_2" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -7941,7 +7941,7 @@ Cache-Control: no-cache
 </div>
 </div>
 <div class="panel-footer">
-<a href="/samples.html#offline_report_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_report_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
