@@ -24,8 +24,8 @@ Sometimes the client needs to reuse their users database, and has that service p
 CrossKnowledge Learning Suite (CKLS) can (and is not limited to) integrate as SP to a SAML IdP using SAML 2.0 protocol.
 
 
-`Identity Provider` The Authority in charge of asserting a subject is valid.
-`Service Provider` Some external entity that consumes the assertion services from the authority.
+* `Identity Provider` : The Authority in charge of asserting a subject is valid.
+* `Service Provider` :  Some external entity that consumes the assertion services from the authority.
 
 From that approach, the IdP can select which SP can connect to it, how they will share the information, which information will be shared, and what encryption will be applied to that communication.
 To have that setup, both the SP and the IdP share their metadata.xml file, which describes all the mandatory information to enable them recognising each other as a valid partner.
