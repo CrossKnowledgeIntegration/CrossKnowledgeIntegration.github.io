@@ -22,6 +22,7 @@ Please note that this site is still under construction, some information will st
 
 * [Prerequisites](/prerequisites-en.html)
 * [SSO Smartlink](/sso-smartlink.html)
+* [SSO SAML 2.0](/saml.html)
 * [Import](/import.html)
 * [Export](/export.html)
 * API
