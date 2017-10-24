@@ -47,9 +47,8 @@ For setting up a new client to a resource owner, follow these steps standards st
 4.	If available, on the confirmation pop-up, choose the category that best suits your CKLS platform.
 5.	From the client page, copy the ClientID and ClientSecret, and fill in the Contact Email field
 6.	On the Advanced Settings page, in the Security section, fill in the Valid OAuth redirect URIs field with the following URLs (if your instance supports HTTPS, write 'https://' instead of 'http://'):
-.. * http://{Your instance URL}
-.. * http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_BO
-.. * http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_FO
+..* http://{Your instance URL}
+..* http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_BO
 7.	Check the client status
 8.	Confirm the settings on success.
 
