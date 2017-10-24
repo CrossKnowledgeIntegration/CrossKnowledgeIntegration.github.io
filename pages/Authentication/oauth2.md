@@ -47,9 +47,9 @@ For setting up a new client to a resource owner, follow these steps standards st
 4.	If available, on the confirmation pop-up, choose the category that best suits your CKLS platform.
 5.	From the client page, copy the ClientID and ClientSecret, and fill in the Contact Email field
 6.	On the Advanced Settings page, in the Security section, fill in the Valid OAuth redirect URIs field with the following URLs (if your instance supports HTTPS, write 'https://' instead of 'http://'):
-a.	http://{Your instance URL}
-b.	http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_BO
-c.	http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_FO
+  a.	http://{Your instance URL}
+  b.	http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_BO
+  c.	http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_FO
 7.	Check the client status
 8.	Confirm the settings on success.
 
@@ -59,15 +59,15 @@ For setting up a new resource owner to the third-party client, the following inf
 
 Required informations | Description
 --- | ---
-Attribute to login | This is the path to the element of the json returned by the resource endpoint which will be used to match an existing learner. Basically, if you choose to match an email adress in the CKLS Field used for authentication, it will be the path to email adresse of the user in the json.
-Authorization endpoint URL |the url of the Authorisation Server (eg : https://www.facebook.com/dialog/oauth)
-Scope (comma-separated list) | the scope we want to reach, basically it is a group of data defined by the resource endpoint we want to get, which will require authorisation by the user at first connection on the authorisation server ( eg : email)
-Token endpoint URL | the url of the Authorization Server which will deliver the token with the code returned by the Authorization endpoint ( eg : https://graph.facebook.com/oauth/access_token)
-Token mapping | in the json returned by the Token Endpoint, the path to the token, level being materialized by >. ( eg : access_token )
-Resource endpoint URL | the url to request for user information with the token ( eg : https://graph.facebook.com/me?fields=email,first_name,last_name)
-Pass token parameter to resource endpoint as | [GET Parameter / Header attribute] select how the token is passed in the request, either as a get parameter or as a header attribute ( eg : Header attribute )
-Token index in request | the name of the token parameter in either the Get of the Header ( when in header, most of the time it is "Bearer", and as get parameter "token", then again it's up to the foreign server this is not an Oauth2 standard). (eg : OAuth )
-Resource fields mapping | Mapping in the json returned by the resource server of the fields, level being materialized by the '>' as for the token.
+`Attribute to login` | This is the path to the element of the json returned by the resource endpoint which will be used to match an existing learner. Basically, if you choose to match an email adress in the CKLS Field used for authentication, it will be the path to email adresse of the user in the json.
+`Authorization endpoint URL` |the url of the Authorisation Server (eg : https://www.facebook.com/dialog/oauth)
+`Scope (comma-separated list)` | the scope we want to reach, basically it is a group of data defined by the resource endpoint we want to get, which will require authorisation by the user at first connection on the authorisation server ( eg : email)
+`Token endpoint URL` | the url of the Authorization Server which will deliver the token with the code returned by the Authorization endpoint ( eg : https://graph.facebook.com/oauth/access_token)
+`Token mapping` | in the json returned by the Token Endpoint, the path to the token, level being materialized by >. ( eg : access_token )
+`Resource endpoint URL` | the url to request for user information with the token ( eg : https://graph.facebook.com/me?fields=email,first_name,last_name)
+`Pass token parameter to resource endpoint as` | [GET Parameter / Header attribute] select how the token is passed in the request, either as a get parameter or as a header attribute ( eg : Header attribute )
+`Token index in request` | the name of the token parameter in either the Get of the Header ( when in header, most of the time it is "Bearer", and as get parameter "token", then again it's up to the foreign server this is not an Oauth2 standard). (eg : OAuth )
+`Resource fields mapping` | Mapping in the json returned by the resource server of the fields, level being materialized by the '>' as for the token.
 
 * First name field: first_name
 * Last name field: last_name

@@ -220,7 +220,7 @@ entries:
         - title: SAML 2.0
           url: /saml.html
           output: web
-        - title: SAML 2.0
+        - title: OAuth 2.0
           url: /oauth2.html
           output: web
 
