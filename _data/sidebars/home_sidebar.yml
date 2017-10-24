@@ -217,7 +217,7 @@ entries:
         - title: Smartlinks
           url: /sso-smartlink.html
           output: web
-        - title: SAML
+        - title: SAML 2.0
           url: /saml.html
           output: web
 
