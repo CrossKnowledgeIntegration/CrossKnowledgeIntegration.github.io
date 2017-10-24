@@ -67,6 +67,6 @@ Please see the image below for a summary on that workflow.
 
 ![alt text](http://developers.crossknowledge.com/images/SAMLworkflow.png)
 
-Illustration 1: Authentication workflow on SP initiated mode. 
+`Illustration 1: Authentication workflow on SP initiated mode`
 
 For more details on SAML 2.0 protocol, please refer to the [OASIS documentation](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
