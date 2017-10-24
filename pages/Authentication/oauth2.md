@@ -41,14 +41,16 @@ On the TP side, it the setup is done based on the information based on the RO se
 ### Setup the Resource Owner party
 
 For setting up a new client to a resource owner, follow these steps standards steps (they may vary depending on your resource owner’s implementation).
-1.	Add a new application
-2.	When asked for the application platform, select Website (or HTTP service)
-3.	Fill in the application name. This name will be displayed to learners when they log in for the first time, so it is recommended to include the instance's name in it.
-4.	If available, on the confirmation pop-up, choose the category that best suits your CKLS platform.
-5.	From the client page, copy the ClientID and ClientSecret, and fill in the Contact Email field
-6.	On the Advanced Settings page, in the Security section, fill in the Valid OAuth redirect URIs field with the following URLs (if your instance supports HTTPS, write 'https://' instead of 'http://'):
-..* http://{Your instance URL}
-..* http://{Your instance URL}/authentication/OAuth2/callback.php?driverType=TYPE_BO
+1. Add a new application
+2. When asked for the application platform, select Website (or HTTP service)
+3. Fill in the application name. This name will be displayed to learners when they log in for the first time, so it is recommended to include the instance's name in it.
+4. If available, on the confirmation pop-up, choose the category that best suits your CKLS platform.
+5. From the client page, copy the ClientID and ClientSecret, and fill in the Contact Email field
+6. On the Advanced Settings page, in the Security section, fill in the Valid OAuth redirect URIs field with the following URLs :
+
++ http(s)://{Your_Instance_URL}
++ http(s)://{Your_Instance_URL}/authentication/OAuth2/callback.php?driverType=TYPE_BO
+
 7.	Check the client status
 8.	Confirm the settings on success.
 
