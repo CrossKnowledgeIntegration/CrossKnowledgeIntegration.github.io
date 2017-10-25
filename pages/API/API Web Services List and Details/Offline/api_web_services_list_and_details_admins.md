@@ -1828,7 +1828,7 @@ API-KEY<br>
 <td markdown="span"><i title="Required" class="fa fa-check"></i></td>
 <td markdown="span">The training modality.	
 </td>
-<td markdown="span">one of the following: blended | eLearning | learningChannel | knowledgeCommunity | learningFeed | campus
+<td markdown="span">one of the following: blended | blendedx | eLearning | learningChannel | knowledgeCommunity | learningFeed | campus
 </td>	
 
 </tr>
