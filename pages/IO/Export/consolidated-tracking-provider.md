@@ -79,6 +79,7 @@ Name | Description
 `statusFormat` | {{site.data.IO_items.param.statusFormat.desc}}
 `timeFrames` | {{site.data.IO_items.param.timeFrames.desc}}
 `timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}
+`timeFramesScaleMode` | {{site.data.IO_items.param.timeFramesMode.desc}}
 `timeGlobalFormat` | {{site.data.IO_items.param.timeGlobalFormat.desc}}
 `trainingGuid` | {{site.data.IO_items.param.trainingGuid.desc}}
 `trainingPathCode` | {{site.data.IO_items.param.trainingPathCode.desc}}
@@ -139,6 +140,9 @@ Name | Description
         </columns>
         <parameters>
             <dateTimeFormat>YYYY-MM-DD hh:ii:ss</dateTimeFormat>
+            <timeFrames>3</timeFrames>
+            <timeFramesScale>less_than_n_days</timeFramesScale>
+            <timeFrameScaleMode>lastActivity,timeSpent</timeFrameScaleMode>
         </parameters>
     </consolidatedTrackingProvider>
 </providers>
