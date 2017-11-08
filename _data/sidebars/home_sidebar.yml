@@ -209,8 +209,7 @@ entries:
         - title: API/REST/Admin/Entities/List
           url: /api_web_services_list_and_details_admins.html#offline_entity_list
           output: web
-      
-
+    
       - title: Authentication
         output: web
         subfolderitems:
@@ -224,11 +223,10 @@ entries:
           url: /oauth2.html
           output: web
 
-    - title: Tools
-      url: /api_tools.html
-      output: web
+      - title: Tools
+        url: /api_tools.html
+        output: web
     
-      subfolders:
       - title: Samples
         output: web
         subfolderitems:
@@ -239,11 +237,6 @@ entries:
           external_url: https://github.com/CrossKnowledge
           output: web
 
-    - title: Data Import Module
-      url: /api_tools.html
-      output: web
-
-      subfolders:
       - title: Data Export Module
         output: web
         subfolderitems:
@@ -297,6 +290,16 @@ entries:
           output: web
         - title: Consolidated Gamification Events
           url: /consolidated-gamification-events-provider.html
+          output: web
+
+      - title: Data Import Module
+        output: web
+        subfolderitems:
+        - title: Overview
+          url: /import.html
+          output: web
+        - title: Consolidated Tracking
+          url: /consolidated-tracking-action.html
           output: web
 
   - title: Publish
