@@ -180,6 +180,12 @@ col:
   gamificationPoints:
     desc: "The number of points acquired for this action."
 
+  isdownloadable:
+    desc: ""
+
+  ismobile:
+    desc: ""
+
   lastPlatformAccessDate:
     desc: "The last date at which the learner has accessed the platform."
 
@@ -477,6 +483,9 @@ col:
   status:
     desc: "The progress status (completed, incomplete or not started) of the content referenced by the tracking row."
 
+  learningObjectVersionStatus:
+    desc: "The status of a Learning Object version (`Validated`, `Disabled`, `Under construction` or `Pending validation`)"
+
   thresholdReachedDate:
     desc: "The date on which the learner has reached the success threshold of the training course."
 
@@ -627,7 +636,10 @@ param:
   eventStatusFilter:
     desc: "Export with a status filter `C` - Confirmed, `P` - Pending, `CA` - Cancelled"
     type: "CPCAElement"
-    
+
+  excludeDeactivatedContents:
+    desc: "Excludes learning objects that have `Deactivated` status"
+
   exportAllSessions:
     desc: "Whether to include failed connections."
     type: "yesNoElement"
@@ -695,6 +707,10 @@ param:
   timeFramesScale:
     desc: "Once a learner has completed a learning object, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFrames`."
     type: "timeFrameScale"
+
+  timeFrameScaleMode:
+    desc: "This parameter is used in addition to `timeFrames` and `timeFramesScale` to determine how the total time spent is estimated. Possible values are `lastActivity` or `timeSpent`"
+    url: /data-timeframescalemode.html
 
   timeGlobalFormat:
     desc: "Time format in which the `timeGlobal` column should be exported"
