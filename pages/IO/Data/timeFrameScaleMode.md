@@ -19,6 +19,7 @@ folder: Data
 1. Hugo watched C1 in T1 on January 2<sup>nd</sup> 2015, spent 50 sec and has status = incomplete.<br/>
 2. Hugo watched C1 in T1 on February 25<sup>th</sup> 2015, spent 300 sec and has status = completed.<br/>
 3. Hugo watched C1 in T1 on April 5<sup>th</sup> 2015, spent 50 sec and has status = completed.<br/><br/>
+
 The tracking report has been generated on 28<sup>th</sup> May. `timeFramesScale` was set to `n_full_months`<br/><br/>
 **Scenario 1:** `timeFrames` = 1. Reporting time frame is 1<sup>st</sup> to 28<sup>th</sup> May.<br/>
 Whether `lastActivity` or `timeSpent` mode is used, no data row in the report will included, because Hugo did not access the content during the reported time frame.<br/><br/>
