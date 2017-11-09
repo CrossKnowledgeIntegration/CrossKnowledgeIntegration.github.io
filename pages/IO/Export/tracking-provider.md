@@ -70,7 +70,7 @@ Name | Description
 `statusFormat` | Allows to specify custom values for completion status
 `timeFrames` | Only export tracking data for a specific time span (e.g. last 7 days). Use `timeFramesScale` to specify days, months or years.
 `timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}
-`timeFrameScaleMode` | {{site.data.IO_items.param.timeFrameScaleMode.desc}}
+[`timeFrameScaleMode`]({{site.data.IO_items.param.timeFrameScaleMode.url}}) | {{site.data.IO_items.param.timeFrameScaleMode.desc}}
 [`timeGlobalFormat`]({{site.data.IO_items.param.timeGlobalFormat.url}})| Time format in which the `timeGlobal` column should be exported
 `trainingGuid` | Only export tracking data for a specific training path
 `trainingPathCode` | Only export tracking data for a specific `trainingPathCode`

@@ -710,7 +710,7 @@ param:
 
   timeFrameScaleMode:
     desc: "This parameter is used in addition to `timeFrames` and `timeFramesScale` to determine how the total time spent is estimated. Possible values are `lastActivity` or `timeSpent`"
-    url: /timeFrameScaleMode.html
+    url: /data-timeframescalemode.html
 
   timeGlobalFormat:
     desc: "Time format in which the `timeGlobal` column should be exported"
