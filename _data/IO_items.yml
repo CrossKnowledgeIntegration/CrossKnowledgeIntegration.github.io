@@ -714,7 +714,7 @@ param:
 
   timeGlobalFormat:
     desc: "Time format in which the `timeGlobal` column should be exported"
-    url: /timeGlobalFormat.html
+    url: /data-timeglobalformat.html
 
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
