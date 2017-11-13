@@ -52,161 +52,161 @@ entries:
       - title: Learner API
         output: web
         subfolderitems:
-        - title: API/REST/Learner/Login
+        - title: /Login
           url: /api_web_services_list_and_details.html#learner_login_post
           output: web
-        - title: API/REST/Learner/mobileLogin
+        - title: /mobileLogin
           url: /api_web_services_list_and_details.html#learner_mobile_login_post
           output: web
-        - title: API/REST/Learner/Logout
+        - title: /Logout
           url: /api_web_services_list_and_details.html#learner_login_delete
           output: web
-        - title: API/REST/Learner/mobileLogout
+        - title: /mobileLogout
           url: /api_web_services_list_and_details.html#learner_mobile_login_delete
           output: web
-        - title: API/REST/Learner/profile/
+        - title: /profile/
           url : /api_web_services_list_and_details.html#learner_profile_get
           output: web
-        - title: API/REST/Learner/Manager/
+        - title: /Manager/
           url : /api_web_services_list_and_details.html#learner_manager_get
           output: web
-        - title: API/REST/Learner/Subordonates/List
+        - title: /Subordonates/List
           url: /api_web_services_list_and_details.html#learner_subordinates_get
           output: web
-        - title: API/REST/Learner/Contents/List
+        - title: /Contents/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_get
           output: web
-        - title: API/REST/Learner/Content/List
+        - title: /Content/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_item_get
           output: web
-        - title: API/REST/Learner/Content/Vote/Add
+        - title: /Content/Vote/Add
           url: /api_web_services_list_and_details.html#learner_learning_objects_item_post
           output: web
-        - title: API/REST/Learner/Contents/Themes/List
+        - title: /Contents/Themes/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_themes_get
           output: web
-        - title: API/REST/Learner/Contents/Types/List
+        - title: /Contents/Types/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_types_get
           output: web
-        - title: API/REST/Learner/Content/Download/
+        - title: /Content/Download/
           url: /api_web_services_list_and_details.html#learner_learning_objects_download_item_get
           output: web
-        - title: API/REST/Learner/PathSessionsFolder/
+        - title: /PathSessionsFolder/
           url: /api_web_services_list_and_details.html#learner_path_session_folders_get
           output: web
-        - title: API/REST/Learner/Trainings/List
+        - title: /Trainings/List
           url: /api_web_services_list_and_details.html#learner_trainings_get
           output: web
-        - title: API/REST/Learner/Training/Sessions/List
+        - title: /Training/Sessions/List
           url: /api_web_services_list_and_details.html#learner_training_sessions_get
           output: web
-        - title: API/REST/Learner/Discussions/List
+        - title: /Discussions/List
           url: /api_web_services_list_and_details.html#learner_discussions_get
           output: web
-        - title: API/REST/Learner/Discussion/Add
+        - title: /Discussion/Add
           url: /api_web_services_list_and_details.html#learner_discussions_post
           output: web
-        - title: API/REST/Learner/Discussion/Follow
+        - title: /Discussion/Follow
           url: /api_web_services_list_and_details.html#learner_discussions_follow_post
           output: web
-        - title: API/REST/Learner/Discussion/Comment/Add
+        - title: /Discussion/Comment/Add
           url: /api_web_services_list_and_details.html#learner_discussions_item_post
           output: web
-        - title: API/REST/Learner/Discussion/Comment/Like
+        - title: /Discussion/Comment/Like
           url: /api_web_services_list_and_details.html#learner_discussions_comment_like_put
           output: we
-        - title: API/REST/Learner/Trackings/List
+        - title: /Trackings/List
           url: /api_web_services_list_and_details.html#learner_trackings_post
           output: web
-        - title: API/REST/Learner/Trackings/Add
+        - title: /Trackings/Add
           url: /api_web_services_list_and_details.html#learner_trackings_post
           output: web
-        - title: API/REST/Learner/Trackings/Update
+        - title: /Trackings/Update
           url: /api_web_services_list_and_details.html#learner_trackings_post
           output: web
-        - title: API/REST/Learner/Tracking/List
+        - title: /Tracking/List
           url: /api_web_services_list_and_details.html#learner_tracking_item_get
           output: web
-        - title: API/REST/Learner/Tracking/Add
+        - title: /Tracking/Add
           url: /api_web_services_list_and_details.html#learner_tracking_item_post
           output: web
-        - title: API/REST/Learner/Tracking/Update
+        - title: /Tracking/Update
           url: /api_web_services_list_and_details.html#learner_tracking_item_post
           output: web
 
       - title: Administration API
         output: web
         subfolderitems:
-        - title: API/REST/Admin/Administrator/Connect
+        - title: Administrator/Connect
           url: /api_web_services_list_and_details_admins.html#offline_administrator_login
           output: web
-        - title: API/REST/Admin/Administrator/Update
+        - title: Administrator/Update
           url: /api_web_services_list_and_details_admins.html#offline_administrator_update_put
           output: web
-        - title: API/REST/Admin/Learner/Add
+        - title: Learner/Add
           url: /api_web_services_list_and_details_admins.html#offline_learner_post
           output: web
-        - title: API/REST/Admin/Learner/Update
+        - title: Learner/Update
           url: /api_web_services_list_and_details_admins.html#offline_learner_put
           output: web
-        - title: API/REST/Admin/Learner/List
+        - title: Learner/List
           url: /api_web_services_list_and_details_admins.html#offline_learner_get
           output: web
-        - title: API/REST/Admin/Learners/List
+        - title: Learners/List
           url: /api_web_services_list_and_details_admins.html#offline_learner_get
           output: web
-        - title: API/REST/Admin/Learner/Registration/List
+        - title: Learner/Registration/List
           url: /api_web_services_list_and_details_admins.html#offline_learner_registration_get
           output: web
-        - title: API/REST/Admin/Learner/Authorization/Token/
+        - title: Learner/Authorization/Token/
           url: /api_web_services_list_and_details_admins.html#offline_learner_token_get
           output: web
         - title: API/Learner/Authentication/Token/
           url: /api_web_services_list_and_details_admins.html#ckauth_learner_authenticate
           output: web
-        - title: API/REST/Admin/Trainings/List
+        - title: Trainings/List
           url: /api_web_services_list_and_details_admins.html#offline_training_list
           output: web
-        - title: API/REST/Admin/Training/List
+        - title: Training/List
           url: /api_web_services_list_and_details_admins.html#offline_training_get
           output: web
-        - title: API/REST/Admin/Training/Add
+        - title: Training/Add
           url: /api_web_services_list_and_details_admins.html#offline_training_post
           output: web
-        - title: API/REST/Admin/Training/Update
+        - title: Training/Update
           url: /api_web_services_list_and_details_admins.html#offline_training_put
           output: web
-        - title: API/REST/Admin/Training/Contents/List
+        - title: Training/Contents/List
           url: /api_web_services_list_and_details_admins.html#offline_training_contents_get
           output: web
-        - title: API/REST/Admin/Content/List
+        - title: Content/List
           url: /api_web_services_list_and_details_admins.html#offline_content_get
           output: web
-        - title: API/REST/Admin/Training/Sessions/List
+        - title: Training/Sessions/List
           url: /api_web_services_list_and_details_admins.html#offline_session_list_get
           output: web
-        - title: API/REST/Admin/Training/Session/List
+        - title: Training/Session/List
           url: /api_web_services_list_and_details_admins.html#offline_session_get
           output: web
-        - title: API/REST/Admin/Training/Session/Add
+        - title: Training/Session/Add
           url: /api_web_services_list_and_details_admins.html#offline_session_post
           output: web
-        - title: API/REST/Admin/Training/Session/Update
+        - title: Training/Session/Update
           url: /api_web_services_list_and_details_admins.html#offline_session_put
           output: web
-        - title: API/REST/Admin/Registration/Add
+        - title: Registration/Add
           url: /api_web_services_list_and_details_admins.html#offline_training_session_register_learner_post
           output: web
-        - title: API/REST/Admin/Registration/List
+        - title: Registration/List
           url: /api_web_services_list_and_details_admins.html#offline_registration_get
           output: web
-        - title: API/REST/Admin/Registration/Delete
+        - title: Registration/Delete
           url: /api_web_services_list_and_details_admins.html#offline_registration_delete
           output: web
-        - title: API/REST/Admin/Entity/List
+        - title: Entity/List
           url: /api_web_services_list_and_details_admins.html#offline_entity_get
           output: web
-        - title: API/REST/Admin/Entities/List
+        - title: Entities/List
           url: /api_web_services_list_and_details_admins.html#offline_entity_list
           output: web
     
