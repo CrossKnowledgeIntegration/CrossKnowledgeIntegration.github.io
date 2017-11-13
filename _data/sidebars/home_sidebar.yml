@@ -137,76 +137,76 @@ entries:
       - title: Administration API
         output: web
         subfolderitems:
-        - title: Administrator/Connect
+        - title: /Administrator/Connect
           url: /api_web_services_list_and_details_admins.html#offline_administrator_login
           output: web
-        - title: Administrator/Update
+        - title: /Administrator/Update
           url: /api_web_services_list_and_details_admins.html#offline_administrator_update_put
           output: web
-        - title: Learner/Add
+        - title: /Learner/Add
           url: /api_web_services_list_and_details_admins.html#offline_learner_post
           output: web
-        - title: Learner/Update
+        - title: /Learner/Update
           url: /api_web_services_list_and_details_admins.html#offline_learner_put
           output: web
-        - title: Learner/List
+        - title: /Learner/List
           url: /api_web_services_list_and_details_admins.html#offline_learner_get
           output: web
-        - title: Learners/List
+        - title: /Learners/List
           url: /api_web_services_list_and_details_admins.html#offline_learner_get
           output: web
-        - title: Learner/Registration/List
+        - title: /Learner/Registration/List
           url: /api_web_services_list_and_details_admins.html#offline_learner_registration_get
           output: web
-        - title: Learner/Authorization/Token/
+        - title: /Learner/Authorization/Token/
           url: /api_web_services_list_and_details_admins.html#offline_learner_token_get
           output: web
-        - title: API/Learner/Authentication/Token/
+        - title: /Authentication/Token/
           url: /api_web_services_list_and_details_admins.html#ckauth_learner_authenticate
           output: web
-        - title: Trainings/List
+        - title: /Trainings/List
           url: /api_web_services_list_and_details_admins.html#offline_training_list
           output: web
-        - title: Training/List
+        - title: /Training/List
           url: /api_web_services_list_and_details_admins.html#offline_training_get
           output: web
-        - title: Training/Add
+        - title: /Training/Add
           url: /api_web_services_list_and_details_admins.html#offline_training_post
           output: web
-        - title: Training/Update
+        - title: /Training/Update
           url: /api_web_services_list_and_details_admins.html#offline_training_put
           output: web
-        - title: Training/Contents/List
+        - title: /Training/Contents/List
           url: /api_web_services_list_and_details_admins.html#offline_training_contents_get
           output: web
-        - title: Content/List
+        - title: /Content/List
           url: /api_web_services_list_and_details_admins.html#offline_content_get
           output: web
-        - title: Training/Sessions/List
+        - title: /Training/Sessions/List
           url: /api_web_services_list_and_details_admins.html#offline_session_list_get
           output: web
-        - title: Training/Session/List
+        - title: /Training/Session/List
           url: /api_web_services_list_and_details_admins.html#offline_session_get
           output: web
-        - title: Training/Session/Add
+        - title: /Training/Session/Add
           url: /api_web_services_list_and_details_admins.html#offline_session_post
           output: web
-        - title: Training/Session/Update
+        - title: /Training/Session/Update
           url: /api_web_services_list_and_details_admins.html#offline_session_put
           output: web
-        - title: Registration/Add
+        - title: /Registration/Add
           url: /api_web_services_list_and_details_admins.html#offline_training_session_register_learner_post
           output: web
-        - title: Registration/List
+        - title: /Registration/List
           url: /api_web_services_list_and_details_admins.html#offline_registration_get
           output: web
-        - title: Registration/Delete
+        - title: /Registration/Delete
           url: /api_web_services_list_and_details_admins.html#offline_registration_delete
           output: web
-        - title: Entity/List
+        - title: /Entity/List
           url: /api_web_services_list_and_details_admins.html#offline_entity_get
           output: web
-        - title: Entities/List
+        - title: /Entities/List
           url: /api_web_services_list_and_details_admins.html#offline_entity_list
           output: web
     
