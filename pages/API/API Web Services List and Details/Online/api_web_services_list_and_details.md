@@ -440,7 +440,7 @@ Cache-Control: no-cache
 
 </tr>
 <tr>
-<td markdown="span">devicenName</td>
+<td markdown="span">deviceName</td>
 <td markdown="span">string</td>
 
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
