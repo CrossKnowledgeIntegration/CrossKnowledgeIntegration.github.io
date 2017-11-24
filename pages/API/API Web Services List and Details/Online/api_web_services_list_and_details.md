@@ -445,9 +445,9 @@ Cache-Control: no-cache
 
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 
-<td markdown="span">The name of the device, for example : iPhone X
+<td markdown="span">The name of the device
 </td>
-<td markdown="span">kale1.</td>
+<td markdown="span">iPhone X</td>
 
 </tr>
 
@@ -457,9 +457,9 @@ Cache-Control: no-cache
 
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 
-<td markdown="span">The name of the application, for example : Mylearning
+<td markdown="span">The name of the application
 </td>
-<td markdown="span">kale1.</td>
+<td markdown="span">Mylearning</td>
 
 </tr>
 
