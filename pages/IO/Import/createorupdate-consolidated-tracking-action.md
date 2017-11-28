@@ -1,5 +1,5 @@
 ---
-title: Consolidated Tracking
+title: Create or Update Consolidated Tracking
 keywords: tracking, consolidated, import, data, createOrUpdateConsolidateTrackingAction
 last_updated: 08 November, 2017
 tags:
@@ -38,20 +38,6 @@ Option | Description | Type | Mandatory | Default value
 --- | --- | --- | --- | ---
 `defaultScoreMax` | The default value for the maximum achievable score | int | Yes | 100
 
-
-### Error Messages
-
-Message | Explanation
----- | ----
-`At least one of these element must be present: learning object version code or GUID.` | A tracking row needs to be associated to a learning object, therefore a reference (lovCode or lovGuid) has to be filled in the import file.
-`This learning object is provided by CrossKnowledge, and this report cannot be updated.` | Reports for CrossKnowledge learning objects cannot be modified by the import process.
-`This learning object is an EasyQuizz, and this report cannot be updated.`	| Reports for Easyquizz learning objects cannot be modified by the import process.
-`At least one of these element must be present: learner login, reference number or email.` | A tracking needs to be associated to a learner, therefore a learner reference (candidateLogin, candidateRefNumber or candidateEmail) has to be filled in the import file.
-`At least one of the following to provide a precise context : "session GUID" or the couple "session title" & "training code".'`	| A tracking needs to be associated to a context, therefore a context reference (sessionGuid, or sessionTitle and trainingPathCode) is required.
-`No registration found for given parameters.` | Given the learner and session information from the import file, the application failed to identify a registration.
-`You cannot set a first completion date if the LO is not completed.` | If during an import, the tracking row is "not completed" and firstCompletionDate is specified, then the row is rejected with the message: "You cannot set a first completion date if the LO is not completed".
-
-
 ### Examples
 
 ```xml 
@@ -80,3 +66,15 @@ Message | Explanation
 	</createOrUpdateConsolidatedTrackingAction>
 </actions>
 ```
+
+### Error Messages
+
+Message | Explanation
+---- | ----
+`At least one of these element must be present: learning object version code or GUID.` | A tracking row needs to be associated to a learning object, therefore a reference (lovCode or lovGuid) has to be filled in the import file.
+`This learning object is provided by CrossKnowledge, and this report cannot be updated.` | Reports for CrossKnowledge learning objects cannot be modified by the import process.
+`This learning object is an EasyQuizz, and this report cannot be updated.`	| Reports for Easyquizz learning objects cannot be modified by the import process.
+`At least one of these element must be present: learner login, reference number or email.` | A tracking needs to be associated to a learner, therefore a learner reference (candidateLogin, candidateRefNumber or candidateEmail) has to be filled in the import file.
+`At least one of the following to provide a precise context : "session GUID" or the couple "session title" & "training code".'`	| A tracking needs to be associated to a context, therefore a context reference (sessionGuid, or sessionTitle and trainingPathCode) is required.
+`No registration found for given parameters.` | Given the learner and session information from the import file, the application failed to identify a registration.
+`You cannot set a first completion date if the LO is not completed.` | If during an import, the tracking row is "not completed" and firstCompletionDate is specified, then the row is rejected with the message: "You cannot set a first completion date if the LO is not completed".
