@@ -1,7 +1,7 @@
 ---
 title: Import
 keywords: ...
-last_updated: December 14, 2016
+last_updated:
 tags: import, data
 sidebar: home_sidebar
 permalink: import.html
@@ -204,7 +204,7 @@ Message | Explanation
 Providers describe the setup of the type of input CSV file (eg. a file stored on the server, inside a given folder; or a file that must be retrieved through FTP)
 
 
-### File System Source Provider
+### File System Source Provider / SFTP File Import Action
 
 #### Fields
 
@@ -258,20 +258,12 @@ Option | Description | Type | Mandatory | Default value
 
 ```
 
-
 #### Error Messages
 
 Message | Explanation
 --- | ---
 `[...] the given date format [...] is not valid. It should only contain the following characters (case insensitive): 'YMDHIS /_.:;,-'` | The given date format is invalid. Please make sure that is only contains the allowed characters.
 `[...] unable to retrieve the file(s) from the SFTP server: error [...]` | 	The application could not retrieve the specified file from the given server.
-
-### SFTP File Import Action
-
-#### Fields
-#### Example
-#### Error Messages
-
 <!-- End providers -->
 
 
@@ -284,10 +276,11 @@ Click the links below to see detailed documentation
 - [Consolidated Tracking action](/consolidated-tracking-action.html)
 - [Create or Update Entity](/#)
 - [Create or Update Intervention](/#)
+- [Create or Update Learner](/#)
 - [Create or Update Session](/#)
 - [Create or Update Training Course](/#)
 - [Register Learner](/#)
-- [Create or Update Learner](/#)
+
 
 <!-- End actions -->
 
@@ -299,6 +292,8 @@ A consolidator is a functionality that is executed at the end of each import fil
 
 In order to work properly, the consolidators must be declared in a specific order:
 
+Click the links below to see detailed documentation
+
 1. [`timeStampedFileErrorLogger`](/import.html#time-stamped-file-error-logger)`
 2. [`massDisableLearners`](/import.html#mass-disable-learners)
 3. [`moveToBackupConsolidator`](/import.html#move-to-backup-consolidator)
@@ -309,119 +304,6 @@ In order to work properly, the consolidators must be declared in a specific orde
 8. [`deleteProcessedFilesConsolidator`](/import.html#delete-processed-files-consolidator)
 9. [`removeFromSFTP`](/import.html#remove-from-sftp)
 10. [`cleanFolder`](/import.html#clean-folder)
-
-### Time Stamped File Error Logger
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-### Mass Disable Learners
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-### Move to Backup Consolidator
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-### Delete Old Registrations
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-### Delete Empty Sessions
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-### Time Logger
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-
-### Email Report
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-
-### Delete Processed Files Consolidator
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-
-### Remove From SFTP 
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
-
-
-
-### Clean Folder
-
-#### Options
-
-#### Fields
-
-#### Example
-
-#### Error Message
 <!-- End consolidators -->
 
 
