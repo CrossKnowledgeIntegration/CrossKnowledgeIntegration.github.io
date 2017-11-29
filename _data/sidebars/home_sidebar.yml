@@ -12,26 +12,19 @@ entries:
   - title: Our solutions
     output: web
     folderitems:
-    - title: Prerequisites
-      url: /prerequisites-fr.html
+    - title: CKLS Prerequisites
+      url: /CKLS-prerequisites
       output: web
-    - title: Authentication Protocols
-      url: /prerequisites-en.html
+    - title: Team Shift Prerequisites
+      url: /TeamShift-prerequisites
       output: web
 
-    - title: Data Exchange Module
+    - title: Architecture
       url: /prerequisites-fr.html
       output: web
 
     - title: Integration Tools
       url: /prerequisites-en.html
-      output: web
-
-    - title: CrossKnowledge Hub
-      url: /prerequisites-fr.html
-      output: web
-    - title: CrossKnowledge Hub UI
-      url: /prerequisites-fr.html
       output: web
 
   - title: Our references
