@@ -85,7 +85,7 @@ iOS (10 and up) using SAFARI browser
 ANDROID (4.4 and up) using CHROME browser
 Other mobile devices are not supported
 
-## Network Requirements
+## Network Information
 
 ### Domain white-listing
 The following domain names should be whitelisted.
