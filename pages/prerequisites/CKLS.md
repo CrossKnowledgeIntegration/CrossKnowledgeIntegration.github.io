@@ -95,14 +95,10 @@ As the contents are played on our LMS, you need the LMS requirements listed abov
             <td width="30%">PDF plugin</td>
             <td width="70%">Adobe Acrobat Reader (any version)</td>
         </tr>
-        <tr>
-            <td width="30%">Java (for Desktop contents)</td>
-            <td width="70%">JVM 1.5 or higher</td>
-        </tr>
     </tbody>
 </table>
 
-## Network Requirements
+## Network Information
 
 ### Media extensions
 The following media extensions should be authorised.<br/>
