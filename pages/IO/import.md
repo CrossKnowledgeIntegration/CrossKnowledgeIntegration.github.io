@@ -274,12 +274,12 @@ Actions that are executed on each line of the CSV file. (eg. when creating the c
 Click the links below to see detailed documentation
 
 - [Consolidated Tracking action](/consolidated-tracking-action.html)
-- [Create or Update Entity](/#)
-- [Create or Update Intervention](/#)
-- [Create or Update Learner](/#)
-- [Create or Update Session](/#)
-- [Create or Update Training Course](/#)
-- [Register Learner](/#)
+- [Create or Update Entity](/createorupdate-entity-action.html)
+- [Create or Update Intervention](/createorupdate-intervention-action.html)
+- [Create or Update Learner](/createorupdate-learner-action.html)
+- [Create or Update Session](/creaateorupdate-session-action.html)
+- [Create or Update Training Course](/createorupdate-trainingcourse-action.html)
+- [Register Learner](/registerlearner-action.html)
 
 
 <!-- End actions -->
@@ -294,16 +294,16 @@ In order to work properly, the consolidators must be declared in a specific orde
 
 Click the links below to see detailed documentation
 
-1. [`timeStampedFileErrorLogger`](/import.html#time-stamped-file-error-logger)`
-2. [`massDisableLearners`](/import.html#mass-disable-learners)
-3. [`moveToBackupConsolidator`](/import.html#move-to-backup-consolidator)
-4. [`deleteOldRegistrations`](/import.html#delete-old-registrations)
-5. [`deleteEmptySessions`](/import.html#delete-empty-sessions)
-6. [`timeLogger`](/import.html#time-logger)
-7. [`emailReport`](/import.html#email-report)
-8. [`deleteProcessedFilesConsolidator`](/import.html#delete-processed-files-consolidator)
-9. [`removeFromSFTP`](/import.html#remove-from-sftp)
-10. [`cleanFolder`](/import.html#clean-folder)
+1. [`timeStampedFileErrorLogger`](/timestamped-file-error-logger-consolidator.html)`
+2. [`massDisableLearners`](/mass-disable-learners-consolidator.html)
+3. [`moveToBackupConsolidator`](/movetobackup-consolidator.html)
+4. [`deleteOldRegistrations`](/deleteoldregistrations-consolidator.html)
+5. [`deleteEmptySessions`](/delete-empty-sessions-consolidator.html)
+6. [`timeLogger`](/time-logger-consolidator.html)
+7. [`emailReport`](/email-report-consolidator.html)
+8. [`deleteProcessedFilesConsolidator`](/delete-processed-files-consolidator.html)
+9. [`removeFromSFTP`](/remove-from-sftp-consolidator.html)
+10. [`cleanFolder`](/clean-folder-consolidator.html)
 <!-- End consolidators -->
 
 
