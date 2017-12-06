@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Delete registrations that were not part of the imported file."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: deleteoldregistrations-consolidator.html
 folder: Import
 ---
 

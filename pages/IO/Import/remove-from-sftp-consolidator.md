@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Remove the import file from the distant machine it was imported from via SftpFileImportAction."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: remove-from-sftp-consolidator.html
 folder: Import
 ---
 

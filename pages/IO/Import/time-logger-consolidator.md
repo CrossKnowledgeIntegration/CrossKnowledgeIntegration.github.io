@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Delete sessions which have no enrolled learners."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: time-logger-consolidator.html
 folder: Import
 ---
 

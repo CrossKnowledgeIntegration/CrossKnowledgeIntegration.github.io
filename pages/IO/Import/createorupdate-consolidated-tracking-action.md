@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Creates or updates a consolidated tracking row with respect to the data row from the import file"
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: createorupdate-consolidated-tracking-action.html
 folder: Import
 ---
 

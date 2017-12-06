@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Log the import errors to a timestamped log file in the specified folder."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: timestamped-file-error-logger-consolidator.html
 folder: Import
 ---
 

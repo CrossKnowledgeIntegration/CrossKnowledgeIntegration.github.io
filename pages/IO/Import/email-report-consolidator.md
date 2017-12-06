@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Send a summary report of all the operations done during the import. If this consolidator is executed after the one for error logging, the user can choose whether or not to include a link to download the error log in the e-mail."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: email-report-consolidator.html
 folder: Import
 ---
 

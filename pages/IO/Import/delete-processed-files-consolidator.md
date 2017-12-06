@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Delete the files that were processed by the import. To be used with caution."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: delete-processed-files-consolidator.html
 folder: Import
 ---
 

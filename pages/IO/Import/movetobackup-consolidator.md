@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Move the processed import file to a specified backup folder."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: movetobackup-consolidator.html
 folder: Import
 ---
 

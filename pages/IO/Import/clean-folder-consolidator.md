@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Clean the data in the specified folder, as well as log files (in DATA_PATH/imports/logs) if needed. It is possible to specify a number of days beyond which the data is considered obsolete and thus will be removed."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: clean-folder-consolidator.html
 folder: Import
 ---
 

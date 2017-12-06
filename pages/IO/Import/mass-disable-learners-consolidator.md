@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Disable a set of learners, chosen by the specified options. Whereas other consolidators can only appear once, this consolidator can be specified twice. The three options noInscriptions, inscriptionsWithExpiredSession and oldLearners are exclusive, however you can combine one of them with fullAccess."
 sidebar: home_sidebar
-permalink: consolidated-tracking-action.html
+permalink: mass-disable-learners-consolidator.html
 folder: Import
 ---
 
