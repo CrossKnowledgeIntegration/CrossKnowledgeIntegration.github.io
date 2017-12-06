@@ -5,7 +5,7 @@ last_updated: 08 November, 2017
 tags:
 summary: "Register a learner to a session with respect to the data row from the import file."
 sidebar: home_sidebar
-permalink: createorupdate-learner-action.html
+permalink: registerlearner-action.html
 folder: Import
 ---
 
