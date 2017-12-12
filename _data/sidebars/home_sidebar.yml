@@ -19,14 +19,6 @@ entries:
       url: /TeamShift-prerequisites
       output: web
 
-    - title: Architecture
-      url: /prerequisites-fr.html
-      output: web
-
-    - title: Integration Tools
-      url: /prerequisites-en.html
-      output: web
-
   - title: Our references
     output: web
     folderitems:
@@ -291,8 +283,26 @@ entries:
         - title: Overview
           url: /import.html
           output: web
-        - title: Consolidated Tracking
-          url: /consolidated-tracking-action.html
+        - title: Create or Update Consolidated Tracking
+          url: /createorupdate-consolidated-tracking-action.html
+          output: web
+        - title: Create or Update Entity
+          url: /createorupdate-entity-action.html
+          output: web
+        - title: Create or Update Intervention
+          url: /createorupdate-intervention-action.html
+          output: web
+        - title: Create or Update Learner
+          url: /createorupdate-learner-action.html
+          output: web
+        - title: Create or Update Session
+          url: /createorupdate-session-action.html
+          output: web
+        - title: Create or Update Training Course
+          url: /createorupdate-trainingcourse-action.html
+          output: web
+        - title: Create or Update Register Learner
+          url: /registerlearner-action.html
           output: web
 
   - title: Publish
