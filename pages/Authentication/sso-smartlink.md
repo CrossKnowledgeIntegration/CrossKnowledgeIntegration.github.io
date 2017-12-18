@@ -134,7 +134,7 @@ If we take our last query example, with our learner John doe. We can see that th
 `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 We will add the hash key in this link by using the parameter hash. 
-The hash key is built with the concatenation of the string parameters of your SSO link + the public key. All encrypted with **MD5 algorithm**.
+The hash key is built with the concatenation of the string parameters of your SSO link + the private key. All encrypted with **MD5 algorithm**.
 
 The string parameters in our previous link is:
 
