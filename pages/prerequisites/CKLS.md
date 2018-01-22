@@ -234,32 +234,36 @@ sftp server : sftp.sa.crossknowledge.com (54.232.80.112)
 
 ### Email servers requirements
 
-##### Mail servers' IP addresses
-```txt
-85.31.192.42 ; 85.31.193.42 ; 85.31.193.7 ; 174.129.245.244
-```
+<table border="1" cellpadding="10" cellspacing="0">
 
-#### Hostnames of SMTP relay used for sending 	
-
-```txt
-smtp.jaguar-network.com
-email-smtp.us-east-1.amazonaws.com
-ses-smtp-prod-335357831.us-east-1.elb.amazonaws.com
-smtp01.crossknowledge.com (EC2)
-```
-#### SPF records
-You should also configure SPF records in your DNS domain zone(s) in order to allow CrossKnowledge to send emails on behalf of your email domain. [More about SPF.](http://www.openspf.org/SPF_Record_Syntax). <br/>
-
-Add to the following to your existing SPF record:
-
-```txt
-include:mailrelay.crossknowledge.com
-```
-
-For informaiton, this actually corresponds to:
-```txt
-"v=spf1 mx ip4:85.31.192.42/32 ip4:85.31.193.42/32 ip4:85.31.193.7/32 ip4:174.129.245.244/32 include:amazonses.com -all"
-```
+<tbody><tr>
+<td>All emails are sent by Amazon SES service from crossknowledge.com domain
+</td>
+<td>CKLS sends emails using a FROM address that belongs to crossknowledge.com domain only. (default and preferred solution)<br>
+<p>The client's email address is kept in the REPLYTO field <br>
+E.g&nbsp;: user john.doe@client.com sends an email to someone, the received email will have the following attributes <br>
+</p>
+<pre>FROM:noreply@crossknowledge.com
+REPLYTO:john.doe@client.com
+</pre>
+</td></tr>
+<tr>
+<td>All emails are sent by Amazon SES service using a FROM adresse that belongs to the client's domain (or crossknowledge.com domain)
+</td>
+<td>
+<p>This setup requires some extra IT configuration tasks for both CrossKnowledge and client's IT Teams&nbsp;: DKIM entries to be added in client's DNS zone&nbsp;: client.com. <br>
+E.g mail can be sent from noreply@client.com or any other @client.com addresses. <br>
+In case an email having a FROM attribute not belonging to either client.com or crossknowledge.com domain, the FROM attribute is automatically replaced by noreply@client.com or any other generic address chosen by the client during the setup phase.
+</p>
+</td></tr>
+<tr>
+<td>All emails are sent directly by the client's SMTP relay
+</td>
+<td>
+<p>CKLS application is then authorised to directly pass emails flow to a remote client's relay.<br>
+CrossKnowledge will not provide any IP ranges (autoscalling CKLS servers may have various IPs changing regularly) however SMTP session can be secured by a TLS login and password (to be provided by Client's Email team).
+</p>
+</td></tr></tbody></table>
 
 ## Sharepoint pre-requisites
 
