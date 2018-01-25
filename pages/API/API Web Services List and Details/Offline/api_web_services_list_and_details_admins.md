@@ -6667,7 +6667,7 @@ API-KEY<br>
 
 </tr>
 <tr>
-<td markdown="span">entityguid</td>
+<td markdown="span">entityGuid</td>
 <td markdown="span">string</td>
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 <td markdown="span">the learner entity GUID.</td>
@@ -6679,7 +6679,7 @@ API-KEY<br>
 <td markdown="span">string</td>
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 <td markdown="span">the learner status.</td>
-<td markdown="span">Y (active) | D (inactive) | U (active between two dates "start" - "end")</td>
+<td markdown="span">Y (active) | N (inactive) | U (active between two dates "start" - "end")</td>
 
 </tr>
 <tr>
