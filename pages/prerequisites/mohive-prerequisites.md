@@ -15,7 +15,7 @@ Mohive is a rapid learning solution also called LCMS.
 
 Processor | Intel® Pentium IV or better
 RAM | yes | 	2 GB (4GB prefered, depending on the OS)
-Screen resolution | 1280*800 recommended
+Screen resolution | 1280x800 recommended
 Sound card | Recommended
 Operating system | Windows XP, Vista, Seven, 8 (Desktop mode only, Tablet mode is not supported), Mac OSX (10.4+)
 Browser | Internet Explorer 8 or higher (with latest minor release), Firefox (latest version), Chrome (latest version)
@@ -33,7 +33,7 @@ Mail server ip adresses | 85.31.193.42, 85.31.192.42
 Broadband connection | 256 kbps, 512 kbps recommended for content with videos
 Processor | Intel® Pentium IV or better
 RAM | *NEW* (since June 2016) 2GB, 4GB recommended (previously: 1GB, 2GB recommended)
-Screen resolution | 1024*768
+Screen resolution | 1024x768
 Sound card | Recommended
 PC Devices |  Windows XP, Vista, Seven, 8 (Desktop only) with Internet Explorer 10 & 11 & Edge (with latest minor release) or Firefox (latest version) or Chrome (latest version)
 Mac Devices | Mac OSX (10.4+) with Chrome (latest version) or Firefox (latest version)
@@ -50,7 +50,7 @@ Javascript | enabled
 Broadband connection | 256 kbps, 512 kbps recommended for content with videos
 Processor | Intel® Pentium® 1 GHz or faster processer
 RAM | 512MB
-Screen resolution | 1024*768
+Screen resolution | 1024x768
 Sound card | Recommended
 Operating system | Windows XP, Vista, Seven, 8 (Desktop mode only, Tablet mode is not supported), Mac OSX (10.4+)
 Browser | Internet Explorer 6SP2 or higher (with latest minor release), Firefox (latest version), Chrome (latest version)
