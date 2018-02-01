@@ -33,9 +33,7 @@ Essentials | iOS 4+ & Android 4.0+, For both, 15 languages, PDF format | iOS 4+ 
 Action tips | iOS 4+ & Android 4.0+, For both, 16 languages, PDF format | iOS 4+ & Android 4.0+, For both, 16 languages, PDF format
 Business reviews | iOS 4+ & Android 4.0+, For both, 2 languages, PDF format | iOS 4+ & Android 4.0+, For both, 2 languages, PDF format
 The Team (LO Code TTxxxxx) and New CrossKnowledge Sessions (v3) | See Content produced with Mohive in Multi-devices Mode (HTML5)  | See Content produced with Mohive in Multi-devices Mode (HTML5)
-Video | yes | yes
-Pdf | yes | yes
-PPT | no | no
+
 
 ## About The Team v2 (LO code like TTxx3xx) and New CrossKnowledge Sessions
 
