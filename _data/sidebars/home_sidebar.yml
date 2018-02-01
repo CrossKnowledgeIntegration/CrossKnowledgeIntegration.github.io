@@ -297,6 +297,23 @@ entries:
         - title: Create or Update Register Learner
           url: /registerlearner-action.html
           output: web
+          
+      - title: Publishers Integration
+        output: web
+        subfolderitems:
+        - title: 3rd Party list
+          url: /third-party-content.html
+          output: web
+                
+      - title: Samples
+        output: web
+        subfolderitems:
+        - title: Integration GitHub
+          external_url: https://github.com/CrossKnowledgeIntegration
+          output: web
+        - title: CKTechno GitHub
+          external_url: https://github.com/CrossKnowledge
+          output: web
 
   - title: Publish
     output: web
