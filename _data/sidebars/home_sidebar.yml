@@ -308,7 +308,10 @@ entries:
           url: /third-party-integration.html
           output: web
         - title: Good practices for providers
-          url: /third-party-integration.html
+          url: /third-party-prerequisites.html
+          output: web
+        - title: Import of 3rd party libraries
+          url: https://github.com/CrossKnowledge/ck_content_provider
           output: web
                 
       - title: Samples
