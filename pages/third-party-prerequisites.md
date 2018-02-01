@@ -8,24 +8,24 @@ folder: prerequisites
 ---
 
 
-### Introduction
+## Introduction
 
-## Purpose of this article
+### Purpose of this article
 
 This article presents a set of prerequisites and constraints to respect when creating a new training content. It will ensure a proper implementation of CrossKnowledge technology.
 
 It also offers a set of best practices to minimize problems during integration phases.
 
-## Glossary
+### Glossary
 
 LMS | Learning Management System. Software to administrate and provide trainings and training contents. Also referred to as elearning platform.
 SCORM 1.2 and 2004 | Sharable Content Object Reference Model. This is the standard regarding content creation model. SCORM defines the structure of all interfaces: how the LMS launches the content, how information are sent back to the LMS, content description...
 AICC | Acronym for Aviation Industry CBT Committee. 
 SCO | Shareable Content Object. SCO is the SCORM term for a unit activity. It's the most precise hierarchical level of content files in a Scorm package.
 
-### Prerequisites and constraints
+## Prerequisites and constraints
 
-## Workstation minimum requirements
+### Workstation minimum requirements
 
 Please ensure yourself to have the minimum CKLS Prerequisites requirement to run the contents smoothly
 
@@ -35,7 +35,7 @@ Beware of Flash Player versions, newest contents are often developed on recent t
 
 Here is the list of file types the Crossknowledge LMS forbids for the creation of learning objects : htaccess, php* (php, php1, php4, php564...), phps, phtm, .phtml, pl, py, cgi, exe, sh.
 
-## File extensions not allowed in your contents 
+### File extensions not allowed in your contents 
 
 For security reasons, any SCORM packages to be integrated in the platform must not contain files with following extensions :
 
@@ -52,14 +52,14 @@ For security reasons, any SCORM packages to be integrated in the platform must n
 
 Basically all the code that is server-side code extensions
 
-## Network constraints
+### Network constraints
 
 To ensure good fluidity while playing contents, contents should meet the following constraints:
 
 Maximum size of content: 50 MB
 Resolution, encoding and quality of the videos must be compatible with Web standards. In other words, the content should not require installation of plugin to be played.
 
-## Delivery and format constraints
+### Delivery and format constraints
 
 CrossKnowledge LMS is compliant with the following standards:
 
@@ -100,7 +100,7 @@ Each delivery will be tested on a dedicated test platform before being uploaded 
 
 For multilingual content, one package per language will be issued. The Crossknowledge "Training On Demand" solution is managing localization and content versioning.
 
-## Scorm 1.2 and Scorm 2004
+### Scorm 1.2 and Scorm 2004
 
 In Scorm 1.2, progress does not exist, so the score field is often diverted from its original design to save the progress of the learner within the content. You will have something like this while advancing through slides (13%, 22%, 75%...).
 
@@ -115,7 +115,7 @@ In Scorm 2004, the progress notion is introduced in addition to the score one. A
 
 Moreover, our LMS does not interprete with Scorm 2004 navigation and sequencing commands (adl.nav.request). This will create an error. For a multi-chapter (multisco) content, a menu will appear on the left of the content to navigate between chapters. This chapters (sco) needs to be well defined in the imsmanifest.xml.
 
-## Good practices
+### Good practices
 
 The content duration must not exceed half an hour.
 
@@ -131,6 +131,6 @@ CrossKnowledge recommends to use JavaScript function onbeforeunload and unonload
 
 Finally on screen resolutions, Crossknowledge recommends resolutions contained less than 858x575 px with a full screen button in the content.
 
-## Testing your Scorm packages
+### Testing your Scorm packages
 
 Please contact your system integration consultant to open you a sandbox in order to test your contents
