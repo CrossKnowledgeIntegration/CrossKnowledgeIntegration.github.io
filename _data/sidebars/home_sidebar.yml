@@ -18,6 +18,9 @@ entries:
     - title: Team Shift Prerequisites
       url: /TeamShift-prerequisites
       output: web
+    - title: CrossKnowledge contents
+      url: /content-information
+      output: web
 
   - title: Our references
     output: web
