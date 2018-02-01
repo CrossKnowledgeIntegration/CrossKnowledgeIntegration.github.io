@@ -304,10 +304,10 @@ entries:
       - title: Publishers Integration
         output: web
         subfolderitems:
-        - title: Third Party Content integration list
+        - title: 3rd party providers list
           url: /third-party-integration.html
           output: web
-        - title: Good practices for content creation
+        - title: Good practices for providers
           url: /third-party-integration.html
           output: web
                 
