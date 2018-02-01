@@ -143,6 +143,7 @@ To do so :
 Content delivery should be linked with metadata file described below. The format should be a CSV flat file with comma delimeter encoded in UTF-8 w-out BOM. Column name is required.
 
 Column name | Description
+---- | ---- 
 courseid | Content code
 locale | Content language (eg. fr-FR, en-GB, pt-BR)
 title | Content title
