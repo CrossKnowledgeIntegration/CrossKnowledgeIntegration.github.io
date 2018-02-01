@@ -35,7 +35,7 @@ Business reviews | iOS 4+ & Android 4.0+, For both, 2 languages, PDF format | iO
 The Team (LO Code TTxxxxx) and New CrossKnowledge Sessions (v3) | See Content produced with Mohive in Multi-devices Mode (HTML5)  | See Content produced with Mohive in Multi-devices Mode (HTML5)
 
 
-## About The Team v2 (LO code like TTxx3xx) and New CrossKnowledge Sessions
+### About The Team v2 (LO code like TTxx3xx) and New CrossKnowledge Sessions
 
 - Only deployable using CrossKnowledge Suite 12.1 (and newer versions)
 - The basic pre-requisites of CrossKnowledge Suite 12.1 (and newer versions) have to be applied plus: 600 kbit / s bandwidth (equivalent to 3G)
@@ -44,6 +44,6 @@ The Team (LO Code TTxxxxx) and New CrossKnowledge Sessions (v3) | See Content pr
 - Microsoft Internet Explorer 8 minimum (popup blockers must be disabled or else allow the browser to accept pop-ups from CrossKnowledge.com).
 - Only The Team v1 (LO code like TTxx0xx) are compatible with Microsoft Internet Explorer 6 and 7.
 
-## CrossKnowledge Contents additional Requirements
+### CrossKnowledge Contents additional Requirements
 
 95% of CrossKnowledge content will not require any more specific software, including videos and CrossKnowedge Session built with Mohive. Some third party content might require Flash Player. Please ask us for detailed information.
