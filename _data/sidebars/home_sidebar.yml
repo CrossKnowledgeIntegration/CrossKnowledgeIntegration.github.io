@@ -305,7 +305,7 @@ entries:
         output: web
         subfolderitems:
         - title: 3rd Party list
-          url: /third-party-content.html
+          url: /third-party-integration.html
           output: web
                 
       - title: Samples
