@@ -3,7 +3,7 @@ title: Third party content provider for integration
 keywords: integration, library, third-party, content
 last_updated: 9 November, 2017
 sidebar: home_sidebar
-permalink: third-party-content.html
+permalink: third-party-integration.html
 folder: publishers integration
 ---
 
