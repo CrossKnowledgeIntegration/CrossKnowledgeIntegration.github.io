@@ -1,5 +1,5 @@
 ---
-title: CrossKnowledge content info
+title: CrossKnowledge contents information
 keywords: pre-requisites, prerequisites, requirements, content
 last_updated: 9 November, 2017
 sidebar: home_sidebar
