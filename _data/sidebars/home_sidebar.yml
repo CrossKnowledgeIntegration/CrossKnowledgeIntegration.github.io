@@ -24,12 +24,6 @@ entries:
     - title: CrossKnowledge contents
       url: /content-information
       output: web
-    - title: Content SCORM connectors
-      url: /scorm-connector-content.html
-      output: web
-    - title: Training Path SCORM connectors
-      url: scorm-connector-trainingpath.html
-      output: web
 
   - title: Our references
     output: web
@@ -332,6 +326,16 @@ entries:
         - title: CKTechno GitHub
           external_url: https://github.com/CrossKnowledge
           output: web
+          
+    - title: SCORM connectors
+      output: web
+      subfolderitems:      
+      - title: Content SCORM connectors
+        url: /scorm-connector-content.html
+        output: web
+      - title: Training Path SCORM connectors
+        url: scorm-connector-trainingpath.html
+        output: web
 
   - title: Publish
     output: web
