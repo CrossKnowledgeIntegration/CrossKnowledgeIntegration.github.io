@@ -26,7 +26,7 @@ entries:
       output: web
     - title: SCORM connectors
       output: web
-      folderitems:
+      subfolders:
       - title:  Content SCORM connectors
         url: /scorm-connector-content.html
         output: web
