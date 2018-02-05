@@ -35,9 +35,10 @@ The bookmarking (suspend_data) is saved on our side for each trainee as all the 
 
 ## Delivery
 
-We deliver one SCORM package per content item, per language. This allows us to propagate different localised metadata elements (title, description) to the client LMS. Learners have the possibility of switching from one language to another one in our content player depending on the content locales (and license).
+We deliver one SCORM package per training path session, per language. This allows us to propagate different localised metadata elements (title, description) to the client LMS. Learners have the possibility of switching from one language to another one in their profile (if navigation enabled) depending on the platform locales.
+If navigation is not enabled, the learner will not be able to change the language on the training path level but he will be able to change it in the different content depending on the content locales (and license).
 
 ## Manifest and metadatas
 
-The title and description of the content is in the manifest file. Through the import of the Scorm package, those datas will be filled automatically in client LMS. If the client wants additional metadatas, these can be sent in a separate CSV file for the whole library (author, program)
+The title and description of the training is in the manifest file. Through the import of the SCORM package, those datas will be filled automatically in client LMS. If the client wants additional metadatas, these can be sent in a separate CSV file.
 
