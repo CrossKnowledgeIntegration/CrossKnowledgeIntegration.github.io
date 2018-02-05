@@ -16,7 +16,7 @@ folder: Authentication
 
 ## Generate metadata file from the ADFS and send it to CK
 
-To generate the file, go to url https://server/federationmetadata/2007-06/federationmetadata.xml
+To generate the file, go to url : https://server/federationmetadata/2007-06/federationmetadata.xml
 
 Replace "server" by the actual server name
 
