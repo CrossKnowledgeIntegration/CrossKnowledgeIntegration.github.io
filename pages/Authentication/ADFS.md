@@ -25,11 +25,11 @@ Replace "server" by the actual server name
 
 ![alt text](http://developers.crossknowledge.com/images/Party_trust_1.jpg)
 
-![alt text](http://developers.crossknowledge.com/images/Party_trust_2.jpg)
+![alt text](http://developers.crossknowledge.com/images/File_Party_trust_2.jpg)
 
-![alt text](http://developers.crossknowledge.com/images/Party_trust_3.jpg)
+![alt text](http://developers.crossknowledge.com/images/File_Party_trust_3.jpg)
 
-![alt text](http://developers.crossknowledge.com/images/Party_trust_5.jpg)
+![alt text](http://developers.crossknowledge.com/images/File_Party_trust_5.jpg)
 
 ![alt text](http://developers.crossknowledge.com/images/Party_trust_6.jpg)
 
