@@ -1,5 +1,5 @@
 ---
-title: SCORM connector Content
+title: Content SCORM connectors
 keywords: ...
 last_updated: February 5, 2018
 tags:
