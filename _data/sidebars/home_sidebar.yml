@@ -24,15 +24,12 @@ entries:
     - title: CrossKnowledge contents
       url: /content-information
       output: web
-    - title: SCORM connectors
+    - title: Content SCORM connectors
+      url: /scorm-connector-content.html
       output: web
-      subfolders:
-      - title:  Content SCORM connectors
-        url: /scorm-connector-content.html
-        output: web
-      - title: Training Path SCORM connectors
-        url: scorm-connector-trainingpath.html
-        output: web
+    - title: Training Path SCORM connectors
+      url: scorm-connector-trainingpath.html
+      output: web
 
   - title: Our references
     output: web
