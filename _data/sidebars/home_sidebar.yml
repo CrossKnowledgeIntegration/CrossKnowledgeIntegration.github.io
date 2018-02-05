@@ -327,15 +327,15 @@ entries:
           external_url: https://github.com/CrossKnowledge
           output: web
           
-    - title: SCORM connectors
-      output: web
-      subfolderitems:      
-      - title: Content SCORM connectors
-        url: /scorm-connector-content.html
+      - title: SCORM connectors
         output: web
-      - title: Training Path SCORM connectors
-        url: /scorm-connector-trainingpath.html
-        output: web
+        subfolderitems:      
+        - title: Content SCORM connectors
+          url: /scorm-connector-content.html
+          output: web
+        - title: Training Path SCORM connectors
+          url: /scorm-connector-trainingpath.html
+          output: web
 
   - title: Publish
     output: web
