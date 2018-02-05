@@ -1,5 +1,5 @@
 ---
-title: SAML 2.0
+title: ADFS 2.0 configuration
 keywords: ...
 last_updated: February 5, 2018
 tags:
