@@ -330,10 +330,10 @@ entries:
       - title: SCORM connectors
         output: web
         subfolderitems:      
-        - title: Content SCORM connectors
+        - title: Content
           url: /scorm-connector-content.html
           output: web
-        - title: Training Path SCORM connectors
+        - title: Training Path
           url: /scorm-connector-trainingpath.html
           output: web
 
