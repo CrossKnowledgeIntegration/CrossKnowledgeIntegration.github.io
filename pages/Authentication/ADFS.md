@@ -40,9 +40,9 @@ Let the checkbox checked to open Claim Rules (or right click on your new relying
 
 ![alt text](http://developers.crossknowledge.com/images/Claim_Rules_nameID_1.jpg)
 
-![alt text](http://developers.crossknowledge.com/images/File_Claim_Rules_nameID_2.jpg
+![alt text](http://developers.crossknowledge.com/images/Claim_Rules_nameID_2.jpg)
 
-![alt text](http://developers.crossknowledge.com/images/File_Claim_Rules_nameID_3.jpg)
+![alt text](http://developers.crossknowledge.com/images/Claim_Rules_nameID_3.jpg)
 
 * Incoming claim type : E-Mail Address
 * Outgoing claim type : Name ID
