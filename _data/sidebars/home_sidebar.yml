@@ -334,7 +334,7 @@ entries:
         url: /scorm-connector-content.html
         output: web
       - title: Training Path SCORM connectors
-        url: scorm-connector-trainingpath.html
+        url: /scorm-connector-trainingpath.html
         output: web
 
   - title: Publish
