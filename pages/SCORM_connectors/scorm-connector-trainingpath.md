@@ -1,5 +1,5 @@
 ---
-title: SCORM connector Training Path
+title: Training Path SCORM connectors
 keywords: ...
 last_updated: February 5, 2018
 tags:
