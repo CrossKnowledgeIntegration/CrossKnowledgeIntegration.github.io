@@ -321,3 +321,7 @@ Business Digest | yes | soon
 CrossKnowledge Essentials | yes | yes
 CrossKnowledge Action Tips | yes | yes
 CrossKnowledge Sessions V3 & The team | yes | yes 
+
+### Update
+
+These technical requirements may be modified according to technical developments of CrossKnowledge solutions
