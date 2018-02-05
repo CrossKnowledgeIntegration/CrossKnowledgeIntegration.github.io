@@ -213,6 +213,9 @@ entries:
         - title: OAuth 2.0
           url: /oauth2.html
           output: web
+        - title: ADFS 2.0 configuration
+          url: /adfs.html
+          output: web
 
       - title: Tools
         url: /api_tools.html
