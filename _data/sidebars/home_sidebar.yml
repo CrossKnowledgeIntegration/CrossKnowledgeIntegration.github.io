@@ -333,7 +333,7 @@ entries:
         - title: Content
           url: /scorm-connector-content.html
           output: web
-        - title: Training Path
+        - title: Learning Path
           url: /scorm-connector-trainingpath.html
           output: web
 
