@@ -19,7 +19,7 @@ First, to display the loginbox, you need to set some mandatory parameters :
 Parameters | Description
 --- | ---
 Loginbox | Set the value to yes to display the login page that allows the learner to login or create an account.
-Hash | The hash has to be a md5 of the API key plus the string parameters, as seen [here] (https://developers.crossknowledge.com/sso-smartlink.html#how-to-build-your-hash-key-)
+Hash | The hash has to be a md5 of the API key plus the string parameters, as seen [here](https://developers.crossknowledge.com/sso-smartlink.html#how-to-build-your-hash-key-)
 
 Because there is no notion of login, when the learner will create his account, the mail field will always be displayed (it’s not possible to remove it except if you set the email in the url parameters). 
 Then he will receive an email to confirm his inscription with an SSO to connect himself to the LMS. - But if you want the learner to have a specific login, you can add in the url.
