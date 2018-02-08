@@ -14,7 +14,7 @@ This document aims to explain you the functionning of CAS Single Sign-On.
 
 Note that our LMS relies on SAML to make CAS.
 
-See about SAML [here] (https://developers.crossknowledge.com/saml.html).
+See about SAML [here] (http://developers.crossknowledge.com/saml.html).
 
 
 ## About CAS
