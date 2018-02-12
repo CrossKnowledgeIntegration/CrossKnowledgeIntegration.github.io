@@ -11,7 +11,7 @@ folder: SCORM_connectors
 ## Pre-requisites
 
 As our content delivery solution through Scorm is in SaaS, the first obvious prerequisite is to have an internet connection enabled on the testing workstation. 
-PC / Workstation requirements are listed [here](http://developers.crossknowledge.com/CKLS-prerequisites)
+PC / Workstation requirements are listed [here](https://developers.crossknowledge.com/CKLS-prerequisites)
 
 
 ## Scorm 1.2 connectors
