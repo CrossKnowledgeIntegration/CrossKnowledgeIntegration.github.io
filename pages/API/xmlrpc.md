@@ -9,6 +9,4 @@ permalink: xmlrpc.html
 folder: API
 ---
 
-The documentation for these web services is on our old wiki:
-
-[XMLPRC legacy documentation](http://integration.crossknowledge.com/Category:Web_services_description)
+The documentation for these web services can be downloaded [here](http://developers.crossknowledge.com/ressources/XMLRPC_API_documentation.pdf)
