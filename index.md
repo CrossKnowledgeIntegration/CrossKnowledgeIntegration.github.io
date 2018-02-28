@@ -20,7 +20,10 @@ Please note that this site is still under construction, some information will st
 
 ## Documentation
 
-* [Prerequisites](/prerequisites-en.html)
+* [CKLS Prerequisites](/CKLS-prerequisites)
+* [Team Shift Prerequisites](/TeamShift-prerequisites)
+* [Mohive Prerequisites](/mohive-prerequisites)
+* [Contents Information](/content-information)
 * [SSO Smartlink](/sso-smartlink.html)
 * [SSO SAML 2.0](/saml.html)
 * [SSO OAuth2.0](/oauth2.html)
