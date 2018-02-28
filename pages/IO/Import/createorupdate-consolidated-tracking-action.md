@@ -15,7 +15,7 @@ folder: Import
 Option | Description | Type | Mandatory | Default value
 --- | --- | --- | --- | ---
 `candidateLogin` |  | actionColumn | No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified |
-`candidateRef Number` | | actionColumn | No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified |
+`candidateRefNumber` | | actionColumn | No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified |
 `candidateEmail` | | actionColumn | No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified |
 `lovCode` | | actionColumn | No, but at least one of the fields lovCode and lovGuid must be specified |
 `lovGuid` | | actionColumn | No, but at least one of the fields lovCode and lovGuid must be specified |
