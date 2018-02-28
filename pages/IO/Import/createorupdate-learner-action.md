@@ -46,7 +46,7 @@ out of its scope. If it is set to no, then it will only be able to modify the se
 
 ```xml 
 <actions>
-	<createOrUpdateConsolidatedTrackingAction>
+	<createOrUpdateLearnerAction>
 		<options>
 			<traineeSearchField>
 				<candidateRefNumber/>
@@ -79,7 +79,7 @@ out of its scope. If it is set to no, then it will only be able to modify the se
 				<mandatory>no</mandatory>
 			</managerLogin>
 		</fields>
-	</createOrUpdateConsolidatedTrackingAction>
+	</createOrUpdateLearnerAction>
 </actions>
 ```
 
