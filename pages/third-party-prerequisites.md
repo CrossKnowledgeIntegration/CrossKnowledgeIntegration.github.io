@@ -143,25 +143,25 @@ To do so :
 Content delivery should be linked with metadata file described below. The format should be a CSV flat file with comma delimeter encoded in UTF-8 w-out BOM. Column name is required.
 
 Column name | Description
----- | ---- 
-courseid | Content code
-locale | Content language (eg. fr-FR, en-GB, pt-BR)
-title | Content title
-description | Content description
-duration | Content duration
-authorid | Content author id - Author needs to be created first in client LMS
-keywords | Content tags or keywords separated by pipe (eg. Word "Pipe" Management)
-level | Content difficulty (1, 2 or 3)
-objectives | Content purpose/objective (text)
-detailedcontent | Content description details
-targetaudience | Content target audience
-thumbnail | 	Content url to thumbnails (Max. 200.0 MB, Size: 640x360px)
-url | 	Content url, if content is weblink
-runtime | Content runtime (eg.youtube_learning_object_guid,aicc_learning_object_guid,automatic_text,E,file_lo_guid,zip_lo_guid,flash_learning_object_guid,
+--- | ---
+`courseid` | Content code
+`locale` | Content language (eg. fr-FR, en-GB, pt-BR)
+`title` | Content title
+`description` | Content description
+`duration` | Content duration
+`authorid` | Content author id - Author needs to be created first in client LMS
+`keywords` | Content tags or keywords separated by pipe (eg. Word "Pipe" Management)
+`level` | Content difficulty (1, 2 or 3)
+`objectives` | Content purpose/objective (text)
+`detailedcontent` | Content description details
+`targetaudience` | Content target audience
+`thumbnail` | 	Content url to thumbnails (Max. 200.0 MB, Size: 640x360px)
+`url` | 	Content url, if content is weblink
+`runtime` | Content runtime (eg.youtube_learning_object_guid,aicc_learning_object_guid,automatic_text,E,file_lo_guid,zip_lo_guid,flash_learning_object_guid,
 link_lo_guid,SCORM,slideshare_lo_guid,telelangue_learning_object_guid,video_learning_object_guid)
-type | Content type (eg. Video, Interactive, Reading, Questionnaire, Website, Audio, work to Submit, in Class assessment, Picture, Doc to download)
-scoreisprogress | Content scorm option to save progress score variable (value = Y)
-themes | Content themes (eg. Theme1>Subtheme1 "Pipe" Theme2)
+`type` | Content type (eg. Video, Interactive, Reading, Questionnaire, Website, Audio, work to Submit, in Class assessment, Picture, Doc to download)
+`scoreisprogress` | Content scorm option to save progress score variable (value = Y)
+`themes` | Content themes (eg. Theme1>Subtheme1 "Pipe" Theme2)
 
 ### Testing your Scorm packages
 
