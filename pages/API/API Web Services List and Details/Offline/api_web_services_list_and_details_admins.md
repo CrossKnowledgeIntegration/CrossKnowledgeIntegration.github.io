@@ -55,7 +55,7 @@ div.panel-footer {
 
 
 <!--GET API/ADMIN/v1/REST/Admin/{administrator_login}/AutoConnectionUrl/{context_type}/{context_guid}-->
-<div id="offline_administrator_login_get" class="panel panel-default">
+<div id="offline_administrator_autoconnectionurl" class="panel panel-default">
 
 <div class="panel-heading">
 
