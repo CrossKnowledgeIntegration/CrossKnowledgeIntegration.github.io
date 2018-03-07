@@ -128,7 +128,7 @@ entries:
       - title: Administration API
         output: web
         subfolderitems:
-        - title: /Admin/{administrator_login}/AutoConnectionUrl/{context_type}/{context_guid}
+        - title: /Admin/AutoConnectionUrl
           url: /api_web_services_list_and_details_admins.html#offline_administrator_autoconnectionurl
           output: web
         - title: /Administrator/Update
