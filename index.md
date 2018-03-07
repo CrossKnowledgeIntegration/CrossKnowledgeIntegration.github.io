@@ -9,15 +9,6 @@ summary: "About integration, their services and the available documentation. If 
 
 This site's purpose is to present the Integration @ Crossknowledge services, tools and available API !!!
 
-Please note that this site is still under construction, some information will still be on our legacy one:
-
-[Legacy Integration wiki](http://integration.crossknowledge.com/)
-
-## Services
-
-* [SSO](/SSO.html)
-* [Scorm audit](/Scorm-audit.html)
-
 ## Documentation
 
 * [CKLS Prerequisites](/CKLS-prerequisites)
@@ -29,8 +20,4 @@ Please note that this site is still under construction, some information will st
 * [SSO OAuth2.0](/oauth2.html)
 * [Import](/import.html)
 * [Export](/export.html)
-* API
-    * [REST back office](/rest-bo.html)
-    * [REST front office](/rest-fo.html)
-    * [Deprecated XMLRPC](/xmlrpc.html)	
-
+* [API](/api_getting_started.html)	
