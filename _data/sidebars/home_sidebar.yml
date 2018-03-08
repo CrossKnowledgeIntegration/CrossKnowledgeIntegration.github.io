@@ -134,32 +134,47 @@ entries:
         - title: /Administrator/Update
           url: /api_web_services_list_and_details_admins.html#offline_administrator_update_put
           output: web
+        - title: /Content
+          url: /api_web_services_list_and_details_admins.html#offline_content
+          output: web
+        - title: /Entity
+          url: /api_web_services_list_and_details_admins.html#offline_entity_get
+          output: web
+        - title: /Entity/List
+          url: /api_web_services_list_and_details_admins.html#offline_entity_list
+          output: web
+        - title: /Learner
+          url: /api_web_services_list_and_details_admins.html#offline_learner_get
+          output: web
+        - title: /Learner/List
+          url: /api_web_services_list_and_details_admins.html#offline_learner_list
+          output: web
         - title: /Learner/Add
           url: /api_web_services_list_and_details_admins.html#offline_learner_post
           output: web
         - title: /Learner/Update
           url: /api_web_services_list_and_details_admins.html#offline_learner_put
           output: web
-        - title: /Learner/List
-          url: /api_web_services_list_and_details_admins.html#offline_learner_get
-          output: web
-        - title: /Learners/List
-          url: /api_web_services_list_and_details_admins.html#offline_learner_get
-          output: web
         - title: /Learner/Registration/List
           url: /api_web_services_list_and_details_admins.html#offline_learner_registration_get
           output: web
-        - title: /Learner/Authorization/Token/
+        - title: /Learner/AuthToken
           url: /api_web_services_list_and_details_admins.html#offline_learner_token_get
           output: web
-        - title: /Authentication/Token/
+        - title: /Learner/Authenticate
           url: /api_web_services_list_and_details_admins.html#ckauth_learner_authenticate
           output: web
-        - title: /Trainings/List
-          url: /api_web_services_list_and_details_admins.html#offline_training_list
+        - title: /Learner/Tracking
+          url: /api_web_services_list_and_details_admins.html#offline_learner_tracking
+          output: web
+        - title: /Tracking
+          url: /api_web_services_list_and_details_admins.html#offline_tracking_get
+          output: web
+        - title: /Training
+          url: /api_web_services_list_and_details_admins.html#offline_training_get
           output: web
         - title: /Training/List
-          url: /api_web_services_list_and_details_admins.html#offline_training_get
+          url: /api_web_services_list_and_details_admins.html#offline_training_list
           output: web
         - title: /Training/Add
           url: /api_web_services_list_and_details_admins.html#offline_training_post
@@ -167,38 +182,35 @@ entries:
         - title: /Training/Update
           url: /api_web_services_list_and_details_admins.html#offline_training_put
           output: web
-        - title: /Training/Contents/List
-          url: /api_web_services_list_and_details_admins.html#offline_training_contents_get
-          output: web
-        - title: /Content/List
-          url: /api_web_services_list_and_details_admins.html#offline_content_get
-          output: web
-        - title: /Training/Sessions/List
+        - title: /Training/Session
           url: /api_web_services_list_and_details_admins.html#offline_session_list_get
-          output: web
-        - title: /Training/Session/List
-          url: /api_web_services_list_and_details_admins.html#offline_session_get
           output: web
         - title: /Training/Session/Add
           url: /api_web_services_list_and_details_admins.html#offline_session_post
           output: web
-        - title: /Training/Session/Update
+        - title: /Training/Content
+          url: /api_web_services_list_and_details_admins.html#offline_training_contents_get
+          output: web
+        - title: /Session
+          url: /api_web_services_list_and_details_admins.html#offline_session_get
+          output: web
+        - title: /Session/Update
           url: /api_web_services_list_and_details_admins.html#offline_session_put
           output: web
-        - title: /Registration/Add
+        - title: /Session/Register
           url: /api_web_services_list_and_details_admins.html#offline_training_session_register_learner_post
           output: web
-        - title: /Registration/List
+        - title: /Registration
           url: /api_web_services_list_and_details_admins.html#offline_registration_get
           output: web
         - title: /Registration/Delete
           url: /api_web_services_list_and_details_admins.html#offline_registration_delete
           output: web
-        - title: /Entity/List
-          url: /api_web_services_list_and_details_admins.html#offline_entity_get
+        - title: /Registration/Report
+          url: /api_web_services_list_and_details_admins.html#offline_registration_report
           output: web
-        - title: /Entities/List
-          url: /api_web_services_list_and_details_admins.html#offline_entity_list
+        - title: /Report
+          url: /api_web_services_list_and_details_admins.html#offline_report
           output: web
     
       - title: Authentication
