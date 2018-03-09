@@ -3217,6 +3217,217 @@ Cache-Control: no-cache
 </div>
 
 
+<!--GET API/ADMIN/v1/REST/Tracking/{tracking_guid}/-->
+<div id="learner_trackings_item_get" class="panel panel-default">
+
+<div class="panel-heading">
+
+<div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Report/{report_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
+</div>
+
+<div class="panel-body">
+
+<p style="font-size: 15px"><strong>Description :</strong></p>
+<p markdown="span">This web-service allow to retrieve a report.</p>
+
+<p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Report/{report_guid}/</i></p>
+<p style="font-size: 15px"><strong>Method : </strong><span class="label label-info">GET</span></p>
+
+<p style="font-size: 15px"><strong>Return :</strong></p>
+<p>This web-service returns a json object with the report details.</p>
+
+<p style="font-size: 15px"><strong>Parameters : </strong></p>
+
+<table>
+<colgroup>
+<col/>
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Required</th>
+<th>Comment</th>
+<th>Values</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">report_guid</td>
+<td markdown="span">string</td>
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Required" class="fa fa-check"></i></td>
+<td markdown="span">The report GUID.</b></td>
+<td markdown="span"> abcdef-12345-XXXXXXX-XXXXXXX</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+<p style="font-size: 15px"><strong>Request : </strong></p>
+
+<pre>
+<code class="language-http">
+
+</code>
+</pre>
+
+<p style="font-size: 15px"><strong>Response: </strong></p>
+
+<p>Returned data: </p>
+<table>
+<colgroup>
+<col/>
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">message</td>
+<td markdown="span">string</td>
+<td markdown="span">a message indicating the success or the reason of the failure</td>
+</tr>
+<tr>
+<td markdown="span">success</td>
+<td markdown="span">boolean</td>
+<td markdown="span">Describes if the web-service call was a success or not. (true or false).
+</td>
+</tr>
+<tr>
+<td markdown="span">totalCount</td>
+<td markdown="span">integer</td>
+<td markdown="span">The number of learning objects tracking row returned by the web-service.
+</td>
+</tr>
+<tr>
+<td markdown="span">value</td>
+<td markdown="span">object</td>
+<td markdown="span">An object or a list of objects containing the data in response to the request.
+</td>
+</tr>
+<tr>
+<td markdown="span">firstLaunchTime</td>
+<td markdown="span">datetime</td>
+<td markdown="span">The date and time when the Learning Object was first launch for the Registration by the learner</td>
+
+
+</tr>
+<tr>
+<td markdown="span">completionTime</td>
+<td markdown="span">datetime</td>
+<td markdown="span">The date and time when the Learning Object was completed for the Registration by the learner</td>
+
+</tr>
+<tr>
+<td markdown="span">id</td>
+<td markdown="span">integer</td>
+<td markdown="span">The tracking item ID.
+</td>
+</tr>
+<tr>
+<td markdown="span">itemId</td>
+<td markdown="span">integer</td>
+<td markdown="span">The learning object session (context) item ID.
+</td>
+</tr>
+<tr>
+<td markdown="span">progression</td>
+<td markdown="span">integer</td>
+<td markdown="span">The learning object progression achieved by the learner on the current session.
+</td>
+</tr>
+<tr>
+<td markdown="span">registrationGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner training session's registration guid.
+</td>
+</tr>
+<tr>
+<td markdown="span">score</td>
+<td markdown="span">float</td>
+<td markdown="span">The score achieved by the learner on the learning object (item id) in the current session.
+</td>
+</tr>
+<tr>
+<td markdown="span">scoreMax</td>
+<td markdown="span">float</td>
+<td markdown="span">The max score achievable by the learner on the learning object (item id) in the current session..
+</td>
+</tr>
+<tr>
+<td markdown="span">timespent</td>
+<td markdown="span">integer</td>
+<td markdown="span">The time spent by the learner on the learning object in the current session.
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Example of JSON response :</h3>
+<pre>
+<code class="language-json">
+
+  
+</code>
+</pre>
+
+
+<p style="font-size: 15px"><strong>Codes and messages: </strong></p>
+<table class="code_messages">
+<colgroup>
+<col />
+<col  />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Message</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">"OK"</td>
+<td markdown="span">**200**</td>
+</tr>
+<tr>
+<td markdown="span">"Not Found"</td>
+<td markdown="span">**204**</td>
+</tr>
+<tr>
+<td markdown="span">"No Content"</td>
+<td markdown="span">**404**</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="glossary">
+     <b>Glossary: </b>
+     <a href="glossary.html#learner" class="btn btn-default navbar-btn cursorNorm" role="button">Learner</a>
+	 <a href="glossary.html#training" class="btn btn-default navbar-btn cursorNorm" role="button">Training</a>
+	 <a href="glossary.html#session" class="btn btn-default navbar-btn cursorNorm" role="button">Session</a>
+	  <a href="glossary.html#tracking" class="btn btn-default navbar-btn cursorNorm" role="button">Tracking (report)</a>
+	<a href="glossary.html#context" class="btn btn-default navbar-btn cursorNorm" role="button">Context</a>
+
+
+</div>
+</div>
+<div class="panel-footer">
+<a href="/samples_admin.html#offline_report_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+</div>
+
+</div>
+
+
 <!--GET API/ADMIN/v1/REST/Training/-->
 <div id="offline_training_list" class="panel panel-default">
 
@@ -7729,218 +7940,3 @@ Cache-Control: no-cache
 </div>
 
 </div>
-
-
-
-
-
-<!--GET API/ADMIN/v1/REST/Tracking/{tracking_guid
-<div id="learner_trackings_item_get" class="panel panel-default">
-
-<div class="panel-heading">
-
-<div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Report/{report_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
-</div>
-
-<div class="panel-body">
-
-<p style="font-size: 15px"><strong>Description :</strong></p>
-<p markdown="span">This web-service allow to retrieve a report.</p>
-
-<p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Report/{report_guid}/</i></p>
-<p style="font-size: 15px"><strong>Method : </strong><span class="label label-info">GET</span></p>
-
-<p style="font-size: 15px"><strong>Return :</strong></p>
-<p>This web-service returns a json object with the report details.</p>
-
-<p style="font-size: 15px"><strong>Parameters : </strong></p>
-
-<table>
-<colgroup>
-<col/>
-<col />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Label</th>
-<th>Type</th>
-<th>Required</th>
-<th>Comment</th>
-<th>Values</th>
-
-</tr>
-</thead>
-<tbody>
-<tr>
-<td markdown="span">report_guid</td>
-<td markdown="span">string</td>
-<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Required" class="fa fa-check"></i></td>
-<td markdown="span">The report GUID.</b></td>
-<td markdown="span"> abcdef-12345-XXXXXXX-XXXXXXX</td>
-
-</tr>
-
-</tbody>
-</table>
-
-
-<p style="font-size: 15px"><strong>Request : </strong></p>
-
-<pre>
-<code class="language-http">
-
-</code>
-</pre>
-
-<p style="font-size: 15px"><strong>Response: </strong></p>
-
-<p>Returned data: </p>
-<table>
-<colgroup>
-<col/>
-<col />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Label</th>
-<th>Type</th>
-<th>Comment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td markdown="span">message</td>
-<td markdown="span">string</td>
-<td markdown="span">a message indicating the success or the reason of the failure</td>
-</tr>
-<tr>
-<td markdown="span">success</td>
-<td markdown="span">boolean</td>
-<td markdown="span">Describes if the web-service call was a success or not. (true or false).
-</td>
-</tr>
-<tr>
-<td markdown="span">totalCount</td>
-<td markdown="span">integer</td>
-<td markdown="span">The number of learning objects tracking row returned by the web-service.
-</td>
-</tr>
-<tr>
-<td markdown="span">value</td>
-<td markdown="span">object</td>
-<td markdown="span">An object or a list of objects containing the data in response to the request.
-</td>
-</tr>
-<tr>
-<td markdown="span">firstLaunchTime</td>
-<td markdown="span">datetime</td>
-<td markdown="span">The date and time when the Learning Object was first launch for the Registration by the learner</td>
-
-
-</tr>
-<tr>
-<td markdown="span">completionTime</td>
-<td markdown="span">datetime</td>
-<td markdown="span">The date and time when the Learning Object was completed for the Registration by the learner</td>
-
-</tr>
-<tr>
-<td markdown="span">id</td>
-<td markdown="span">integer</td>
-<td markdown="span">The tracking item ID.
-</td>
-</tr>
-<tr>
-<td markdown="span">itemId</td>
-<td markdown="span">integer</td>
-<td markdown="span">The learning object session (context) item ID.
-</td>
-</tr>
-<tr>
-<td markdown="span">progression</td>
-<td markdown="span">integer</td>
-<td markdown="span">The learning object progression achieved by the learner on the current session.
-</td>
-</tr>
-<tr>
-<td markdown="span">registrationGuid</td>
-<td markdown="span">string</td>
-<td markdown="span">The learner training session's registration guid.
-</td>
-</tr>
-<tr>
-<td markdown="span">score</td>
-<td markdown="span">float</td>
-<td markdown="span">The score achieved by the learner on the learning object (item id) in the current session.
-</td>
-</tr>
-<tr>
-<td markdown="span">scoreMax</td>
-<td markdown="span">float</td>
-<td markdown="span">The max score achievable by the learner on the learning object (item id) in the current session..
-</td>
-</tr>
-<tr>
-<td markdown="span">timespent</td>
-<td markdown="span">integer</td>
-<td markdown="span">The time spent by the learner on the learning object in the current session.
-</td>
-</tr>
-</tbody>
-</table>
-
-<h3>Example of JSON response :</h3>
-<pre>
-<code class="language-json">
-
-  
-</code>
-</pre>
-
-
-<p style="font-size: 15px"><strong>Codes and messages: </strong></p>
-<table class="code_messages">
-<colgroup>
-<col />
-<col  />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Message</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td markdown="span">"OK"</td>
-<td markdown="span">**200**</td>
-</tr>
-<tr>
-<td markdown="span">"Not Found"</td>
-<td markdown="span">**204**</td>
-</tr>
-<tr>
-<td markdown="span">"No Content"</td>
-<td markdown="span">**404**</td>
-</tr>
-
-</tbody>
-</table>
-
-<div class="glossary">
-     <b>Glossary: </b>
-     <a href="glossary.html#learner" class="btn btn-default navbar-btn cursorNorm" role="button">Learner</a>
-	 <a href="glossary.html#training" class="btn btn-default navbar-btn cursorNorm" role="button">Training</a>
-	 <a href="glossary.html#session" class="btn btn-default navbar-btn cursorNorm" role="button">Session</a>
-	  <a href="glossary.html#tracking" class="btn btn-default navbar-btn cursorNorm" role="button">Tracking (report)</a>
-	<a href="glossary.html#context" class="btn btn-default navbar-btn cursorNorm" role="button">Context</a>
-
-
-</div>
-</div>
-<div class="panel-footer">
-<a href="/samples_admin.html#offline_report_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
-</div>
-
-</div>
-}/-->
