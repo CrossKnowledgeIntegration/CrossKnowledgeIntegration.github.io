@@ -168,7 +168,7 @@ entries:
           url: /api_web_services_list_and_details_admins.html#offline_learner_tracking
           output: web
         - title: /Tracking
-          url: /api_web_services_list_and_details_admins.html#offline_tracking_get
+          url: /api_web_services_list_and_details_admins.html#learner_trackings_item_get
           output: web
         - title: /Training
           url: /api_web_services_list_and_details_admins.html#offline_training_get
