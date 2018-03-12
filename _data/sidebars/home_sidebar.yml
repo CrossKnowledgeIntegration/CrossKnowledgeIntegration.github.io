@@ -206,12 +206,6 @@ entries:
         - title: /Registration/Delete
           url: /api_web_services_list_and_details_admins.html#offline_registration_delete
           output: web
-        - title: /Registration/Report
-          url: /api_web_services_list_and_details_admins.html#offline_registration_report
-          output: web
-        - title: /Report
-          url: /api_web_services_list_and_details_admins.html#offline_report
-          output: web
     
       - title: Authentication
         output: web
