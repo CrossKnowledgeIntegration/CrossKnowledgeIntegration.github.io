@@ -1303,6 +1303,285 @@ Cache-Control: no-cache
 
 </div>
 
+<!--GET API/ADMIN/v1/REST/Learner/GUID-->
+<div id="offline_learner_get" class="panel panel-default">
+
+<div class="panel-heading">
+
+<div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Learner/{learner_guid}
+&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
+</div>
+
+<div class="panel-body">
+
+<p style="font-size: 15px"><strong>Description :</strong></p>
+<p markdown="span">This web-service allows to search for a learner profile.</p>
+<p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Learner/{learner_guid}</i></p>
+<p style="font-size: 15px"><strong>Method : </strong><span class="label label-info">GET</span></p>
+<p style="font-size: 15px"><strong>Return :</strong></p>
+<p>This web-service returns a json object with the learner profile information.</p>
+
+<p style="font-size: 15px"><strong>Parameters : </strong></p>
+{{site.data.alerts.note}}
+<p>This web-service requires a valid API key to be used. To do this, you must set your API Key within your HTTP Header request.
+</p>
+HTTP Header name:
+<pre>
+API-KEY<br>
+
+</pre>
+{{site.data.alerts.end}}
+
+{% include callout.html content="<span class='fa-stack fa-lg'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-key fa-stack-1x fa-inverse'></i></span>&nbsp;Get your [CrossKnowledge Learning Suite API key now](http://page.crossknowledge.com/contact-EN.html)." type="info" %}
+
+<table>
+<colgroup>
+<col/>
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Required</th>
+<th>Comment</th>
+<th>Values</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">guid</td>
+<td markdown="span">string</td>
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
+<td markdown="span">the learner GUID.</td>
+<td markdown="span">abcdef-12345-XXXXXXX-XXXXXXX</td>
+</tbody>
+</table>
+
+<p style="font-size: 15px"><strong>Request : </strong></p>
+
+<pre>
+<code class="language-http">
+GET /API/ADMIN/v1/REST/Learner/XXXX-E3C0-578F-4EE4-F39B406097E5 HTTP/1.1
+Host: yourdomain.crossknowledge.com
+API-KEY: XXXX-4E19-752A-DB81-5087AB7CA438	
+Cache-Control: no-cache
+</code>
+</pre>
+
+<p style="font-size: 15px"><strong>Response: </strong></p>
+
+<p>Returned data: </p>
+<table>
+<colgroup>
+<col/>
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">message</td>
+<td markdown="span">string</td>
+<td markdown="span">a message indicating the success or the reason of the failure</td>
+</tr>
+<tr>
+<td markdown="span">success</td>
+<td markdown="span">boolean</td>
+<td markdown="span">Describes if the web-service call was a success or not. (true or false).
+</td>
+</tr>
+<tr>
+<td markdown="span">totalCount</td>
+<td markdown="span">integer</td>
+<td markdown="span">The number of learners accounts counted by the web-service.
+</td>
+</tr>
+<tr>
+<td markdown="span">count</td>
+<td markdown="span">integer</td>
+<td markdown="span">The number of learners accounts returned by the web-service.
+</td>
+</tr>
+<tr>
+<td markdown="span">value</td>
+<td markdown="span">array</td>
+<td markdown="span">An array or a list of objects containing the data in response to the request.
+</td>
+</tr>
+<tr>
+<td markdown="span">guid</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner GUID.
+</td>
+</tr>
+<tr>
+<td markdown="span">login</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner login.
+</td>
+</tr>
+<tr>
+<td markdown="span">referenceNumber</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner reference number.
+</td>
+</tr>
+<tr>
+<td markdown="span">name</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner lastname.
+</td>
+</tr>
+<tr>
+<td markdown="span">firstname</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner firstname.
+</td>
+</tr>
+<tr>
+<td markdown="span">email</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner email.
+</td>
+</tr>
+<tr>
+<td markdown="span">entityGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner entity GUID.
+</td>
+</tr>
+<tr>
+<td markdown="span">type</td>
+<td markdown="span">string</td>
+<td markdown="span">The learning object type (in the example below i for Interactive content).
+</td>
+</tr>
+<tr>
+<td markdown="span">enabled</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner status.
+</td>
+</tr>
+<tr>
+<td markdown="span">_links</td>
+<td markdown="span">object</td>
+<td markdown="span">The web-service endpoints related to the current object (learner).
+</td>
+</tr>
+<tr>
+<td markdown="span">self</td>
+<td markdown="span">object</td>
+<td markdown="span">The web-service endpoint of the current object (learner).
+</td>
+</tr>
+<tr>
+<td markdown="span">registrations</td>
+<td markdown="span">integer</td>
+<td markdown="span">The web-service enpoint of the registrations of the learner.
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3>Example of JSON response :</h3>
+<pre>
+<code class="language-json">
+{
+    "message": "OK",
+    "success": true,
+    "totalCount": 1,
+    "count": 1,
+    "value": [
+        {
+            "guid": "XXXX-FA8B-9DCA-0490-EFC90A0A4A9D",
+            "login": "john.doe@veganmaster.com",
+            "referenceNumber": "Do not delete",
+            "name": "Doe",
+            "firstName": "John",
+            "email": "john.doe@veganmaster.com",
+            "entityGuid": "XXXX-E3C0-578F-4EE4-F39B406097E5",
+            "enabled": true,
+            "_links": {
+                "self": "/API/ADMIN/v1/REST/Learner/XXXX-FA8B-9DCA-0490-EFC90A0A4A9D/",
+                "registrations": "/API/ADMIN/v1/REST/Learner/XXXX-FA8B-9DCA-0490-EFC90A0A4A9D/Registration/"
+            }
+        }
+    ],
+    "_links": {
+        "self": "/API/ADMIN/v1/REST/Learner/XXXX-FA8B-9DCA-0490-EFC90A0A4A9D/"
+    }
+}
+  
+</code>
+</pre>
+
+
+<p style="font-size: 15px"><strong>Codes and messages: </strong></p>
+<table class="code_messages">
+<colgroup>
+<col />
+<col  />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Message</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">"OK"</td>
+<td markdown="span">**200**</td>
+</tr>
+<tr>
+<td markdown="span">"No Content"</td>
+<td markdown="span">**204**
+</td>
+</tr>
+<tr>
+<td markdown="span">"enabled is not a boolean"</td>
+<td markdown="span">**400**
+</td>
+</tr>
+<tr>
+<td markdown="span">" "page" : this value should be a valid number."</td>
+<td markdown="span">**400**
+</td>
+</tr>
+<tr>
+<td markdown="span">" "limit" : this value should be 1 or more."</td>
+<td markdown="span">**400**
+</td>
+</tr>
+<tr>
+<td markdown="span">"Not Found"</td>
+<td markdown="span">**404**
+</td>
+</tr>
+</tbody>
+</table>
+
+<div class="glossary">
+     <b>Glossary: </b>
+     <a href="glossary.html#learner" class="btn btn-default navbar-btn cursorNorm" role="button">Learner</a>
+
+</div>
+
+</div>
+<div class="panel-footer">
+<a href="/samples_admin.html#offline_learner_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+</div>
+
+</div>
+
 <!--GET API/ADMIN/v1/REST/Learner/-->
 <div id="offline_learner_list" class="panel panel-default">
 
@@ -3217,26 +3496,37 @@ Cache-Control: no-cache
 </div>
 
 
-<!--GET API/ADMIN/v1/REST/Tracking/{tracking_guid}/-->
-<div id="learner_trackings_item_get" class="panel panel-default">
+<!--GET API/ADMIN/v1/REST/Learner/{learner_guid}/Tracking/-->
+<div id="offline_learner_tracking" class="panel panel-default">
 
 <div class="panel-heading">
 
-<div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Report/{report_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
+<div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Learner/{learner_guid}/Tracking/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
 </div>
 
 <div class="panel-body">
 
 <p style="font-size: 15px"><strong>Description :</strong></p>
-<p markdown="span">This web-service allow to retrieve a report.</p>
+<p markdown="span">This web-service allows to get the learner tracking history.</p>
 
-<p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Report/{report_guid}/</i></p>
+<p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Learner/{learner_guid}/Tracking/</i></p>
 <p style="font-size: 15px"><strong>Method : </strong><span class="label label-info">GET</span></p>
 
 <p style="font-size: 15px"><strong>Return :</strong></p>
-<p>This web-service returns a json object with the report details.</p>
+<p>This web-service returns a json object with the learner tracking history.</p>
 
 <p style="font-size: 15px"><strong>Parameters : </strong></p>
+{{site.data.alerts.note}}
+<p>This web-service requires a valid API key to be used. To do this, you must set your API Key within your HTTP Header request.
+</p>
+HTTP Header name:
+<pre>
+API-KEY<br>
+
+</pre>
+{{site.data.alerts.end}}
+
+{% include callout.html content="<span class='fa-stack fa-lg'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-key fa-stack-1x fa-inverse'></i></span>&nbsp;Get your [CrossKnowledge Learning Suite API key now](http://page.crossknowledge.com/contact-EN.html)." type="info" %}
 
 <table>
 <colgroup>
@@ -3255,23 +3545,39 @@ Cache-Control: no-cache
 </thead>
 <tbody>
 <tr>
-<td markdown="span">report_guid</td>
+<td markdown="span">page</td>
+<td markdown="span">integer</td>
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not Required" class="fa fa-times"></i></td>
+<td markdown="span">The page number that should be displayed, based on the limit number.</td>
+<td markdown="span">Default: 1</td>
+</tr>
+<tr>
+<td markdown="span">limit</td>
+<td markdown="span">integer</td>
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not Required" class="fa fa-times"></i></td>
+<td markdown="span">Limit to search.</td>
+<td markdown="span">	Default: 10
+Maximum: 50</td>
+</tr>
+<tr>
+<td markdown="span">status</td>
 <td markdown="span">string</td>
-<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Required" class="fa fa-check"></i></td>
-<td markdown="span">The report GUID.</b></td>
-<td markdown="span"> abcdef-12345-XXXXXXX-XXXXXXX</td>
-
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not Required" class="fa fa-times"></i></td>
+<td markdown="span">Status of trackings to return.</td>
+<td markdown="span">"completed", "inProgress" (no record for not started so we skip this value)</td>
 </tr>
 
 </tbody>
 </table>
 
-
 <p style="font-size: 15px"><strong>Request : </strong></p>
 
 <pre>
 <code class="language-http">
-
+GET /API/ADMIN/v1/REST/Learner/XXXX-7D28-82B0-1388-A60892F2299B/Tracking HTTP/1.1
+Host: yourdomain.crossknowledge.com
+API-KEY: XXXX-4E19-752A-DB81-5087AB7CA438	
+Cache-Control: no-cache
 </code>
 </pre>
 
@@ -3305,8 +3611,14 @@ Cache-Control: no-cache
 <tr>
 <td markdown="span">totalCount</td>
 <td markdown="span">integer</td>
-<td markdown="span">The number of learning objects tracking row returned by the web-service.
+<td markdown="span">The number of learner authentication token counted by the web-service.
 </td>
+<tr>
+<td markdown="span">count</td>
+<td markdown="span">integer</td>
+<td markdown="span">The number of learner authentication token returned by the web-service.
+</td>
+</tr>
 </tr>
 <tr>
 <td markdown="span">value</td>
@@ -3315,58 +3627,9 @@ Cache-Control: no-cache
 </td>
 </tr>
 <tr>
-<td markdown="span">firstLaunchTime</td>
-<td markdown="span">datetime</td>
-<td markdown="span">The date and time when the Learning Object was first launch for the Registration by the learner</td>
-
-
-</tr>
-<tr>
-<td markdown="span">completionTime</td>
-<td markdown="span">datetime</td>
-<td markdown="span">The date and time when the Learning Object was completed for the Registration by the learner</td>
-
-</tr>
-<tr>
-<td markdown="span">id</td>
-<td markdown="span">integer</td>
-<td markdown="span">The tracking item ID.
-</td>
-</tr>
-<tr>
-<td markdown="span">itemId</td>
-<td markdown="span">integer</td>
-<td markdown="span">The learning object session (context) item ID.
-</td>
-</tr>
-<tr>
-<td markdown="span">progression</td>
-<td markdown="span">integer</td>
-<td markdown="span">The learning object progression achieved by the learner on the current session.
-</td>
-</tr>
-<tr>
-<td markdown="span">registrationGuid</td>
+<td markdown="span">_links</td>
 <td markdown="span">string</td>
-<td markdown="span">The learner training session's registration guid.
-</td>
-</tr>
-<tr>
-<td markdown="span">score</td>
-<td markdown="span">float</td>
-<td markdown="span">The score achieved by the learner on the learning object (item id) in the current session.
-</td>
-</tr>
-<tr>
-<td markdown="span">scoreMax</td>
-<td markdown="span">float</td>
-<td markdown="span">The max score achievable by the learner on the learning object (item id) in the current session..
-</td>
-</tr>
-<tr>
-<td markdown="span">timespent</td>
-<td markdown="span">integer</td>
-<td markdown="span">The time spent by the learner on the learning object in the current session.
+<td markdown="span">The web-service endpoints related to the current object.
 </td>
 </tr>
 </tbody>
@@ -3375,7 +3638,47 @@ Cache-Control: no-cache
 <h3>Example of JSON response :</h3>
 <pre>
 <code class="language-json">
-
+{
+  "message": "OK",
+  "success": true,
+  "totalCount": 2,
+  "count": 2,
+  "value": [
+    {
+       "guid": "13C826AF-BD07-1B61-1EE1-10AEB581EA3D",
+       "sessionGuid": "09C13FA3-E7AE-2E2C-A2EF-59E574D411C0",
+       "trainingGuid": "2F9B175C-5A14-A709-AB61-3703C7CD5981",
+       "learnerGuid": "5416D83C-C811-CC25-C468-E4DE0E5AC7A9",
+       "contentGuid": "5416D83C-C811-CC25-C468-E4DE0E5AC7A9",
+       "contentVersionGuid": "5416D83C-C811-CC25-C468-E4DE0E5AC7A9",
+       "_links": {
+         "self": "/API/ADMIN/v1/REST/Registration/13C826AF-BD07-1B61-1EE1-10AEB581EA3D/",
+         "session": "/API/ADMIN/v1/REST/Session/09C13FA3-E7AE-2E2C-A2EF-59E574D411C0/",
+         "training": "/API/ADMIN/v1/REST/Training/2F9B175C-5A14-A709-AB61-3703C7CD5981/",
+         "learner": "/API/ADMIN/v1/REST/Learner/5416D83C-C811-CC25-C468-E4DE0E5AC7A9/"
+         "content": "/API/ADMIN/v1/REST/content/5416D83C-C811-CC25-C468-E4DE0E5AC7A9/"
+       }
+    },
+    {
+       "guid": "26D826AF-BD07-1B61-1EE1-10AEB581EA5G",
+       "sessionGuid": "266DA3AA-7F95-49E1-83DF-27E3986C0B6",
+       "trainingGuid": "44EA3AA-7F95-49E1-83DF-27E3986C1HC7",
+       "learnerGuid": "5416D83C-C811-CC25-C468-E4DE0E5AC7A9",
+       "contentGuid": "5416D83C-C811-CC25-C468-E4DE0E5AC7A9",
+       "contentVersionGuid": "5416D83C-C811-CC25-C468-E4DE0E5AC7A9",
+       "_links": {
+         "self": "/API/ADMIN/v1/REST/Registration/26D826AF-BD07-1B61-1EE1-10AEB581EA5G/",
+         "session": "/API/ADMIN/v1/REST/Session/266DA3AA-7F95-49E1-83DF-27E3986C0B6/",
+         "training": "/API/ADMIN/v1/REST/Training/44EA3AA-7F95-49E1-83DF-27E3986C1HC7/",
+         "learner": "/API/ADMIN/v1/REST/Learner/5416D83C-C811-CC25-C468-E4DE0E5AC7A9/"
+         "content": "/API/ADMIN/v1/REST/content/5416D83C-C811-CC25-C468-E4DE0E5AC7A9/"
+       }
+    }
+  ],
+  "_links": {
+    "self": "/API/ADMIN/v1/REST/Learner/5416D83C-C811-CC25-C468-E4DE0E5AC7A9/Tracking/"
+  }
+}
   
 </code>
 </pre>
@@ -3399,30 +3702,21 @@ Cache-Control: no-cache
 <td markdown="span">**200**</td>
 </tr>
 <tr>
-<td markdown="span">"Not Found"</td>
-<td markdown="span">**204**</td>
+<td markdown="span">"No Content."</td>
+<td markdown="span">**204**
+</td>
 </tr>
 <tr>
-<td markdown="span">"No Content"</td>
-<td markdown="span">**404**</td>
+<td markdown="span">"Unauthorized."</td>
+<td markdown="span">**401**
+</td>
 </tr>
-
 </tbody>
 </table>
 
-<div class="glossary">
-     <b>Glossary: </b>
-     <a href="glossary.html#learner" class="btn btn-default navbar-btn cursorNorm" role="button">Learner</a>
-	 <a href="glossary.html#training" class="btn btn-default navbar-btn cursorNorm" role="button">Training</a>
-	 <a href="glossary.html#session" class="btn btn-default navbar-btn cursorNorm" role="button">Session</a>
-	  <a href="glossary.html#tracking" class="btn btn-default navbar-btn cursorNorm" role="button">Tracking (report)</a>
-	<a href="glossary.html#context" class="btn btn-default navbar-btn cursorNorm" role="button">Context</a>
-
-
-</div>
 </div>
 <div class="panel-footer">
-<a href="/samples_admin.html#offline_report_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+<a href="/samples_admin.html#offline_learner_tracking" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
 </div>
 
 </div>
@@ -7940,3 +8234,216 @@ Cache-Control: no-cache
 </div>
 
 </div>
+
+<!--GET API/ADMIN/v1/REST/Report/{report_guid}/-->
+
+<!--
+<div id="offline_report" class="panel panel-default">
+
+<div class="panel-heading">
+
+<div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Report/{report_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
+</div>
+
+<div class="panel-body">
+
+<p style="font-size: 15px"><strong>Description :</strong></p>
+<p markdown="span">This web-service allow to retrieve a report.</p>
+
+<p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Report/{report_guid}/</i></p>
+<p style="font-size: 15px"><strong>Method : </strong><span class="label label-info">GET</span></p>
+
+<p style="font-size: 15px"><strong>Return :</strong></p>
+<p>This web-service returns a json object with the report details.</p>
+
+<p style="font-size: 15px"><strong>Parameters : </strong></p>
+
+<table>
+<colgroup>
+<col/>
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Required</th>
+<th>Comment</th>
+<th>Values</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">report_guid</td>
+<td markdown="span">string</td>
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Required" class="fa fa-check"></i></td>
+<td markdown="span">The report GUID.</b></td>
+<td markdown="span"> abcdef-12345-XXXXXXX-XXXXXXX</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+<p style="font-size: 15px"><strong>Request : </strong></p>
+
+<pre>
+<code class="language-http">
+
+</code>
+</pre>
+
+<p style="font-size: 15px"><strong>Response: </strong></p>
+
+<p>Returned data: </p>
+<table>
+<colgroup>
+<col/>
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">message</td>
+<td markdown="span">string</td>
+<td markdown="span">a message indicating the success or the reason of the failure</td>
+</tr>
+<tr>
+<td markdown="span">success</td>
+<td markdown="span">boolean</td>
+<td markdown="span">Describes if the web-service call was a success or not. (true or false).
+</td>
+</tr>
+<tr>
+<td markdown="span">totalCount</td>
+<td markdown="span">integer</td>
+<td markdown="span">The number of learning objects tracking row returned by the web-service.
+</td>
+</tr>
+<tr>
+<td markdown="span">value</td>
+<td markdown="span">object</td>
+<td markdown="span">An object or a list of objects containing the data in response to the request.
+</td>
+</tr>
+<tr>
+<td markdown="span">firstLaunchTime</td>
+<td markdown="span">datetime</td>
+<td markdown="span">The date and time when the Learning Object was first launch for the Registration by the learner</td>
+
+
+</tr>
+<tr>
+<td markdown="span">completionTime</td>
+<td markdown="span">datetime</td>
+<td markdown="span">The date and time when the Learning Object was completed for the Registration by the learner</td>
+
+</tr>
+<tr>
+<td markdown="span">id</td>
+<td markdown="span">integer</td>
+<td markdown="span">The tracking item ID.
+</td>
+</tr>
+<tr>
+<td markdown="span">itemId</td>
+<td markdown="span">integer</td>
+<td markdown="span">The learning object session (context) item ID.
+</td>
+</tr>
+<tr>
+<td markdown="span">progression</td>
+<td markdown="span">integer</td>
+<td markdown="span">The learning object progression achieved by the learner on the current session.
+</td>
+</tr>
+<tr>
+<td markdown="span">registrationGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The learner training session's registration guid.
+</td>
+</tr>
+<tr>
+<td markdown="span">score</td>
+<td markdown="span">float</td>
+<td markdown="span">The score achieved by the learner on the learning object (item id) in the current session.
+</td>
+</tr>
+<tr>
+<td markdown="span">scoreMax</td>
+<td markdown="span">float</td>
+<td markdown="span">The max score achievable by the learner on the learning object (item id) in the current session..
+</td>
+</tr>
+<tr>
+<td markdown="span">timespent</td>
+<td markdown="span">integer</td>
+<td markdown="span">The time spent by the learner on the learning object in the current session.
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Example of JSON response :</h3>
+<pre>
+<code class="language-json">
+
+  
+</code>
+</pre>
+
+
+<p style="font-size: 15px"><strong>Codes and messages: </strong></p>
+<table class="code_messages">
+<colgroup>
+<col />
+<col  />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Message</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">"OK"</td>
+<td markdown="span">**200**</td>
+</tr>
+<tr>
+<td markdown="span">"Not Found"</td>
+<td markdown="span">**204**</td>
+</tr>
+<tr>
+<td markdown="span">"No Content"</td>
+<td markdown="span">**404**</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="glossary">
+     <b>Glossary: </b>
+     <a href="glossary.html#learner" class="btn btn-default navbar-btn cursorNorm" role="button">Learner</a>
+	 <a href="glossary.html#training" class="btn btn-default navbar-btn cursorNorm" role="button">Training</a>
+	 <a href="glossary.html#session" class="btn btn-default navbar-btn cursorNorm" role="button">Session</a>
+	  <a href="glossary.html#tracking" class="btn btn-default navbar-btn cursorNorm" role="button">Tracking (report)</a>
+	<a href="glossary.html#context" class="btn btn-default navbar-btn cursorNorm" role="button">Context</a>
+
+
+</div>
+</div>
+<div class="panel-footer">
+<a href="/samples_admin.html#offline_report" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+</div>
+
+</div>
+-->
