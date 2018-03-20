@@ -3720,7 +3720,271 @@ Cache-Control: no-cache
 </div>
 
 </div>
+<!--GET API/ADMIN/v1/REST/Tracking/{tracking_guid}/-->
+<div id="offline_tracking_get" class="panel panel-default">
 
+<div class="panel-heading">
+
+<div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Tracking/{tracking_guid}/
+&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
+</div>
+
+<div class="panel-body">
+
+<p style="font-size: 15px"><strong>Description :</strong></p>
+<p markdown="span">This web-service allows to read the metadatas of a given tracking.</p>
+
+<p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Tracking/{tracking_guid}/</i></p>
+<p style="font-size: 15px"><strong>Method : </strong><span class="label label-info">GET</span></p>
+
+<p style="font-size: 15px"><strong>Return :</strong></p>
+<p>This web-service returns a json object of the translated metadatas for a given tracking.</p>
+
+<p style="font-size: 15px"><strong>Parameters : </strong></p>
+{{site.data.alerts.note}}
+<p>This web-service requires a valid API key to be used. To do this, you must set your API Key within your HTTP Header request.
+</p>
+HTTP Header name:
+<pre>
+API-KEY<br>
+
+</pre>
+{{site.data.alerts.end}}
+
+{% include callout.html content="<span class='fa-stack fa-lg'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-key fa-stack-1x fa-inverse'></i></span>&nbsp;Get your [CrossKnowledge Learning Suite API key now](http://page.crossknowledge.com/contact-EN.html)." type="info" %}
+
+<table>
+<colgroup>
+<col/>
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Required</th>
+<th>Comment</th>
+<th>Values</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">tracking_guid</td>
+<td markdown="span">string</td>
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Required" class="fa fa-check"></i></td>
+<td markdown="span">The tracking GUID to look for.</td>
+<td markdown="span">abcdef-12345-XXXXXXX-XXXXXXX1</td>
+
+</tr>
+</tbody>
+</table>
+
+<p style="font-size: 15px"><strong>Request : </strong></p>
+
+<pre>
+<code class="language-http">
+GET /API/ADMIN/v1/REST/Tracking/XXXX-B83E-7A8C-CA0D-B1A5E38F073D/ HTTP/1.1
+Host: yourdomain.crossknowledge.com
+API-KEY: XXXX-4E19-752A-DB81-5087AB7CA438	
+Cache-Control: no-cache
+</code>
+</pre>
+
+<p style="font-size: 15px"><strong>Response: </strong></p>
+
+<p>Returned data: </p>
+<table>
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">guid</td>
+<td markdown="span">string</td>
+<td markdown="span">The guid of tracking line</td>
+</tr>
+<tr>
+<td markdown="span">sessionGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The guid of the session related to the tracking.
+</td>
+</tr>
+<tr>
+<td markdown="span">trainingGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The guid of the training related to the tracking.
+</td>
+</tr>
+<tr>
+<td markdown="span">learnerGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The guid of the learner related to the tracking.
+</td>
+</tr>
+<tr>
+<td markdown="span">contentGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The guid of the content related to the tracking.
+</td>
+</tr>
+<tr>
+<td markdown="span">contentVersionGuid</td>
+<td markdown="span">string</td>
+<td markdown="span">The guid of the content version related to the tracking
+</td>
+</tr>
+<tr>
+<td markdown="span">firstLaunchDate</td>
+<td markdown="span">string</td>
+<td markdown="span">The date at which the content referenced by the tracking line has been launched for the first time.
+</td>
+</tr>
+<tr>
+<td markdown="span">firstCompletionDate</td>
+<td markdown="span">string</td>
+<td markdown="span">The date at which the content referenced by the training has been completed for the first time.
+</td>
+</tr>
+<tr>
+<td markdown="span">lastCompletionDate</td>
+<td markdown="span">string</td>
+<td markdown="span">The date at which the content referenced by the training has been last access.
+</td>
+</tr>
+<tr>
+<td markdown="span">timeSpent</td>
+<td markdown="span">integer</td>
+<td markdown="span">Time spent on the content.
+</td>
+</tr>
+<tr>
+<td markdown="span">progress</td>
+<td markdown="span">integer</td>
+<td markdown="span">Progress done on the content.
+</td>
+</tr>
+<tr>
+<td markdown="span">score</td>
+<td markdown="span">float</td>
+<td markdown="span">Score on the content.
+</td>
+</tr>
+<tr>
+<td markdown="span">status</td>
+<td markdown="span">string</td>
+<td markdown="span">Status for the tracking line.
+</td>
+</tr>
+<tr>
+<td markdown="span">_links</td>
+<td markdown="span">string</td>
+<td markdown="span">The web-service endpoints related to the current object.
+</td>
+</tr>
+<tr>
+<td markdown="span">self</td>
+<td markdown="span">string</td>
+<td markdown="span">The web-service endpoint of the current object.
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Example of JSON response :</h3>
+<pre>
+<code class="language-json">
+{
+    "message": "OK",
+    "success": true,
+    "totalCount": 1,
+    "count": 1,
+    "value": [
+        {
+            "guid": "2D158332-D58B-0A1A-736A-69D68F6A03B1",
+            "sessionGuid": "9EBC52C8-F241-BAA1-68EA-61B7E77C5052",
+            "trainingGuid": "487636CF-01E1-113D-365B-D55C6013A260",
+            "learnerGuid": "16DC7CC3-9F07-A070-CC9A-4E91B6810267",
+            "contentGuid": "VDRD310",
+            "contentVersionGuid": "VDRD310en-GB",
+            "firstLaunchDate": "2013-08-14 12:36:46",
+            "firstCompletionDate": "2013-08-14 12:36:46",
+            "lastCompletionDate": "2013-08-14 12:36:46",
+            "timeSpent": 240,
+            "progress": 100,
+            "score": 0,
+            "status": "c",
+            "_links": {
+                "self": "/API/ADMIN/v1/REST/Tracking/2D158332-D58B-0A1A-736A-69D68F6A03B1/",
+                "session": "/API/ADMIN/v1/REST/Session/9EBC52C8-F241-BAA1-68EA-61B7E77C5052/",
+                "training": "/API/ADMIN/v1/REST/Training/487636CF-01E1-113D-365B-D55C6013A260/",
+                "learner": "/API/ADMIN/v1/REST/Learner/16DC7CC3-9F07-A070-CC9A-4E91B6810267/",
+                "content": "/API/ADMIN/v1/REST/Content/VDRD310/",
+                "registration": "/API/ADMIN/v1/REST/Registration/AE43335A-5299-764F-0570-075C3CD85FF3/"
+            }
+        }
+    ],
+    "_links": {
+        "self": "/API/ADMIN/v1/REST/Tracking/2D158332-D58B-0A1A-736A-69D68F6A03B1/"
+    }
+}
+</code>
+</pre>
+
+
+<p style="font-size: 15px"><strong>Codes and messages: </strong></p>
+<table class="code_messages">
+<colgroup>
+<col />
+<col  />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Message</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td markdown="span">"OK"</td>
+<td markdown="span">**200**</td>
+</tr>
+
+<tr>
+<td markdown="span">"No Content"</td>
+<td markdown="span">**204**</td>
+</tr>
+<tr>
+<td markdown="span">"Unauthorized"	</td>
+<td markdown="span">**401**
+</td>
+</tr>
+<tr>
+<td markdown="span">"Not Found"	</td>
+<td markdown="span">**404**
+</td>
+</tr>
+</tbody>
+</table>
+
+<div class="glossary">
+     <b>Glossary: </b>
+     <a href="glossary.html#tracking" class="btn btn-default navbar-btn cursorNorm" role="button">Tracking</a>
+     <a href="glossary.html#training" class="btn btn-default navbar-btn cursorNorm" role="button">Training</a>
+	 <a href="glossary.html#session" class="btn btn-default navbar-btn cursorNorm" role="button">Session</a>
+	 <a href="glossary.html#learner" class="btn btn-default navbar-btn cursorNorm" role="button">Learner</a>
+	 <a href="glossary.html#content" class="btn btn-default navbar-btn cursorNorm" role="button">Content</a>
+</div>
+</div>
+<div class="panel-footer">
+<a href="/samples_admin.html#offline_tracking_get" class="btn btn-default"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-code fa-stack-1x fa-inverse" data-toggle="tooltip" data-original-title="Get code snippet"></i></span>&nbsp;</a>
+</div>
+
+</div>
 
 <!--GET API/ADMIN/v1/REST/Training/-->
 <div id="offline_training_list" class="panel panel-default">
