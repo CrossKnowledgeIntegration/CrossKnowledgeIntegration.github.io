@@ -3,7 +3,7 @@ col:
   activityName:
     desc: "Name of the activity."
     
-  activityId:
+  activityID:
     desc: "Id of the activity."
     
   activityDuration:
