@@ -287,6 +287,9 @@ entries:
         - title: Consolidated Gamification Events
           url: /consolidated-gamification-events-provider.html
           output: web
+        - title: Class Based Training
+          url: /class-based-training-provider.html
+          output: web
 
       - title: Data Import Module
         output: web
