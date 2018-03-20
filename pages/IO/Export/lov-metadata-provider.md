@@ -10,7 +10,7 @@ folder: Export
 ---
 
 
-### Available columnsge
+### Available columns
 
 Name | Description
 ---|---
@@ -66,15 +66,28 @@ Name | Description
             <learningObjectVersionLoId/>
             <learningObjectVersionLoGuid/>
             <learningObjectVersionId/>
-            <learningObjectVersionCode/>
             <learningObjectVersionGuid/>
-            <learningObjectVersionDuration/>
-            <learningObjectVersionIncludedInLO/>
-            <learningObjectVersionLearningPoints/>
+            <learningObjectVersionCode/>
             <learningObjectVersionTitle/>
+            <learningObjectVersionSummary/>
+            <learningObjectVersionPublisher/>
             <learningObjectVersionType/>
             <learningObjectVersionDisplayedType/>
             <learningObjectVersionVersion/>
+            <learningObjectVersionAuthorId/>
+            <learningObjectVersionAuthorFirstName/>
+            <learningObjectVersionAuthorLastName/>
+            <learningObjectVersionDuration/>
+            <learningObjectVersionIncludedInLO/>
+            <learningObjectVersionLearningPoints/>
+            <learningObjectVersionLevel/>
+            <learningObjectVersionLocale/>
+            <learningObjectVersionTags/>
+            <learningObjectVersionTargetAudience/>
+            <learningObjectVersionThemes/>
+            <learningObjectVersionThumbnailSmall/>
+            <learningObjectVersionThumbnailMedium/>
+            <learningObjectVersionThumbnailLarge/>
             <learningObjectVersionCreationDate/>
             <learningObjectVersionModificationDate/>
             <learningObjectVersionFirstLaunchDate/>
