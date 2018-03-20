@@ -105,6 +105,8 @@ Parameters | Description
 `training` | values are id or GUID of a training. It will redirect the learner to this training. If only the training is set in the url, the learner will be redirected to his last active session (except if singleton or individual is set). In all other case, the learner is redirected to the homepage.
 `session` | values are id or GUID of a session. It will redirect the learner to the session. The learner is automatically registered to the session if Enroll is set to yes. In all other case, the learner is redirected to the homepage.
 `content` | values are id or GUID of a content. It will redirect the learner to the learning course page of his last active session. In all other case, the learner is redirected to the homepage.
+`force_mobile` | values : yes / no. Launches the content as that occurs in mobile interfaces. If the parameter is present and has value of yes, the mobile interface will be used to launch the param. It is important to note that the force_mobile param will only force the CKLS instance to launch the LR as if was being displayed in a mobile browser. All other verification (like if the LR can be launched in mobile) won't be forced.
+
 
 Training, session and content can all be in the url. 
 The SSO system will verify the consistency between those parameters. 
