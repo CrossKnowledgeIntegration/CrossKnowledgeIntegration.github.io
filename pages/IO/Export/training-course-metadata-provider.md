@@ -42,7 +42,7 @@ Name | Description
 ### Examples
 ```xml
 <providers>
-    <platformCandidatesAccessProvider>
+    <trainingCourseMetadataProvider>
         <columns>
             <modality/>
             <title/>
@@ -59,6 +59,6 @@ Name | Description
         <parameters>
             <dateFormat>MM-DD-YYYY</dateFormat>
         </parameters>
-    </platformCandidatesAccessProvider>
+    </trainingCourseMetadataProvider>
 </providers>
 ```
