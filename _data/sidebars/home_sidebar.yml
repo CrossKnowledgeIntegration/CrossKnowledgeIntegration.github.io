@@ -254,6 +254,9 @@ entries:
         - title: Training Audit Metadata
           url: /training-audit-metadata-provider.html
           output: web
+        - title: Session Audit Metadata
+          url: /session-audit-metadata-provider.html
+          output: web
         - title: Training Course Metadata
           url: /training-course-metadata-provider.html
           output: web
