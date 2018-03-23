@@ -725,7 +725,7 @@ param:
     type: "string"
 
   publishers:
-    desc: "Only export tracking data on content issued by the given publishers. Multiple publishers may be specified in a comma-separated list."
+    desc: "Only export tracking data on content issued by the given publishers GUID. Multiple publishers may be specified in a comma-separated list."
     type: "string"
     
   reportStatus:
