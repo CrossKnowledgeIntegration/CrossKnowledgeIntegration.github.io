@@ -37,7 +37,7 @@ CrossKnowledge creates their SP metadata and share that with the client’s IT.
 The client’s IT imports that metadata adding it as a valid Service Provider description to the Identity Provider service.
 Once setup on the IdP side, the IdP exports and shared their metadata to CrossKnowledge, which adds the IdP metadata to its SP, completing the handshake between those systems.
 
-For setting up an AD FS 2.0 IdP service, please follow this [link](https://integration.crossknowledge.com/How_to_configure_ADFS_2.0).
+For setting up an AD FS 2.0 IdP service, please follow this [link](https://developers.crossknowledge.com/adfs.html).
 
 For other systems, please consult their own SAML IdP setup documentation.
 
@@ -65,7 +65,7 @@ The former, the user accesses directly the IdP asking for authentication, while 
 
 Please see the image below for a summary on that workflow.
 
-![alt text](http://developers.crossknowledge.com/images/SAMLworkflow.png)
+![alt text](https://developers.crossknowledge.com/images/SAMLworkflow.png)
 
 `Illustration 1: Authentication workflow on SP initiated mode`
 
