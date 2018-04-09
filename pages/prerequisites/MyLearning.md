@@ -23,6 +23,10 @@ My Learning is compatible with the following devices:
 
 It is available on both stores under CrossKnowledge My Learning
 
+## Content
+
+In order to see all CrossKnowledge content on your mobile device, you need to have the cloud option activated. This option will make sure that our CrossKnowledge content are hosted on Amazon.
+
 ## Offline content
 
 My Learning allows downloading Blendedx learning resources offline, to view them with no connectivity.
