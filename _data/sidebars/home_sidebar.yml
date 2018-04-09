@@ -21,6 +21,9 @@ entries:
     - title: Mohive Prerequisites
       url: /mohive-prerequisites
       output: web
+    - title: MyLearning Prerequisites
+      url: /MyLearning-prerequisites
+      output: web
     - title: CrossKnowledge contents
       url: /content-information
       output: web
