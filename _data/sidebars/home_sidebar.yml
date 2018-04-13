@@ -358,9 +358,13 @@ entries:
           url: /scorm-connector-trainingpath.html
           output: web
           
-      - title: Embed HTML
+      - title: Embed
         url: /html_embed.html
         output: web
+        subfolderitems:
+        - title: HTML Embed Activity
+          url: /html_embed.html
+          output: web
 
   - title: Publish
     output: web
