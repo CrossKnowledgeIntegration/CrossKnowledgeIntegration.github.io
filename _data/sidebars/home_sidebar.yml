@@ -357,6 +357,10 @@ entries:
         - title: Learning Path
           url: /scorm-connector-trainingpath.html
           output: web
+          
+      - title: Embed HTML
+        url: /html_embed.html
+        output: web
 
   - title: Publish
     output: web
