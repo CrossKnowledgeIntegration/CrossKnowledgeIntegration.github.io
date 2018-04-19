@@ -75,6 +75,8 @@ CrossKnowledge LMS is a web-based application needing the following environment 
 
 We systematically test the latest versions of Chrome, Firefox and Internet Explorer browsers to ensure the best experience for our users. Older versions of these browsers are not systematically tested, but run smoothly in most cases. If, however, there is a problem specific to a particular version of one of these browsers, please contact us.
 
+These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
+
 ### Tablet compatibility
 
 CrossKnowledge LMS is compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the LMS.
