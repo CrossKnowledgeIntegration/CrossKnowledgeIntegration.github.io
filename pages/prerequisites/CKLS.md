@@ -64,7 +64,7 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). TLSv1.x protocols are supported.</td>
+            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). TLSv1.1 and TLSv1.2 protocols are supported.</td>
         </tr>
         <tr>
             <td>Popup blocker for your URL</td>
@@ -109,7 +109,7 @@ The following media extensions should be authorised.<br/>
 ### Domain white-listing
 The following domain names should be whitelisted.
 ```txt
-http(s)://*.crossknowledge.com, http(s)://*.crossknowledge-player.com
+https://*.crossknowledge.com, https://*.crossknowledge-player.com
 ```
 
 If wildcards (*) are not allowed, authorise at least the following URLs:<br/>
@@ -131,27 +131,26 @@ https://media-cdn2.crossknowledge.com
 
 ##### For users based in Europe
 ```txt
-http(s)://cdn.crossknowledge.com/*
-http(s)://d12yhdsdwe7din.cloudfront.net/* or http(s)://mohivecontents-eu.crossknowledge.com
+https://cdn.crossknowledge.com/*
+https://d12yhdsdwe7din.cloudfront.net/* and http(s)://mohivecontents-eu.crossknowledge.com
 ```
 
 ##### For users based in the US:
 ```txt
-rtmp://s11glde2jwx3y7.cloudfront.net/*
-http(s)://d2niiguqm1v5wm.cloudfront.net/* or http(s)://ckcontents-na.crossknowledge.com
-http(s)://dmi776hgmgo8n.cloudfront.net/* or http(s)://mohivecontents-na.crossknowledge.com
+https://d2niiguqm1v5wm.cloudfront.net/* and http(s)://ckcontents-na.crossknowledge.com
+https://dmi776hgmgo8n.cloudfront.net/* and http(s)://mohivecontents-na.crossknowledge.com
 ```
 
 ##### For users based in Asia:
 ```txt
-http(s)://ckcontents-jp.crossknowledge.com
-http(s)://mohivecontents-jp.crossknowledge.com
+https://ckcontents-jp.crossknowledge.com
+https://mohivecontents-jp.crossknowledge.com
 ```
 
 #### CKLM (XKA, Digital Literacy, Leaders...)
 ```txt
-http(s)://d12pbbvc3h54xm.cloudfront.net/*
-http(s)://cklm-prod.s3.amazonaws.com/*
+https://d12pbbvc3h54xm.cloudfront.net/*
+https://cklm-prod.s3.amazonaws.com/*
 https://cdn-cklm-prod.crossknowledge.com/*
 https://ckcg.crossknowledge.com/*
 ```
