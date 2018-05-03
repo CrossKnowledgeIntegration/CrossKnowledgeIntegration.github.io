@@ -22,6 +22,7 @@ My Learning is compatible with the following devices:
 * Windows Phone: we do not have a native app, and we did not plan it, but our CKLS can be accessed via the browser.
 
 It is available on both stores under CrossKnowledge My Learning
+These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
 
 ## Content
 
