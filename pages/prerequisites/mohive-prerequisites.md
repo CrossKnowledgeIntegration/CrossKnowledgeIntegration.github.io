@@ -13,6 +13,8 @@ folder: prerequisites
 This document specifies the Mohive eLPS system requirements. The system requirements are allocated to the course environment (for content playback), the authoring environment (for content production) and the Mohive eLPS Server.
 Mohive is a rapid learning solution also called LCMS.
 
+These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
+
 Processor | Intel® Pentium IV or better
 RAM | yes | 	2 GB (4GB prefered, depending on the OS)
 Screen resolution | 1280x800 recommended
