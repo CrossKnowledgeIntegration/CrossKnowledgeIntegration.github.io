@@ -1,7 +1,7 @@
 ---
 title: Team Shift Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements, teamshift
-last_updated: 29 November, 2017
+last_updated: 8 May, 2018
 sidebar: home_sidebar
 permalink: TeamShift-prerequisites.html
 folder: prerequisites
@@ -148,22 +148,21 @@ Part of our content is hosted on Amazon Cloud for a better experience around the
 
 ### CKLS & Team Shift portal IPs addresses
 
-##### Europe https://*.eu.crossknowledge.com: 
-
-```txt
-Network range :
-78.153.234.128/26
-```
-<br/>
-```txt
-Load balancer: 78.153.234.185
-```
+##### CKLS urls format
+Europe https://*.eu.crossknowledge.com
+USA https://*.na.crossknowledge.com
+South Amarica https://*.sa.crossknowledge.com
+Asia https://*.asia.crossknowledge.com
 
 ### Email servers requirements
 
 ##### Mail servers' IP addresses and whitelist
 ```txt
-85.31.192.42 ; 85.31.193.42 ; 85.31.193.7 ; 174.129.245.244
+TeamShift relies on Amazon SES service for sending emails
+At the time of this post’s writing, this these are the IP ranges used by AWS SES:
+
+199.255.192.0/22 199.127.232.0/22 54.240.0.0/18
+Emails can also be sent from this spare IP : 174.129.245.244/32
 no-reply@crossknowledge.com should be whitelisted
 ```
 
@@ -171,9 +170,8 @@ no-reply@crossknowledge.com should be whitelisted
 
 ```txt
 email-smtp.us-east-1.amazonaws.com
-ses-smtp-prod-335357831.us-east-1.elb.amazonaws.com
-smtp01.crossknowledge.com (EC2)
+sesmailna.crossknowledge.com
+email-smtp.eu-west-1.amazonaws.com
+sesmaileu.crossknowledge.com
+smtp01.crossknowledge.com
 ```
-
-### Unsupported formats
-* `https://customername.customerdomain.com` - Crossknowledge only support HTTPS protocol with its own urls.
