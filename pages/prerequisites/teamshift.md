@@ -103,7 +103,6 @@ https://ckls-assets.crossknowledge.com/
 https://ckls-api.crossknowledge.com/
 https://ckls-cdn-eu.crossknowledge.com/
 https://teamshift.crossknowledge.com/*
-https://teamshift-eu.crossknowledge.com/*
 https://teamshift.eu.crossknowledge.com/* - this is the CKLS instance
 https://alltypes-assessment.s3-sa-east-1.amazonaws.com/*
 https://teamshift.s3-sa-east-1.amazonaws.com/*
