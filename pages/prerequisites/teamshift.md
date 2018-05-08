@@ -157,10 +157,11 @@ Asia https://*.asia.crossknowledge.com
 ### Email servers requirements
 
 ##### Mail servers' IP addresses and whitelist
-```txt
+
 TeamShift relies on Amazon SES service for sending emails
 At the time of this post’s writing, this these are the IP ranges used by AWS SES:
 
+```txt
 199.255.192.0/22 199.127.232.0/22 54.240.0.0/18
 Emails can also be sent from this spare IP : 174.129.245.244/32
 no-reply@crossknowledge.com should be whitelisted
