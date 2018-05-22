@@ -3,7 +3,7 @@ title: CKLS Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
 last_updated: 9 November, 2017
 sidebar: home_sidebar
-permalink: CKLS-prerequisites.html
+permalink: CKLS-prerequisites
 folder: prerequisites
 ---
 
