@@ -13,8 +13,8 @@
                 searchInput: document.getElementById('search-input'),
                 resultsContainer: document.getElementById('results-container'),
                 dataSource: 'search.json',
-                searchResultTemplate: '<li><a href="{url}" title="Search configuration">{title}</a></li>',
-                noResultsText: 'No results found.',
+                searchResultTemplate: '<li class="search-result"><a href="{url}" title="Search configuration">{title}</a></li>',
+                noResultsText: '<li class="search-result">No results found.</li>',
                 limit: 10,
                 fuzzy: true
     });

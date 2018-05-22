@@ -212,20 +212,29 @@ p.post-meta {font-size: 80%; color: #777;}
 /* search area */
 #search-demo-container ul#results-container {
     list-style: none;
-    font-size: 12px;
     background-color: white;
     position: absolute;
-    top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
-    left: 20px;
-    z-index: -1;
-    width:223px;
-    border-left: 1px solid #dedede;
-    box-shadow: 2px 3px 2px #dedede;
+    top: 57px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
+    z-index: 2000;
+    box-shadow: 1px 5px 15px #dedede;
+    min-width: 90%;
+    font-size: 14px;
+    padding:0px;
+    border-radius: .25rem;
 }
 
+#search-demo-container ul#results-container li.search-result a{
+    color: #000000;
+}
 
-ul#results-container a {
-    background-color: transparent;
+#search-demo-container ul#results-container li.search-result a:hover{
+    color: #009bde;
+    text-decoration:none;
+}
+
+#search-demo-container ul#results-container li.search-result{
+    padding: 8px 10px;
+    color: #000000;
 }
 
 ul#results-container a: hover {
@@ -233,9 +242,6 @@ ul#results-container a: hover {
 }
 
 
-#search-demo-container a:hover {
-    color: black;
-}
 #search-input {
     padding: .5em;
     margin-left:20px;
