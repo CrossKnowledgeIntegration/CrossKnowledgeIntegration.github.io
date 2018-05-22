@@ -1,56 +1,94 @@
 {% include custom/sidebarconfigs.html %}
 
-<ul id="mysidebar" class="nav">
-    <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
-    {% for entry in sidebar %}
-    {% for folder in entry.folders %}
-    {% if folder.output contains "web" %}
-    <li>
-        <a href="#">{{ folder.title }}</a>
-        <ul>
-            {% for folderitem in folder.folderitems %}
-            {% if folderitem.output contains "web" %}
-            {% if folderitem.external_url %}
-            <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
-            {% elsif page.url == folderitem.url %}
-            <li class="active"><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
-            {% else %}
-            <li><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
-            {% endif %}
-            {% for subfolders in folderitem.subfolders %}
-            {% if subfolders.output contains "web" %}
-            <li class="subfolders">
-                <a href="#">{{ subfolders.title }}</a>
-                <ul>
-                    {% for subfolderitem in subfolders.subfolderitems %}
-                    {% if subfolderitem.output contains "web" %}
-                    {% if subfolderitem.external_url %}
-                    <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
-                    {% elsif page.url == subfolderitem.url %}
-                    <li class="active"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
-                    {% else %}
-                    <li><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
-                    {% endif %}
-                    {% endif %}
+
+
+<div class="row">
+    <div id="search-demo-container" class="form-group col-sm-12">
+        <input type="text" id="search-input" class="form-control" placeholder="{{site.data.strings.search_placeholder_text}}">
+        <ul id="results-container"></ul>
+    </div>
+    <script src="{{ "js/jekyll-search.js"}}" type="text/javascript"></script>
+    <script type="text/javascript">
+            SimpleJekyllSearch.init({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                dataSource: 'search.json',
+                searchResultTemplate: '<li><a href="{url}" title="Search configuration">{title}</a></li>',
+                noResultsText: 'No results found.',
+                limit: 10,
+                fuzzy: true
+    });
+    </script>
+</div>
+
+<div class="row">
+    <div id="sidebar" class="col-md-12">
+        <ul class="nav flex-column sub-1">
+            {% for entry in sidebar %}
+            {% for folder in entry.folders %}
+            {% if folder.output contains "web" %}     
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#item-{{forloop.index}}">{{ folder.title }}</a>
+                <div id="item-{{forloop.index}}" class="collapse">
+                    {% for folderitem in folder.folderitems %}
+                    <ul class="nav flex-column sub-2 ml-3">
+                        <!-- <sub>{{page.url}}={{folderitem.url}}</sub> -->
+                        {% if folderitem.output contains "web" %}
+                        {% if folderitem.external_url %}
+                        <li class="nav-item"><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
+                        {% elsif page.url == folderitem.url %}
+                        <li class="nav-item active"><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
+                        {% else %}
+                        <li class="nav-item"><a href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
+                        {% endif %}
+                        {% endif %}
+
+
+                        {% for subfolders in folderitem.subfolders %}
+                        {% if subfolders.output contains "web" %}
+                        <li class="nav-item subfolders has-children">
+                            <a class="nav-link" data-toggle="collapse" href="#sub-item-{{forloop.index}}">&nbsp;{{ subfolders.title }}</a>
+                            <div id="sub-item-{{forloop.index}}" class="collapse">
+                                    
+                                {% for subfolderitem in subfolders.subfolderitems %}
+                                {% if subfolderitem.output contains "web" %}
+                                <ul class="nav flex-column">
+                                    {% if subfolderitem.external_url %}
+                                    <li class="nav-item"><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
+                                    {% elsif page.url == subfolderitem.url %}
+                                    <li class="nav-item active"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
+                                    {% else %}
+                                    <li class="nav-item"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
+                                    {% endif %}
+                                </ul>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+
+                    </ul>
+
+
+
+
                     {% endfor %}
-                </ul>
+                </div>
             </li>
             {% endif %}
             {% endfor %}
-            {% endif %}
             {% endfor %}
         </ul>
-        {% endif %}
-        {% endfor %}
-        {% endfor %}
-        <!-- if you aren't using the accordion, uncomment this block:
-           <p class="external">
-               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
-           </p>
-           -->
-    </li>
-</ul>
+    
+        
+
+    </div>
 </div>
 
+
+
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
-<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("li.active").parents('li').toggleClass("active");
+$("li.active").parents('div').toggleClass("show");
+</script>
