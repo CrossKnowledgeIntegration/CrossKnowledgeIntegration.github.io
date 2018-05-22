@@ -3,7 +3,7 @@ title: Mohive Prerequisites
 keywords: pre-requisites, prerequisites, requirements
 last_updated: 9 November, 2017
 sidebar: home_sidebar
-permalink: mohive-prerequisites.html
+permalink: mohive-prerequisites
 folder: prerequisites
 ---
 
