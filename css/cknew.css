@@ -52,7 +52,7 @@ nav.ck-top{
     position: sticky;
     top: 0;
     z-index: 2000;
-    max-height:96px;
+    min-height: 6rem;
 }
 
 li.nav-item.subfolders a.nav-link::before{
