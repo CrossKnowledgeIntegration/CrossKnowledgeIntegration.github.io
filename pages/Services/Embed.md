@@ -13,3 +13,10 @@ folder: Services
 * Youtube
 * TED
 * Slideshare
+* Dailymotion
+* Prezi
+* Typeform
+* Vimeo
+* Uptale
+* Office 365
+* Public PPTX
