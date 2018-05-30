@@ -8,6 +8,8 @@ permalink: html_embed.html
 folder: Services
 ---
 
-## List of existing services supported by HTML Embed activity
+## List of existing services supported by HTML Embed activity (tested)
 
-XXXXX
+* Youtube
+* TED
+* Slideshare
