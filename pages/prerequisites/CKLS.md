@@ -1,7 +1,7 @@
 ---
 title: CKLS Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
-last_updated: 9 November, 2017
+last_updated: 14 June, 2018
 sidebar: home_sidebar
 permalink: CKLS-prerequisites
 folder: prerequisites
@@ -213,7 +213,9 @@ web interfaces (ports 80 and 443) : Could be hitting any of the eu-west-1 IP ran
 
 ## Email servers requirements
 
-@crossknowledge.com domain must be whitelisted as a trused sender. Here below are possible email configuration scenario :
+@crossknowledge.com domain must be whitelisted as a trused sender. 
+
+### Supported email configuration scenario :
 
 <table border="1" cellpadding="10" cellspacing="0">
 
@@ -248,7 +250,7 @@ CrossKnowledge will not provide any IP ranges (autoscalling CKLS servers may hav
 
 Maximum message size (including attachments) is limited to 10 MB per message (after base64 encoding).
 
-##### Mail servers' IP addresses and whitelist
+### Mail servers' IP addresses and whitelist
 
 At the time of this writing, these are the IP ranges used by AWS SES:
 
@@ -264,13 +266,15 @@ From a Windows system
 ```txt
 C:>nslookup -type=TXT amazonses.com | find "v=spf1"
 ```
-Emails can also be sent from this spare IP : 174.129.245.244/32
+Emails can also be sent from this spare IP :
+```
+174.129.245.244/32
+```
 and for CKLS instances created before September 2017 and still hosted by Jaguar Network, please add also:
-
 ```
 85.31.192.42/32 85.31.193.42/32 174.129.245.244/32
 ```
-#### Hostnames of SMTP relays and custom MAIL FROM domains used for sending 	
+### Hostnames of SMTP relays and custom MAIL FROM domains used for sending 	
 
 ```txt
 email-smtp.us-east-1.amazonaws.com
