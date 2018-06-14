@@ -171,11 +171,11 @@ From a Linux or Mac OS system:
 $ dig TXT amazonses.com +short| grep 'v=spf1'
 ```
 From a Windows system
-``txt
+```txt
 C:>nslookup -type=TXT amazonses.com | find "v=spf1"
 ```
 
-#### Hostnames of SMTP relay used for sending 	
+#### Hostnames of SMTP relays and custom "MAIL FROM" domains used for sending 	
 
 ```txt
 email-smtp.us-east-1.amazonaws.com
