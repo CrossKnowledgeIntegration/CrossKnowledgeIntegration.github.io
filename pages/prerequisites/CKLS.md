@@ -113,6 +113,7 @@ https://*.crossknowledge.com, https://*.crossknowledge-player.com
 ```
 
 If wildcards (*) are not allowed, authorise at least the following URLs:<br/>
+
 #### General CKLS cloudfront URLs:
 
 ```txt
