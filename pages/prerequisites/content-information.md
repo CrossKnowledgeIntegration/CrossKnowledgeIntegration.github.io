@@ -15,7 +15,7 @@ Learning object type | Average weight | Min. | Max. | Duration | Bandwidth
 Essentials | 395 KB | 157 KB | 655 KB | N/A | N/A
 Action Tips | 313 KB | 174 KB | 890 KB | N/A | N/A
 Business Reviews | 248 KB | 83 KB | 2424 KB | N/A | N/A
-Videocasts | 11 MB | 3 MB | 36 MB | 5mn | RTMP (streaming): 400kB/s (peak)
+Videocasts | 11 MB | 3 MB | 36 MB | 5mn | 400kB/s (peak)
 Sessions | 14 MB | 1 289 KB | 84 MB | from 30 to 45 mn | 500kB/s (peak ), 40kB/s (average)
 The Team Sessions | 140 MB | 119 MB | 162 MB | from 30 to 45 mn | 2000kB/s (peak), 400kB/s (average)
 
@@ -39,10 +39,9 @@ The Team (LO Code TTxxxxx) and New CrossKnowledge Sessions (v3) | See Content pr
 
 - Only deployable using CrossKnowledge Suite 12.1 (and newer versions)
 - The basic pre-requisites of CrossKnowledge Suite 12.1 (and newer versions) have to be applied plus: 600 kbit / s bandwidth (equivalent to 3G)
-- Cloud Mode: Flash Player 10
+- Cloud Mode: HTML5
 - Classic Mode: Flash Player 10
 - Microsoft Internet Explorer 8 minimum (popup blockers must be disabled or else allow the browser to accept pop-ups from CrossKnowledge.com).
-- Only The Team v1 (LO code like TTxx0xx) are compatible with Microsoft Internet Explorer 6 and 7.
 
 ### CrossKnowledge Contents additional Requirements
 
