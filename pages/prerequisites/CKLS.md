@@ -64,7 +64,9 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed (SSLCipherSuite ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5). TLSv1.1 and TLSv1.2 protocols are supported (TLS1.0 no longer supported as of 2018, Agust 31.</td>
+            <td>Only "Medium and High" ciphers are allowed :
+                ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES.
+                TLSv1.1 and TLSv1.2 protocols are supported (TLS1.0 no longer supported as of 2018, Agust 31.</td>
         </tr>
         <tr>
             <td>Popup blocker for your URL</td>
