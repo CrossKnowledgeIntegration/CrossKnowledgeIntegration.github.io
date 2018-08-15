@@ -1,9 +1,9 @@
 ---
 title: CKLS Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
-last_updated: 9 November, 2017
+last_updated: 14 June, 2018
 sidebar: home_sidebar
-permalink: CKLS-prerequisites.html
+permalink: CKLS-prerequisites
 folder: prerequisites
 ---
 
@@ -64,7 +64,9 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). TLSv1.x protocols are supported.</td>
+            <td>Only "Medium and High" ciphers are allowed : <br>
+                ECDH+AESGCM,DH+AESGCM,ECDH+AES256,DH+AES256,ECDH+AES128<br>DH+AES,ECDH+3DES,DH+3DES,RSA+AESGCM,RSA+AES,RSA+3DES.<br>
+                TLSv1.1 and TLSv1.2 protocols are supported (TLS1.0 no longer supported as of 2018, Agust 31.</td>
         </tr>
         <tr>
             <td>Popup blocker for your URL</td>
@@ -74,6 +76,9 @@ CrossKnowledge LMS is a web-based application needing the following environment 
 </table>
 
 We systematically test the latest versions of Chrome, Firefox and Internet Explorer browsers to ensure the best experience for our users. Older versions of these browsers are not systematically tested, but run smoothly in most cases. If, however, there is a problem specific to a particular version of one of these browsers, please contact us.
+
+These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
+
 
 ### Tablet compatibility
 
@@ -95,14 +100,11 @@ As the contents are played on our LMS, you need the LMS requirements listed abov
             <td width="30%">PDF plugin</td>
             <td width="70%">Adobe Acrobat Reader (any version)</td>
         </tr>
-        <tr>
-            <td width="30%">Java (for Desktop contents)</td>
-            <td width="70%">JVM 1.5 or higher</td>
-        </tr>
     </tbody>
 </table>
 
-## Network Requirements
+
+## Network Information
 
 ### Media extensions
 The following media extensions should be authorised.<br/>
@@ -111,10 +113,11 @@ The following media extensions should be authorised.<br/>
 ### Domain white-listing
 The following domain names should be whitelisted.
 ```txt
-http(s)://*.crossknowledge.com, http(s)://*.crossknowledge-player.com
+https://*.crossknowledge.com, https://*.crossknowledge-player.com
 ```
 
 If wildcards (*) are not allowed, authorise at least the following URLs:<br/>
+
 #### General CKLS cloudfront URLs:
 
 ```txt
@@ -133,28 +136,26 @@ https://media-cdn2.crossknowledge.com
 
 ##### For users based in Europe
 ```txt
-http(s)://cdn.crossknowledge.com/*
-http(s)://d12yhdsdwe7din.cloudfront.net/* or http(s)://mohivecontents-eu.crossknowledge.com
+https://cdn.crossknowledge.com/*
+https://d12yhdsdwe7din.cloudfront.net/* and http(s)://mohivecontents-eu.crossknowledge.com
 ```
 
 ##### For users based in the US:
 ```txt
-rtmp://s11glde2jwx3y7.cloudfront.net/*
-http(s)://d2niiguqm1v5wm.cloudfront.net/* or http(s)://ckcontents-na.crossknowledge.com
-http(s)://dmi776hgmgo8n.cloudfront.net/* or http(s)://mohivecontents-na.crossknowledge.com
+https://d2niiguqm1v5wm.cloudfront.net/* and http(s)://ckcontents-na.crossknowledge.com
+https://dmi776hgmgo8n.cloudfront.net/* and http(s)://mohivecontents-na.crossknowledge.com
 ```
 
 ##### For users based in Asia:
 ```txt
-rtmp://s2b3cf985zlt2f.cloudfront.net/*
-http(s)://d8k70rs95pqqh.cloudfront.net/* or http(s)://ckcontents-jp.crossknowledge.com
-http(s)://d14u2sk2qya69r.cloudfront.net/* or http(s)://mohivecontents-jp.crossknowledge.com
+https://ckcontents-jp.crossknowledge.com
+https://mohivecontents-jp.crossknowledge.com
 ```
 
 #### CKLM (XKA, Digital Literacy, Leaders...)
 ```txt
-http(s)://d12pbbvc3h54xm.cloudfront.net/*
-http(s)://cklm-prod.s3.amazonaws.com/*
+https://d12pbbvc3h54xm.cloudfront.net/*
+https://cklm-prod.s3.amazonaws.com/*
 https://cdn-cklm-prod.crossknowledge.com/*
 https://ckcg.crossknowledge.com/*
 ```
@@ -168,101 +169,126 @@ https://ckls-cdn-jp.crossknowledge.com/*
 ```
 
 ### AWS CloudFront IP Ranges
-
-Part of our content is hosted on Amazon Cloud for a better experience around the globe.
+Part of the content is hosted on Amazon Cloud for a better experience around the globe.
 
 ```txt
-54.182.0.0/16
-54.192.0.0/16
-54.230.0.0/16
-54.239.128.0/18
-54.239.192.0/19
-54.240.128.0/18
-204.246.164.0/22
-204.246.168.0/22
-204.246.174.0/23
-204.246.176.0/20
-205.251.192.0/19
-205.251.249.0/24
-205.251.250.0/23
-205.251.252.0/23
-205.251.254.0/24
-216.137.32.0/19
+CLoudFront IPs could be from any of the IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "CLOUDFRONT"
 ```
-
+<br/>
 ### CKLS portal IPs addresses
 
-##### Europe https://*.lms.crossknowledge.com:
-
+#### Europe CKLS created since September 2017 https://*.eu.crossknowledge.com: 
 ```txt
-Network range:
-78.153.226.128/27
-
-Load balancer: 78.153.226.153
+web interfaces (ports 80 and 443) : Could be hitting any of the eu-central-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
+sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 ```
 
-##### Europe https://*.eu.crossknowledge.com: 
-
-```txt
-Network range :
-78.153.234.128/26
-```
 <br/>
+#### Europe CKLS created before September 2017 https://*.eu.crossknowledge.com or https://*.lms.crossknowledge.com:
 ```txt
-Load balancer: 78.153.234.185
-```
-<br/>
-```txt
+web interfaces (ports 80 and 443) Could be hitting any IPs within the ranges 78.153.226.128/27 and 78.153.234.128/26
 sftp server : sftp.crossknowledge.com (78.153.226.149)
 sftp server : sftp.eu.crossknowledge.com (78.153.234.131)
-Staging server : jnstaging.crossknowledge.com (78.153.226.147)
 ```
-##### US
+<br/>
+#### USA https://*.na.crossknowledge.com:
 ```txt
-Could be any of the US-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
-Load Balancer : 54.225.122.181 , 23.23.170.115
-sftp server : sftp.na.crossknowledge.com (107.21.240.58) - until April 2017
-sftp server : sftp.na.crossknowledge.com (54.221.219.193) - starting April 2017
+web interfaces (ports 80 and 443) : Could be hitting any of the us-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
+sftp server : sftp.na.crossknowledge.com (54.221.219.193)
 ```
 
-##### South America:
+<br/>
+#### South America: https://*.sa.crossknowledge.com
 ```txt
-Could be any of the sa-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
-Load Balancer : 54.232.80.81 , 177.71.182.37
+web interfaces (ports 80 and 443) : Could be hitting any of the sa-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
 sftp server : sftp.sa.crossknowledge.com (54.232.80.112)
 ```
-##### IPs addresses and URLs for CK-Hub:
+
+<br/>
+#### Asia: https://*.asia.crossknowledge.com
 ```txt
-46.51.186.229 or 54.228.234.84 May change, so you'd better use the a CNAME pointing to ck-hub.crossknowledge.com (also CNAME pointing to ck-hub-preprod.crossknowledge.com for UAT)
+web interfaces (ports 80 and 443) : Could be hitting any of the ap-northeast-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
+sftp server : sftp.asia.crossknowledge.com (54.65.104.30)
 ```
 
-### Email servers requirements
-
-##### Mail servers' IP addresses
+<br/>
+#### IPs addresses and URLs for CK-Hub https://ck-hub.crossknowledge.com:
 ```txt
-85.31.192.42 ; 85.31.193.42 ; 85.31.193.7 ; 174.129.245.244
+web interfaces (ports 80 and 443) : Could be hitting any of the eu-west-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2".
+(also ck-hub-preprod.crossknowledge.com for UAT)
 ```
 
-#### Hostnames of SMTP relay used for sending 	
+## Email servers requirements
+
+@crossknowledge.com domain must be whitelisted as a trused sender. 
+
+### Supported email configuration scenario :
+
+<table border="1" cellpadding="10" cellspacing="0">
+
+<tbody><tr>
+<td>All emails are sent by Amazon SES service from crossknowledge.com domain
+</td>
+<td>CKLS sends emails using a FROM address that belongs to crossknowledge.com domain only. (default and preferred solution)<br>
+<p>The client's email address is kept in the REPLYTO field <br>
+E.g&nbsp;: user john.doe@client.com sends an email to someone, the received email will have the following attributes <br>
+</p>
+<pre>FROM:noreply@crossknowledge.com
+REPLYTO:john.doe@client.com
+</pre>
+</td></tr>
+<tr>
+<td>All emails are sent by Amazon SES service using a FROM adresse that belongs to the client's domain (or crossknowledge.com domain)
+</td>
+<td>
+<p>This setup requires some extra IT configuration tasks for both CrossKnowledge and client's IT Teams&nbsp;: DKIM entries to be added in client's DNS zone&nbsp;: client.com. <br>
+E.g mail can be sent from noreply@client.com or any other @client.com addresses. <br>
+In case an email having a FROM attribute not belonging to either client.com or crossknowledge.com domain, the FROM attribute is automatically replaced by noreply@client.com or any other generic address chosen by the client during the setup phase.
+</p>
+</td></tr>
+<tr>
+<td>All emails are sent directly by the client's SMTP relay
+</td>
+<td>
+<p>CKLS application is then authorised to directly pass emails flow to a remote client's relay.<br>
+CrossKnowledge will not provide any IP ranges (autoscalling CKLS servers may have various IPs changing regularly) however SMTP session can be secured by a TLS login and password (to be provided by Client's Email team).
+</p>
+</td></tr></tbody></table>
+
+Maximum message size (including attachments) is limited to 10 MB per message (after base64 encoding).
+
+### Mail servers' IP addresses and whitelist
+
+At the time of this writing, these are the IP ranges used by AWS SES:
 
 ```txt
-smtp.jaguar-network.com
+199.255.192.0/22 199.127.232.0/22 54.240.0.0/18
+```
+However these ranges may change, so to get an up to date list, please run the following command: 
+From a Linux or Mac OS system:
+```txt
+$ dig TXT amazonses.com +short| grep 'v=spf1'
+```
+From a Windows system
+```txt
+C:>nslookup -type=TXT amazonses.com | find "v=spf1"
+```
+Emails can also be sent from this spare IP :
+```
+174.129.245.244/32
+```
+and for CKLS instances created before September 2017 and still hosted by Jaguar Network, please add also:
+```
+85.31.192.42/32 85.31.193.42/32 174.129.245.244/32
+```
+### Hostnames of SMTP relays and custom MAIL FROM domains used for sending 	
+
+```txt
 email-smtp.us-east-1.amazonaws.com
-ses-smtp-prod-335357831.us-east-1.elb.amazonaws.com
-smtp01.crossknowledge.com (EC2)
-```
-#### SPF records
-You should also configure SPF records in your DNS domain zone(s) in order to allow CrossKnowledge to send emails on behalf of your email domain. [More about SPF.](http://www.openspf.org/SPF_Record_Syntax). <br/>
-
-Add to the following to your existing SPF record:
-
-```txt
-include:mailrelay.crossknowledge.com
-```
-
-For informaiton, this actually corresponds to:
-```txt
-"v=spf1 mx ip4:85.31.192.42/32 ip4:85.31.193.42/32 ip4:85.31.193.7/32 ip4:174.129.245.244/32 include:amazonses.com -all"
+sesmailna.crossknowledge.com
+email-smtp.eu-west-1.amazonaws.com
+sesmaileu.crossknowledge.com
+smtp01.crossknowledge.com
 ```
 
 ## Sharepoint pre-requisites
@@ -277,47 +303,9 @@ from IE8 to IE10, Firefox, Chrome<br/>
 ## URL of CKLS platform
 ### Supported formats
 
-* `https://customername.(eu lms na sa).crossknowledge.com`, with `http://customername.(eu-lms-na-sa).crossknowledge.com` being redirected to HTTPS (default setting).
-* both `https://customername.(eu lms na sa).crossknowledge.com` and `http://customername.(eu-lms-na-sa).crossknowledge.com` without redirection from HTTP to HTTPS.
-* `http://customername.customerdomain.com` as soon as customer domain contain a valid DNS entry that points to crossknowledge load balancer (NO HTTPS in this case).
+* `https://customername.(eu,lms,na,sa).crossknowledge.com`, with `http://customername.(eu,lms,na,sa).crossknowledge.com` being redirected to HTTPS (default setting).
+* `http://customername.customerdomain.com` being redirected to HTTPS CrossKnowledge urls, as soon as customer domain has a valid DNS entry pointing to crossknowledge load balancer.
+e.g : http://customername.customerdomain.com with automatic rediction to https://customername.eu.crossknowledge.com
 
 ### Unsupported formats
 * `https://customername.customerdomain.com` - Crossknowledge only support HTTPS protocol with its own urls.
-
-## My Learning App
-My Learning is compatible with the following devices:
-
-* Apple iOS: any device with iOS 10 and above (iPhone 5 and up, iPod 6 and up, iPad mini 2 or iPad 4 and up)
-* Android: any device with Android KitKat 4.4 (API 19) - a non contractual list can be found (here)[http://www.theandroidcop.com/list-of-android-smartphones-and-tablets-getting-android-4-4-kitkat-update/]
-
-## Learn App
-
-Learn is an application for iPad and iPhone working on iOS 8 and up. An Android application also exists (Android 4.2+). 
-
-### Learning objects compatibility online and offline mode
-
-Find below the list of learning objects with their compatibility status with Learn application (this list is subject to change).
-
-
-Learning object type | Online mode | Offline mode
----- | ---- | ----
-Custom SCORM | yes (monosco) | yes
-Mohive| yes | yes
-Easyquizz | no | no
-Image | no | no
-Audio mp3 | yes | yes
-Video | yes | yes
-Pdf | yes | yes
-PPT | no | no
-Text page | no | no
-Zip file | no | no
-YouTube | no | no
-Slideshare | no | no
-Brightcove | no | no
-URL | no | no
-Digital Literacy | yes | yes
-Leaders Videocast | yes | yes
-Business Digest | yes | soon
-CrossKnowledge Essentials | yes | yes
-CrossKnowledge Action Tips | yes | yes
-CrossKnowledge Sessions V3 & The team | yes | yes 

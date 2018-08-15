@@ -105,6 +105,10 @@ Parameters | Description
 `training` | values are id or GUID of a training. It will redirect the learner to this training. If only the training is set in the url, the learner will be redirected to his last active session (except if singleton or individual is set). In all other case, the learner is redirected to the homepage.
 `session` | values are id or GUID of a session. It will redirect the learner to the session. The learner is automatically registered to the session if Enroll is set to yes. In all other case, the learner is redirected to the homepage.
 `content` | values are id or GUID of a content. It will redirect the learner to the learning course page of his last active session. In all other case, the learner is redirected to the homepage.
+`force_mobile` | **SOON AVAILABLE** - values : yes / no. Launches the content as that occurs in mobile interfaces. If the parameter is present and has value of yes, the mobile interface will be used to launch the param. It is important to note that the force_mobile param will only force the CKLS instance to launch the LR as if was being displayed in a mobile browser. All other verification (like if the LR can be launched in mobile) won't be forced.
+`force_language` | **SOON AVAILABLE** - values : languages code (eg. en-GB). This parameter can receive a language code to force the content to be displayed in this language (if available). If the content is available in the provided language, CKLS will put this value on the top of locales list, this will cause the content to be loaded in the correct language. If the content does not have the provided language, CKLS will behave like its today, it loads the content using the default language.
+
+
 
 Training, session and content can all be in the url. 
 The SSO system will verify the consistency between those parameters. 
@@ -134,7 +138,7 @@ If we take our last query example, with our learner John doe. We can see that th
 `https://my_CKLS_plateform.com/sso/identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes`
 
 We will add the hash key in this link by using the parameter hash. 
-The hash key is built with the concatenation of the string parameters of your SSO link + the public key. All encrypted with **MD5 algorithm**.
+The hash key is built with the concatenation of the string parameters of your SSO link + the private key. All encrypted with **MD5 algorithm**.
 
 The string parameters in our previous link is:
 

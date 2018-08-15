@@ -12,26 +12,20 @@ entries:
   - title: Our solutions
     output: web
     folderitems:
-    - title: Prerequisites
-      url: /prerequisites-fr.html
+    - title: CKLS Prerequisites
+      url: /CKLS-prerequisites
       output: web
-    - title: Authentication Protocols
-      url: /prerequisites-en.html
+    - title: Team Shift Prerequisites
+      url: /TeamShift-prerequisites
       output: web
-
-    - title: Data Exchange Module
-      url: /prerequisites-fr.html
+    - title: Mohive Prerequisites
+      url: /mohive-prerequisites
       output: web
-
-    - title: Integration Tools
-      url: /prerequisites-en.html
+    - title: MyLearning Prerequisites
+      url: /MyLearning-prerequisites
       output: web
-
-    - title: CrossKnowledge Hub
-      url: /prerequisites-fr.html
-      output: web
-    - title: CrossKnowledge Hub UI
-      url: /prerequisites-fr.html
+    - title: CrossKnowledge contents
+      url: /content-information
       output: web
 
   - title: Our references
@@ -52,165 +46,170 @@ entries:
       - title: Learner API
         output: web
         subfolderitems:
-        - title: API/REST/Learner/Login
+        - title: /Login
           url: /api_web_services_list_and_details.html#learner_login_post
           output: web
-        - title: API/REST/Learner/mobileLogin
+        - title: /mobileLogin
           url: /api_web_services_list_and_details.html#learner_mobile_login_post
           output: web
-        - title: API/REST/Learner/Logout
+        - title: /Logout
           url: /api_web_services_list_and_details.html#learner_login_delete
           output: web
-        - title: API/REST/Learner/mobileLogout
+        - title: /mobileLogout
           url: /api_web_services_list_and_details.html#learner_mobile_login_delete
           output: web
-        - title: API/REST/Learner/profile/
+        - title: /profile/
           url : /api_web_services_list_and_details.html#learner_profile_get
           output: web
-        - title: API/REST/Learner/Manager/
+        - title: /Manager/
           url : /api_web_services_list_and_details.html#learner_manager_get
           output: web
-        - title: API/REST/Learner/Subordonates/List
+        - title: /Subordonates/List
           url: /api_web_services_list_and_details.html#learner_subordinates_get
           output: web
-        - title: API/REST/Learner/Contents/List
+        - title: /Contents/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_get
           output: web
-        - title: API/REST/Learner/Content/List
+        - title: /Content/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_item_get
           output: web
-        - title: API/REST/Learner/Content/Vote/Add
+        - title: /Content/Vote/Add
           url: /api_web_services_list_and_details.html#learner_learning_objects_item_post
           output: web
-        - title: API/REST/Learner/Contents/Themes/List
+        - title: /Contents/Themes/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_themes_get
           output: web
-        - title: API/REST/Learner/Contents/Types/List
+        - title: /Contents/Types/List
           url: /api_web_services_list_and_details.html#learner_learning_objects_types_get
           output: web
-        - title: API/REST/Learner/Content/Download/
+        - title: /Content/Download/
           url: /api_web_services_list_and_details.html#learner_learning_objects_download_item_get
           output: web
-        - title: API/REST/Learner/PathSessionsFolder/
+        - title: /PathSessionsFolder/
           url: /api_web_services_list_and_details.html#learner_path_session_folders_get
           output: web
-        - title: API/REST/Learner/Trainings/List
+        - title: /Trainings/List
           url: /api_web_services_list_and_details.html#learner_trainings_get
           output: web
-        - title: API/REST/Learner/Training/Sessions/List
+        - title: /Training/Sessions/List
           url: /api_web_services_list_and_details.html#learner_training_sessions_get
           output: web
-        - title: API/REST/Learner/Discussions/List
+        - title: /Discussions/List
           url: /api_web_services_list_and_details.html#learner_discussions_get
           output: web
-        - title: API/REST/Learner/Discussion/Add
+        - title: /Discussion/Add
           url: /api_web_services_list_and_details.html#learner_discussions_post
           output: web
-        - title: API/REST/Learner/Discussion/Follow
+        - title: /Discussion/Follow
           url: /api_web_services_list_and_details.html#learner_discussions_follow_post
           output: web
-        - title: API/REST/Learner/Discussion/Comment/Add
+        - title: /Discussion/Comment/Add
           url: /api_web_services_list_and_details.html#learner_discussions_item_post
           output: web
-        - title: API/REST/Learner/Discussion/Comment/Like
+        - title: /Discussion/Comment/Like
           url: /api_web_services_list_and_details.html#learner_discussions_comment_like_put
           output: we
-        - title: API/REST/Learner/Trackings/List
+        - title: /Trackings/List
           url: /api_web_services_list_and_details.html#learner_trackings_post
           output: web
-        - title: API/REST/Learner/Trackings/Add
+        - title: /Trackings/Add
           url: /api_web_services_list_and_details.html#learner_trackings_post
           output: web
-        - title: API/REST/Learner/Trackings/Update
+        - title: /Trackings/Update
           url: /api_web_services_list_and_details.html#learner_trackings_post
           output: web
-        - title: API/REST/Learner/Tracking/List
+        - title: /Tracking/List
           url: /api_web_services_list_and_details.html#learner_tracking_item_get
           output: web
-        - title: API/REST/Learner/Tracking/Add
+        - title: /Tracking/Add
           url: /api_web_services_list_and_details.html#learner_tracking_item_post
           output: web
-        - title: API/REST/Learner/Tracking/Update
+        - title: /Tracking/Update
           url: /api_web_services_list_and_details.html#learner_tracking_item_post
           output: web
 
       - title: Administration API
         output: web
         subfolderitems:
-        - title: API/REST/Admin/Administrator/Connect
-          url: /api_web_services_list_and_details_admins.html#offline_administrator_login
+        - title: /Admin/AutoConnectionUrl
+          url: /api_web_services_list_and_details_admins.html#offline_administrator_autoconnectionurl
           output: web
-        - title: API/REST/Admin/Administrator/Update
+        - title: /Administrator/Update
           url: /api_web_services_list_and_details_admins.html#offline_administrator_update_put
           output: web
-        - title: API/REST/Admin/Learner/Add
-          url: /api_web_services_list_and_details_admins.html#offline_learner_post
+        - title: /Content
+          url: /api_web_services_list_and_details_admins.html#offline_content
           output: web
-        - title: API/REST/Admin/Learner/Update
-          url: /api_web_services_list_and_details_admins.html#offline_learner_put
-          output: web
-        - title: API/REST/Admin/Learner/List
-          url: /api_web_services_list_and_details_admins.html#offline_learner_get
-          output: web
-        - title: API/REST/Admin/Learners/List
-          url: /api_web_services_list_and_details_admins.html#offline_learner_get
-          output: web
-        - title: API/REST/Admin/Learner/Registration/List
-          url: /api_web_services_list_and_details_admins.html#offline_learner_registration_get
-          output: web
-        - title: API/REST/Admin/Learner/Authorization/Token/
-          url: /api_web_services_list_and_details_admins.html#offline_learner_token_get
-          output: web
-        - title: API/Learner/Authentication/Token/
-          url: /api_web_services_list_and_details_admins.html#ckauth_learner_authenticate
-          output: web
-        - title: API/REST/Admin/Trainings/List
-          url: /api_web_services_list_and_details_admins.html#offline_training_list
-          output: web
-        - title: API/REST/Admin/Training/List
-          url: /api_web_services_list_and_details_admins.html#offline_training_get
-          output: web
-        - title: API/REST/Admin/Training/Add
-          url: /api_web_services_list_and_details_admins.html#offline_training_post
-          output: web
-        - title: API/REST/Admin/Training/Update
-          url: /api_web_services_list_and_details_admins.html#offline_training_put
-          output: web
-        - title: API/REST/Admin/Training/Contents/List
-          url: /api_web_services_list_and_details_admins.html#offline_training_contents_get
-          output: web
-        - title: API/REST/Admin/Content/List
-          url: /api_web_services_list_and_details_admins.html#offline_content_get
-          output: web
-        - title: API/REST/Admin/Training/Sessions/List
-          url: /api_web_services_list_and_details_admins.html#offline_session_list_get
-          output: web
-        - title: API/REST/Admin/Training/Session/List
-          url: /api_web_services_list_and_details_admins.html#offline_session_get
-          output: web
-        - title: API/REST/Admin/Training/Session/Add
-          url: /api_web_services_list_and_details_admins.html#offline_session_post
-          output: web
-        - title: API/REST/Admin/Training/Session/Update
-          url: /api_web_services_list_and_details_admins.html#offline_session_put
-          output: web
-        - title: API/REST/Admin/Registration/Add
-          url: /api_web_services_list_and_details_admins.html#offline_training_session_register_learner_post
-          output: web
-        - title: API/REST/Admin/Registration/List
-          url: /api_web_services_list_and_details_admins.html#offline_registration_get
-          output: web
-        - title: API/REST/Admin/Registration/Delete
-          url: /api_web_services_list_and_details_admins.html#offline_registration_delete
-          output: web
-        - title: API/REST/Admin/Entity/List
+        - title: /Entity
           url: /api_web_services_list_and_details_admins.html#offline_entity_get
           output: web
-        - title: API/REST/Admin/Entities/List
+        - title: /Entity/List
           url: /api_web_services_list_and_details_admins.html#offline_entity_list
           output: web
-      
-
+        - title: /Learner
+          url: /api_web_services_list_and_details_admins.html#offline_learner_get
+          output: web
+        - title: /Learner/List
+          url: /api_web_services_list_and_details_admins.html#offline_learner_list
+          output: web
+        - title: /Learner/Add
+          url: /api_web_services_list_and_details_admins.html#offline_learner_post
+          output: web
+        - title: /Learner/Update
+          url: /api_web_services_list_and_details_admins.html#offline_learner_put
+          output: web
+        - title: /Learner/Registration/List
+          url: /api_web_services_list_and_details_admins.html#offline_learner_registration_get
+          output: web
+        - title: /Learner/AuthToken
+          url: /api_web_services_list_and_details_admins.html#offline_learner_token_get
+          output: web
+        - title: /Learner/Authenticate
+          url: /api_web_services_list_and_details_admins.html#ckauth_learner_authenticate
+          output: web
+        - title: /Learner/Tracking
+          url: /api_web_services_list_and_details_admins.html#offline_learner_tracking
+          output: web
+        - title: /Tracking
+          url: /api_web_services_list_and_details_admins.html#offline_tracking_get
+          output: web
+        - title: /Training
+          url: /api_web_services_list_and_details_admins.html#offline_training_get
+          output: web
+        - title: /Training/List
+          url: /api_web_services_list_and_details_admins.html#offline_training_list
+          output: web
+        - title: /Training/Add
+          url: /api_web_services_list_and_details_admins.html#offline_training_post
+          output: web
+        - title: /Training/Update
+          url: /api_web_services_list_and_details_admins.html#offline_training_put
+          output: web
+        - title: /Training/Session
+          url: /api_web_services_list_and_details_admins.html#offline_session_list_get
+          output: web
+        - title: /Training/Session/Add
+          url: /api_web_services_list_and_details_admins.html#offline_session_post
+          output: web
+        - title: /Training/Content
+          url: /api_web_services_list_and_details_admins.html#offline_training_contents_get
+          output: web
+        - title: /Session
+          url: /api_web_services_list_and_details_admins.html#offline_session_get
+          output: web
+        - title: /Session/Update
+          url: /api_web_services_list_and_details_admins.html#offline_session_put
+          output: web
+        - title: /Session/Register
+          url: /api_web_services_list_and_details_admins.html#offline_training_session_register_learner_post
+          output: web
+        - title: /Registration
+          url: /api_web_services_list_and_details_admins.html#offline_registration_get
+          output: web
+        - title: /Registration/Delete
+          url: /api_web_services_list_and_details_admins.html#offline_registration_delete
+          output: web
+    
       - title: Authentication
         output: web
         subfolderitems:
@@ -220,30 +219,23 @@ entries:
         - title: SAML 2.0
           url: /saml.html
           output: web
+        - title: ADFS 2.0 configuration
+          url: /adfs.html
+          output: web
         - title: OAuth 2.0
           url: /oauth2.html
           output: web
+        - title: CAS
+          url: /cas.html
+          output: web
+        - title: Login Box
+          url: /loginbox.html
+          output: web
 
-    - title: Tools
-      url: /api_tools.html
-      output: web
-    
-      subfolders:
-      - title: Samples
+      - title: Tools
+        url: /api_tools.html
         output: web
-        subfolderitems:
-        - title: Integration GitHub
-          external_url: https://github.com/CrossKnowledgeIntegration
-          output: web
-        - title: CKTechno GitHub
-          external_url: https://github.com/CrossKnowledge
-          output: web
-
-    - title: Data Import Module
-      url: /api_tools.html
-      output: web
-
-      subfolders:
+    
       - title: Data Export Module
         output: web
         subfolderitems:
@@ -264,6 +256,9 @@ entries:
           output: web
         - title: Training Audit Metadata
           url: /training-audit-metadata-provider.html
+          output: web
+        - title: Session Audit Metadata
+          url: /session-audit-metadata-provider.html
           output: web
         - title: Training Course Metadata
           url: /training-course-metadata-provider.html
@@ -297,6 +292,78 @@ entries:
           output: web
         - title: Consolidated Gamification Events
           url: /consolidated-gamification-events-provider.html
+          output: web
+        - title: Class Based Training
+          url: /class-based-training-provider.html
+          output: web
+
+      - title: Data Import Module
+        output: web
+        subfolderitems:
+        - title: Overview
+          url: /import.html
+          output: web
+        - title: Create or Update Consolidated Tracking
+          url: /createorupdate-consolidated-tracking-action.html
+          output: web
+        - title: Create or Update Entity
+          url: /createorupdate-entity-action.html
+          output: web
+        - title: Create or Update Intervention
+          url: /createorupdate-intervention-action.html
+          output: web
+        - title: Create or Update Learner
+          url: /createorupdate-learner-action.html
+          output: web
+        - title: Create or Update Session
+          url: /createorupdate-session-action.html
+          output: web
+        - title: Create or Update Training Course
+          url: /createorupdate-trainingcourse-action.html
+          output: web
+        - title: Create or Update Register Learner
+          url: /registerlearner-action.html
+          output: web
+          
+      - title: Publishers Integration
+        output: web
+        subfolderitems:
+        - title: 3rd party providers list
+          url: /third-party-integration.html
+          output: web
+        - title: Good practices for providers
+          url: /third-party-prerequisites.html
+          output: web
+        - title: Import of 3rd party libraries
+          external_url: https://github.com/CrossKnowledge/ck_content_provider
+          output: web
+                
+      - title: Samples
+        output: web
+        subfolderitems:
+        - title: Integration GitHub
+          external_url: https://github.com/CrossKnowledgeIntegration
+          output: web
+        - title: CKTechno GitHub
+          external_url: https://github.com/CrossKnowledge
+          output: web
+          
+      - title: SCORM connectors
+        output: web
+        subfolderitems:      
+        - title: Content
+          url: /scorm-connector-content.html
+          output: web
+        - title: Learning Path
+          url: /scorm-connector-trainingpath.html
+          output: web
+          
+      - title: Embed
+        url: /html_embed.html
+        output: web
+        subfolderitems:
+        - title: HTML Embed Activity
+          url: /html_embed.html
           output: web
 
   - title: Publish

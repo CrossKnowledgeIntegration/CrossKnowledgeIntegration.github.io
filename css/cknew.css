@@ -1,0 +1,89 @@
+
+@media (max-width: 990px) {
+    div.ck-sidebar {
+        position: relative;
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    div.ck-sidebar{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 320px;
+        flex: 0 1 320px;
+        position: sticky;
+        top: 6rem;
+        z-index: 1000;
+        height: calc(100vh - 6rem);
+        -webkit-box-shadow: 5px 0px 15px -5px rgba(0,0,0,0.3);
+        -moz-box-shadow: 5px 0px 15px -5px rgba(0,0,0,0.3);
+        box-shadow: 5px 0px 15px -5px rgba(0,0,0,0.3);
+    }
+
+    div#toc{
+      float: right;
+      margin-left: 30px;  
+    }
+
+    div#toc ul {
+      max-width:300px;
+    }
+
+}
+
+#sidebar{
+	z-index: 1000;
+	max-height: calc(100vh - 8rem);
+	overflow-y: auto;
+	overflow-x: hidden;
+	list-style-type:none;
+}
+
+#sidebar li, li ul{
+	list-style-type:none;
+}
+
+nav.ck-top{
+    background-image: url(https://developers.crossknowledge.com/images/BackgroundHubLarge.png);
+    background-size: cover;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    min-height: 6rem;
+}
+
+li.nav-item.subfolders a.nav-link::before{
+    content: "\f105";
+    font-family: FontAwesome;
+    display: block;
+    float: left;
+    -moz-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+li.nav-item.subfolders a.nav-link[aria-expanded="true"]::before {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+li.active > a{
+  font-weight: bold;
+}
+
+ul.sub-2 li.active > a{
+  color: #007bff;
+  background: #FFFFFF;
+}
+
+ul.sub-2 li.active a:hover{
+  color: #007bff;
+}
+
+li.nav-item{
+    margin: 0 -20px;
+}

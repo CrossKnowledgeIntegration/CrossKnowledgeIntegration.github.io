@@ -34,7 +34,6 @@ Name | Description
 `candidateAccountActivated` | {{site.data.IO_items.col.candidateAccountActivated.desc}}
 `candidateAccountActivatedFrom` | {{site.data.IO_items.col.candidateAccountActivatedFrom.desc}}
 `candidateAccountActivatedUntil` | {{site.data.IO_items.col.candidateAccountActivatedUntil.desc}}
-`candidateGroupAncestors` | {{site.data.IO_items.col.candidateGroupAncestors.desc}}
 `lastPlatformAccessDate` | {{site.data.IO_items.col.lastPlatformAccessDate.desc}}
 `creationDate` | {{site.data.IO_items.col.creationDate.desc}}
 `candidatePoints` | {{site.data.IO_items.col.candidatePoints.desc}}
@@ -78,7 +77,6 @@ Name | Description
                 <candidateAccountActivated/>
                 <candidateAccountActivatedFrom/>
                 <candidateAccountActivatedUntil/>
-                <candidateGroupAncestors/>
                 <lastPlatformAccessDate/>
                 <creationDate/>
                 <candidatePoints/>

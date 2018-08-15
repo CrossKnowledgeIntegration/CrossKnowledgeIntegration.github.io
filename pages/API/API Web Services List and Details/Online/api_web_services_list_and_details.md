@@ -439,6 +439,30 @@ Cache-Control: no-cache
 <td markdown="span">kale1.</td>
 
 </tr>
+<tr>
+<td markdown="span">deviceName</td>
+<td markdown="span">string</td>
+
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
+
+<td markdown="span">The name of the device
+</td>
+<td markdown="span">iPhone X</td>
+
+</tr>
+
+<tr>
+<td markdown="span">applicationName</td>
+<td markdown="span">string</td>
+
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
+
+<td markdown="span">The name of the application
+</td>
+<td markdown="span">Mylearning</td>
+
+</tr>
+
 </tbody>
 </table>
 

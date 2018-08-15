@@ -1,4 +1,17 @@
 col:
+
+  activityName:
+    desc: "Name of the activity."
+    
+  activityID:
+    desc: "Id of the activity."
+    
+  activityDuration:
+    desc: "Duration of the activity."
+    
+  activityPoints:
+    desc: "Points of the activity."
+
   badge:
     desc: "Localized label of the badge."
 
@@ -31,6 +44,9 @@ col:
 
   candidateEntityAncestors:
     desc: "The learner's entity ancestors."
+
+  candidateEntity:
+    desc: "The name used in the database to reference the learner's entity."
 
   candidateEntityId:
     desc: "The ID used in the database to reference the learner's entity."
@@ -146,18 +162,48 @@ col:
 
   eventEndDate:
     desc: "The end date of the event."
+    
+  eventEndTime:
+    desc: "The end time of the event."
+    
+  eventFacilitator:
+    desc: "The facilitator of the event."
+    
+  eventLocation:
+    desc: "The location of the event."
+    
+  eventLocationID:
+    desc: "The ID of the location of the event."
+
+  eventRoom:
+    desc: "The room of the event."
+    
+  eventRoomGuid:
+    desc: "The guid of the room of the event."
+    
+  eventID:
+    desc: "The ID of the event."
 
   eventStartDate:
     desc: "The start date of the event."
+    
+  eventStartTime:
+    desc: "The start time of the event."
 
   eventStatus:
     desc: "The status of the event."
 
   eventTeacher:
     desc: "The teacher of the event."
+    
+  eventTimeZone:
+    desc: "The timezone of the event."
 
   eventTitle:
     desc: "The title of the event."
+
+  eventVirtualMeetingURL:
+    desc: "Link to the virtual meeting of the event."
 
   eventVirtualRoomLink:
     desc: "Link to the virtual room of the event."
@@ -443,6 +489,9 @@ col:
 
   platformAccessDate:
     desc: "A date at which the learner has accessed the platform."
+    
+  pointsGained:
+    desc: "Points gained on the content."
 
   progression:
     desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
@@ -490,6 +539,9 @@ col:
     desc: "The date on which the learner has reached the success threshold of the training course."
 
   timeGlobal:
+    desc: "The total time the learner spent on the content."
+    
+  timeSpent:
     desc: "The total time the learner spent on the content."
 
   title:
@@ -673,7 +725,7 @@ param:
     type: "string"
 
   publishers:
-    desc: "Only export tracking data on content issued by the given publishers. Multiple publishers may be specified in a comma-separated list."
+    desc: "Only export tracking data on content issued by the given publishers GUID. Multiple publishers may be specified in a comma-separated list."
     type: "string"
     
   reportStatus:
@@ -714,7 +766,7 @@ param:
 
   timeGlobalFormat:
     desc: "Time format in which the `timeGlobal` column should be exported"
-    url: /timeGlobalFormat.html
+    url: /data-timeglobalformat.html
 
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
