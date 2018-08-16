@@ -39,6 +39,10 @@ Get in touch with your local phone provider, while using cellular network, to ma
 
 We also recommend using wifi connection to download learning resources.
 
+<div class="alert alert-info" role="alert">
+    <i class="fa fa-info-circle"></i> For SCORM content to be available offline, any libraries referenced within the SCORM package should be included in the package itself.
+</div>
+
 ## Note on network prerequisites
 
 If users are connected to the corporate network, you need to ensure that this network complies with our prerequisites, in term of IP whitelisting. You can have more information in [this page](https://developers.crossknowledge.com/CKLS-prerequisites).

@@ -79,6 +79,7 @@ We systematically test the latest versions of Chrome, Firefox and Internet Explo
 
 These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
 
+
 ### Tablet compatibility
 
 CrossKnowledge LMS is compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the LMS.
@@ -101,6 +102,7 @@ As the contents are played on our LMS, you need the LMS requirements listed abov
         </tr>
     </tbody>
 </table>
+
 
 ## Network Information
 
