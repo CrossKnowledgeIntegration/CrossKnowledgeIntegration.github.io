@@ -119,7 +119,7 @@ Moreover, our LMS does not interprete with Scorm 2004 navigation and sequencing 
 
 The content duration must not exceed half an hour.
 
-If the course is longer, it should be divided into several zip packages (mono-SCO).
+As **we do not support MULTI SCO**, if the course is longer, it should be divided into several zip packages (mono-SCO).
 
 As the contents will be imported in a Crossknowledge learning path , this is not an issue.
 
