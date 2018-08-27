@@ -2028,7 +2028,7 @@ API-KEY<br>
 
 </tr>
 <tr>
-<td markdown="span">firstname</td>
+<td markdown="span">firstName</td>
 <td markdown="span">string</td>
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 <td markdown="span">the learner firstname.</td>
@@ -2073,24 +2073,24 @@ API-KEY<br>
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 <td markdown="span">the learner activation date.</td>
 <td markdown="span">yyyy-mm-dd</td>
-
 </tr>
+
 <tr>
 <td markdown="span">end</td>
 <td markdown="span">string</td>
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 <td markdown="span">the learner deactivation date.</td>
 <td markdown="span">yyyy-mm-dd</td>
-
 </tr>
+
 <tr>
 <td markdown="span">customFields</td>
 <td markdown="span">array</td>
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 <td markdown="span">the learner custom fields (only string and integer custom field type allowed).</td>
-<td markdown="span">customFields['guid']='value'</td>
-
+<td markdown="span">"customFields": ["f114870d-ed13-4e03-bc77-c34841a7a52b":"France", "d941cf5f-00a8-4e8d-804e-f913e6aad471":"IT"]</td>
 </tr>
+
 <tr>
 <td markdown="span">presentation</td>
 <td markdown="span">string</td>
