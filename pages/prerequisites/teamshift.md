@@ -12,7 +12,7 @@ folder: prerequisites
 
 The first requirement and mandatory one, is having the possibility to access Amazon Cloud URLs and IPs adresses.
 
-Team Shift is a new CrossKnowledge solution which requires the following environment on the customer side to run properly:
+TeamSHIFT is a new CrossKnowledge solution which requires the following environment on the customer side to run properly:
 
 <table>
     <tbody>
