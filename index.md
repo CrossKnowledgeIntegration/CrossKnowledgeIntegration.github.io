@@ -2,17 +2,17 @@
 title: About Integration @ CrossKnowledge
 sidebar: home_sidebar
 permalink: index.html
-summary: "About integration, their services and the available documentation. If you are CrossKnowledge clients, get in touch with your IT consultant for more details"
+summary: "About integration, their services and the available documentation. If you are CrossKnowledge client, get in touch with your IT consultant for more details"
 ---
 
 ## About
 
-This site's purpose is to present the Integration @ Crossknowledge services, tools and available API !!!
+This site's purpose is to present the Integration @ Crossknowledge services, tools and available API !
 
 ## Documentation
 
 * [CKLS Prerequisites](/CKLS-prerequisites)
-* [Team Shift Prerequisites](/TeamShift-prerequisites)
+* [TeamSHIFT Prerequisites](/TeamShift-prerequisites)
 * [Mohive Prerequisites](/mohive-prerequisites)
 * [Contents Information](/content-information)
 * [SSO Smartlink](/sso-smartlink.html)
