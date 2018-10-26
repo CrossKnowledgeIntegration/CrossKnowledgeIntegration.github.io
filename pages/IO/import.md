@@ -36,7 +36,7 @@ The XML configuration file defines the structure of the data import files.
   <import>
     ... <!-- the description of a second import file -->
   </import>
-<import-config>
+</import-config>
 
 ```
 
