@@ -33,3 +33,7 @@ Our latest API, that will replace the XMLRPC one. This API is back office, that 
 as an administrator executes it.
 
 [More info](/rest-bo.html)
+
+<div class="alert alert-warning" role="alert">
+    <i class="fa fa-exclamation-triangle"></i> API requests are limited to 500 requests every 60 seconds.
+</div>
