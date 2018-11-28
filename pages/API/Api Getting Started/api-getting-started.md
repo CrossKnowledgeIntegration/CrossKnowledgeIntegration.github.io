@@ -17,6 +17,10 @@ This document provides all the basic information you need to start using the Cro
 
 The CrossKnowledge API offers to our clients, partners or independant software vendors, a powerful way to create innovative learning application or to integrate with HRIS platform or any third party application.
 
+<div class="alert alert-warning" role="alert">
+    <i class="fa fa-exclamation-triangle"></i> API requests are limited to 500 requests every 60 seconds.
+</div>
+
 The CrossKnowledge API includes :
 
 <script>
