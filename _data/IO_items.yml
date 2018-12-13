@@ -511,7 +511,7 @@ col:
   score:
     desc: "The score the learner has achieved on the content."
 
-  NPSScore:
+  npsScore:
     desc: "Score of a NPS activity."
 
   sessionEndDate:
