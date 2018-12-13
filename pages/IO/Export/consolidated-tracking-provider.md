@@ -1,9 +1,9 @@
 ---
 title: Consolidated Tracking
 keywords: 
-last_updated: 24 August, 2017
+last_updated: 13 December, 2018
 tags: 
-summary: ""
+summary: "Summary of tracking data at a session level"
 sidebar: home_sidebar
 permalink: consolidated-tracking-provider.html
 folder: Export
@@ -52,10 +52,14 @@ Name | Description
 `progression` | {{site.data.IO_items.col.progression.desc}}
 `progressionMandatory` | {{site.data.IO_items.col.progressionMandatory.desc}}
 `score` | {{site.data.IO_items.col.score.desc}}
+`npsScore` | {{site.data.IO_items.col.npsScore.desc}}
 `status` | {{site.data.IO_items.col.status.desc}}
 `thresholdReachedDate` | {{site.data.IO_items.col.thresholdReachedDate.desc}}
 `firstCompletionDate` | {{site.data.IO_items.col.firstCompletionDate.desc}}
 `timeGlobal` | {{site.data.IO_items.col.timeGlobal.desc}}
+`timeSpentCBT` | {{site.data.IO_items.col.timeSpentCBT.desc}}
+`timeSpentDigital` | {{site.data.IO_items.col.timeSpentDigital.desc}}
+`timeSpent` | {{site.data.IO_items.col.timeSpent.desc}}
 `constantValue` | {{site.data.IO_items.col.constantValue.desc}}
 
 
@@ -63,6 +67,7 @@ Name | Description
 
 Name | Description
 ---|---
+`activityType` | {{site.data.IO_items.param.activityType.desc}}
 `ancestorsWithCurrent` | {{site.data.IO_items.param.ancestorsWithCurrent.desc}}
 `catalogVisibility` | {{site.data.IO_items.param.catalogVisibility.desc}}
 `dateFormat` | {{site.data.IO_items.param.dateFormat.desc}}
@@ -137,6 +142,10 @@ Name | Description
             <firstCompletionDate/>
             <timeGlobal/>
             <constantValue/>
+            <npsScore/>
+            <timeSpentCB/>
+            <timeSpentDigital/>
+            <timeSpent/>
         </columns>
         <parameters>
             <dateTimeFormat>YYYY-MM-DD hh:ii:ss</dateTimeFormat>
