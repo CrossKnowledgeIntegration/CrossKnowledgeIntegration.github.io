@@ -1,9 +1,9 @@
 ---
 title: Learning Object Version Metadata
 keywords: LOV, learning object version, learning object, metadata, report, export
-last_updated: 24 August, 2017
+last_updated: 13 December, 2018
 tags: 
-summary: "This provider generates a data report containing metadata of all versions of Learning Objects available on the platform"
+summary: "This provider generates a data report containing metadata of all versions of Learning Object versions available on the platform"
 sidebar: home_sidebar
 permalink: lov-metadata-provider.html
 folder: Export
@@ -54,6 +54,7 @@ Name | Description
 
 Name | Description
 ---|---
+`preferredLocales` | {{site.data.IO_items.param.preferredLocales.desc}}
 `dateFormat` | {{site.data.IO_items.param.dateFormat.desc}}
 `timeFrames` | {{site.data.IO_items.param.timeFrames.desc}}
 `timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}

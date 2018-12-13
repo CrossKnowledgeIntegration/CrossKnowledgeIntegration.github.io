@@ -131,7 +131,7 @@ col:
     desc: "The date at which the object (learner, training course or training session) was created."
 
   description:
-    desc: "The description of the training course. /!\ Other contexts maybe"
+    desc: "The description of the training course. /!\ Other contexts maybe"
 
   endDate:
     desc: "The end date of the session."
@@ -511,6 +511,9 @@ col:
   score:
     desc: "The score the learner has achieved on the content."
 
+  NPSScore:
+    desc: "Score of a NPS activity."
+
   sessionEndDate:
     desc: "The end date of the session."
 
@@ -540,12 +543,18 @@ col:
 
   timeGlobal:
     desc: "The total time the learner spent on the content."
+
+  timeSpentCBT:
+    desc: "The total time spent in classrooms."
+
+  timeSpentDigital:
+    desc: "The total time spent on digital activities."
     
   timeSpent:
     desc: "The total time the learner spent on the content."
 
   title:
-    desc: "The title of the training course. /!\ Other contexts maybe"
+    desc: "The title of the training course. /!\ Other contexts maybe"
 
   trainingAudience:
     desc: "The target audience of the training course."
@@ -635,7 +644,7 @@ col:
     desc: "The publisher of the training course."
 
   trainingStatus:
-    desc: "The status (published, archived or under construction) of the training course. The values displayed in this column can be configured via the `trainingStatusFormat` parameter."
+    desc: "The status (published, archived or under construction) of the training course. The values displayed in this column can be configured via the `trainingStatusFormat` parameter."
 
   trainingTitle:
     desc: "The title of the training course."
@@ -644,6 +653,10 @@ col:
     desc: "The welcome text of the training course."
 
 param:
+
+  activityType:
+    desc: "Blendedx registrations are exported as soon as their related path contains at least one activity of this type. Other modalities' registrations are exported if the filter is 0 (content) and 4 (classroom) and contains CBT activities"
+    type: "string"
 
   ancestorsWithCurrent:
     desc: "For each tracking data row, the learner's hierarchy can be exported with the other data. This parameter tells the provider whether to include the learner's group in the hierarchy or not. If set to `yes`, the learner's current group will be included. Otherwise, it will be removed from the exported hierarchy."
