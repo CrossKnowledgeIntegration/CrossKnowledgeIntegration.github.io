@@ -157,8 +157,7 @@ Column name | Description
 `targetaudience` | Content target audience
 `thumbnail` | Content url to thumbnails (Max. 200.0 MB, Size: 640x360px)
 `url` | Content url, if content is weblink
-`runtime` | Content runtime (eg.youtube_learning_object_guid,aicc_learning_object_guid,automatic_text,E,file_lo_guid,zip_lo_guid,flash_learning_object_guid,
-link_lo_guid,SCORM,slideshare_lo_guid,telelangue_learning_object_guid,video_learning_object_guid)
+`runtime` | Content runtime (eg.youtube_learning_object_guid,aicc_learning_object_guid,automatic_text,E,file_lo_guid,zip_lo_guid,flash_learning_object_guid,link_lo_guid,SCORM,slideshare_lo_guid,telelangue_learning_object_guid,video_learning_object_guid)
 `type` | Content type (eg. Video, Interactive, Reading, Questionnaire, Website, Audio, work to Submit, in Class assessment, Picture, Doc to download)
 `scoreisprogress` | Content scorm option to save progress score variable (value = Y)
 `themes` | Content themes (eg. Theme1>Subtheme1 "Pipe" Theme2)
