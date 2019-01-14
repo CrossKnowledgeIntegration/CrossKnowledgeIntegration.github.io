@@ -262,7 +262,7 @@ Maximum message size (including attachments) is limited to 10 MB per message (af
 At the time of this writing, these are the IP ranges used by AWS SES:
 
 ```txt
-199.255.192.0/22 199.127.232.0/22 54.240.0.0/18
+199.255.192.0/22 199.127.232.0/22 54.240.0.0/18 69.169.224.0/20
 ```
 However these ranges may change, so to get an up to date list, please run the following command: 
 From a Linux or Mac OS system:
