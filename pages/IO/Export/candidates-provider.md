@@ -48,6 +48,8 @@ Name | Description
 `groupIds` | {{site.data.IO_items.param.groupIds.desc}}
 `timeFrames` | {{site.data.IO_items.param.timeFrames.desc}}
 `timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}
+`dateFormat` | {{site.data.IO_items.param.dateFormat.desc}}
+`dateTimeFormat` | {{site.data.IO_items.param.dateTimeFormat.desc}}
 
 
 ### Examples
