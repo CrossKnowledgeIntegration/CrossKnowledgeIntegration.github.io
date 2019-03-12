@@ -25,6 +25,11 @@ Macromedia Flash | *NEW* (since March 2015 and Mohive 15.1): 11.1 or higher, wit
 Popup blocker | Disabled for Mohive
 Cookies | enabled
 
+**Adobe will stop updating and distributing the Adobe Flash Player, used by the Mohive authoring platform at the end of 2020.
+This will not affect content created in Mohive in Multi-devices mode.
+The author workstation will still be operational if you download the desktop application, automatically proposed by Mohive, even if the browser doesn’t work with flash anymore.
+The Mobile desktop application is not compatible with Apple devices.**
+
 ### Network requirements
 
 Whitelist the whole domain name | https://*.mohive.net
@@ -61,8 +66,12 @@ Popup blocker | Disabled for Mohive
 Cookies | enabled
 Javascript | enabled
 
+**Adobe will stop updating and distributing the Adobe Flash Player, used by Legacy Desktop mode for Mohive contents at the end of 2020.**
+
 ### Legacy Tablet Mode (Flash Runtime)
 
 - Tablet support requires any Apple iPad from version 2 onwards, with latest iOS version.
 - Only available for customers using the Legacy Tablet Mode in previous Mohive versions.
 - Other customers are invited to use the Multi-devices Mode (HTML5 runtime)
+
+**Adobe will stop updating and distributing the Adobe Flash Player, used by Legacy Tablet mode for Mohive contents at the end of 2020.**
