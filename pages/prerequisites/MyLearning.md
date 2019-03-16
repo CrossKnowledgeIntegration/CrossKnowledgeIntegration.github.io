@@ -23,6 +23,9 @@ My Learning is compatible with the following devices:
 
 It is available on both stores under CrossKnowledge My Learning
 
+Latest mobile application version available on stores is the only supported version.
+Please note that SCORM connectors are not optimized for mobile usage.
+
 These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
 
 ## Content
