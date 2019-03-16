@@ -1,7 +1,7 @@
 ---
 title: CKLS Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
-last_updated: 14 June, 2018
+last_updated: 16 March, 2019
 sidebar: home_sidebar
 permalink: CKLS-prerequisites
 folder: prerequisites
@@ -20,7 +20,7 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>RAM</td>
-            <td>2 GB (4GB prefered, depending on the OS)</td>
+            <td>2 GB (4GB preferred, depending on the OS)</td>
         </tr>
         <tr>
             <td>Screen resolution</td>
@@ -28,7 +28,7 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>Windows operating system</td>
-            <td>Windows Vista, 7, 8, 10 (Desktop mode only, Tablet mode is not supported for now)</td>
+            <td>Windows 7, 8, 10 (Desktop mode only, Tablet mode is not supported for now)</td>
         </tr>
         <tr>
             <td>Apple operating system</td>
@@ -64,9 +64,30 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed : <br>
-                ECDH+AESGCM,DH+AESGCM,ECDH+AES256,DH+AES256,ECDH+AES128<br>DH+AES,ECDH+3DES,DH+3DES,RSA+AESGCM,RSA+AES,RSA+3DES.<br>
-                TLSv1.1 and TLSv1.2 protocols are supported (TLS1.0 no longer supported as of 2018, Agust 31.</td>
+            <td>
+            SSL Protocols :<br>
+            - Protocol-TLSv1.1<br>
+            - Protocol-TLSv1.2<br>
+            SSL Ciphers:<br>
+            - ECDHE-ECDSA-AES128-GCM-SHA256<br>
+            - ECDHE-RSA-AES128-GCM-SHA256<br>
+            - ECDHE-ECDSA-AES128-SHA256<br>
+            - ECDHE-RSA-AES128-SHA256<br>
+            - ECDHE-ECDSA-AES128-SHA<br>
+            - ECDHE-RSA-AES128-SHA<br>
+            - ECDHE-ECDSA-AES256-GCM-SHA384<br>
+            - ECDHE-RSA-AES256-GCM-SHA384<br>
+            - ECDHE-ECDSA-AES256-SHA384<br>
+            - ECDHE-RSA-AES256-SHA384<br>
+            - ECDHE-RSA-AES256-SHA<br>
+            - ECDHE-ECDSA-AES256-SHA<br>
+            - AES128-GCM-SHA256<br>
+            - AES128-SHA256<br>
+            - AES128-SHA<br>
+            - AES256-GCM-SHA384<br>
+            - AES256-SHA256<br>
+            - AES256-SHA<br>
+            </td>
         </tr>
         <tr>
             <td>Popup blocker for your URL</td>
@@ -78,6 +99,9 @@ CrossKnowledge LMS is a web-based application needing the following environment 
 We systematically test the latest versions of Chrome, Firefox and Internet Explorer browsers to ensure the best experience for our users. Older versions of these browsers are not systematically tested, but run smoothly in most cases. If, however, there is a problem specific to a particular version of one of these browsers, please contact us.
 
 These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
+In addition to those, specific requirements apply to:
+- Facilitator in Front-office interface: workstation prerequisites above are applicable, except Internet Explorer which requires IE11 or above
+- Blendedˣ Embedded Web Resource Activity and Embedded BI tool in Analyze workspace: these features are used to integrate a 3rd party content from the web. CrossKnowledge can not guaranty the compatibility of the integrated content
 
 
 ### Tablet compatibility
@@ -85,6 +109,8 @@ These technical requirements may be modified according to technical developments
 CrossKnowledge LMS is compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the LMS.
 
 CrossKnowledge LMS is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the LMS. 
+
+Please note that SCORM connectors are not optimized for mobile usage
 
 ### CrossKnowledge content additional requirements
 
@@ -150,6 +176,7 @@ https://dmi776hgmgo8n.cloudfront.net/* and http(s)://mohivecontents-na.crossknow
 ```txt
 https://ckcontents-jp.crossknowledge.com
 https://mohivecontents-jp.crossknowledge.com
+https://crossknowledge-player.digitallearning.cn
 ```
 
 #### CKLM (XKA, Digital Literacy, Leaders...)
@@ -175,7 +202,8 @@ Part of the content is hosted on Amazon Cloud for a better experience around the
 CLoudFront IPs could be from any of the IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "CLOUDFRONT"
 ```
 <br/>
-### CKLS portal IPs addresses
+
+### CKLS portal IP addresses
 
 #### Europe CKLS created since September 2017 https://*.eu.crossknowledge.com: 
 ```txt
@@ -184,6 +212,7 @@ sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 ```
 
 <br/>
+
 #### Europe CKLS created before September 2017 https://*.eu.crossknowledge.com or https://*.lms.crossknowledge.com:
 ```txt
 web interfaces (ports 80 and 443) Could be hitting any IPs within the ranges 78.153.226.128/27 and 78.153.234.128/26
@@ -191,6 +220,7 @@ sftp server : sftp.crossknowledge.com (78.153.226.149)
 sftp server : sftp.eu.crossknowledge.com (78.153.234.131)
 ```
 <br/>
+
 #### USA https://*.na.crossknowledge.com:
 ```txt
 web interfaces (ports 80 and 443) : Could be hitting any of the us-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
@@ -198,6 +228,7 @@ sftp server : sftp.na.crossknowledge.com (54.221.219.193)
 ```
 
 <br/>
+
 #### South America: https://*.sa.crossknowledge.com
 ```txt
 web interfaces (ports 80 and 443) : Could be hitting any of the sa-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
@@ -205,6 +236,7 @@ sftp server : sftp.sa.crossknowledge.com (54.232.80.112)
 ```
 
 <br/>
+
 #### Asia: https://*.asia.crossknowledge.com
 ```txt
 web interfaces (ports 80 and 443) : Could be hitting any of the ap-northeast-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
@@ -212,6 +244,7 @@ sftp server : sftp.asia.crossknowledge.com (54.65.104.30)
 ```
 
 <br/>
+
 #### IPs addresses and URLs for CK-Hub https://ck-hub.crossknowledge.com:
 ```txt
 web interfaces (ports 80 and 443) : Could be hitting any of the eu-west-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2".
