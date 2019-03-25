@@ -149,7 +149,7 @@ The API Key a is valid API key set in the configuration of your CKLS.
 
 In this example, to build our Hash Key, we will proceed as below:
 
-`md5(API KEY + "identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/")`
+`SHA512(API KEY + "identity_field/login/login/johndoe/email/john.doe@xyz.com/ref_number/14453X/register/yes/")`
 
 **The last / at the end of your string parameters is mandatory.**
 
