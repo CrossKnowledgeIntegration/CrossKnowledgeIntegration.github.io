@@ -28,7 +28,7 @@ Cookies | enabled
 **Adobe will stop updating and distributing the Adobe Flash Player, used by the Mohive authoring platform at the end of 2020.
 This will not affect content created in Mohive in Multi-devices mode.
 The author workstation will still be operational if you download the desktop application, automatically proposed by Mohive, even if the browser doesn’t work with flash anymore.
-The Mobile desktop application is not compatible with Apple devices.**
+The Mohive desktop application is not compatible with Apple devices.**
 
 ### Network requirements
 
