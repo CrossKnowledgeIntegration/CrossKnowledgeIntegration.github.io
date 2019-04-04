@@ -22,4 +22,4 @@ folder: Services
 * Public PPTX
 * Microsoft Power BI
 
-{% include note.html content="The google analytics dashboard pages cannot be embedded in an iFrame." %}
+{% include note.html content="Google analytics dashboard pages cannot be embedded in an iFrame." %}
