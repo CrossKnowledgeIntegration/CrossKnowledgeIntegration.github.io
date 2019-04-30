@@ -36,7 +36,7 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>Internet Explorer</td>
-            <td>8, 9, 10, 11, latest version</td>
+            <td>11, latest version</td>
         </tr>
         <tr>
             <td>Microsoft Edge</td>
