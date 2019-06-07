@@ -13,6 +13,8 @@ folder: Export
 
 Name | Description
 ---|---
+`reportId` | {{site.data.IO_items.col.reportId.desc}}
+`reportGuid` | {{site.data.IO_items.col.reportGuid.desc}}
 `candidateId` | {{site.data.IO_items.col.candidateId.desc}}
 `candidateGuid` | {{site.data.IO_items.col.candidateGuid.desc}}
 `candidateName` | {{site.data.IO_items.col.candidateName.desc}}
@@ -62,8 +64,9 @@ Name | Description
 ~~`groupIds`~~ | <i class="fa fa-exclamation-circle preference"></i> This parameter is deprecated in the CKLS 14.1 version, please use `entityIds` instead.
 `entityIds` | Only export data for the specified entities
 `modality`  | Only export tracking data for a specific training modality
-`onlyFromImportedRegistrations` | Only export data related to registrations that were imported.
-`onlyFromImportedSessions` | Only export data related to sessions that were imported.
+`onlyFromImportedRegistrations` | {{site.data.IO_items.param.onlyFromImportedRegistrations.desc}}
+`onlyFromImportedSessions` | {{site.data.IO_items.param.onlyFromImportedSessions.desc}}
+`onlyFromImportedTraining` | {{site.data.IO_items.param.onlyFromImportedTraining.desc}}
 `preferredLocales` | Only export data where `contentLocale` matches locales specified in a comma-separated list
 `publishers` | Only export tracking data for a specific content publisher
 `reportStatus` | Only export tracking data for a specific completion `status`
@@ -74,9 +77,21 @@ Name | Description
 [`timeGlobalFormat`]({{site.data.IO_items.param.timeGlobalFormat.url}})| Time format in which the `timeGlobal` column should be exported
 `trainingGuid` | Only export tracking data for a specific training path
 `trainingPathCode` | Only export tracking data for a specific `trainingPathCode`
+`trainingStatus` | {{site.data.IO_items.param.trainingStatus.desc}}
+`trainingPublishers` | Only export tracking data for the training courses belonging to the selected publishers (use the publisher's title, separated by commas).
+`trainingStatusFormat` | {{site.data.IO_items.param.trainingStatusFormat.desc}}
+`trainingModalityFormat` | "Configure what value to display for each modality value."
+`sessionTitle` | Only export tracking data for a specific session
 `sessionGuid` | Only export tracking data for a specific session
 `withoutLaunchTime` | Whether or not to export tracking data that has no launch date
 `deltamode` | Only export tracking data that was not included in the previous export
+`ancestorsWithCurrent` | {{site.data.IO_items.param.ancestorsWithCurrent.desc}}
+`learnersSmartGroups` | Only export the tracking for the learners belonging to the chosen smartgroups.
+`catalogVisibility` | {{site.data.IO_items.param.catalogVisibility.desc}}
+`templates` | Allow the creation of value template combined with other columns value ([more here](https://techwiki.crossknowledge.com/LMS/HRIS_integration/Data_Export_-_Generic_export_Column_Templating))
+`onlyHrisSelectedItems` | Only export HRIS items tagged in the back-office of the CKLS.
+`stripHTML` | {{site.data.IO_items.param.stripHTML.desc}}
+`maxLength` | {{site.data.IO_items.param.maxLength.desc}}
 
 ### Example
 

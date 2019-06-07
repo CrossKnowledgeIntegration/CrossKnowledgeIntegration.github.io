@@ -2,13 +2,13 @@ col:
 
   activityName:
     desc: "Name of the activity."
-    
+
   activityID:
     desc: "Id of the activity."
-    
+
   activityDuration:
     desc: "Duration of the activity."
-    
+
   activityPoints:
     desc: "Points of the activity."
 
@@ -162,31 +162,31 @@ col:
 
   eventEndDate:
     desc: "The end date of the event."
-    
+
   eventEndTime:
     desc: "The end time of the event."
-    
+
   eventFacilitator:
     desc: "The facilitator of the event."
-    
+
   eventLocation:
     desc: "The location of the event."
-    
+
   eventLocationID:
     desc: "The ID of the location of the event."
 
   eventRoom:
     desc: "The room of the event."
-    
+
   eventRoomGuid:
     desc: "The guid of the room of the event."
-    
+
   eventID:
     desc: "The ID of the event."
 
   eventStartDate:
     desc: "The start date of the event."
-    
+
   eventStartTime:
     desc: "The start time of the event."
 
@@ -195,7 +195,7 @@ col:
 
   eventTeacher:
     desc: "The teacher of the event."
-    
+
   eventTimeZone:
     desc: "The timezone of the event."
 
@@ -489,7 +489,7 @@ col:
 
   platformAccessDate:
     desc: "A date at which the learner has accessed the platform."
-    
+
   pointsGained:
     desc: "Points gained on the content."
 
@@ -507,6 +507,14 @@ col:
 
   registrationGuid:
     desc: "The GUID of the registration."
+
+  reportId:
+    desc: "The database ID used to identify the tracking row."
+    type: "int"
+
+  reportGuid:
+    desc: "The GUID of the tracking row."
+    type: "string"
 
   score:
     desc: "The score the learner has achieved on the content."
@@ -549,7 +557,7 @@ col:
 
   timeSpentDigital:
     desc: "The total time spent on digital activities."
-    
+
   timeSpent:
     desc: "The total time the learner spent on the content."
 
@@ -685,7 +693,7 @@ param:
   deltaMode:
     desc: "Only export new tracking data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
     type: "Y/N element"
-    
+
   entityIds:
     desc: "A comma-separated list of the entity ids to filter on. If multiple entity IDs are provided, then the export will return data about learners who belong to at least one of those entities."
     type: "string"
@@ -693,11 +701,11 @@ param:
   eventClassRoomTypeFilter:
     desc: "Export with filter Virtual or Standard."
     type: "VirtualStandardElement"
-    
+
   eventDurationAllDayFilter:
     desc: "Export all day between a start day and a end day."
     type: "YNElement"
-    
+
   eventStatusFilter:
     desc: "Export with a status filter `C` - Confirmed, `P` - Pending, `CA` - Cancelled"
     type: "CPCAElement"
@@ -708,7 +716,7 @@ param:
   exportAllSessions:
     desc: "Whether to include failed connections."
     type: "yesNoElement"
-    
+
   failedConnections:
     desc: "Whether to include failed connections."
     type: "Yes/No  element"
@@ -720,15 +728,15 @@ param:
   modality:
     desc: "Only export data related to a training course that belongs to the specified modality."
     type: "modality"
-    
+
   onlyFromImportedTraining:
     desc: "Only export tracking data related to trainings that were imported."
     type: "yesNoElement"
-    
+
   onlyFromImportedRegistrations:
     desc: "Only export tracking data related to registrations that were imported."
     type: "yesNoElement"
-    
+
   onlyFromImportedSessions:
     desc: "Only export tracking data related to sessions that were imported."
     type: "yesNoElement"
@@ -740,23 +748,23 @@ param:
   publishers:
     desc: "Only export tracking data on content issued by the given publishers GUID. Multiple publishers may be specified in a comma-separated list."
     type: "string"
-    
+
   reportStatus:
     desc: "Export tracking data that have the specified report statuses (several values can be given)."
     type: "reportStatus"
-    
+
   selectedLocales:
     desc: "The comma-separated list of selected locales."
     type: "string"
-    
+
   sessionGuid:
     desc: "Only export data related to a training session that has the specified GUID."
     type: "string"
-    
+
   sessionTitle:
     desc: "Only export data related to a training session that has a title that contains the given string."
     type: "string"
-    
+
   statusFormat:
     desc: "This parameter is used to convert LMS progress status to Scorm-compliant progress status."
     type: "statusFormat"
