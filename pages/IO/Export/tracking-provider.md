@@ -88,7 +88,7 @@ Name | Description
 `ancestorsWithCurrent` | {{site.data.IO_items.param.ancestorsWithCurrent.desc}}
 `learnersSmartGroups` | Only export the tracking for the learners belonging to the chosen smartgroups.
 `catalogVisibility` | {{site.data.IO_items.param.catalogVisibility.desc}}
-`templates` | Allow the creation of value template combined with other columns value ([more here](https://techwiki.crossknowledge.com/LMS/HRIS_integration/Data_Export_-_Generic_export_Column_Templating))
+`templates` | Allow the creation of value template combined with other columns value (see example below).
 `onlyHrisSelectedItems` | Only export HRIS items tagged in the back-office of the CKLS.
 `stripHTML` | {{site.data.IO_items.param.stripHTML.desc}}
 `maxLength` | {{site.data.IO_items.param.maxLength.desc}}
@@ -127,9 +127,13 @@ Name | Description
 			<timeGlobal/>
 			<progression/>
 			<status/>
+            <templatedValue label="URL" templateId="1" />
 		</columns>
         <parameters>
             <dateFormat>MM-DD-YYYY</dateFormat>
+            <templates>
+                <template id="1">https://instanceurl.ck.com/sso/content/{19}/Language/{21}</template>
+            </templates>
         </parameters>
     </trackingProvider>
 </providers>
