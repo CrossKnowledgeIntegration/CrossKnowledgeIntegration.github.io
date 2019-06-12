@@ -691,7 +691,7 @@ param:
     type: "string"
 
   deltaMode:
-    desc: "Only export new tracking data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
+    desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
     type: "Y/N element"
 
   entityIds:
@@ -724,6 +724,10 @@ param:
   groupIds:
     desc: "<i class='fa fa-exclamation-circle preference'></i> This parameter is deprecated in the CKLS 14.1 version, please use `entityIds` instead. A comma-separated list of the group ids to filter on. If multiple group ids are provided, then the export will return data about learners who belong to at least one of those groups."
     type: "string"
+
+  maxLength:
+    desc: "If not empty, this option will crop each value to the specified max length (each cell, not each line)."
+    type: "integer"
 
   modality:
     desc: "Only export data related to a training course that belongs to the specified modality."
@@ -768,6 +772,10 @@ param:
   statusFormat:
     desc: "This parameter is used to convert LMS progress status to Scorm-compliant progress status."
     type: "statusFormat"
+
+  stripHTML:
+    desc: "If not empty, this option will remove any HTML tag from the exported data."
+    type: "string"
 
   threshold:
     desc: "Whether or not to export tracking data that has no launch date (the learner has never launched the content). When points will be exported, use the threshold to convert them (points*threshold). Useful for incentive tool. Default value 1 . All values are allowed, so be careful (0, negatives, etc)"

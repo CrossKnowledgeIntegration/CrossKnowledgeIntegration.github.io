@@ -84,7 +84,7 @@ Name | Description
 `sessionTitle` | Only export tracking data for a specific session
 `sessionGuid` | Only export tracking data for a specific session
 `withoutLaunchTime` | Whether or not to export tracking data that has no launch date
-`deltamode` | Only export tracking data that was not included in the previous export
+`deltamode` | {{site.data.IO_items.param.deltaMode.desc}}
 `ancestorsWithCurrent` | {{site.data.IO_items.param.ancestorsWithCurrent.desc}}
 `learnersSmartGroups` | Only export the tracking for the learners belonging to the chosen smartgroups.
 `catalogVisibility` | {{site.data.IO_items.param.catalogVisibility.desc}}
