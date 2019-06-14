@@ -69,12 +69,14 @@ col:
 
   candidateGroupAncestors:
     desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityAncestors` instead."
+    deleted: true
 
   candidateGroupId:
     desc: "The ID used in the database to reference the learner's group."
 
   candidateGroupName:
     desc: "The learner's group name."
+    deleted: true
 
   candidateGuid:
     desc: "The learner's GUID."
@@ -724,6 +726,7 @@ param:
   groupIds:
     desc: "<i class='fa fa-exclamation-circle preference'></i> This parameter is deprecated in the CKLS 14.1 version, please use `entityIds` instead. A comma-separated list of the group ids to filter on. If multiple group ids are provided, then the export will return data about learners who belong to at least one of those groups."
     type: "string"
+    deleted: true
 
   maxLength:
     desc: "If not empty, this option will crop each value to the specified max length (each cell, not each line)."
@@ -805,8 +808,16 @@ param:
     desc: "Only export data related to the training courses that have an ID included in the comma-separated list specified in this parameter."
     type: "string"
 
+  trainingModalityFormat:
+    desc: "Only export data related to the training courses with the chosen modality, filtered by their database name (ex: blended, guided, learning_channel)."
+    type: "string"
+
   trainingPathCode:
     desc: "Only export data related to a training course that has the specified code."
+    type: "string"
+
+  trainingPublishers:
+    desc: "Only export data related to the list of publishers, filtered by title. Can contain several values separated by commas."
     type: "string"
 
   trainingStatus:

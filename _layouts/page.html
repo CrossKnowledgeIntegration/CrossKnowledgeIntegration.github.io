@@ -45,7 +45,16 @@ layout: default
 
     {% endif %}
 
-  {{content}}
+    {% if page.dynamic_content %}
+        {% if page.columns %}
+            {% include dynamic_content.html columns=page.columns title='Available columns' collection=site.data.IO_items.col %}
+        {% endif %}
+        {% if page.parameters %}
+            {% include dynamic_content.html columns=page.parameters title='Filters and parameters' collection=site.data.IO_items.param %}
+        {% endif %}
+    {% endif %}
+
+    {{content}}
 
     <div class="tags">
         {% if page.tags != null %}
