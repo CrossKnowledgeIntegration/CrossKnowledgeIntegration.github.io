@@ -19,10 +19,15 @@
         {% if include.collection[c].url %}
             {% assign html = '<a href="' | append: include.collection[c].url | append: '">' | append: html | append: '</a>' %}
         {% endif %}
+
+        {% assign type = include.collection[c].type %}
+        {% if site.data.IO_items.datatype[type] %}
+            {% assign type = '<a href="' | append: site.data.IO_items.datatype[type].url | append: '">' | append: type | append: '</a>' %}
+        {% endif %}
+
         <tr>
             <td>{{ html }}</td>
-
-            <td>{{ include.collection[c].type }}</td>
+            <td>{{ type }}</td>
             <td>{{ include.collection[c].desc }}</td>
         </tr>
     {% endfor %}

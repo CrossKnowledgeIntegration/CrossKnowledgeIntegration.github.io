@@ -2,513 +2,679 @@ col:
 
   activityName:
     desc: "Name of the activity."
+    type: "string"
 
   activityID:
     desc: "Id of the activity."
+    type: "int"
 
   activityDuration:
     desc: "Duration of the activity."
+    type: "int"
 
   activityPoints:
     desc: "Points of the activity."
+    type: "int"
 
   badge:
     desc: "Localized label of the badge."
+    type: "string"
 
   badgeCategory:
     desc: "Localized badge category."
+    type: "string"
 
   badgeCode:
     desc: "unique ID/code for a badge."
+    type: "string"
 
   badgeDateTime:
     desc: "Date time the badge was acquired."
+    type: "datetime"
 
   candidateAccountActivated:
     desc: "The status of the learner's account (actived/disabled)."
+    type: "enum (Y, N, U)"
 
   candidateAccountActivatedFrom:
     desc: "If the learner's account is only active during a limited period of time, the first date for which it is active."
+    type: "date"
 
   candidateAccountActivatedUntil:
     desc: "If the learner's account is only active during a limited period of time, the last date for which it is active."
+    type: "date"
 
   candidateBadges:
     desc: "Total amont of badges acquired by the learner."
+    type: "int"
 
   candidateCustomFieldGuid:
     desc: "GUID for one of the learner's possible custom fields."
+    type: "string"
 
   candidateEmail:
     desc: "The learner's e-mail address."
+    type: "string"
 
   candidateEntityAncestors:
     desc: "The learner's entity ancestors."
+    type: "string"
 
   candidateEntity:
     desc: "The name used in the database to reference the learner's entity."
+    type: "string"
 
   candidateEntityId:
     desc: "The ID used in the database to reference the learner's entity."
+    type: "int"
 
   candidateEntityName:
     desc: "The learner's entity name."
+    type: "string"
 
   candidateFirstname:
     desc: "The learner's first name."
+    type: "string"
 
   candidateFollowLinkedin:
     desc: "The learner's LinkedIn username."
+    type: "url"
     url: /candidateFollowLinkedin.html
 
   candidateFollowTwitter:
     desc: "The learner's Twitter handle."
+    type: ""
 
   candidateFollowWeb:
     desc: "The learner's web page."
+    type: "url"
 
   candidateGroupAncestors:
     desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityAncestors` instead."
+    type: "string"
     deleted: true
 
   candidateGroupId:
-    desc: "The ID used in the database to reference the learner's group."
+    desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityId` instead."
+    type: "int"
+    deleted: true
 
   candidateGroupName:
-    desc: "The learner's group name."
+    desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityName` instead."
+    type: "string"
     deleted: true
 
   candidateGuid:
     desc: "The learner's GUID."
+    type: "string"
 
   candidateId:
     desc: "The database ID used to identify the learner."
+    type: "int"
 
   candidateLocale:
     desc: "The chosen display locale for the learner, based on the available locales on the instance and their preferences."
+    type: "string"
 
   candidateLocales:
     desc: "The ordered list of chosen locales for the learner."
+    type: "string"
 
   candidateLogin:
     desc: "The learner's login."
+    type: "string"
 
   candidateName:
     desc: "The learner's name (family name/surname)."
+    type: "string"
 
   candidatePoints:
     desc: "Total amont of points acquired by the learner."
+    type: "int"
 
   candidatePresentation:
     desc: "The candidate's presentation text."
+    type: "string"
 
   candidateRefNumber:
     desc: "The learner's reference number."
+    type: "string"
 
   candidateTimeZone:
     desc: "The candidate's timezone."
+    type: "string"
 
   catalogVisibility:
     desc: "\"Y\" if the training course associated with the current context is visible in the public catalogue, \"N\" otherwise."
+    type: "enum (Y, N)"
 
   completionTime:
-    desc: "The date at which the content referenced by the tracking row has been completed [JULIEN] WRONG => the last access date"
+    desc: "The date at which the content referenced by the tracking row has been last accessed"
+    type: "datetime"
 
   constantValue:
     desc: "Return the constant value specified in this column's child elements."
+    type: "string"
 
   contentGuid:
     desc: "The GUID of the learning object version."
+    type: "string"
 
   contentLocale:
     desc: "The locale of the learning object version."
+    type: "string"
 
   contentRefNumber:
     desc: "The reference number of the learning object version."
+    type: "string"
 
   contentTitle:
     desc: "The title of the learning object version."
+    type: "string"
 
   creationDate:
     desc: "The date at which the object (learner, training course or training session) was created."
+    type: "date"
 
   description:
-    desc: "The description of the training course. /!\ Other contexts maybe"
+    desc: "The description of the training course. /!\ Other contexts maybe."
+    type: "string"
 
   endDate:
     desc: "The end date of the session."
+    type: "date"
 
   eventAllDay:
-    desc: "Every days for this event."
+    desc: "'true' if the event lasts the whole day, false otherwise."
+    type: "enum (true, false)"
 
   eventClassRoomCapacity:
     desc: "The room capacity of the event."
+    type: "int"
 
   eventClassRoomDescription:
     desc: "The room description of the event."
+    type: "string"
 
   eventClassRoomEquipments:
     desc: "The room equipments of the event."
+    type: "string"
 
   eventClassRoomTitle:
     desc: "The room title of the event."
+    type: "string"
 
   eventClassRoomType:
     desc: "The room type of the event."
+    type: "enum (Standard, Virtual)"
 
   eventDescription:
     desc: "The description of the event."
+    type: "string"
 
   eventDuration:
     desc: "The duration of the event."
+    type: "int"
 
   eventEndDate:
     desc: "The end date of the event."
+    type: "date"
 
   eventEndTime:
     desc: "The end time of the event."
+    type: "time"
 
   eventFacilitator:
     desc: "The facilitator of the event."
+    type: "string"
 
   eventLocation:
     desc: "The location of the event."
+    type: "string"
 
   eventLocationID:
     desc: "The ID of the location of the event."
+    type: "int"
 
   eventRoom:
     desc: "The room of the event."
+    type: "string"
 
   eventRoomGuid:
     desc: "The guid of the room of the event."
+    type: "string"
 
   eventID:
     desc: "The ID of the event."
+    type: "int"
 
   eventStartDate:
     desc: "The start date of the event."
+    type: "date"
 
   eventStartTime:
     desc: "The start time of the event."
+    type: "time"
 
   eventStatus:
-    desc: "The status of the event."
+    desc: "The validation status of the event. Values can be C, P, CA, respectively for Confirmed, Pending, CAncelled."
+    type: "enum (C, P, CA)"
 
   eventTeacher:
     desc: "The teacher of the event."
+    type: "string"
 
   eventTimeZone:
     desc: "The timezone of the event."
+    type: "string"
 
   eventTitle:
     desc: "The title of the event."
+    type: "string"
 
   eventVirtualMeetingURL:
     desc: "Link to the virtual meeting of the event."
+    type: "url"
 
   eventVirtualRoomLink:
     desc: "Link to the virtual room of the event."
+    type: "url"
 
   firstCompletionDate:
-    desc: "The date at which the content referenced by the training has been completed for the first time."
+    desc: "The date and time at which the content referenced by the training has been completed for the first time."
+    type: "datetime"
 
   firstLaunchDate:
-    desc: "The date at which the content referenced by the tracking row has been launched for the first time."
+    desc: "The date and time at which the content referenced by the tracking row has been launched for the first time."
+    type: "datetime"
 
   gamificationAction:
     desc: "Label localized of the action."
+    type: "string"
 
   gamificationActionCode:
     desc: "unique ID/code for an action."
+    type: "string"
 
   gamificationDateTime:
     desc: "Date time when this action occured."
+    type: "datetime"
 
   gamificationPoints:
     desc: "The number of points acquired for this action."
-
-  isdownloadable:
-    desc: ""
-
-  ismobile:
-    desc: ""
+    type: "int"
 
   lastPlatformAccessDate:
     desc: "The last date at which the learner has accessed the platform."
+    type: "datetime"
 
   learningObjectAssignements:
     desc: "The number of tracking rows associated with this learning object."
+    type: "int"
 
   learningObjectAuthorFirstName:
     desc: "The first name of the author of the learning object."
+    type: "string"
 
   learningObjectAuthorId:
     desc: "The ID used by the database to identify the author of the learning object."
+    type: "int"
 
   learningObjectAuthorLastName:
     desc: "The last name of the author of the learning object."
+    type: "string"
 
   learningObjectAverageCompletionTime:
-    desc: "The average completion time of the learning object."
+    desc: "The average time spent by learners of the learning object."
+    type: "int"
 
   learningObjectAverageScore:
     desc: "The average rating of the learning object."
+    type: "float"
 
   learningObjectCode:
     desc: "The reference number of the learning object."
+    type: "string"
 
   learningObjectCompletions:
     desc: "The number of tracking rows associated with the learning object which are completed."
+    type: "int"
 
   learningObjectCreationDate:
     desc: "The creation date of the learning object."
+    type: "datetime"
 
   learningObjectDisplayedType:
     desc: "The type (interactive content, audio, image, ...) of the learning object."
+    type: "string"
 
   learningObjectDuration:
-    desc: "The duration of the learning object."
+    desc: "The duration of the learning object (in minutes)."
+    type: "int"
 
   learningObjectFirstLaunchDate:
     desc: "The date at which the learning object has been launched for the first time."
+    type: "datetime"
 
   learningObjectGuid:
     desc: "The GUID of the learning object."
+    type: "string"
 
   learningObjectId:
     desc: "The ID used by the database to identify the learning object."
+    type: "int"
 
   learningObjectIncludedInLO:
-    desc: "What is included in the learning object."
+    desc: "Metadata field 'Included in this learning product' of learning object."
+    type: "string"
 
   learningObjectLastLaunchDate:
     desc: "The date at which the learning object has been launched for the last time."
+    type: "datetime"
 
   learningObjectLearningPoints:
-    desc: "The learning points of the learning object."
+    desc: "Metadata field 'What you will learn' of learning object."
+    type: "string"
 
   learningObjectLevel:
     desc: "The level of the learning object."
+    type: "enum (0, 1, 2, 3)"
 
   learningObjectLocales:
     desc: "The locales in which the learning object is available."
+    type: "string"
 
   learningObjectModificationDate:
     desc: "The last modification date of the learning object."
+    type: "datetime"
 
   learningObjectNbOfComments:
     desc: "The number of comments for the learning object."
+    type: "int"
 
   learningObjectNbTimesFavorited:
     desc: "The number of times the learning object has been added to a favorite list by a learner."
+    type: "int"
 
   learningObjectPublisher:
     desc: "The publisher of the learning object."
+    type: "datetime"
 
   learningObjectRatingByLearners:
     desc: "The rating given by the learners on the learning object."
+    type: "float"
 
   learningObjectRatingDisplayed:
     desc: "The rating that is displayed on the learning object."
+    type: "float"
 
   learningObjectRatingNbByLearners:
     desc: "The number of rating votes by learners on the learning object."
+    type: "int"
 
   learningObjectRatingNbDisplayed:
     desc: "The displayed number of rating votes by learners on the learning object."
+    type: "int"
 
   learningObjectSummary:
-    desc: "The summar of the learning object."
+    desc: "The summary (description) of the learning object."
+    type: "string"
 
   learningObjectTags:
     desc: "The tags associated to the learning object."
+    type: "string"
 
   learningObjectTargetAudience:
     desc: "The target audience of the learning object."
+    type: "string"
 
   learningObjectThemes:
     desc: "The themes of the learning object."
+    type: "string"
 
   learningObjectThumbnailLarge:
     desc: "The URL to the large-sized thumbnail of the learning object."
+    type: "url"
 
   learningObjectThumbnailMedium:
     desc: "The URL to the medium-sized thumbnail of the learning object."
+    type: "url"
 
   learningObjectThumbnailSmall:
     desc: "The URL to the small-sized thumbnail of the learning object."
+    type: "url"
 
   learningObjectTitle:
     desc: "The title of the learning object."
+    type: "string"
 
   learningObjectTotalTimeSpent:
-    desc: "The total time spent on the learning object by all learners of the platform."
+    desc: "The total time spent on the learning object by all learners of the platform (in minutes)."
+    type: "int"
 
   learningObjectType:
     desc: "The runtime (SCORM, MP4, AICC, ...) of the learning object."
+    type: "string"
 
   learningObjectVersionAssignements:
     desc: "The number of tracking rows associated with this learning object version."
+    type: "int"
 
   learningObjectVersionAuthorFirstName:
     desc: "The first name of the author of the learning object version."
+    type: "string"
 
   learningObjectVersionAuthorId:
     desc: "The ID used by the database to identify the author of the learning object version."
+    type: "int"
 
   learningObjectVersionAuthorLastName:
     desc: "The last name of the author of the learning object version."
+    type: "string"
 
   learningObjectVersionAverageCompletionTime:
-    desc: "The average completion time of the learning object version."
+    desc: "The average time spent by learners of the learning object version (in minutes)."
+    type: "int"
 
   learningObjectVersionAverageScore:
     desc: "The average rating of the learning object version."
+    type: "float"
 
   learningObjectVersionCode:
     desc: "The reference number of the learning object version."
+    type: "string"
 
   learningObjectVersionCompletions:
     desc: "The number of tracking rows associated with the learning object version which are completed."
+    type: "int"
 
   learningObjectVersionCreationDate:
     desc: "The date at which the learning object version was created."
+    type: "datetime"
 
   learningObjectVersionDisplayedType:
     desc: "The type (interactive content, audio, image, ...) of the learning object version."
+    type: "string"
 
   learningObjectVersionDuration:
-    desc: "The duration of the learning object version."
+    desc: "The duration of the learning object version (in minutes)."
+    type: "int"
 
   learningObjectVersionFirstLaunchDate:
     desc: "The date at which the learning object version was launched for the first time."
+    type: "datetime"
 
   learningObjectVersionGuid:
     desc: "The GUID used by the database to identify the learning object version."
+    type: "string"
 
   learningObjectVersionId:
     desc: "The ID used by the database to identify the learning object version."
+    type: "int"
 
   learningObjectVersionIncludedInLO:
-    desc: "What is included in the learning object version."
+    desc: "Metadata field 'Included in this learning product' of learning object."
+    type: "string"
 
   learningObjectVersionLastLaunchDate:
     desc: "The date at which the learning object version was launched for the last time."
+    type: "datetime"
 
   learningObjectVersionLearningPoints:
-    desc: "The learning points of the learning object version."
+    desc: "Metadata field 'What you will learn' of learning object."
+    type: "string"
 
   learningObjectVersionLevel:
     desc: "The level of the learning object version."
+    type: "enum (0, 1, 2, 3)"
 
   learningObjectVersionLocale:
     desc: "The locale of the learning object version."
+    type: "string"
 
   learningObjectVersionLoGuid:
     desc: "The GUID of the original learning object."
+    type: "string"
 
   learningObjectVersionLoId:
     desc: "The ID used by the database to identify the original learning object."
+    type: "int"
 
   learningObjectVersionModificationDate:
     desc: "The date at which the learning object version was modified for the last time."
+    type: "datetime"
 
   learningObjectVersionPublisher:
     desc: "The publisher of the learning object version."
+    type: "string"
+
+  learningObjectVersionStatus:
+    desc: "The status of a Learning Object version"
+    type: "enum (Validated, Disabled, Under construction, Pending validation)"
 
   learningObjectVersionSummary:
-    desc: "The summary of the learning object version."
+    desc: "The summary (description) of the learning object version."
+    type: "string"
 
   learningObjectVersionTags:
     desc: "The tags associated with the learning object version."
+    type: "string"
 
   learningObjectVersionTargetAudience:
     desc: "The target audience of the learning object version."
+    type: "string"
 
   learningObjectVersionThemes:
     desc: "A comma separated list of the themes of the learning object version."
+    type: "string"
 
   learningObjectVersionThumbnailLarge:
     desc: "The URL to the large-sized thumbnail of the learning object version."
+    type: "url"
 
   learningObjectVersionThumbnailMedium:
     desc: "The URL to the medium-sized thumbnail of the learning object version."
+    type: "url"
 
   learningObjectVersionThumbnailSmall:
     desc: "The URL to the small-sized thumbnail of the learning object version."
+    type: "url"
 
   learningObjectVersionTitle:
     desc: "The title of the learning object version."
+    type: "string"
 
   learningObjectVersionTotalTimeSpent:
-    desc: "The total time spent on the learning object version by all learners of the platform."
+    desc: "The total time spent on the learning object version by all learners of the platform (in minutes)."
+    type: "int"
 
   learningObjectVersionType:
     desc: "The runtime (SCORM, MP4, AICC, ...) of the learning object version."
+    type: "string"
 
   learningObjectVersionVersion:
-    desc: "The version of the learning object version."
+    desc: "The version number of the learning object version."
+    type: "int"
 
   learningObjectViewsByLearners:
     desc: "The number of views of the learning object."
+    type: "int"
 
   learningObjectViewsDisplayed:
-    desc: "The displayed number of views of the learning object."
+    desc: "The displayed number of views of the learning object (real view by learners + fake views added in the back-office)."
+    type: "int"
 
   locale:
-    desc: "Local of the label."
+    desc: "Label of the locale."
+    type: "string"
 
   logDate:
     desc: "The date at which the tracking log was created."
+    type: "date"
 
   managerLogin:
     desc: "The manager's login."
+    type: "string"
 
   maxNbLearners:
     desc: "The maximum number of learners that can enroll to the training session."
+    type: "int"
 
   modality:
     desc: "The modality of the associated training course."
+    type: "enum(learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
 
   modificationDate:
     desc: "The date at which the object (training course, training session) was last modified."
+    type: "datetime"
 
   Name:
     desc: "Description"
+    type: "string"
 
   nbLO:
     desc: "The total number of learning objects in the same session as the learning object referenced by the tracking row."
+    type: "int"
 
   nbLOFinished:
     desc: "The total number of learning objects that the learner has finished in the same session as the learning object referenced by the tracking row."
+    type: "int"
 
   nbLOStarted:
     desc: "The total number of learning objects that the learner has started in the same session as the learning object referenced by the tracking row."
+    type: "int"
 
   pathModificationDate:
     desc: "The date at which the associated training course was last modified (learning object added, folders reorganized,...)."
+    type: "datetime"
 
   platformAccessDate:
     desc: "A date at which the learner has accessed the platform."
+    type: "datetime"
 
   pointsGained:
     desc: "Points gained on the content."
+    type: "int"
 
   progression:
     desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
+    type: "float"
 
   progressionMandatory:
     desc: "The total progress of the learner (on the mandatory learning objects) in the current session."
+    type: "float"
 
   registeredLearners:
     desc: "The number of learners that have enrolled to the training session."
+    type: "int"
 
   registrationDate:
     desc: "The date of the registration."
+    type: "datetime"
 
   registrationGuid:
     desc: "The GUID of the registration."
+    type: "string"
 
   reportId:
     desc: "The database ID used to identify the tracking row."
@@ -520,147 +686,187 @@ col:
 
   score:
     desc: "The score the learner has achieved on the content."
+    type: "float"
 
   npsScore:
     desc: "Score of a NPS activity."
+    type: "int"
 
   sessionEndDate:
     desc: "The end date of the session."
+    type: "date"
 
   sessionGuid:
     desc: "The GUID of the session."
+    type: "string"
 
   sessionId:
     desc: "The database ID used to identify the session."
+    type: "int"
 
   sessionStartDate:
     desc: "The start date of the session."
+    type: "date"
 
   sessionTitle:
     desc: "The title of the session."
+    type: "string"
 
   startDate:
     desc: "The start date of the session."
+    type: "date"
 
   status:
-    desc: "The progress status (completed, incomplete or not started) of the content referenced by the tracking row."
-
-  learningObjectVersionStatus:
-    desc: "The status of a Learning Object version (`Validated`, `Disabled`, `Under construction` or `Pending validation`)"
+    desc: "The progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'."
+    string: "enum (completed, incomplete, not started)"
 
   thresholdReachedDate:
     desc: "The date on which the learner has reached the success threshold of the training course."
+    type: "datetime"
 
   timeGlobal:
     desc: "The total time the learner spent on the content."
+    type: "timeGlobalFormat"
 
   timeSpentCBT:
-    desc: "The total time spent in classrooms."
+    desc: "The total time spent in classroom events."
+    type: "timeGlobalFormat"
 
   timeSpentDigital:
     desc: "The total time spent on digital activities."
+    type: "timeGlobalFormat"
 
   timeSpent:
     desc: "The total time the learner spent on the content."
+    type: "timeGlobalFormat"
 
   title:
-    desc: "The title of the training course. /!\ Other contexts maybe"
+    desc: "The title of the main object exported (when there is only one type of object exported). For example, you will need more specific columns when exporting registrations or tracking (learningObjectVersionTitle, sessionTitle, trainingTitle...)"
+    type: "string"
 
   trainingAudience:
-    desc: "The target audience of the training course."
+    desc: "The target audience of the training course (metadata field 'Who should attend?')."
+    type: "string"
 
   trainingBenefits:
-    desc: "The benefits of the training course."
+    desc: "The benefits of the training course (metadata field 'Learning outcomes')."
+    type: "string"
 
   trainingBOLink:
     desc: "The URL to the record page of the training course."
+    type: "url"
 
   trainingChapters:
     desc: "The chapter hierarchy of the training course."
+    type: "string"
 
   trainingContentAuthor:
     desc: "The author of the learning object."
+    type: "string"
 
   trainingContentCatalog:
     desc: "The catalog to which the learning object belongs."
+    type: "string"
 
   trainingContentCode:
     desc: "The reference number of the learning object."
+    type: "string"
 
   trainingContentFolder:
     desc: "The name of the folder in which the learning object is placed (inside the training course)."
+    type: "string"
 
   trainingContentGuid:
     desc: "The GUID of the learning object."
+    type: "string"
 
   trainingContentMandatory:
     desc: "The flag (Y or N) indicating if the learning object is mandatory in the context of the training course."
+    type: "enum (Y, N)"
 
   trainingContentOrder:
-    desc: "The order of the learning object in the training course."
+    desc: "The sort order of the learning object in the training course."
+    type: "float"
 
   trainingContentRuntime:
     desc: "The runtime of the learning object (SCORM content, CrossKnowledge learning product,...)."
+    type: "string"
 
   trainingContentSubtype:
     desc: "The subtype of the learning object (Business review, custom, session,...)."
+    type: "string"
 
   trainingContentTitle:
     desc: "The title of the learning object."
+    type: "string"
 
   trainingContentType:
     desc: "The type of the learning object (Reading document, interactive document,...)."
+    type: "string"
 
   trainingDescription:
     desc: "The description of the training course."
-
-  trainingDigestSettings:
-    desc: "The digest settings of the training course."
+    type: "string"
 
   trainingDuration:
     desc: "The duration of the training course."
+    type: "string"
 
   trainingFolderDescription:
     desc: "The descriptions of the folders in the training course, separated by commas."
+    type: "string"
 
   trainingFurtherInformation:
-    desc: "Further information on the training course."
+    desc: "Further information on the training course (metadata field 'Further information')."
+    type: "string"
 
   trainingGoals:
-    desc: "The goals of the training course."
+    desc: "The goals of the training course (metadata field 'What you will learn')."
+    type: "string"
 
   trainingGuid:
     desc: "The GUID of the training course."
+    type: "string"
 
   trainingId:
     desc: "The database ID used to identify the training course."
+    type: "int"
 
   trainingLearningPath:
-    desc: "The overview of the training course."
+    desc: "The overview of the training course (metadata field 'Training course overview')."
+    type: "string"
 
   trainingLocale:
     desc: "The main locale of the training course."
+    type: "string"
 
   trainingModality:
     desc: "The modality of the training course."
+    type: "enum(learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
 
   trainingPathCode:
     desc: "The reference number of the training course."
+    type: "string"
 
   trainingPrice:
     desc: "The price of the training course."
+    type: "string"
 
   trainingPublisher:
     desc: "The publisher of the training course."
+    type: "string"
 
   trainingStatus:
-    desc: "The status (published, archived or under construction) of the training course. The values displayed in this column can be configured via the `trainingStatusFormat` parameter."
+    desc: "The validation status of the training course. The values displayed in this column are C, P, A which respectively mean Under Construction, Published, Archive. These values can be configured via the `trainingStatusFormat` parameter."
+    type: "enum (C, P, A)"
 
   trainingTitle:
     desc: "The title of the training course."
+    type: "string"
 
   trainingWelcomeText:
     desc: "The welcome text of the training course."
+    type: "string"
 
 param:
 
@@ -670,7 +876,7 @@ param:
 
   ancestorsWithCurrent:
     desc: "For each tracking data row, the learner's hierarchy can be exported with the other data. This parameter tells the provider whether to include the learner's group in the hierarchy or not. If set to `yes`, the learner's current group will be included. Otherwise, it will be removed from the exported hierarchy."
-    type: "Yes/No  element"
+    type: "yesNoElement"
 
   badgeCategory:
     desc: "Restrict on certain badge 'colors'. Can be `gold`, `silver` or `bronze`. One value is allowed, case must be respected because of XML validator"
@@ -678,7 +884,7 @@ param:
 
   catalogVisibility:
     desc: "Only export training courses that have the specified catalog visibility."
-    type: "Y/N element"
+    type: "YNElement"
 
   connectionStatusFormat:
     desc: "The format in which to display the connection status."
@@ -694,7 +900,7 @@ param:
 
   deltaMode:
     desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
-    type: "Y/N element"
+    type: "YNElement"
 
   entityIds:
     desc: "A comma-separated list of the entity ids to filter on. If multiple entity IDs are provided, then the export will return data about learners who belong to at least one of those entities."
@@ -702,15 +908,15 @@ param:
 
   eventClassRoomTypeFilter:
     desc: "Export with filter Virtual or Standard."
-    type: "VirtualStandardElement"
+    type: "enum (Standard, Virtual)"
 
   eventDurationAllDayFilter:
     desc: "Export all day between a start day and a end day."
     type: "YNElement"
 
   eventStatusFilter:
-    desc: "Export with a status filter `C` - Confirmed, `P` - Pending, `CA` - Cancelled"
-    type: "CPCAElement"
+    desc: "Export only events with a chosen status (C - Confirmed, P - Pending, CA - Cancelled)"
+    type: "enum (C, P, CA)"
 
   excludeDeactivatedContents:
     desc: "Excludes learning objects that have `Deactivated` status"
@@ -721,7 +927,7 @@ param:
 
   failedConnections:
     desc: "Whether to include failed connections."
-    type: "Yes/No  element"
+    type: "yesNoElement"
 
   groupIds:
     desc: "<i class='fa fa-exclamation-circle preference'></i> This parameter is deprecated in the CKLS 14.1 version, please use `entityIds` instead. A comma-separated list of the group ids to filter on. If multiple group ids are provided, then the export will return data about learners who belong to at least one of those groups."
@@ -786,7 +992,7 @@ param:
 
   timeFrames:
     desc: "Once a learner has completed a learning object, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFramesScale.`"
-    type: "int"
+    type: "timeFrameScale"
 
   timeFramesScale:
     desc: "Once a learner has completed a learning object, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFrames`."
@@ -794,11 +1000,11 @@ param:
 
   timeFrameScaleMode:
     desc: "This parameter is used in addition to `timeFrames` and `timeFramesScale` to determine how the total time spent is estimated. Possible values are `lastActivity` or `timeSpent`"
-    url: /data-timeframescalemode.html
+    type: "timeFrameScale"
 
   timeGlobalFormat:
     desc: "Time format in which the `timeGlobal` column should be exported"
-    url: /data-timeglobalformat.html
+    type: "timeGlobalFormat"
 
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
@@ -821,8 +1027,8 @@ param:
     type: "string"
 
   trainingStatus:
-    desc: "Only export training courses that have the specified statuses. This parameter contains a comma-separated list of training statuses (see the default values in `trainingStatus`)."
-    type: "trainingStatusFormat"
+    desc: "Only export training courses that have the specified statuses. This parameter contains a comma-separated list of training statuses (see the available values in column `trainingStatus`)."
+    type: "string"
 
   trainingStatusFormat:
     desc: "Configure what value to display for each training status value."
@@ -834,4 +1040,14 @@ param:
 
   withoutLaunchTime:
     desc: "Whether or not to export tracking data that has no launch date (the learner has never launched the content). By default, the provider will only export tracking data where the learner has launched the content at least once."
-    type: "Yes/No  element"
+    type: "yesNoElement"
+
+datatype:
+  timeGlobalFormat:
+    url: /data-timeglobalformat.html
+
+  timeFrameScale:
+    url: /data-timeframescalemode.html
+
+  trainingStatusFormat:
+    url: /data-trainingstatusformat.html
