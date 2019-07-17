@@ -7,64 +7,21 @@ summary: ""
 sidebar: home_sidebar
 permalink: training-log-provider.html
 folder: Export
+dynamic_content: true
+columns: [reportId, reportGuid, candidateId, candidateGuid, candidateName, candidateFirstname, candidateLogin, 
+    candidateEmail, candidateRefNumber, candidateCustomFieldGuid, candidateTimeZone, candidateGroupAncestors, candidateSmartgroups,
+    candidateEntityAncestors, candidateGroupName, candidateEntityName, trainingId, trainingGuid, trainingTitle, 
+    trainingPathCode, sessionId, sessionGuid, sessionTitle, sessionStartDate, sessionEndDate, registrationGuid, 
+    learningObjectGuid, contentGuid, contentTitle, contentRefNumber, contentLocale, learningObjectPublisher, learningObjectRealCompletionTime,
+    trainingContentFolder, trainingContentMandatory, firstLaunchDate, completionTime, firstCompletionDate, progression, 
+    score, status, timeGlobal, constantValue, logDate, templatedValue]
+parameters: [dateFormat, dateTimeFormat, groupIds, entityIds, modality, onlyFromImportedRegistrations, 
+    onlyFromImportedSessions, onlyFromImportedTraining, preferredLocales, publishers, reportStatus, statusFormat, 
+    timeFrames, timeFramesScale, timeFrameScaleMode, timeGlobalFormat, trainingGuid, trainingPathCode, trainingStatus, 
+    trainingPublishers, trainingStatusFormat, trainingModalityFormat, sessionTitle, sessionGuid, withoutLaunchTime, 
+    deltaMode, ancestorsWithCurrent, learnersSmartGroups, catalogVisibility, templates, onlyHrisSelectedItems, stripHTML, 
+    maxLength]
 ---
-
-
-### Available columns
-
-Name | Description
----|---
-`candidateId` | {{site.data.IO_items.col.candidateId.desc}}
-`candidateGuid` | {{site.data.IO_items.col.candidateGuid.desc}}
-`candidateRefNumber` | {{site.data.IO_items.col.candidateRefNumber.desc}}
-`candidateName` | {{site.data.IO_items.col.candidateName.desc}}
-`candidateFirstname` | {{site.data.IO_items.col.candidateFirstname.desc}}
-`candidateLogin` | {{site.data.IO_items.col.candidateLogin.desc}}
-`candidateEmail` | {{site.data.IO_items.col.candidateEmail.desc}}
-`candidateGroupAncestors` | {{site.data.IO_items.col.candidateGroupAncestors.desc}}
-`candidateGroupName` | {{site.data.IO_items.col.candidateGroupName.desc}}
-`candidateCustomFieldGuid` | {{site.data.IO_items.col.candidateCustomFieldGuid.desc}}
-`candidatePresentation` | {{site.data.IO_items.col.candidatePresentation.desc}}
-`candidateTimeZone` | {{site.data.IO_items.col.candidateTimeZone.desc}}
-`contentGuid` | {{site.data.IO_items.col.contentGuid.desc}}
-`learningObjectGuid` | {{site.data.IO_items.col.learningObjectGuid.desc}}
-`contentRefNumber` | {{site.data.IO_items.col.contentRefNumber.desc}}
-`contentTitle` | {{site.data.IO_items.col.contentTitle.desc}}
-`contentLocale` | {{site.data.IO_items.col.contentLocale.desc}}
-`learningObjectPublisher` | {{site.data.IO_items.col.learningObjectPublisher.desc}}
-`registrationGuid` | {{site.data.IO_items.col.registrationGuid.desc}}
-`sessionId` | {{site.data.IO_items.col.sessionId.desc}}
-`sessionTitle` | {{site.data.IO_items.col.sessionTitle.desc}}
-`sessionGuid` | {{site.data.IO_items.col.sessionGuid.desc}}
-`sessionStartDate` | {{site.data.IO_items.col.sessionStartDate.desc}}
-`sessionEndDate` | {{site.data.IO_items.col.sessionEndDate.desc}}
-`trainingId` | {{site.data.IO_items.col.trainingId.desc}}
-`trainingGuid` | {{site.data.IO_items.col.trainingGuid.desc}}
-`trainingPathCode` | {{site.data.IO_items.col.trainingPathCode.desc}}
-`trainingTitle` | {{site.data.IO_items.col.trainingTitle.desc}}
-`trainingContentFolder` | {{site.data.IO_items.col.trainingContentFolder.desc}}
-`trainingContentMandatory` | {{site.data.IO_items.col.trainingContentMandatory.desc}}
-`firstLaunchDate` | {{site.data.IO_items.col.firstLaunchDate.desc}}
-`completionTime` | {{site.data.IO_items.col.completionTime.desc}}
-`firstCompletionDate` | {{site.data.IO_items.col.firstCompletionDate.desc}}
-`progression` | {{site.data.IO_items.col.progression.desc}}
-`score` | {{site.data.IO_items.col.score.desc}}
-`status` | {{site.data.IO_items.col.status.desc}}
-`timeGlobal` | {{site.data.IO_items.col.timeGlobal.desc}}
-`constantValue` | {{site.data.IO_items.col.constantValue.desc}}
-`logDate` | {{site.data.IO_items.col.logDate.desc}}
-`trainingModality` | {{site.data.IO_items.col.trainingModality.desc}}
-`trainingPublisher` | {{site.data.IO_items.col.trainingPublisher.desc}}
-
-### Filters and parameters
-
-Name | Description
----|---
-`groupIds` | {{site.data.IO_items.param.groupIds.desc}}
-`entityIds` | {{site.data.IO_items.param.entityIds.desc}}
-`publishers` | {{site.data.IO_items.param.publishers.desc}}
-`timeFrames` | {{site.data.IO_items.param.timeFrames.desc}}
-`timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}
 
 ### Examples
 ```xml

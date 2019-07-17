@@ -140,6 +140,10 @@ col:
     desc: "The learner's reference number."
     type: "string"
 
+  candidateSmartgroups:
+    desc: "The list of the learner's smartgroups names separated by semicolons."
+    type: "string"
+
   candidateTimeZone:
     desc: "The candidate's timezone."
     type: "string"
@@ -415,6 +419,10 @@ col:
   learningObjectRatingNbDisplayed:
     desc: "The displayed number of rating votes by learners on the learning object."
     type: "int"
+
+  learningObjectRealCompletionTime:
+    desc: "The last launch date of the resource, or NULL if the progression is not 100%."
+    type: "datetime"
 
   learningObjectSummary:
     desc: "The summary (description) of the learning object."
@@ -718,14 +726,20 @@ col:
 
   status:
     desc: "The progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'."
-    string: "enum (completed, incomplete, not started)"
+    type: "enum (completed, incomplete, not started)"
+
+  templatedValue:
+    desc: "A column to be used with the 'templates' option. This column requires an attribute 'templateId' which refers to the definition of one template."
+    type: "string"
 
   thresholdReachedDate:
     desc: "The date on which the learner has reached the success threshold of the training course."
     type: "datetime"
 
   timeGlobal:
-    desc: "The total time the learner spent on the content."
+    desc: "<ul><li>If the current context is a Tracking: the total time the learner spent on the content.</li>\
+      <li>If the current context is a Tracking Log: the time the learner spent on the content on the day related to the current log. </li>\
+      <li>If the options timeFrames and timeFramesScale are specified in the provider, then the timeGlobal value is filter to only the time spent during the chosen period.</li></ul>"
     type: "timeGlobalFormat"
 
   timeSpentCBT:
@@ -773,7 +787,7 @@ col:
     type: "string"
 
   trainingContentFolder:
-    desc: "The name of the folder in which the learning object is placed (inside the training course)."
+    desc: "The name of the folder in which the learning object is timeGlobalplaced (inside the training course)."
     type: "string"
 
   trainingContentGuid:
@@ -934,6 +948,10 @@ param:
     type: "string"
     deleted: true
 
+  learnersSmartGroups:
+    desc: "A list of IDs of smartgroups separated by commas. Allows to filter the exported results on the specified smartgroups."
+    type: "string"
+
   maxLength:
     desc: "If not empty, this option will crop each value to the specified max length (each cell, not each line)."
     type: "integer"
@@ -953,6 +971,10 @@ param:
   onlyFromImportedSessions:
     desc: "Only export tracking data related to sessions that were imported."
     type: "yesNoElement"
+
+  onlyHrisSelectedItems:
+    desc: "Only export results defined in the BO of the CKLS for the HRIS connector. <br/> @see <a href='https://techwiki.crossknowledge.com/LMS/HRIS_integration/Data_export_-_Add_a_filter_to_export_only_selected_resources'>on Techwiki</a>"
+    type: "string"
 
   preferredLocales:
     desc: "The comma-separated list of preferred locales."
@@ -985,6 +1007,10 @@ param:
   stripHTML:
     desc: "If not empty, this option will remove any HTML tag from the exported data."
     type: "string"
+
+  templates:
+    desc: "The definition of a dynamic template, to allow to customize the returned value for a column. It also allows to combine the values of several columns into one."
+    type: "templates"
 
   threshold:
     desc: "Whether or not to export tracking data that has no launch date (the learner has never launched the content). When points will be exported, use the threshold to convert them (points*threshold). Useful for incentive tool. Default value 1 . All values are allowed, so be careful (0, negatives, etc)"
@@ -1045,6 +1071,9 @@ param:
 datatype:
   timeGlobalFormat:
     url: /data-timeglobalformat.html
+
+  templates:
+    url: /data-templates.html
 
   timeFrameScale:
     url: /data-timeframescalemode.html
