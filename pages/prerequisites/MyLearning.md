@@ -17,8 +17,9 @@ We strongly recommend migrating to [My Learning]( https://www.youtube.com/watch?
 ## Compatibility
 
 My Learning is compatible with the following devices:
-* Apple iOS: any device with iOS 10 and above
-* Android: any device with Android KitKat 4.4 (API 19) and above - a non contractual list can be found [here](http://www.theandroidcop.com/list-of-android-smartphones-and-tablets-getting-android-4-4-kitkat-update)
+* Apple iOS: any device with iOS 11 and above
+* Android: any device with Android Marshmallow 6.0 (API 23) and above - a non contractual list can be found [here](https://en.droidwiki.org/wiki/List_of_Android_version_names)
+From December 1st 2019, My Learning will be supported on any device using Android Nougat 7 (API 25) and above.
 * Windows Phone: we do not have a native app, and we did not plan it, but our CKLS can be accessed via the browser.
 
 It is available on both stores under CrossKnowledge My Learning
