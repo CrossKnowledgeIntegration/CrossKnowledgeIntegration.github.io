@@ -10,9 +10,7 @@ folder: prerequisites
 
 ## Learn vs My Learning
 
-Learn is our legacy mobile app. This app does not support our latest technology [Blendedx]( https://www.youtube.com/watch?v=Ab6_IiCz1a8 ) and won't work on **iPhone using iOS 12 and above.**
-
-We strongly recommend migrating to [My Learning]( https://www.youtube.com/watch?v=RcR7IznmaHE ). Get in touch with your CrossKnowledge contact to have more information.
+Learn is our legacy mobile app. This mobile application is no longer supported, and is not available anymore on Apple and Google stores.
 
 ## Compatibility
 
