@@ -60,7 +60,7 @@ CrossKnowledge LMS is a web-based application needing the following environment 
         </tr>
         <tr>
             <td>Tested email readers</td>
-            <td>Outlook 2010, Outlook 2013, Lotus Notes 8.5, Gmail, Outlook 365</td>
+            <td>Outlook 2010, Outlook 2013, Lotus Notes 9, Gmail, Outlook 365</td>
         </tr>
         <tr>
             <td>HTTPS</td>
@@ -102,6 +102,8 @@ These technical requirements may be modified according to technical developments
 In addition to those, specific requirements apply to:
 - Facilitator in Front-office interface: workstation prerequisites above are applicable, except Internet Explorer which requires IE11 or above
 - Blendedˣ Embedded Web Resource Activity and Embedded BI tool in Analyze workspace: these features are used to integrate a 3rd party content from the web. CrossKnowledge can not guaranty the compatibility of the integrated content
+
+In order to ensure a good user experience for Blendedˣ Embedded Content Activity, please ensure that SCORM contents are built to be responsive. For example, no Flash should be included in the SCORM content.
 
 
 ### Tablet compatibility
