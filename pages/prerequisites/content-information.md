@@ -46,3 +46,5 @@ The Team (LO Code TTxxxxx) and New CrossKnowledge Sessions (v3) | See Content pr
 ### CrossKnowledge Contents additional Requirements
 
 95% of CrossKnowledge content will not require any more specific software, including videos and CrossKnowedge Session built with Mohive. Some third party content might require Flash Player. Please ask us for detailed information.
+
+Please note that content built with Flash will not be responsive.
