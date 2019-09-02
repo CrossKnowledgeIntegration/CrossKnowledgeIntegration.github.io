@@ -50,7 +50,7 @@ TeamSHIFT is a new CrossKnowledge solution which requires the following environm
         </tr>
         <tr>
             <td>Email clients</td>
-            <td>Outlook 2010, 2013 or 365, Lotus Notes: 8.5 or newer, Gmail or Google Inbox</td>
+            <td>Standard email readers are supported to deliver CK standard emails. Email content is HTML.</td>
         </tr>
 		<tr>
             <td>Sound card</td>
