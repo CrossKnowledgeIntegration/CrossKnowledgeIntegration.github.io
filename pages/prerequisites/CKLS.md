@@ -66,7 +66,7 @@ CrossKnowledge LMS is a web-based application needing the following environment 
             <td>HTTPS</td>
             <td>
             SSL Protocols :<br>
-            - Protocol-TLSv1.1<br>
+            - Protocol-TLSv1.1 until September 2019 (will then be sunset)<br>
             - Protocol-TLSv1.2<br>
             SSL Ciphers:<br>
             - ECDHE-ECDSA-AES128-GCM-SHA256<br>
