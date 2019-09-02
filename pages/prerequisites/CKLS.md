@@ -59,8 +59,8 @@ CrossKnowledge LMS is a web-based application needing the following environment 
             <td>latest version</td>
         </tr>
         <tr>
-            <td>Tested email readers</td>
-            <td>Outlook 2010, Outlook 2013, Lotus Notes 9, Gmail, Outlook 365</td>
+            <td>Email clients</td>
+            <td>Standard email readers are supported to deliver CK standard emails. Email content is HTML.</td>
         </tr>
         <tr>
             <td>HTTPS</td>
