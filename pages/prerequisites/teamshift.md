@@ -62,7 +62,7 @@ TeamSHIFT is a new CrossKnowledge solution which requires the following environm
         </tr>
         <tr>
             <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). TLSv1.x protocols are supported.</td>
+            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). TLSv1.1 protocol is supported until September 2019. TLSv1.2 protocol is recommended.</td>
         </tr>
         <tr>
             <td>Popup blocker for the solution</td>
