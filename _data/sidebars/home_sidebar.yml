@@ -251,6 +251,9 @@ entries:
         - title: Tracking Log
           url: /training-log-provider.html
           output: web
+        - title: Activity
+          url: /activity-provider.html
+          output: web
         - title: Training Audit Content
           url: /training-audit-content-provider.html
           output: web

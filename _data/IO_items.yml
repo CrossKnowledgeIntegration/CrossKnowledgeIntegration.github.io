@@ -12,9 +12,29 @@ col:
     desc: "Duration of the activity."
     type: "int"
 
+  activityFirstAccessDate:
+    desc: "Indicates when the learner launched the activity for the first time"
+    type: "datetime"
+
+  activityId:
+    desc: "The ID used in the database to reference the Blendedx activity."
+    type: "int"
+
+  activityLastAccessDate:
+    desc: "Indicates when the learner launched the activity for the last time"
+    type: "datetime"
+
   activityPoints:
     desc: "Points of the activity."
     type: "int"
+
+  activityType:
+    desc: "Label of the activity type (ex: Learning resource, Assessment, Survey...)."
+    type: "string"
+
+  attendanceStatus:
+    desc: "Learner's attendance status (only available for classroom activities). "
+    type: "enum(Present, Absent, Absent but excused, No information, Not applicable)"
 
   badge:
     desc: "Localized label of the badge."
@@ -283,6 +303,10 @@ col:
   eventVirtualRoomLink:
     desc: "Link to the virtual room of the event."
     type: "url"
+
+  feedbackDate:
+    desc: "Indicates when the facilitator has sent his/her feedback"
+    type: "datetime"
 
   firstCompletionDate:
     desc: "The date and time at which the content referenced by the training has been completed for the first time."
@@ -612,6 +636,10 @@ col:
     desc: "The displayed number of views of the learning object (real view by learners + fake views added in the back-office)."
     type: "int"
 
+  likes:
+    desc: "Displays the number of likes received for the activity."
+    type: "int"
+
   locale:
     desc: "Label of the locale."
     type: "string"
@@ -672,6 +700,10 @@ col:
     desc: "The total progress of the learner (on the mandatory learning objects) in the current session."
     type: "float"
 
+  progressStatus:
+    desc: "Activity's completion status (some statuses are only available depending on the activity type)"
+    type: "enum(Not started, Started, Completed, Pending feeback, Feedback given)"
+
   registeredLearners:
     desc: "The number of learners that have enrolled to the training session."
     type: "int"
@@ -697,6 +729,10 @@ col:
     type: "float"
 
   npsScore:
+    desc: "Score of a NPS activity."
+    type: "int"
+
+  scoreNPS:
     desc: "Score of a NPS activity."
     type: "int"
 
@@ -727,6 +763,10 @@ col:
   status:
     desc: "The progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'."
     type: "enum (completed, incomplete, not started)"
+
+  submissionDate:
+    desc: "Indicates when the learner has submitted his/her assignment or reply."
+    type: "datetime"
 
   templatedValue:
     desc: "A column to be used with the 'templates' option. This column requires an attribute 'templateId' which refers to the definition of one template."
@@ -898,7 +938,7 @@ param:
 
   catalogVisibility:
     desc: "Only export training courses that have the specified catalog visibility."
-    type: "YNElement"
+    type: "yesNoElement"
 
   connectionStatusFormat:
     desc: "The format in which to display the connection status."
@@ -914,7 +954,7 @@ param:
 
   deltaMode:
     desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
-    type: "YNElement"
+    type: "yesNoElement"
 
   entityIds:
     desc: "A comma-separated list of the entity ids to filter on. If multiple entity IDs are provided, then the export will return data about learners who belong to at least one of those entities."
@@ -926,7 +966,7 @@ param:
 
   eventDurationAllDayFilter:
     desc: "Export all day between a start day and a end day."
-    type: "YNElement"
+    type: "yesNoElement"
 
   eventStatusFilter:
     desc: "Export only events with a chosen status (C - Confirmed, P - Pending, CA - Cancelled)"
@@ -950,6 +990,10 @@ param:
 
   learnersSmartGroups:
     desc: "A list of IDs of smartgroups separated by commas. Allows to filter the exported results on the specified smartgroups."
+    type: "string"
+
+  learningObjectPublishersName:
+    desc: "Only export data related to the list of publishers (linked to learning resources), filtered by title. Can contain several values separated by commas."
     type: "string"
 
   maxLength:
@@ -1017,11 +1061,11 @@ param:
     type: "string"
 
   timeFrames:
-    desc: "Once a learner has completed a learning object, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFramesScale.`"
+    desc: "Once a learner has completed a learning object or activity, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFramesScale.`"
     type: "timeFrameScale"
 
   timeFramesScale:
-    desc: "Once a learner has completed a learning object, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFrames`."
+    desc: "Once a learner has completed a learning object or activity, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFrames`."
     type: "timeFrameScale"
 
   timeFrameScaleMode:
@@ -1049,7 +1093,7 @@ param:
     type: "string"
 
   trainingPublishers:
-    desc: "Only export data related to the list of publishers, filtered by title. Can contain several values separated by commas."
+    desc: "Only export data related to the list of publishers (linked to training courses), filtered by title. Can contain several values separated by commas."
     type: "string"
 
   trainingStatus:
@@ -1069,6 +1113,9 @@ param:
     type: "yesNoElement"
 
 datatype:
+  reportStatus:
+    url: /data-reportstatus.html
+
   timeGlobalFormat:
     url: /data-timeglobalformat.html
 
