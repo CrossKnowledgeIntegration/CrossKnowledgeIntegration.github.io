@@ -1,0 +1,35 @@
+<h3 id="{{ include.title | downcase | replace: ' ', '-' }}" class="clickable-header top-level-header">{{ include.title }}</h3>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% assign columns = include.columns | sort '' %}
+    {% for c in columns %}
+        {% assign html = c %}
+        {% if include.collection[c].deleted %}
+            {% assign html = '<del>' | append: html | append: '</del>' %}
+        {% endif %}
+        {% assign html = '<code class="highlighter-rouge">' | append: html | append: '</code>' %}
+        {% if include.collection[c].url %}
+            {% assign html = '<a href="' | append: include.collection[c].url | append: '">' | append: html | append: '</a>' %}
+        {% endif %}
+
+        {% assign type = include.collection[c].type %}
+        {% if site.data.IO_items.datatype[type] %}
+            {% assign type = '<a href="' | append: site.data.IO_items.datatype[type].url | append: '">' | append: type | append: '</a>' %}
+        {% endif %}
+
+        <tr>
+            <td>{{ html }}</td>
+            <td>{{ type }}</td>
+            <td>{{ include.collection[c].desc }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

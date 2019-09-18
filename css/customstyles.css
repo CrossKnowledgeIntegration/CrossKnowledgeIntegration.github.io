@@ -182,8 +182,12 @@ table th[class*="col-"] {
 
 
 table td:first-child {
-    width: 150px;
+    min-width: 200px;
     /*font-weight:bold;*/
+}
+
+table td:first-child code {
+    white-space: nowrap;
 }
 
 table.boldFirstColumn td:first-child {
