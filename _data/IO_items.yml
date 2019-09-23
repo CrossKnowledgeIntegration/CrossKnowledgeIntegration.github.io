@@ -752,6 +752,10 @@ col:
     desc: "The database ID used to identify the session."
     type: "int"
 
+  sessionLocale:
+    desc: "The locale of the current session."
+    type: "string"
+
   sessionStartDate:
     desc: "The start date of the session."
     type: "date"
@@ -1000,6 +1004,14 @@ param:
   learnersSmartGroups:
     desc: "A list of IDs of smartgroups separated by commas. Allows to filter the exported results on the specified smartgroups."
     type: "string"
+
+  lastNFullMonths:
+    desc: "Similar to the 'timeFrames*' options. Filter to only export data created or updated less than N full months ago.<br /><i>Overrides 'timeFrameScale' and 'lastNMonths' options.</i>"
+    type: "integer"
+
+  lastNMonths:
+    desc: "Similar to the 'timeFrames*' options. Filter to only export data created or updated less than N months ago.<br /><i>Overrides 'timeFrameScale' option.</i>"
+    type: "integer"
 
   learningObjectPublishersName:
     desc: "Only export data related to the list of publishers (linked to learning resources), filtered by title. Can contain several values separated by commas."

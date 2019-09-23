@@ -8,8 +8,7 @@ sidebar: home_sidebar
 permalink: training-audit-content-provider.html
 folder: Export
 dynamic_content: true
-important_note: { link: training-audit-metadata-provider.html,  
-    content: This provider also allows to use all the columns from the provider <a href="training-audit-metadata-provider.html">'Training Audit Metadata'</a> }
+important_note: This provider also allows to use all the columns from the provider <a href="training-audit-metadata-provider.html">'Training Audit Metadata'</a>
 columns: [trainingContentGuid, trainingContentCode, trainingContentTitle, trainingContentType, trainingContentRuntime,
     trainingContentAuthor, trainingContentCatalog, trainingContentSubtype, trainingContentOrder, trainingContentFolder,
     trainingContentMandatory]
