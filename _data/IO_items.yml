@@ -98,31 +98,15 @@ col:
 
   candidateFollowLinkedin:
     desc: "The learner's LinkedIn username."
-    type: "url"
-    url: /candidateFollowLinkedin.html
+    type: "string"
 
   candidateFollowTwitter:
-    desc: "The learner's Twitter handle."
-    type: ""
+    desc: "The learner's Twitter username."
+    type: "string"
 
   candidateFollowWeb:
     desc: "The learner's web page."
     type: "url"
-
-  candidateGroupAncestors:
-    desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityAncestors` instead."
-    type: "string"
-    deleted: true
-
-  candidateGroupId:
-    desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityId` instead."
-    type: "int"
-    deleted: true
-
-  candidateGroupName:
-    desc: "<i class='fa fa-exclamation-circle preference'></i> This column is deprecated in the CKLS 14.1 version, please use `candidateEntityName` instead."
-    type: "string"
-    deleted: true
 
   candidateGuid:
     desc: "The learner's GUID."
@@ -995,11 +979,6 @@ param:
   failedConnections:
     desc: "Whether to include failed connections."
     type: "yesNoElement"
-
-  groupIds:
-    desc: "<i class='fa fa-exclamation-circle preference'></i> This parameter is deprecated in the CKLS 14.1 version, please use `entityIds` instead. A comma-separated list of the group ids to filter on. If multiple group ids are provided, then the export will return data about learners who belong to at least one of those groups."
-    type: "string"
-    deleted: true
 
   learnersSmartGroups:
     desc: "A list of IDs of smartgroups separated by commas. Allows to filter the exported results on the specified smartgroups."

@@ -9,8 +9,7 @@ permalink: consolidated-tracking-provider.html
 folder: Export
 dynamic_content: true
 columns: [candidateId, candidateName, candidateFirstname, candidateLogin, candidateEmail, candidateRefNumber, candidateGuid, 
-    candidateGroupAncestors, candidateEntityAncestors, candidateGroupName, candidateEntityName, candidateCustomFieldGuid, 
-    candidateSmartgroups,
+    candidateEntityAncestors, candidateEntityName, candidateCustomFieldGuid, candidateSmartgroups,
     lastPlatformAccessDate, nbLO, nbLOStarted, nbLOFinished, registrationDate, registrationGuid, sessionId, sessionTitle, 
     sessionGuid, sessionStartDate, sessionEndDate, trainingId, trainingTitle, trainingPathCode, trainingGuid, 
     catalogVisibility, trainingStatus, trainingModality, trainingPublisher, trainingChapters, trainingDuration, 
@@ -35,9 +34,7 @@ parameters: [modality, trainingPathCode, sessionTitle, sessionGuid, trainingGuid
             <candidateEmail/>
             <candidateRefNumber/>
             <candidateGuid/>
-            <candidateGroupAncestors/>
             <candidateEntityAncestors/>
-            <candidateGroupName/>
             <candidateEntityName/>
             <candidateCustomFieldGuid/>
             <lastPlatformAccessDate/>
