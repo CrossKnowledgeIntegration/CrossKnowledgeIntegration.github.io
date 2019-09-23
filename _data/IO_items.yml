@@ -753,8 +753,11 @@ col:
     type: "date"
 
   status:
-    desc: "The progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'."
-    type: "enum (completed, incomplete, not started)"
+    desc: "<b>For the providers related to tracking: </b>The progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'.
+    <br />Type: enum (completed, incomplete, not started)
+    <br /><b>For the provider 'Platform Candidates Access': </b>The status of the of connection attempt (0 = failed, 1 = successful).
+    <br />Type: enum (0, 1)"
+    type: "enum"
 
   submissionDate:
     desc: "Indicates when the learner has submitted his/her assignment or reply."
