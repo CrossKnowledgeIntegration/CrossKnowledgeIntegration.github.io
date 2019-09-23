@@ -545,8 +545,12 @@ col:
     type: "int"
 
   learningObjectVersionIncludedInLO:
-    desc: "Metadata field 'Included in this learning product' of learning object."
+    desc: "Metadata field 'Included in this learning product' of learning object version."
     type: "string"
+
+  learningObjectVersionIsMobile:
+    desc: "Metadata field 'Launchable in the Learn application' of learning object version."
+    type: "enum (true, false)"
 
   learningObjectVersionLastLaunchDate:
     desc: "The date at which the learning object version was launched for the last time."
@@ -658,7 +662,7 @@ col:
 
   modality:
     desc: "The modality of the associated training course."
-    type: "enum(learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
+    type: "enum (learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
 
   modificationDate:
     desc: "The date at which the object (training course, training session) was last modified."
@@ -702,7 +706,7 @@ col:
 
   progressStatus:
     desc: "Activity's completion status (some statuses are only available depending on the activity type)"
-    type: "enum(Not started, Started, Completed, Pending feeback, Feedback given)"
+    type: "enum (Not started, Started, Completed, Pending feeback, Feedback given)"
 
   registeredLearners:
     desc: "The number of learners that have enrolled to the training session."
@@ -896,7 +900,7 @@ col:
 
   trainingModality:
     desc: "The modality of the training course."
-    type: "enum(learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
+    type: "enum (learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
 
   trainingPathCode:
     desc: "The reference number of the training course."
@@ -956,6 +960,10 @@ param:
     desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
     type: "yesNoElement"
 
+  durationFormat:
+    desc: "Format for durations in the exported data (ex: learning resource duration)."
+    type: "enum (hh:mm:ss, minutes, seconds)"
+
   entityIds:
     desc: "A comma-separated list of the entity ids to filter on. If multiple entity IDs are provided, then the export will return data about learners who belong to at least one of those entities."
     type: "string"
@@ -974,6 +982,7 @@ param:
 
   excludeDeactivatedContents:
     desc: "Excludes learning objects that have `Deactivated` status"
+    type: "yesNoElement"
 
   exportAllSessions:
     desc: "Whether to include failed connections."
