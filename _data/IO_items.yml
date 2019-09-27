@@ -233,7 +233,11 @@ col:
     type: "time"
 
   eventFacilitator:
-    desc: "The facilitator of the event."
+    desc: "The full name of the facilitator of the event (back-office user)."
+    type: "string"
+
+  eventFacilitatorGuid:
+    desc: "The GUID of the facilitator of the event (back-office user)."
     type: "string"
 
   eventLocation:
@@ -299,6 +303,18 @@ col:
   firstLaunchDate:
     desc: "The date and time at which the content referenced by the tracking row has been launched for the first time."
     type: "datetime"
+
+  foFacilitatorName:
+    desc: "Name of the front-office facilitor of the event."
+    type: "string"
+
+  foFacilitatorFirstname:
+    desc: "First name of the front-office facilitor of the event."
+    type: "string"
+
+  foFacilitatorEmail:
+    desc: "Email address of the front-office facilitor of the event."
+    type: "string"
 
   gamificationAction:
     desc: "Label localized of the action."
@@ -919,6 +935,10 @@ col:
 
 param:
 
+  activityNames:
+    desc: "Filter on the name of activities. Can contain several values separated by commas."
+    type: "string"
+
   activityType:
     desc: "Blendedx registrations are exported as soon as their related path contains at least one activity of this type. Other modalities' registrations are exported if the filter is 0 (content) and 4 (classroom) and contains CBT activities"
     type: "string"
@@ -926,6 +946,10 @@ param:
   ancestorsWithCurrent:
     desc: "For each tracking data row, the learner's hierarchy can be exported with the other data. This parameter tells the provider whether to include the learner's group in the hierarchy or not. If set to `yes`, the learner's current group will be included. Otherwise, it will be removed from the exported hierarchy."
     type: "yesNoElement"
+
+  attendanceStatus:
+    desc: "Filter on the learner's attendance status (only available for classroom activities)."
+    type: "enum(present, absent, absent but excused, no information, event not started, not applicable)"
 
   badgeCategory:
     desc: "Restrict on certain badge 'colors'. Can be `gold`, `silver` or `bronze`. One value is allowed, case must be respected because of XML validator"
@@ -967,6 +991,10 @@ param:
     desc: "Export all day between a start day and a end day."
     type: "yesNoElement"
 
+  eventStarted:
+    desc: "Whether the classroom event's date is in the past."
+    type: "yesNoElement"
+
   eventStatusFilter:
     desc: "Export only events with a chosen status (C - Confirmed, P - Pending, CA - Cancelled)"
     type: "enum (C, P, CA)"
@@ -979,9 +1007,17 @@ param:
     desc: "Whether to include failed connections."
     type: "yesNoElement"
 
+  facilitatorGuids:
+    desc: "Filter on the GUID of back-office facilitators. Can contain several values separated by commas."
+    type: "string"
+
   failedConnections:
     desc: "Whether to include failed connections."
     type: "yesNoElement"
+
+  foFacilitatorIds:
+    desc: "Filter on the database ID of front-office facilitators. Can contain several values separated by commas."
+    type: "string"
 
   learnersSmartGroups:
     desc: "A list of IDs of smartgroups separated by commas. Allows to filter the exported results on the specified smartgroups."
@@ -994,6 +1030,10 @@ param:
   lastNMonths:
     desc: "Similar to the 'timeFrames*' options. Filter to only export data created or updated less than N months ago.<br /><i>Overrides 'timeFrameScale' option.</i>"
     type: "integer"
+
+  locationIds:
+    desc: "Filter on the database ID of one or several location (column eventLocationID). Can contain several values separated by commas."
+    type: "string"
 
   learningObjectPublishersName:
     desc: "Only export data related to the list of publishers (linked to learning resources), filtered by title. Can contain several values separated by commas."
@@ -1034,6 +1074,10 @@ param:
   reportStatus:
     desc: "Export tracking data that have the specified report statuses (several values can be given)."
     type: "reportStatus"
+
+  roomGuids:
+    desc: "Filter on the GUID of one or several rooms. Can contain several values separated by commas."
+    type: "string"
 
   selectedLocales:
     desc: "The comma-separated list of selected locales."
