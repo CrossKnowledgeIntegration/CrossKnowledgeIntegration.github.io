@@ -36,7 +36,7 @@ parameters: [modality, trainingPathCode, sessionTitle, sessionGuid, trainingGuid
             <candidateGuid/>
             <candidateEntityAncestors/>
             <candidateEntityName/>
-            <candidateCustomFieldGuid/>
+            <candidateCustomFieldGuid label="Department">8345C0A3-B8AB-7F65-0638-39B0E1244AA8</candidateCustomFieldGuid>
             <lastPlatformAccessDate/>
             <nbLO/>
             <nbLOStarted/>

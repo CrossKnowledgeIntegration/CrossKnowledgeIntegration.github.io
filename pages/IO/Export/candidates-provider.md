@@ -32,7 +32,7 @@ parameters: [ancestorsWithCurrent, timeFrames, timeFramesScale, entityIds, learn
                 <candidateRefNumber/>
                 <candidateGuid/>
                 <managerLogin/>
-                <candidateCustomFieldGuid/>
+                <candidateCustomFieldGuid label="Department">8345C0A3-B8AB-7F65-0638-39B0E1244AA8</candidateCustomFieldGuid>
                 <candidateTimeZone/>
                 <candidatePresentation/>
                 <candidateFollowWeb/>
