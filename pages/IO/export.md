@@ -39,15 +39,16 @@ The XML configuration file defines the structure of the data export files
 
 File export action allows to create a temporary file with the data from the chosen provider.
 
-Option | Description | Mandatory | Default value
+{:.optionsTable}
+Option | Description | Mandatory | Allowed values | Default value
 --- | --- | --- | --- 
-`format` | Format of the temporary file | No | `CSV`
-`encoding` | Encoding of the temporary file | No | `UTF-8`
-`delimiter` | The delimiter to be used in the temporary file to separate the columns | No | `semicolon`
-`showHeaders` | Whether or not to write the column headers to the temporary file | No | `yes`
-`decimal` | The decimal separator to be used in the temporary file | No | `point`
+`format` | Format of the temporary file | No | CSV, TSV, XML, XLS | `CSV`
+`encoding` | Encoding of the temporary file | No | UTF-8, ISO-8859-1, WINDOWS-1252, UTF-16LE | `UTF-8`
+`delimiter` | The delimiter to be used in the temporary file to separate the columns | No | comma, pipe, semicolon, tabulation | `semicolon`
+`showHeaders` | Whether or not to write the column headers to the temporary file | No | yes, no | `yes`
+`decimal` | The decimal separator to be used in the temporary file | No | comma, point | `point`
 
-For example, the following consolidator will write the data given by the provider to a temporary CSV file, using UTF-8 encoding, semicolon delimiter and include column headers.
+For example, the following configuration will write the data given by the provider to a temporary CSV file, using UTF-8 encoding, semicolon delimiter and include column headers.
 
 ```xml
 <actions>
@@ -64,24 +65,25 @@ For example, the following consolidator will write the data given by the provide
 
 SFTP export action allows to create a temporary data file and upload it via sFTP to a remote server.
 
-Option | Description | Mandatory | Default value
+{:.optionsTable}
+Option | Description | Mandatory | Allowed values | Default value
 --- | --- | --- | ---
-`format` | Format of the temporary file. | No | `CSV`
-`encoding` | Encoding of the temporary file. | No | `UTF-8`
-`delimiter` | The delimiter to be used in the temporary file to separate the columns. | No | `semicolon`
-`showHeaders` | Whether or not to write the column headers to the temporary file. | No | `yes`
-`decimal` | The decimal separator to be used in the temporary file. | No | `point`
-`sftpHost` | Address of the sFTP server. | Yes | `Yes`	
-`sftpLogin` | Login to be used for the sFTP connection. | Yes | `Yes`	
-`sftpPassword` | Password to be used for the sFTP connection. |	Yes | `Yes`	
-`sftpFolder` | Path to the folder to fetch the file from. The path begins at the root folder of the supplied sFTP user. The parameter must begin with a '/'. | Yes | `root`
-`fileName` | Full name to be given to the file (with extension) when it is uploaded to the remote server. See Additional string formats | Yes | `Yes`	
+`format` | Format of the temporary file | No | CSV, TSV, XML, XLS | `CSV`
+`encoding` | Encoding of the temporary file | No | UTF-8, ISO-8859-1, WINDOWS-1252, UTF-16LE | `UTF-8`
+`delimiter` | The delimiter to be used in the temporary file to separate the columns | No | comma, pipe, semicolon, tabulation | `semicolon`
+`showHeaders` | Whether or not to write the column headers to the temporary file | No | yes, no | `yes`
+`decimal` | The decimal separator to be used in the temporary file | No | comma, point | `point`
+`sftpHost` | Address of the sFTP server. | Yes | - | 
+`sftpLogin` | Login to be used for the sFTP connection. | Yes | - | 
+`sftpPassword` | Password to be used for the sFTP connection. |	Yes | - | 
+`sftpFolder` | Path to the folder to fetch the file from. The path begins at the root folder of the supplied sFTP user. The parameter must begin with a '/'. | Yes | - |
+`fileName` | Full name to be given to the file (with extension) when it is uploaded to the remote server. See Additional string formats | Yes | - | 	
 
-The following consolidator will temporarily write the data given by the provider to a temporary CSV file, encoded using UTF-8, with semicolons as delimiters, with the column headers and using a '.' as the decimal separator. The file will then be uploaded to a specific folder on `10.145.23.15` with the following name: `temp_data_{day}_{month}_{year}.csv`.
+The following configuration will temporarily write the data given by the provider to a temporary CSV file, encoded using UTF-8, with semicolons as delimiters, with the column headers and using a '.' as the decimal separator. The file will then be uploaded to a specific folder on `10.145.23.15` with the following name: `temp_data_{day}_{month}_{year}.csv`.
 
 ```xml
 <actions>
-	<fileExportAction>
+	<sftpExportAction>
 		<format>CSV</format>
 		<encoding>UTF-8</encoding>
 		<delimiter>semicolon</delimiter>
@@ -92,7 +94,7 @@ The following consolidator will temporarily write the data given by the provider
 		<sftpPassword>p4ssword</sftpPassword>
 		<sftpFolder>/folder</sftpFolder>
 		<fileName>temp_data_%d_%m_%y.csv</fileName>
-	</fileExportAction>
+	</sftpExportAction>
 </actions>
 ```
 
@@ -108,6 +110,7 @@ In order to work properly, the consolidators must be declared in a specific orde
 
 ### Time logger
 
+Internal processor which computes the time spent by each part of the export, to display this time spent in the scheduled task logs.
 
 
 ### Move to folder
@@ -118,7 +121,7 @@ Option | Description | Mandatory | Default value
 --- | --- | --- | ---
 `fileName` | The filename format for the export files after they have been moved. | Yes | No default value
 `folderPath` | Path to the folder where the files will be moved to. No base path, a full path must be given. | Yes | No default value
-`deleteEmptyFiles` | If specified, empty exports files will be deleted. | No | `No`
+`deleteEmptyFiles` | If specified, empty exports files will be deleted. | No | `no`
 
 The following consolidator will move the export files to `/var/www/instance/data/exports/`.
 The export files will be renamed with respect to the following format: `export_{day}_{month}_{year}_{number of iteration}.csv`.
@@ -143,7 +146,21 @@ Message | Explanation
 
 ### Email report
 
-In addition to the link to download the error log file, another link that enables the user to download the export file is also included in the e-mail.
+An email can be sent to a list of email addresses at the end of the task. In addition to the link to download the error log file, another link that enables the user to download the export file is also included in the e-mail.
+
+Option | Description | Mandatory | Default value
+--- | --- | --- | ---
+`targetEmail` | Full path to the folder that will contain the old export files. There is no base path, the full path must be given. | No |
+`includeDownloadLink` | Wether the email's body needs to include a download link. | No | `no`
+
+```xml
+<consolidators>
+	<emailReport>
+		<targetEmail>mmouse@wiley.com</targetEmail>
+		<includeDownloadLink>yes</includeDownloadLink>
+	</emailReport>
+</consolidators>
+```
 
 ### Archive
 
@@ -207,7 +224,7 @@ Similar to the CleanFolder consolidator for imports, this consolidator cleans th
 Option | Description | Mandatory | Default value
 --- | --- | --- | ---
 `dataFolderPath` | Path to the folder containing the data to be cleaned. The base path is `DATA_PATH` (the data folder of the instance). | No | No default value
-`cleanLogs` | Whether or not to clean the log folder, which is `DATA_PATH/exports/logs` | No | `No`
+`cleanLogs` | Whether or not to clean the log folder, which is `DATA_PATH/exports/logs` | No | `no`
 `cleanOlderThan` | If specified, only clean data that is older than the number of days given in this option. | No | `30`
 
 
@@ -238,7 +255,7 @@ Option | Description | Mandatory | Default value
 --- | --- | --- | ---
 `inputFolderPath` | Path to the source folder. The base path is the data folder of the instance `DATA_PATH`. | Yes | No default value
 `outputFolderPath` | Path to the destination folder. The base path is the data folder of the instance `DATA_PATH`. | Yes | No default value
-`timestamp` | Whether to prepend the timestamp to the import file when moving it to the backup folder. | Yes | `No`
+`timestamp` | Whether to prepend the timestamp to the import file when moving it to the backup folder. | No | `no`
 
 
 The following consolidator will move all the files from `DATA_PATH/imports/source` to `DATA_PATH/imports/destination`, prepending the timestamp to the filenames while moving them.
@@ -270,7 +287,7 @@ Option | Description | Mandatory | Default value
 `type` | The archive format. | Yes | No default value
 `inputFolderPath` | Path to the folder containing the files to be archived. The base path is the data folder of the instance `DATA_PATH`. | Yes | No default value
 `outputFilePath` | Path to the output file (the resulting archive), without the extension. Date formats are supported in this parameter. The base path is the data folder of the instance `DATA_PATH`. | Yes | No default value
-`removeSources` | Whether or not to remove the original files once they have been archived.	| No | `Yes`
+`removeSources` | Whether or not to remove the original files once they have been archived.	| No | `yes`
 
 ```xml
 <postProcess>
@@ -294,7 +311,7 @@ Message | Explanation
 
 ### Encryption
 
-This allows to encrypt files with PGP and move the encrypted files to the specified folder. Be careful, if you use both: post process packager and PGP encryption (`clear_signed` and `signed` method) you may not be able to unzip the file.
+This allows to encrypt files with PGP and move the encrypted files to the specified folder. Be careful, if you use both: post process packager and PGP encryption (`clearsigned` and `signed` method) you may not be able to unzip the file.
 
 
 Option | Description | Mandatory | Default value
@@ -302,7 +319,7 @@ Option | Description | Mandatory | Default value
 `inputFolderPath` | Path to the folder containing the files to encrypt. The base path is the instance's data folder. | Yes | No default value
 `outputFolderPath` | Path to the folder that will contain the decrypted files. The base path is the instance's data folder. | Yes | No default value
 `signature` | Whether or not and how the file will be signed. | No | `signed`
-`removeSources` | Whether or not to remove the original encrypted files after a successful decryption. | No | `No`
+`removeSources` | Whether or not to remove the original encrypted files after a successful decryption. | No | `no`
 
 ```xml
 <postProcess>
@@ -323,8 +340,6 @@ Message | Explanation
 `You have to set a private key ring` | The path to the private key ring must be defined in the instance's configuration file. You should contact the IT department.
 `Command line [...] returns an unexpected error` | An unexpected error has occured during encryption. You should contact the support department.
 
-## Pre-processing
-
 ### Remote resource uploader
 
 Upload files to a specified folder on a remote directory via FTP, FTPS or SFTP.
@@ -338,11 +353,10 @@ Option | Description | Mandatory | Default value
 `password` | Password used to connect to the host via the chosen protocol with the chosen login. | Yes | No default value
 `sourceFilesPath` | Path to the files to upload to the host. Wildcards characters such as '*' are supported. The base path is the instance's data folder. | Yes | No default value
 `destinationFolderPath` | Path to the folder on the distant machine to which the files will be uploaded. The base path is the root folder of the supplied FTP/FTPS/sFTP user. | Yes | No default value	
-`removeSources` | Whether or not to remove the original files once the transfer is complete. | No | `Yes`
-
+`removeSources` | Whether or not to remove the original files once the transfer is complete. | No | `yes`
 
 ```xml
-<preProcess>
+<postProcess>
 	<remoteResourceUploader>
 		<protocol>sFTP</protocol>
 		<host>10.145.23.15</host>
@@ -352,10 +366,62 @@ Option | Description | Mandatory | Default value
 		<destinationFolderPath>foo/bar/</destinationFolderPath>
 		<removeSouces>no</removeSouces>
 	</remoteResourceUploader>
-</preProcess>
+</postProcess>
 ```
 
 Message | Explanation
 ---- | ----
 `Failed to upload files to remote server` | An unexpected error occured during the transfer. For further information, contact the support.
 `String '..' is forbidden in file path` | For security reasons, make sure that the specified file paths do not contain the '..' string.
+
+
+### CallBack Url
+
+Perform a HTTP request on a specific URL when the export is completed (`GET` or `POST`).
+
+Option | Description | Mandatory | Default value
+--- | --- | --- | ---
+`url` | URL to call. | Yes | No default value
+`method` | Protocol to be used for the file transfer. | No | `GET`
+`joinFileList` | Detailed configuration of files and folders to list in the data sent in the request. | No | No default value
+`fields` | Data fields to send back in the URL. | No | No default value
+
+
+```xml
+<postProcess>
+	<callBackUrl>
+		<url>www.google.com</url>
+		<method>POST</method>
+		<joinFileList>
+            <folderPath>folder1</folderPath> <!-- Name of one folder where to search files -->
+            <fieldName>field1</fieldName> <!-- GET/POST fieldname where to send the list of files for this folder -->
+        </joinFileList>
+		<joinFileList>
+            <folderPath>folder3</folderPath> <!-- Name of one folder where to search files -->
+            <fieldName>field3</fieldName> <!-- GET/POST fieldname where to send the list of files for this folder -->
+        </joinFileList>
+        <fields>
+            <field>
+                <name>client</name>
+                <value>disney</value>
+            </field>
+            <field>
+                <name>export</name>
+                <value>export-02</value>
+            </field>
+        </fields>
+	</callBackUrl>
+</postProcess>
+```
+
+### HRIS Export
+
+Enable HRIS/OCN connector for this export (no optional parameter or value, just copy-paste the full example below in your XML configuration file).
+
+```xml
+<postProcess>
+    <HRISExportPostProcess>
+        <type>SUCCESSFACTOR</type>
+    </HRISExportPostProcess>
+</postProcess>
+```

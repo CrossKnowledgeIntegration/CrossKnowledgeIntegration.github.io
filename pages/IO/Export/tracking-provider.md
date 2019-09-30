@@ -9,13 +9,13 @@ permalink: tracking-provider.html
 folder: Export
 dynamic_content: true
 columns: [reportId, reportGuid, candidateId, candidateGuid, candidateName, candidateFirstname, candidateLogin, 
-    candidateEmail, candidateRefNumber, candidateCustomFieldGuid, candidateTimeZone, candidateGroupAncestors, candidateSmartgroups,
-    candidateEntityAncestors, candidateGroupName, candidateEntityName, trainingId, trainingGuid, trainingTitle, 
+    candidateEmail, candidateRefNumber, candidateCustomFieldGuid, candidateTimeZone, candidateSmartgroups,
+    candidateEntityAncestors, candidateEntityName, trainingId, trainingGuid, trainingTitle, 
     trainingPathCode, sessionId, sessionGuid, sessionTitle, sessionStartDate, sessionEndDate, registrationGuid, 
     learningObjectGuid, contentGuid, contentTitle, contentRefNumber, contentLocale, learningObjectPublisher, learningObjectRealCompletionTime,
     trainingContentFolder, trainingContentMandatory, firstLaunchDate, completionTime, firstCompletionDate, progression, 
     score, status, timeGlobal, constantValue, templatedValue]
-parameters: [dateFormat, dateTimeFormat, groupIds, entityIds, modality, onlyFromImportedRegistrations, 
+parameters: [dateFormat, dateTimeFormat, entityIds, modality, onlyFromImportedRegistrations, 
     onlyFromImportedSessions, onlyFromImportedTraining, preferredLocales, publishers, reportStatus, statusFormat, 
     timeFrames, timeFramesScale, timeFrameScaleMode, timeGlobalFormat, trainingGuid, trainingPathCode, trainingStatus, 
     trainingPublishers, trainingStatusFormat, trainingModalityFormat, sessionTitle, sessionGuid, withoutLaunchTime, 

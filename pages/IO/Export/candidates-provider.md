@@ -1,56 +1,22 @@
 ---
 title: Platform Candidates
 keywords: candidates, learners, export, data, report
-last_updated: 22 August, 2017
+last_updated: September, 2019
 tags:
-summary: ""
+summary: "Export learners"
 sidebar: home_sidebar
 permalink: candidates-provider.html
 folder: Export
+dynamic_content: true
+columns: [candidateId, candidateLogin, candidateName, candidateFirstname, candidateEmail, candidateRefNumber, candidateGuid, 
+    managerLogin, candidateCustomFieldGuid, candidateTimeZone, 
+    candidatePresentation, candidateFollowWeb, candidateFollowTwitter, candidateFollowLinkedin, candidateLocale, 
+    candidateLocales, candidateAccountActivated, candidateAccountActivatedFrom, candidateAccountActivatedUntil, 
+    lastPlatformAccessDate, creationDate, candidatePoints, candidateBadges, constantValue, candidateEntityName, 
+    candidateEntityId, candidateSmartgroups, candidateEntityAncestors]
+parameters: [ancestorsWithCurrent, timeFrames, timeFramesScale, entityIds, learnersSmartGroups, templates, stripHTML, 
+    maxLength, dateFormat, dateTimeFormat]
 ---
-
-### Available columns
-
-Name | Description
----|---
-`candidateId` | {{site.data.IO_items.col.candidateId.desc}}
-`candidateLogin` | {{site.data.IO_items.col.candidateLogin.desc}}
-`candidateName` | {{site.data.IO_items.col.candidateName.desc}}
-`candidateFirstname` | {{site.data.IO_items.col.candidateFirstname.desc}}
-`candidateEmail` | {{site.data.IO_items.col.candidateEmail.desc}}
-`candidateRefNumber` | {{site.data.IO_items.col.candidateRefNumber.desc}}
-`candidateGuid` | {{site.data.IO_items.col.candidateGuid.desc}}
-`managerLogin` | {{site.data.IO_items.col.managerLogin.desc}}
-`candidateGroupAncestors` | {{site.data.IO_items.col.candidateGroupAncestors.desc}}
-`candidateGroupId` | {{site.data.IO_items.col.candidateGroupId.desc}}
-`candidateCustomFieldGuid` | {{site.data.IO_items.col.candidateCustomFieldGuid.desc}}
-`candidateTimeZone` | {{site.data.IO_items.col.candidateTimeZone.desc}}
-`candidatePresentation` | {{site.data.IO_items.col.candidatePresentation.desc}}
-`candidateFollowWeb` | {{site.data.IO_items.col.candidateFollowWeb.desc}}
-`candidateFollowTwitter` | {{site.data.IO_items.col.candidateFollowTwitter.desc}}
-`candidateFollowLinkedin` | {{site.data.IO_items.col.candidateFollowLinkedin.desc}}
-`candidateLocale` | {{site.data.IO_items.col.candidateLocale.desc}}
-`candidateLocales` | {{site.data.IO_items.col.candidateLocales.desc}}
-`candidateAccountActivated` | {{site.data.IO_items.col.candidateAccountActivated.desc}}
-`candidateAccountActivatedFrom` | {{site.data.IO_items.col.candidateAccountActivatedFrom.desc}}
-`candidateAccountActivatedUntil` | {{site.data.IO_items.col.candidateAccountActivatedUntil.desc}}
-`lastPlatformAccessDate` | {{site.data.IO_items.col.lastPlatformAccessDate.desc}}
-`creationDate` | {{site.data.IO_items.col.creationDate.desc}}
-`candidatePoints` | {{site.data.IO_items.col.candidatePoints.desc}}
-`candidateBadges` | {{site.data.IO_items.col.candidateBadges.desc}}
-`constantValue` | {{site.data.IO_items.col.constantValue.desc}}
-
-### Filters and parameters
-
-Name | Description
----|---
-`ancestorsWithCurrent` | {{site.data.IO_items.param.ancestorsWithCurrent.desc}}
-`groupIds` | {{site.data.IO_items.param.groupIds.desc}}
-`timeFrames` | {{site.data.IO_items.param.timeFrames.desc}}
-`timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}
-`dateFormat` | {{site.data.IO_items.param.dateFormat.desc}}
-`dateTimeFormat` | {{site.data.IO_items.param.dateTimeFormat.desc}}
-
 
 ### Examples
 ```xml
@@ -66,9 +32,7 @@ Name | Description
                 <candidateRefNumber/>
                 <candidateGuid/>
                 <managerLogin/>
-                <candidateGroupAncestors/>
-                <candidateGroupId/>
-                <candidateCustomFieldGuid/>
+                <candidateCustomFieldGuid label="Department">8345C0A3-B8AB-7F65-0638-39B0E1244AA8</candidateCustomFieldGuid>
                 <candidateTimeZone/>
                 <candidatePresentation/>
                 <candidateFollowWeb/>
@@ -97,6 +61,7 @@ Name | Description
     <consolidators>
         <moveToFolder>
             <fileName>Platform_Candidates.csv</fileName>
+        </moveToFolder>
     </consolidators>
 </export>           
 ```

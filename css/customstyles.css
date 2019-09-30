@@ -161,9 +161,6 @@ table > colgroup + thead > tr:first-child > td,
 table > thead:first-child > tr:first-child > td {
     border-top: 0;
 }
-table > tbody + tbody {
-    b
-}
 table > tbody > tr:nth-of-type(odd) {
     background-color: #f9f9f9;
 }
@@ -198,6 +195,10 @@ table tr td {
     hyphens: auto;
 }
 
+.optionsTable td:nth-child(1) code, .optionsTable td:nth-child(5) code,
+    .optionsTable td:nth-child(1), .optionsTable td:nth-child(5) {
+    white-space: nowrap;
+}
 
 p.external a {
     text-align:right;
