@@ -3,7 +3,7 @@ title: Consolidated Gamification Events
 keywords:
 last_updated: September, 2019
 tags: 
-summary: ""
+summary: "Export all gamification events (gamification points received by learners)."
 sidebar: home_sidebar
 permalink: consolidated-gamification-events-provider.html
 folder: Export

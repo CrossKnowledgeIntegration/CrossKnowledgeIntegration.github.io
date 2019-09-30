@@ -3,7 +3,7 @@ title: Consolidated Gamification Badges
 keywords:
 last_updated: September, 2019
 tags: 
-summary: ""
+summary: "Export gamification badges received by learners."
 sidebar: home_sidebar
 permalink: consolidated-gamification-badges-provider.html
 folder: Export
