@@ -151,7 +151,7 @@ An email can be sent to a list of email addresses at the end of the task. In add
 Option | Description | Mandatory | Default value
 --- | --- | --- | ---
 `targetEmail` | Full path to the folder that will contain the old export files. There is no base path, the full path must be given. | No |
-`includeDownloadLink` | Wether the email's body needs to include a download link. | No | no
+`includeDownloadLink` | Wether the email's body needs to include a download link. | No | `no`
 
 ```xml
 <consolidators>
@@ -382,7 +382,7 @@ Perform a HTTP request on a specific URL when the export is completed (`GET` or 
 Option | Description | Mandatory | Default value
 --- | --- | --- | ---
 `url` | URL to call. | Yes | No default value
-`method` | Protocol to be used for the file transfer. | No | GET
+`method` | Protocol to be used for the file transfer. | No | `GET`
 `joinFileList` | Detailed configuration of files and folders to list in the data sent in the request. | No | No default value
 `fields` | Data fields to send back in the URL. | No | No default value
 
@@ -416,7 +416,7 @@ Option | Description | Mandatory | Default value
 
 ### HRIS Export
 
-Enable HRIS/OCN connector for this export.
+Enable HRIS/OCN connector for this export (no optional parameter or value, just copy-paste the full example below in your XML configuration file).
 
 ```xml
 <postProcess>
