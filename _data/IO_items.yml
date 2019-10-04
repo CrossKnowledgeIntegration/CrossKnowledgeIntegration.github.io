@@ -75,6 +75,7 @@ col:
   candidateEmail:
     desc: "The learner's e-mail address."
     type: "string"
+    mandatory: "No, but at least one of the fields `candidateLogin`, `candidateRefNumber` and `candidateEmail` must be specified"
 
   candidateEntityAncestors:
     desc: "The learner's entity ancestors."
@@ -127,6 +128,7 @@ col:
   candidateLogin:
     desc: "The learner's login."
     type: "string"
+    mandatory: No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified
 
   candidateName:
     desc: "The learner's name (family name/surname)."
@@ -143,6 +145,7 @@ col:
   candidateRefNumber:
     desc: "The learner's reference number."
     type: "string"
+    mandatory: No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified
 
   candidateSmartgroups:
     desc: "The list of the learner's smartgroups names separated by semicolons."
@@ -296,6 +299,10 @@ col:
     desc: "Indicates when the facilitator has sent his/her feedback"
     type: "datetime"
 
+  firstAccessDate:
+    desc: "The date and time at which the content referenced by the tracking row has been launched for the first time."
+    type: "datetime"
+
   firstCompletionDate:
     desc: "The date and time at which the content referenced by the training has been completed for the first time."
     type: "datetime"
@@ -331,6 +338,13 @@ col:
   gamificationPoints:
     desc: "The number of points acquired for this action."
     type: "int"
+
+  ignoredColumn:
+    desc: "Column present in the import file but to be ignored becuse it's not relevant for this import action"
+
+  lastAccessDate:
+    desc: "The date and time at which the content referenced by the tracking row has been accessed for the last time."
+    type: "datetime"
 
   lastPlatformAccessDate:
     desc: "The last date at which the learner has accessed the platform."
@@ -652,6 +666,16 @@ col:
     desc: "The date at which the tracking log was created."
     type: "date"
 
+  lovCode:
+    desc: "The reference number of the learning object version."
+    type: "string"
+    mandatory: No, but at least one of the fields lovCode and lovGuid must be specified
+
+  lovGuid:
+    desc: "The GUID used by the database to identify the learning object version."
+    type: "string"
+    mandatory: No, but at least one of the fields lovCode and lovGuid must be specified
+
   managerLogin:
     desc: "The manager's login."
     type: "string"
@@ -732,6 +756,10 @@ col:
     desc: "The score the learner has achieved on the content."
     type: "float"
 
+  scoreMax:
+    desc: "The maximum score the learner can  achieve on the content."
+    type: "int"
+
   npsScore:
     desc: "Score of a NPS activity."
     type: "int"
@@ -747,10 +775,14 @@ col:
   sessionGuid:
     desc: "The GUID of the session."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   sessionId:
     desc: "The database ID used to identify the session."
     type: "int"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   sessionLocale:
     desc: "The locale of the current session."
@@ -763,6 +795,8 @@ col:
   sessionTitle:
     desc: "The title of the session."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   startDate:
     desc: "The start date of the session."
@@ -808,6 +842,10 @@ col:
   title:
     desc: "The title of the main object exported (when there is only one type of object exported). For example, you will need more specific columns when exporting registrations or tracking (learningObjectVersionTitle, sessionTitle, trainingTitle...)"
     type: "string"
+
+  trackingStatus:
+    desc: "Completion status for the tracking currently imported. This is a mapping column, see specific documentation page for more details."
+    type: "trackingStatus"
 
   trainingAudience:
     desc: "The target audience of the training course (metadata field 'Who should attend?')."
@@ -896,6 +934,8 @@ col:
   trainingId:
     desc: "The database ID used to identify the training course."
     type: "int"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   trainingLearningPath:
     desc: "The overview of the training course (metadata field 'Training course overview')."
@@ -916,6 +956,8 @@ col:
   trainingPrice:
     desc: "The price of the training course."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   trainingPublisher:
     desc: "The publisher of the training course."
@@ -970,6 +1012,14 @@ param:
   dateTimeFormat:
     desc: "Format for dates in the exported data. The default datetime format is `YYYY-MM-DD hh:ii:ss`."
     type: "string"
+
+  defaultScoreMax:
+    desc: "Default maximum score to be used when importing tracking."
+    type: "int"
+
+  defaultTime:
+    desc: "Default time which needs to be used when importing tracking which only contains dates but no times."
+    type: "time"
 
   deltaMode:
     desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
@@ -1123,6 +1173,10 @@ param:
     desc: "Time format in which the `timeGlobal` column should be exported"
     type: "timeGlobalFormat"
 
+  timeZone:
+    desc: "Time format in which the `timeGlobal` column should be exported"
+    type: "string"
+
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
     type: "string"
@@ -1171,6 +1225,9 @@ datatype:
 
   timeFrameScale:
     url: /data-timeframescalemode.html
+
+  trackingStatus:
+    url: /data-trackingstatus.html
 
   trainingStatusFormat:
     url: /data-trainingstatusformat.html
