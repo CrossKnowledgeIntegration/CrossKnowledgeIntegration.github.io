@@ -33,7 +33,13 @@
             <td style="max-width: 200px">{{ type }}</td>
             <td>{{ include.collection[c].desc }}</td>
             {% if page.show_mandatory_column %}
-                <td>{{ include.collection[c].mandatory }}</td>
+                <td>
+                    {% if include.collection[c].mandatory %}
+                        {{ include.collection[c].mandatory }}
+                    {% else %}
+                    No
+                    {% endif %}
+                </td>
             {% endif %}
         </tr>
     {% endfor %}

@@ -339,6 +339,11 @@ col:
     desc: "The number of points acquired for this action."
     type: "int"
 
+  hieracrchyEntityName:
+    desc: "The name of the entity being imported. It is also used as unique identifier to define if an entity needs to be created or if an existing entity with this name needs to be updated.
+      <br/>If several entities have the same title, the first entity found with that name will be updated."
+    type: "string"
+
   ignoredColumn:
     desc: "Column present in the import file but to be ignored becuse it's not relevant for this import action"
 
@@ -1012,6 +1017,10 @@ param:
   dateTimeFormat:
     desc: "Format for dates in the exported data. The default datetime format is `YYYY-MM-DD hh:ii:ss`."
     type: "string"
+
+  defaultEntityId:
+    desc: "The ID of the entity under which all the newly created entities will be placed (default = 1)."
+    type: "int"
 
   defaultScoreMax:
     desc: "Default maximum score to be used when importing tracking."

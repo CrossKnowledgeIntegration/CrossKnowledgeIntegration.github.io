@@ -7,30 +7,22 @@ summary: "Create or update an entity with respect to the data row from the impor
 sidebar: home_sidebar
 permalink: createorupdate-entity-action.html
 folder: Import
+dynamic_content: true
+show_mandatory_column: true
+columns: [hieracrchyEntityName, ignoredColumn]
+parameters: [defaultEntityId]
 ---
-
-
-### Available columns
-
-Option | Description | Type | Mandatory | Default value
---- | --- | --- | --- | ---
-`ignoredColumn` |  	See columnsMapping_ignoredColumn. | actionColumn | No |
-`hieracrchyEntityName` |  See columnsMapping_hierarchyEntityName. | actionColumn | No |
-
-### Filters and parameters
-
-Option | Description | Type | Mandatory | Default value
---- | --- | --- | --- | ---
-`defaultEntityId` | The default value for the entity id | int | No | 1
-
 
 ### Examples
 
+Please see below a complete example, with data CSV to import, XML configuration, and resulting entity hierarchy. 
+
+XML:
 ```xml 
 <actions>
 	<createOrUpdateEntityAction>
 		<options>
-			<defaultEntityId>1</defaultEntityId>
+			<defaultEntityId>8</defaultEntityId>
 		</options>
 		<fields>
 			<hierarchyEntityName/>
@@ -40,7 +32,23 @@ Option | Description | Type | Mandatory | Default value
 </actions>
 ```
 
+CSV:
+```csv
+A,B
+A,C
+```
+
+HIERARCHY:
+
+```
+Entity 8
+ - A
+ - - B
+ - - C
+```
+
 ### Error Messages
 
 Message | Explanation
 ---- | ----
+Task will fail if the defaultEntityId is not a valid entity ID. | 
