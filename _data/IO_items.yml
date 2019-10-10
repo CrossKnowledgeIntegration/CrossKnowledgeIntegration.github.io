@@ -117,6 +117,10 @@ col:
     desc: "The database ID used to identify the learner."
     type: "int"
 
+  candidateLanguages:
+    desc: "The ordered list of chosen locales for the learner."
+    type: "string"
+
   candidateLocale:
     desc: "The chosen display locale for the learner, based on the available locales on the instance and their preferences."
     type: "string"
@@ -155,6 +159,10 @@ col:
     desc: "The candidate's timezone."
     type: "string"
 
+  candidateValidity:
+    desc: "The status of the learner's account (active/disabled)."
+    type: "candidateValidity"
+
   catalogVisibility:
     desc: "\"Y\" if the training course associated with the current context is visible in the public catalogue, \"N\" otherwise."
     type: "enum (Y, N)"
@@ -187,8 +195,32 @@ col:
     desc: "The date at which the object (learner, training course or training session) was created."
     type: "date"
 
+  custom:
+    desc: "Value for one of the learner's custom fields."
+    type: "string"
+
   description:
     desc: "The description of the training course. /!\ Other contexts maybe."
+    type: "string"
+
+  enabledFrom:
+    desc: "If the learner's account is only active during a limited period of time, the first date for which it is active."
+    type: "date"
+
+  enabledUntil:
+    desc: "If the learner's account is only active during a limited period of time, the last date for which it is active."
+    type: "date"
+
+  entityGuid:
+    desc: "GUID of the learner's entity."
+    type: "string"
+
+  entityId:
+    desc: "Database ID of the learner's entity."
+    type: "string"
+
+  entityName:
+    desc: "Name of the learner's entity."
     type: "string"
 
   endDate:
@@ -705,6 +737,10 @@ col:
     desc: "The manager's login."
     type: "string"
 
+  managerRefNumber:
+    desc: "The manager's reference number."
+    type: "string"
+
   maxNbLearners:
     desc: "The maximum number of learners that can enroll to the training session."
     type: "int"
@@ -744,6 +780,10 @@ col:
   pointsGained:
     desc: "Points gained on the content."
     type: "int"
+
+  presentation:
+    desc: "`Presentation` field from the learner profile."
+    type: "string"
 
   progression:
     desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
@@ -1062,8 +1102,12 @@ param:
     type: "string"
 
   defaultEntityId:
-    desc: "The ID of the entity under which all the newly created entities will be placed (default = 1)."
+    desc: "The ID of the entity under which all the newly created objects will be placed (default = 1)."
     type: "int"
+
+  defaultLangCode:
+    desc: "Default language code to be used if the column `language` is absent or empty."
+    type: "string"
 
   defaultScoreMax:
     desc: "Default maximum score to be used when importing tracking."
@@ -1077,9 +1121,17 @@ param:
     desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
     type: "yesNoElement"
 
+  disableImportFlag:
+    desc: "If set to `yes`, the generic import will not tag learners in the database as 'updated by the generic import'."
+    type: "yesNoElement"
+
   durationFormat:
     desc: "Format for durations in the exported data (ex: learning resource duration)."
     type: "enum (hh:mm:ss, minutes, seconds)"
+
+  enableAllLearners:
+    desc: "If set to `yes`, this will automatically force activated all the learners account updated by this import. This default value can be overriden by using the `candidateValidity` column for each learner."
+    type: "yesNoElement"
 
   entityIds:
     desc: "A comma-separated list of the entity ids to filter on. If multiple entity IDs are provided, then the export will return data about learners who belong to at least one of those entities."
@@ -1120,6 +1172,10 @@ param:
   foFacilitatorIds:
     desc: "Filter on the database ID of front-office facilitators. Can contain several values separated by commas."
     type: "string"
+
+  fullAccess:
+    desc: "If set to `no`, the import will only update the data which have been previously created or updated by the generic import itself."
+    type: "yesNoElement"
 
   learnersSmartGroups:
     desc: "A list of IDs of smartgroups separated by commas. Allows to filter the exported results on the specified smartgroups."
@@ -1229,6 +1285,10 @@ param:
     desc: "Time format in which the `timeGlobal` column should be exported"
     type: "string"
 
+  traineeSearchField:
+    desc: "This option is used to specify the columns that will be used as filters to find the learner."
+    type: "traineeSearchField"
+
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
     type: "string"
@@ -1266,6 +1326,9 @@ param:
     type: "yesNoElement"
 
 datatype:
+  candidateValidity:
+    url: /data-candidatevalidity.html
+
   reportStatus:
     url: /data-reportstatus.html
 
@@ -1280,6 +1343,9 @@ datatype:
 
   trackingStatus:
     url: /data-trackingstatus.html
+
+  traineeSearchField:
+    url: /data-traineesearchfield.html
 
   trainingStatusFormat:
     url: /data-trainingstatusformat.html

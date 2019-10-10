@@ -1,7 +1,7 @@
 ---
 title: Create Or Update Intervention Action
 keywords: tracking, consolidated, import, data, createOrUpdateInterventionAction
-last_updated: 08 November, 2017
+last_updated: October 2019
 tags:
 summary: "Create or update an intervention with respect to the data row from the import file."
 sidebar: home_sidebar
