@@ -347,6 +347,26 @@ col:
   ignoredColumn:
     desc: "Column present in the import file but to be ignored becuse it's not relevant for this import action"
 
+  interventionDate:
+    desc: "Start date of the intervention."
+    type: "datetime"
+    mandatory: "yes"
+
+  interventionDuration:
+    desc: "Duration of the intervention (in hours)."
+    type: "int"
+    mandatory: "yes"
+
+  interventionGuid:
+    desc: "Unique GUID of the intervention (only for update)."
+    type: "string"
+    mandatory: "yes"
+
+  interventionStatus:
+    desc: "Status for the intervention currently imported. Possible values are A (Active) or C (Cancelled)"
+    type: "enum (A, C)"
+    mandatory: "yes"
+
   lastAccessDate:
     desc: "The date and time at which the content referenced by the tracking row has been accessed for the last time."
     type: "datetime"
@@ -757,6 +777,20 @@ col:
     desc: "The GUID of the tracking row."
     type: "string"
 
+  roomGuid:
+    desc: "Unique GUID of the room."
+    type: "string"
+    mandatory: "yes"
+
+  roomLabel:
+    desc: "Label of the room."
+    type: "string"
+    mandatory: "yes"
+
+  roomCapacity:
+    desc: "Total number of places in this room."
+    type: "int"
+
   score:
     desc: "The score the learner has achieved on the content."
     type: "float"
@@ -817,6 +851,11 @@ col:
   submissionDate:
     desc: "Indicates when the learner has submitted his/her assignment or reply."
     type: "datetime"
+
+  teacherLogin:
+    desc: "Login of the teacher (back-office user) to assign as a teacher to the current intervention."
+    type: "string"
+    mandatory: "yes"
 
   templatedValue:
     desc: "A column to be used with the 'templates' option. This column requires an attribute 'templateId' which refers to the definition of one template."
@@ -935,6 +974,8 @@ col:
   trainingGuid:
     desc: "The GUID of the training course."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`
 
   trainingId:
     desc: "The database ID used to identify the training course."
@@ -957,6 +998,8 @@ col:
   trainingPathCode:
     desc: "The reference number of the training course."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`
 
   trainingPrice:
     desc: "The price of the training course."
