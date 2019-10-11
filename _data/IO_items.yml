@@ -728,6 +728,11 @@ col:
     type: "string"
     mandatory: No, but at least one of the fields lovCode and lovGuid must be specified
 
+  lovCodes:
+    desc: >
+      This option references the LO's refNumber and is used to specify wich LOs are included in the training course. It's possible to separate LOs by step with double pipe "||" and into the step with comma "," (ex: "REF1,REF2||REF3||REF4").
+    type: "string"
+
   lovGuid:
     desc: "The GUID used by the database to identify the learning object version."
     type: "string"
@@ -848,7 +853,7 @@ col:
     type: "int"
 
   sessionAction:
-    desc: "Flag to define wether the current row should update the related session ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
+    desc: "Flag to define wether the current data row should update the related session ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
     type: "enum (M, A)"
 
   sessionEndDate:
@@ -935,6 +940,10 @@ col:
     desc: "Completion status for the tracking currently imported. This is a mapping column, see specific documentation page for more details."
     type: "trackingStatus"
 
+  trainingAction:
+    desc: "Flag to define wether the current data row should update the related training course ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
+    type: "enum (M, A)"
+
   trainingAudience:
     desc: "The target audience of the training course (metadata field 'Who should attend?')."
     type: "string"
@@ -995,6 +1004,10 @@ col:
     desc: "The type of the learning object (Reading document, interactive document,...)."
     type: "string"
 
+  trainingCost:
+    desc: "Metadata 'Price' of the training course."
+    type: "string"
+
   trainingDescription:
     desc: "The description of the training course."
     type: "string"
@@ -1039,6 +1052,14 @@ col:
     desc: "The modality of the training course."
     type: "enum (learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
 
+  trainingOutcomes:
+    desc: "Metadata 'Learning outcomes' of the training course."
+    type: "string"
+
+  trainingOverview:
+    desc: "Metadata 'Training course overview' of the training course."
+    type: "string"
+
   trainingPathCode:
     desc: "The reference number of the training course."
     type: "string"
@@ -1055,6 +1076,15 @@ col:
     desc: "The publisher of the training course."
     type: "string"
 
+  trainingScoresVisibleByLearners:
+    desc: ""
+    type: ""
+
+  trainingSteps:
+    desc: >
+      This option is used to describe steps that will be added or updated. This option is only used for blended and blendedx modalities. This option is mandatory for blended modality, and mandatory for blendedx on course creation, but not for course update. Steps are separated by double pipe “||” and the separator used to separate step title and step duration is “|>”. A step is described by “StepTitle|>StepDuration” where StepTitle cannot be empty and duration is optionnal and it's a integer which represents step duration in days (eg : "Intro|>1||Basics|>2||Advanced concepts|>4||Conclusion").
+    type: "string"
+
   trainingStatus:
     desc: "The validation status of the training course. The values displayed in this column are C, P, A which respectively mean Under Construction, Published, Archive. These values can be configured via the `trainingStatusFormat` parameter."
     type: "enum (C, P, A)"
@@ -1065,6 +1095,10 @@ col:
 
   trainingWelcomeText:
     desc: "The welcome text of the training course."
+    type: "string"
+
+  trainingWhatYouWillLearn:
+    desc: "Metadata 'What you will learn' of the training course."
     type: "string"
 
 param:
