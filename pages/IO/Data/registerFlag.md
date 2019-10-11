@@ -1,7 +1,7 @@
 ---
 title: registerFlag
 keywords: ...
-last_updated: 9th November, 2017
+last_updated: October 2019
 sidebar: home_sidebar
 permalink: /data-registerflag.html
 folder: Data
