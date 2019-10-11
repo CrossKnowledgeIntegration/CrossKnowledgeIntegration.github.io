@@ -1,7 +1,7 @@
 ---
 title: Create or Update Consolidated Tracking
 keywords: tracking, consolidated, import, data, createOrUpdateConsolidateTrackingAction
-last_updated: 08 November, 2017
+last_updated: October 2019
 tags:
 summary: "Import or update tracking done by a learner on a learning resource. Consolidated tracking stands for a unique row that summarizes the history of a learner accessing a learning resource inside a training session from a training course."
 sidebar: home_sidebar
