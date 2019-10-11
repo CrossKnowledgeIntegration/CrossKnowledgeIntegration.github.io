@@ -75,6 +75,7 @@ col:
   candidateEmail:
     desc: "The learner's e-mail address."
     type: "string"
+    mandatory: "No, but at least one of the fields `candidateLogin`, `candidateRefNumber` and `candidateEmail` must be specified"
 
   candidateEntityAncestors:
     desc: "The learner's entity ancestors."
@@ -116,6 +117,10 @@ col:
     desc: "The database ID used to identify the learner."
     type: "int"
 
+  candidateLanguages:
+    desc: "The ordered list of chosen locales for the learner."
+    type: "string"
+
   candidateLocale:
     desc: "The chosen display locale for the learner, based on the available locales on the instance and their preferences."
     type: "string"
@@ -127,6 +132,7 @@ col:
   candidateLogin:
     desc: "The learner's login."
     type: "string"
+    mandatory: No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified
 
   candidateName:
     desc: "The learner's name (family name/surname)."
@@ -143,6 +149,7 @@ col:
   candidateRefNumber:
     desc: "The learner's reference number."
     type: "string"
+    mandatory: No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified
 
   candidateSmartgroups:
     desc: "The list of the learner's smartgroups names separated by semicolons."
@@ -151,6 +158,10 @@ col:
   candidateTimeZone:
     desc: "The candidate's timezone."
     type: "string"
+
+  candidateValidity:
+    desc: "The status of the learner's account (active/disabled)."
+    type: "candidateValidity"
 
   catalogVisibility:
     desc: "\"Y\" if the training course associated with the current context is visible in the public catalogue, \"N\" otherwise."
@@ -184,8 +195,32 @@ col:
     desc: "The date at which the object (learner, training course or training session) was created."
     type: "date"
 
+  custom:
+    desc: "Value for one of the learner's custom fields."
+    type: "string"
+
   description:
     desc: "The description of the training course. /!\ Other contexts maybe."
+    type: "string"
+
+  enabledFrom:
+    desc: "If the learner's account is only active during a limited period of time, the first date for which it is active."
+    type: "date"
+
+  enabledUntil:
+    desc: "If the learner's account is only active during a limited period of time, the last date for which it is active."
+    type: "date"
+
+  entityGuid:
+    desc: "GUID of the learner's entity."
+    type: "string"
+
+  entityId:
+    desc: "Database ID of the learner's entity."
+    type: "string"
+
+  entityName:
+    desc: "Name of the learner's entity."
     type: "string"
 
   endDate:
@@ -296,6 +331,10 @@ col:
     desc: "Indicates when the facilitator has sent his/her feedback"
     type: "datetime"
 
+  firstAccessDate:
+    desc: "The date and time at which the content referenced by the tracking row has been launched for the first time."
+    type: "datetime"
+
   firstCompletionDate:
     desc: "The date and time at which the content referenced by the training has been completed for the first time."
     type: "datetime"
@@ -331,6 +370,38 @@ col:
   gamificationPoints:
     desc: "The number of points acquired for this action."
     type: "int"
+
+  hieracrchyEntityName:
+    desc: "The name of the entity being imported. It is also used as unique identifier to define if an entity needs to be created or if an existing entity with this name needs to be updated.
+      <br/>If several entities have the same title, the first entity found with that name will be updated."
+    type: "string"
+
+  ignoredColumn:
+    desc: "Column present in the import file but to be ignored becuse it's not relevant for this import action"
+
+  interventionDate:
+    desc: "Start date of the intervention."
+    type: "datetime"
+    mandatory: "yes"
+
+  interventionDuration:
+    desc: "Duration of the intervention (in hours)."
+    type: "int"
+    mandatory: "yes"
+
+  interventionGuid:
+    desc: "Unique GUID of the intervention (only for update)."
+    type: "string"
+    mandatory: "yes"
+
+  interventionStatus:
+    desc: "Status for the intervention currently imported. Possible values are A (Active) or C (Cancelled)"
+    type: "enum (A, C)"
+    mandatory: "yes"
+
+  lastAccessDate:
+    desc: "The date and time at which the content referenced by the tracking row has been accessed for the last time."
+    type: "datetime"
 
   lastPlatformAccessDate:
     desc: "The last date at which the learner has accessed the platform."
@@ -652,8 +723,27 @@ col:
     desc: "The date at which the tracking log was created."
     type: "date"
 
+  lovCode:
+    desc: "The reference number of the learning object version."
+    type: "string"
+    mandatory: No, but at least one of the fields lovCode and lovGuid must be specified
+
+  lovCodes:
+    desc: >
+      This option references the LO's refNumber and is used to specify wich LOs are included in the training course. It's possible to separate LOs by step with double pipe "||" and into the step with comma "," (ex: "REF1,REF2||REF3||REF4").
+    type: "string"
+
+  lovGuid:
+    desc: "The GUID used by the database to identify the learning object version."
+    type: "string"
+    mandatory: No, but at least one of the fields lovCode and lovGuid must be specified
+
   managerLogin:
     desc: "The manager's login."
+    type: "string"
+
+  managerRefNumber:
+    desc: "The manager's reference number."
     type: "string"
 
   maxNbLearners:
@@ -696,6 +786,10 @@ col:
     desc: "Points gained on the content."
     type: "int"
 
+  presentation:
+    desc: "`Presentation` field from the learner profile."
+    type: "string"
+
   progression:
     desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
     type: "float"
@@ -711,6 +805,10 @@ col:
   registeredLearners:
     desc: "The number of learners that have enrolled to the training session."
     type: "int"
+
+  registerFlag:
+    desc: "Optional flag to allow to unregister a learner from a session. By default the behaviour for this field is to register the learner. Please see the dedicated page for more details."
+    type: "registerFlag"
 
   registrationDate:
     desc: "The date of the registration."
@@ -728,9 +826,27 @@ col:
     desc: "The GUID of the tracking row."
     type: "string"
 
+  roomGuid:
+    desc: "Unique GUID of the room."
+    type: "string"
+    mandatory: "yes"
+
+  roomLabel:
+    desc: "Label of the room."
+    type: "string"
+    mandatory: "yes"
+
+  roomCapacity:
+    desc: "Total number of places in this room."
+    type: "int"
+
   score:
     desc: "The score the learner has achieved on the content."
     type: "float"
+
+  scoreMax:
+    desc: "The maximum score the learner can  achieve on the content."
+    type: "int"
 
   npsScore:
     desc: "Score of a NPS activity."
@@ -740,6 +856,10 @@ col:
     desc: "Score of a NPS activity."
     type: "int"
 
+  sessionAction:
+    desc: "Flag to define wether the current data row should update the related session ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
+    type: "enum (M, A)"
+
   sessionEndDate:
     desc: "The end date of the session."
     type: "date"
@@ -747,10 +867,14 @@ col:
   sessionGuid:
     desc: "The GUID of the session."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   sessionId:
     desc: "The database ID used to identify the session."
     type: "int"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   sessionLocale:
     desc: "The locale of the current session."
@@ -763,6 +887,8 @@ col:
   sessionTitle:
     desc: "The title of the session."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   startDate:
     desc: "The start date of the session."
@@ -778,6 +904,11 @@ col:
   submissionDate:
     desc: "Indicates when the learner has submitted his/her assignment or reply."
     type: "datetime"
+
+  teacherLogin:
+    desc: "Login of the teacher (back-office user) to assign as a teacher to the current intervention."
+    type: "string"
+    mandatory: "yes"
 
   templatedValue:
     desc: "A column to be used with the 'templates' option. This column requires an attribute 'templateId' which refers to the definition of one template."
@@ -808,6 +939,14 @@ col:
   title:
     desc: "The title of the main object exported (when there is only one type of object exported). For example, you will need more specific columns when exporting registrations or tracking (learningObjectVersionTitle, sessionTitle, trainingTitle...)"
     type: "string"
+
+  trackingStatus:
+    desc: "Completion status for the tracking currently imported. This is a mapping column, see specific documentation page for more details."
+    type: "trackingStatus"
+
+  trainingAction:
+    desc: "Flag to define wether the current data row should update the related training course ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
+    type: "enum (M, A)"
 
   trainingAudience:
     desc: "The target audience of the training course (metadata field 'Who should attend?')."
@@ -869,6 +1008,10 @@ col:
     desc: "The type of the learning object (Reading document, interactive document,...)."
     type: "string"
 
+  trainingCost:
+    desc: "Metadata 'Price' of the training course."
+    type: "string"
+
   trainingDescription:
     desc: "The description of the training course."
     type: "string"
@@ -892,10 +1035,14 @@ col:
   trainingGuid:
     desc: "The GUID of the training course."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`
 
   trainingId:
     desc: "The database ID used to identify the training course."
     type: "int"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   trainingLearningPath:
     desc: "The overview of the training course (metadata field 'Training course overview')."
@@ -909,16 +1056,33 @@ col:
     desc: "The modality of the training course."
     type: "enum (learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
 
+  trainingOutcomes:
+    desc: "Metadata 'Learning outcomes' of the training course."
+    type: "string"
+
+  trainingOverview:
+    desc: "Metadata 'Training course overview' of the training course."
+    type: "string"
+
   trainingPathCode:
     desc: "The reference number of the training course."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`
 
   trainingPrice:
     desc: "The price of the training course."
     type: "string"
+    mandatory: >
+      No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId`
 
   trainingPublisher:
     desc: "The publisher of the training course."
+    type: "string"
+
+  trainingSteps:
+    desc: >
+      This option is used to describe steps that will be added or updated. This option is only used for blended and blendedx modalities. This option is mandatory for blended modality, and mandatory for blendedx on course creation, but not for course update. Steps are separated by double pipe “||” and the separator used to separate step title and step duration is “|>”. A step is described by “StepTitle|>StepDuration” where StepTitle cannot be empty and duration is optionnal and it's a integer which represents step duration in days (eg : "Intro|>1||Basics|>2||Advanced concepts|>4||Conclusion").
     type: "string"
 
   trainingStatus:
@@ -931,6 +1095,10 @@ col:
 
   trainingWelcomeText:
     desc: "The welcome text of the training course."
+    type: "string"
+
+  trainingWhatYouWillLearn:
+    desc: "Metadata 'What you will learn' of the training course."
     type: "string"
 
 param:
@@ -971,13 +1139,41 @@ param:
     desc: "Format for dates in the exported data. The default datetime format is `YYYY-MM-DD hh:ii:ss`."
     type: "string"
 
+  defaultEntityId:
+    desc: "The ID of the entity under which all the newly created objects will be placed (default = 1)."
+    type: "int"
+
+  defaultLangCode:
+    desc: "Default language code to be used if the column `language` is absent or empty."
+    type: "string"
+
+  defaultScoreMax:
+    desc: "Default maximum score to be used when importing tracking."
+    type: "int"
+
+  defaultTime:
+    desc: "Default time which needs to be used when importing tracking which only contains dates but no times."
+    type: "time"
+
   deltaMode:
     desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
+    type: "yesNoElement"
+
+  disableImportFlag:
+    desc: "If set to `yes`, the generic import will not tag learners in the database as 'updated by the generic import'."
+    type: "yesNoElement"
+
+  dontUpdateExistingSessions:
+    desc: "Define if the import task is allowed to update the sessions already in the database (option equivalent to fullAccess)."
     type: "yesNoElement"
 
   durationFormat:
     desc: "Format for durations in the exported data (ex: learning resource duration)."
     type: "enum (hh:mm:ss, minutes, seconds)"
+
+  enableAllLearners:
+    desc: "If set to `yes`, this will automatically force activated all the learners account updated by this import. This default value can be overriden by using the `candidateValidity` column for each learner."
+    type: "yesNoElement"
 
   entityIds:
     desc: "A comma-separated list of the entity ids to filter on. If multiple entity IDs are provided, then the export will return data about learners who belong to at least one of those entities."
@@ -1018,6 +1214,10 @@ param:
   foFacilitatorIds:
     desc: "Filter on the database ID of front-office facilitators. Can contain several values separated by commas."
     type: "string"
+
+  fullAccess:
+    desc: "If set to `no`, the import will only update the data which have been previously created or updated by the generic import itself."
+    type: "yesNoElement"
 
   learnersSmartGroups:
     desc: "A list of IDs of smartgroups separated by commas. Allows to filter the exported results on the specified smartgroups."
@@ -1087,6 +1287,10 @@ param:
     desc: "Only export data related to a training session that has the specified GUID."
     type: "string"
 
+  sessionSearchField:
+    desc: "This option is used to specify the columns that will be used as filters to find the training session."
+    type: "sessionSearchField"
+
   sessionTitle:
     desc: "Only export data related to a training session that has a title that contains the given string."
     type: "string"
@@ -1122,6 +1326,18 @@ param:
   timeGlobalFormat:
     desc: "Time format in which the `timeGlobal` column should be exported"
     type: "timeGlobalFormat"
+
+  timeZone:
+    desc: "Time format in which the `timeGlobal` column should be exported"
+    type: "string"
+
+  traineeSearchField:
+    desc: "This option is used to specify the columns that will be used as filters to find the learner."
+    type: "traineeSearchField"
+
+  trainingSearchField:
+    desc: "This option is used to specify the columns that will be used as filters to find the training course."
+    type: "trainingSearchField"
 
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
@@ -1160,8 +1376,17 @@ param:
     type: "yesNoElement"
 
 datatype:
+  candidateValidity:
+    url: /data-candidatevalidity.html
+
+  registerFlag:
+    url: /data-registerflag.html
+
   reportStatus:
     url: /data-reportstatus.html
+
+  sessionSearchField:
+    url: /data-sessionsearchfield.html
 
   timeGlobalFormat:
     url: /data-timeglobalformat.html
@@ -1171,6 +1396,15 @@ datatype:
 
   timeFrameScale:
     url: /data-timeframescalemode.html
+
+  trackingStatus:
+    url: /data-trackingstatus.html
+
+  traineeSearchField:
+    url: /data-traineesearchfield.html
+
+  trainingSearchField:
+    url: /data-trainingsearchfield.html
 
   trainingStatusFormat:
     url: /data-trainingstatusformat.html

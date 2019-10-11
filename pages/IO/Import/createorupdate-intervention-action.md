@@ -1,34 +1,18 @@
 ---
 title: Create Or Update Intervention Action
 keywords: tracking, consolidated, import, data, createOrUpdateInterventionAction
-last_updated: 08 November, 2017
+last_updated: October 2019
 tags:
 summary: "Create or update an intervention with respect to the data row from the import file."
 sidebar: home_sidebar
 permalink: createorupdate-intervention-action.html
 folder: Import
+dynamic_content: true
+show_mandatory_column: true
+columns: [interventionGuid, trainingGuid, trainingPathCode, sessionGuid, sessionTitle, interventionDate, interventionDuration, 
+    roomGuid, roomLabel, roomCapacity, teacherLogin, interventionStatus, ignoredColumn]
+parameters: []
 ---
-
-
-### Available columns
-
-Option | Description | Type | Mandatory | Default value
---- | --- | --- | --- | ---
-`interventionGuid` | See columnsMapping_interventionGuid. | actionColumn | Yes |
-`trainingGuid` | See columnsMapping_trainingGuid. | actionColumn | No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`|
-`trainingPathCode` | See columnsMapping_trainingPathCode. | actionColumn | No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode` |
-`sessionGuid` | See columnsMapping_trainingPathCode. | actionColumn | No, but at least one of the following fields must be specified: `sessionGuid` Or `sessionTitle`|
-`sessionTitle` | | actionColumn | 	No, but at least one of the following fields must be specified: `sessionGuid` Or `sessionTitle` |
-`interventionDate`	| See columnsMapping_interventionDate. | actionColumn |	Yes |	
-`interventionDuration`|	See columnsMapping_interventionDuration. | actionColumn	| Yes |	
-`roomGuid` | See columnsMapping_roomGuid. | actionColumn | Yes |	
-`roomLabel` | See columnsMapping_roomLabel. | actionColumn	| Yes |	
-`roomCapacity` | See columnsMapping_roomCapacity. |	actionColumn | No |	
-`teacherLogin` | See columnsMapping_teacherLogin. | actionColumn | Yes |	
-`interventionStatus` |	See columnsMapping_interventionStatus. | actionColumn | Yes |
-
-### Filters and parameters
-
 
 ### Examples
 
@@ -47,10 +31,7 @@ Option | Description | Type | Mandatory | Default value
 			<roomLabel/>
 			<roomCapacity/>
 			<teacherLogin/>
-			<interventionStatus>
-				<active>A</active>
-				<cancelled>C</cancelled>
-			</interventionStatus>
+			<interventionStatus/>
 		</fields>
 	</createOrUpdateInterventionAction>
 </actions>

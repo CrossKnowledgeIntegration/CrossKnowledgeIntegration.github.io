@@ -1,42 +1,22 @@
 ---
 title: Create or Update Consolidated Tracking
 keywords: tracking, consolidated, import, data, createOrUpdateConsolidateTrackingAction
-last_updated: 08 November, 2017
+last_updated: October 2019
 tags:
-summary: "Creates or updates a consolidated tracking row with respect to the data row from the import file"
+summary: "Import or update tracking done by a learner on a learning resource. Consolidated tracking stands for a unique row that summarizes the history of a learner accessing a learning resource inside a training session from a training course."
 sidebar: home_sidebar
 permalink: createorupdate-consolidated-tracking-action.html
 folder: Import
+dynamic_content: true
+show_mandatory_column: true
+important_note: >
+    Unlike the other import providers, the settings for this provider need to be split in two blocks: <code class="highlighter-rouge">options</code> and <code class="highlighter-rouge">parameters</code>. 
+    Please see the example below for more details.
+columns: [candidateLogin, candidateRefNumber, candidateEmail, lovCode, lovGuid, sessionGuid, trainingPathCode, trainingId, 
+    sessionTitle, sessionId, firstAccessDate, lastAccessDate, firstCompletionDate, progression, trackingStatus, timeSpent, 
+    score, scoreMax, ignoredColumn]
+parameters: [defaultScoreMax, dateTimeFormat, timeZone, defaultTime]
 ---
-
-
-### Available columns
-
-Option | Description | Type | Mandatory | Default value
---- | --- | --- | --- | ---
-`candidateLogin` |  | actionColumn | No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified |
-`candidateRefNumber` | | actionColumn | No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified |
-`candidateEmail` | | actionColumn | No, but at least one of the fields candidateLogin, candidateRefNumber and candidateEmail must be specified |
-`lovCode` | | actionColumn | No, but at least one of the fields lovCode and lovGuid must be specified |
-`lovGuid` | | actionColumn | No, but at least one of the fields lovCode and lovGuid must be specified |
-`sessionGuid` | | actionColumn | No, but at least one of the following fields must be specified: `sessionGuid` Or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId` |
-`sessionTitle` | | actionColumn | 	No, but at least one of the following fields must be specified: `sessionGuid` Or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId` |
-`sessionId` | | actionColumn | No, but at least one of the following fields must be specified: `sessionGuid` Or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId` |
-`trainingPathCode` | | actionColumn | No, but at least one of the following fields must be specified: `sessionGuid` Or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId` |
-`trainingId` | | actionColumn | No, but at least one of the following fields must be specified:`sessionGuid` Or `sessionTitle` or `sessionId` AND `trainingPathCode` or `trainingId` |
-`lastAccessDate` | | actionColumn | No |
-`progression` | | actionColumn | No |
-`trackingStatus` | | actionColumn | No |
-`timeSpent` | | actionColumn | Yes |
-`score` | | actionColumn | No |
-`scoreMax` | | actionColumn | No |
-`firstCompletionDate` | | actionColumn | No | 
-
-### Filters and parameters
-
-Option | Description | Type | Mandatory | Default value
---- | --- | --- | --- | ---
-`defaultScoreMax` | The default value for the maximum achievable score | int | Yes | 100
 
 ### Examples
 
@@ -63,6 +43,11 @@ Option | Description | Type | Mandatory | Default value
 			<trackingStatus/>
             <firstCompletionDate/>
 		</fields>
+        <parameters>
+            <timeZone>America/Sao_Paulo</timeZone>
+            <dateTimeFormat>YYYY-MM-DD HH:II:SS</dateTimeFormat>
+            <defaultTime>00:00:00</defaultTime>
+        </parameters>
 	</createOrUpdateConsolidatedTrackingAction>
 </actions>
 ```

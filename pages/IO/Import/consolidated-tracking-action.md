@@ -1,7 +1,7 @@
 ---
 title: Consolidated Tracking
 keywords: tracking, consolidated, import, data, createOrUpdateConsolidateTrackingAction
-last_updated: 08 November, 2017
+last_updated: October 2019
 tags:
 summary: "Creates or updates a consolidated tracking row with respect to the data row from the import file"
 sidebar: home_sidebar

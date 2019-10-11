@@ -1,43 +1,18 @@
 ---
 title: Create Or Update Register Learner Action
 keywords: register, learner, import, data, createOrUpdateLearnerAction
-last_updated: 08 November, 2017
+last_updated: October 2019
 tags:
 summary: "Register a learner to a session with respect to the data row from the import file."
 sidebar: home_sidebar
 permalink: registerlearner-action.html
 folder: Import
+dynamic_content: true
+show_mandatory_column: true
+columns: [candidateLogin, candidateRefNumber, candidateEmail, trainingPathCode, trainingId, sessionTitle, sessionId, 
+    sessionStartDate, sessionEndDate, registrationGuid, registerFlag, ignoredColumn, registrationDate]
+parameters: [traineeSearchField, trainingSearchField, sessionSearchField, dontUpdateExistingSessions, fullAccess]
 ---
-
-
-### Available columns
-
-Option | Description | Type | Mandatory | Default value
---- | --- | --- | --- | ---
-`candidateLogin` | See columnsMapping_candidateLogin. |	actionColumn |	Yes	
-`candidateRefNumber` | See columnsMapping_candidateRefNumber. |	actionColumn |	Yes	
-`trainingPathCode` | See columnsMapping_trainingPathCode. |actionColumn |	Yes	
-`trainingId` | See columnsMapping_trainingId. |	actionColumn |	Yes	
-`sessionTitle` | See columnsMapping_sessionTitle. |	actionColumn |	Yes	
-`sessionId` | See columnsMapping_sessionId. |	actionColumn |	Yes	
-`sessionStartDate` | See columnsMapping_sessionStartDate. |	actionColumn |	Yes	
-`sessionEndDate` | See columnsMapping_sessionEndDate. |	actionColumn |	Yes	
-`registrationDate` | Set the learner's registration date to the session |	actionColumn |	No	
-`registerFlag` | See columnsMapping_registerFlag. |	actionColumn (specified in xsd, but not coherent with code) | Yes	
-`registrationGuid` | See columnsMapping_registrationGuid. |	actionColumn |	No
-
-### Filters and parameters
-
-Option | Description | Type | Mandatory | Default value
---- | --- | --- | --- | ---
-`traineeSearchField` |	This option is used to specify the columns that will be used as filters to find the learner. |	traineeSearchField | Yes	
-`trainingSearchField` |	This option is used to specify the columns that will be used as filters to find the training course. |	trainingSearchField | Yes	
-`sessionSearchField` |	This option is used to specify the columns that will be used as filters to find the session. |	sessionSearchField | Yes	
-`dontUpdateExistingSessions` |	will not update an existing session that was created out of the import process. |	yesNoElement | No	
-`fullAccess` |	This option is used to specify whether the current import process can modify information
-out of its scope. If it is set to no, then it will only be able to modify the sessions, learners and registrations that were previously created by itself. |
-yesNoElement | No
-
 
 ### Examples
 
