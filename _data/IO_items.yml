@@ -806,6 +806,10 @@ col:
     desc: "The number of learners that have enrolled to the training session."
     type: "int"
 
+  registerFlag:
+    desc: "Optional flag to allow to unregister a learner from a session. By default the behaviour for this field is to register the learner. Please see the dedicated page for more details."
+    type: "registerFlag"
+
   registrationDate:
     desc: "The date of the registration."
     type: "datetime"
@@ -1076,10 +1080,6 @@ col:
     desc: "The publisher of the training course."
     type: "string"
 
-  trainingScoresVisibleByLearners:
-    desc: ""
-    type: ""
-
   trainingSteps:
     desc: >
       This option is used to describe steps that will be added or updated. This option is only used for blended and blendedx modalities. This option is mandatory for blended modality, and mandatory for blendedx on course creation, but not for course update. Steps are separated by double pipe “||” and the separator used to separate step title and step duration is “|>”. A step is described by “StepTitle|>StepDuration” where StepTitle cannot be empty and duration is optionnal and it's a integer which represents step duration in days (eg : "Intro|>1||Basics|>2||Advanced concepts|>4||Conclusion").
@@ -1161,6 +1161,10 @@ param:
 
   disableImportFlag:
     desc: "If set to `yes`, the generic import will not tag learners in the database as 'updated by the generic import'."
+    type: "yesNoElement"
+
+  dontUpdateExistingSessions:
+    desc: "Define if the import task is allowed to update the sessions already in the database (option equivalent to fullAccess)."
     type: "yesNoElement"
 
   durationFormat:
@@ -1374,6 +1378,9 @@ param:
 datatype:
   candidateValidity:
     url: /data-candidatevalidity.html
+
+  registerFlag:
+    url: /data-registerflag.html
 
   reportStatus:
     url: /data-reportstatus.html
