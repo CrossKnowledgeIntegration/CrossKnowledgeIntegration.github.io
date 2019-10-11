@@ -9,7 +9,7 @@ folder: Data
 
 {{site.data.IO_items.param.traineeSearchField.desc}}
 
-Inside a `traineeSearchField` tag, only one of the following value is allowed:
+Inside a `traineeSearchField` tag, it is possible to set multiple fields at the same time, in which case the learners will be searched by all these columns jointly:
 
 ```xml
 <options>

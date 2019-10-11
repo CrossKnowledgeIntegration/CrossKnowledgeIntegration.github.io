@@ -847,6 +847,10 @@ col:
     desc: "Score of a NPS activity."
     type: "int"
 
+  sessionAction:
+    desc: "Flag to define wether the current row should update the related session ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
+    type: "enum (M, A)"
+
   sessionEndDate:
     desc: "The end date of the session."
     type: "date"
@@ -1245,6 +1249,10 @@ param:
     desc: "Only export data related to a training session that has the specified GUID."
     type: "string"
 
+  sessionSearchField:
+    desc: "This option is used to specify the columns that will be used as filters to find the training session."
+    type: "sessionSearchField"
+
   sessionTitle:
     desc: "Only export data related to a training session that has a title that contains the given string."
     type: "string"
@@ -1289,6 +1297,10 @@ param:
     desc: "This option is used to specify the columns that will be used as filters to find the learner."
     type: "traineeSearchField"
 
+  trainingSearchField:
+    desc: "This option is used to specify the columns that will be used as filters to find the training course."
+    type: "trainingSearchField"
+
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
     type: "string"
@@ -1332,6 +1344,9 @@ datatype:
   reportStatus:
     url: /data-reportstatus.html
 
+  sessionSearchField:
+    url: /data-sessionsearchfield.html
+
   timeGlobalFormat:
     url: /data-timeglobalformat.html
 
@@ -1346,6 +1361,9 @@ datatype:
 
   traineeSearchField:
     url: /data-traineesearchfield.html
+
+  trainingSearchField:
+    url: /data-trainingsearchfield.html
 
   trainingStatusFormat:
     url: /data-trainingstatusformat.html
