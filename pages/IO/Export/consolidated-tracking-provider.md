@@ -1,7 +1,7 @@
 ---
 title: Consolidated Tracking
 keywords: 
-last_updated: September, 2019
+last_updated: October, 2019
 tags: 
 summary: "This provider generates a data report containing tracking data at the session level (= registration)."
 sidebar: home_sidebar
@@ -13,7 +13,7 @@ columns: [candidateId, candidateName, candidateFirstname, candidateLogin, candid
     lastPlatformAccessDate, nbLO, nbLOStarted, nbLOFinished, registrationDate, registrationGuid, sessionId, sessionTitle, 
     sessionGuid, sessionStartDate, sessionEndDate, trainingId, trainingTitle, trainingPathCode, trainingGuid, 
     catalogVisibility, trainingStatus, trainingModality, trainingPublisher, trainingChapters, trainingDuration, 
-    completionTime, firstLaunchDate, progression, progressionMandatory, score, npsScore, status, thresholdReachedDate, 
+    completionTime, firstLaunchDate, progression, progressionMandatory, score, scoreNPS, status, thresholdReachedDate, 
     firstCompletionDate, timeGlobal, timeSpentCBT, timeSpentDigital, timeSpent, constantValue]
 parameters: [modality, trainingPathCode, sessionTitle, sessionGuid, trainingGuid, activityType, dateFormat, 
     dateTimeFormat, statusFormat, reportStatus, withoutLaunchTime, deltaMode, timeGlobalFormat, ancestorsWithCurrent, 
@@ -68,7 +68,7 @@ parameters: [modality, trainingPathCode, sessionTitle, sessionGuid, trainingGuid
             <firstCompletionDate/>
             <timeGlobal/>
             <constantValue/>
-            <npsScore/>
+            <scoreNPS/>
             <timeSpentCB/>
             <timeSpentDigital/>
             <timeSpent/>

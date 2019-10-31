@@ -848,10 +848,6 @@ col:
     desc: "The maximum score the learner can  achieve on the content."
     type: "int"
 
-  npsScore:
-    desc: "Score of a NPS activity."
-    type: "int"
-
   scoreNPS:
     desc: "Score of a NPS activity."
     type: "int"
