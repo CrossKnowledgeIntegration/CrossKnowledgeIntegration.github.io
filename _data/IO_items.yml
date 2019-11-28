@@ -732,6 +732,7 @@ col:
     desc: >
       This option references the LO's refNumber and is used to specify wich LOs are included in the training course. It's possible to separate LOs by step with double pipe "||" and into the step with comma "," (ex: "REF1,REF2||REF3||REF4").
     type: "string"
+    mandatory: Column itself must be added in the XML configuration file, but can remain empty in the CSV file by setting &lt;mandatory&gt;no&lt;/mandatory&gt; inside the field's tag.
 
   lovGuid:
     desc: "The GUID used by the database to identify the learning object version."
@@ -1051,6 +1052,8 @@ col:
   trainingModality:
     desc: "The modality of the training course."
     type: "enum (learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
+    mandatory: >
+      Yes when using `createOrUpdateTrainingCourseAction`.
 
   trainingOutcomes:
     desc: "Metadata 'Learning outcomes' of the training course."
