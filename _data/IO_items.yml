@@ -1064,7 +1064,8 @@ col:
     desc: "The reference number of the training course."
     type: "string"
     mandatory: >
-      No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`
+      <ul><li>If the column `trainingGuid` is not available => Yes</li>
+      <li>Otherwise => No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`</li></ul>
 
   trainingPrice:
     desc: "The price of the training course."
