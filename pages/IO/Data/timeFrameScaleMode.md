@@ -14,6 +14,13 @@ folder: Data
 * `lastActivity` will report the total time the learner has spent learning if the last access date is within the specified time frame.
 
 
+Here is the list of all possible values for `timeFramesScale`:
+* `less_than_n_days`
+* `less_than_n_months`
+* `less_than_n_full_months`
+* `less_than_n_years`
+* `less_than_n_full_years`
+
 
 {% include callout.html content="**Example** when used for [Tracking provider](/tracking-provider.html)<br/><br/>
 1. Hugo watched C1 in T1 on January 2<sup>nd</sup> 2015, spent 50 sec and has status = incomplete.<br/>

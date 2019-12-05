@@ -1053,6 +1053,14 @@ table th code {
     color: white;
 }
 
+body .post-content code.highlighter-rouge.language-plaintext {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    background-color: transparent;
+}
+
 ol li ul li ol li {
     list-style: decimal;
 }
