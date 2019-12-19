@@ -54,7 +54,7 @@ Option | Description | Type | Mandatory | Default value
 --- | --- | --- | --- | ---
 `inputFolderPath` | Path to the folder containing the encrypted files. The base path is the instance's data folder. | string | No 
 `outputFolderPath` | Path to the folder that will contain the decrypted files.The base path is the instance's data folder. | string | Yes
-`signature` | Whether or not and how the encrypted file is signed. | signedType | Yes | `signed`
+`signature` | Whether or not and how the encrypted file is signed. | enum(signed, not_signed, clearsigned) | Yes | `signed`
 `removeSources` | Whether or not to remove the original encrypted files after a successful decryption. | yesNoElement | No | Yes
 
 #### Example

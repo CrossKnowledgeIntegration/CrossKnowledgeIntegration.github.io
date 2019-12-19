@@ -314,12 +314,12 @@ Message | Explanation
 This allows to encrypt files with PGP and move the encrypted files to the specified folder. Be careful, if you use both: post process packager and PGP encryption (`clearsigned` and `signed` method) you may not be able to unzip the file.
 
 
-Option | Description | Mandatory | Default value
+Option | Description | Type | Mandatory | Default value
 --- | --- | --- | ---
-`inputFolderPath` | Path to the folder containing the files to encrypt. The base path is the instance's data folder. | Yes | No default value
-`outputFolderPath` | Path to the folder that will contain the decrypted files. The base path is the instance's data folder. | Yes | No default value
-`signature` | Whether or not and how the file will be signed. | No | `signed`
-`removeSources` | Whether or not to remove the original encrypted files after a successful decryption. | No | `no`
+`inputFolderPath` | Path to the folder containing the files to encrypt. The base path is the instance's data folder. | string | Yes | No default value
+`outputFolderPath` | Path to the folder that will contain the decrypted files. The base path is the instance's data folder. | string | Yes | No default value
+`signature` | Whether or not and how the file will be signed. | enum(signed, not_signed, clearsigned) | No | `signed`
+`removeSources` | Whether or not to remove the original encrypted files after a successful decryption. | yesNoElement | No | `no`
 
 ```xml
 <postProcess>
