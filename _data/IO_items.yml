@@ -1135,7 +1135,7 @@ param:
     type: "string"
 
   dateTimeFormat:
-    desc: "Format for dates in the exported data. The default datetime format is `YYYY-MM-DD hh:ii:ss`."
+    desc: "Format for dates in the exported data. The default value datetime format is `YYYY-MM-DD hh:ii:ss`."
     type: "string"
 
   defaultEntityId:
@@ -1151,7 +1151,7 @@ param:
     type: "int"
 
   defaultTime:
-    desc: "Default time which needs to be used when importing tracking which only contains dates but no times."
+    desc: "REQUIRED when tracking date only contains dates but no times(e.g. MM-DD-YYY) Add time in hh:ii:ss format ."
     type: "time"
 
   deltaMode:
@@ -1327,7 +1327,7 @@ param:
     type: "timeGlobalFormat"
 
   timeZone:
-    desc: "Time format in which the `timeGlobal` column should be exported"
+    desc: "Time format in which the `timeGlobal` column should be exported, must be in ISO format e.g.(America/Sao_Paulo)"
     type: "string"
 
   traineeSearchField:
