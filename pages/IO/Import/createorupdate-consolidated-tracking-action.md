@@ -27,21 +27,24 @@ parameters: [defaultScoreMax, dateTimeFormat, timeZone, defaultTime]
 			<defaultScoreMax>100</defaultScoreMax>
 		</options>
 		<fields>
+			<candidateEmail/>
 			<candidateLogin/>
 			<candidateRefNumber/>
-			<candidateEmail/>
-			<lovCode/>
-			<lovGuid/>
-			<sessionTitle/>
-			<sessionGuid/>
-			<trainingPathCode/>
+			<firstAccessDate/>
+			<firstCompletionDate/>
 			<lastAccessDate/>
-			<progress/>
-			<timeSpent/>
+			<lovCode/> <!-- use Code or Guid -->
+			<lovGuid/>
+			<progression/>
 			<score/>
 			<scoreMax/>
+			<sessionTitle/><!-- Use Title, Guid, Or Id -->
+			<sessionGuid/>
+			<sessionId/>
+			<timeSpent/>
 			<trackingStatus/>
-            <firstCompletionDate/>
+			<trainingPathCode/><!-- Use PathCode or Id -->
+			<trainingId/>
 		</fields>
         <parameters>
             <timeZone>America/Sao_Paulo</timeZone>
