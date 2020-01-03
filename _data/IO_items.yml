@@ -1033,13 +1033,13 @@ col:
     desc: "The GUID of the training course."
     type: "string"
     mandatory: >
-      No, but at least one of the following fields must be specified: `trainingGuid` or `trainingPathCode`
+      No, but at least one of the following fields must be specified: `trainingId` or `trainingGuid` or `trainingPathCode` (not all these fields might be available in each provider)
 
   trainingId:
     desc: "The database ID used to identify the training course."
     type: "int"
     mandatory: >
-      No, but at least one of the following fields must be specified: `trainingPathCode` or `trainingId`
+      No, but at least one of the following fields must be specified: `trainingId` or `trainingGuid` or `trainingPathCode` (not all these fields might be available in each provider)
 
   trainingLearningPath:
     desc: "The overview of the training course (metadata field 'Training course overview')."
@@ -1067,7 +1067,7 @@ col:
     desc: "The reference number of the training course."
     type: "string"
     mandatory: >
-      No, but at least one of the following fields must be specified: `trainingPathCode` or `trainingId`
+      No, but at least one of the following fields must be specified: `trainingId` or `trainingGuid` or `trainingPathCode` (not all these fields might be available in each provider)
 
   trainingPrice:
     desc: "The price of the training course."
@@ -1131,11 +1131,11 @@ param:
     type: "custom"
 
   dateFormat:
-    desc: "Format for dates in the exported data. The default date format is `YYYY-MM-DD`."
+    desc: "Format for dates in the exported data. When not specified, the default date format is `YYYY-MM-DD`."
     type: "string"
 
   dateTimeFormat:
-    desc: "Format for dates in the exported data. The default value datetime format is `YYYY-MM-DD hh:ii:ss`."
+    desc: "Format for dates in the exported data. When not specified, the default value is `YYYY-MM-DD hh:ii:ss`."
     type: "string"
 
   defaultEntityId:
@@ -1151,7 +1151,7 @@ param:
     type: "int"
 
   defaultTime:
-    desc: "REQUIRED when tracking date only contains dates but no times(e.g. MM-DD-YYY) Add time in hh:ii:ss format ."
+    desc: "Time value which will be used when tracking date only contains dates but no times(e.g. MM-DD-YYY). Specify time in hh:ii:ss format. In case a date is imported without time, but the `defaultTime` parameter is not specified,the dates will be imported with the time 00:00:00."
     type: "time"
 
   deltaMode:
@@ -1327,7 +1327,7 @@ param:
     type: "timeGlobalFormat"
 
   timeZone:
-    desc: "Time format in which the `timeGlobal` column should be exported, must be in ISO format e.g.(America/Sao_Paulo)"
+    desc: "Time format in which the `timeGlobal` column should be exported, must be in TZ database format e.g.(America/Sao_Paulo). Full list available on <a href='https://en.wikipedia.org/wiki/List_of_tz_database_time_zones'>Wikipedia</a>"
     type: "string"
 
   traineeSearchField:
