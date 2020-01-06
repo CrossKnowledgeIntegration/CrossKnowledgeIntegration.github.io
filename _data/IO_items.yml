@@ -197,7 +197,7 @@ col:
 
   custom:
     desc: "Value for one of the learner's custom fields."
-    type: "string"
+    type: "string(250)"
 
   description:
     desc: "The description of the training course. /!\ Other contexts maybe."
@@ -1128,7 +1128,7 @@ param:
 
   connectionStatusFormat:
     desc: "The format in which to display the connection status."
-    type: "custom"
+    type: "connectionStatusFormat"
 
   dateFormat:
     desc: "Format for dates in the exported data. When not specified, the default date format is `YYYY-MM-DD`."
@@ -1224,11 +1224,11 @@ param:
 
   lastNFullMonths:
     desc: "Similar to the 'timeFrames*' options. Filter to only export data created or updated less than N full months ago.<br /><i>Overrides 'timeFrameScale' and 'lastNMonths' options.</i>"
-    type: "integer"
+    type: "int"
 
   lastNMonths:
     desc: "Similar to the 'timeFrames*' options. Filter to only export data created or updated less than N months ago.<br /><i>Overrides 'timeFrameScale' option.</i>"
-    type: "integer"
+    type: "int"
 
   locationIds:
     desc: "Filter on the database ID of one or several location (column eventLocationID). Can contain several values separated by commas."
@@ -1240,11 +1240,11 @@ param:
 
   maxLength:
     desc: "If not empty, this option will crop each value to the specified max length (each cell, not each line)."
-    type: "integer"
+    type: "int"
 
   modality:
     desc: "Only export data related to a training course that belongs to the specified modality."
-    type: "modality"
+    type: "enum('', learning_channel, kc, blended, campus, distanciel, mentored_action_learning, portal, serious_game, content_test, guided)"
 
   onlyFromImportedTraining:
     desc: "Only export tracking data related to trainings that were imported."
@@ -1378,6 +1378,9 @@ datatype:
   candidateValidity:
     url: /data-candidatevalidity.html
 
+  connectionStatusFormat:
+    url: /data-connectionstatusformat.html
+
   registerFlag:
     url: /data-registerflag.html
 
@@ -1387,11 +1390,14 @@ datatype:
   sessionSearchField:
     url: /data-sessionsearchfield.html
 
-  timeGlobalFormat:
-    url: /data-timeglobalformat.html
+  statusFormat:
+    url: /data-statusformat.html
 
   templates:
     url: /data-templates.html
+
+  timeGlobalFormat:
+    url: /data-timeglobalformat.html
 
   timeFrameScale:
     url: /data-timeframescalemode.html

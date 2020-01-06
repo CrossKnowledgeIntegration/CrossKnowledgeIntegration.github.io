@@ -8,6 +8,8 @@ permalink: export.html
 folder: IO
 ---
 
+{% include datatypes_notice.html %}
+
 ## Structure of the configuration file
 
 The XML configuration file defines the structure of the data export files

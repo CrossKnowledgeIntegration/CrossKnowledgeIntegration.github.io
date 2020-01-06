@@ -34,8 +34,12 @@ parameters: [dateFormat, dateTimeFormat, ancestorsWithCurrent, timeFrames, timeF
             <constantValue/>
         </columns>
         <parameters>
-            <groupIds>1,32</groupIds>
+            <entityIds>1,32</entityIds>
             <dateFormat>MM-DD-YYYY</dateFormat>
+            <connectionStatusFormat>
+				<success>S</success>
+				<failure>F</failure>
+			</connectionStatusFormat>
         </parameters>
     </platformCandidatesAccessProvider>
 </providers>
