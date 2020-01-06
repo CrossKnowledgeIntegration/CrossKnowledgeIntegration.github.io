@@ -27,7 +27,7 @@ parameters: [dateFormat, dateTimeFormat, ancestorsWithCurrent, timeFrames, timeF
             <candidateRefNumber/>
             <candidateGuid/>
             <candidateTimeZone/>
-            <candidateCustomFieldGuid/>
+            <candidateCustomFieldGuid label="Column label">8345C0A3-B8AB-7F65-0638-39B0E1244AA8</candidateCustomFieldGuid>
             <candidatePresentation/>
             <platformaccessdate/>
             <status/>
