@@ -751,10 +751,6 @@ col:
     desc: "The date at which the object (training course, training session) was last modified."
     type: "datetime"
 
-  Name:
-    desc: "Description"
-    type: "string"
-
   nbLO:
     desc: "The total number of learning objects in the same session as the learning object referenced by the tracking row."
     type: "int"
@@ -781,7 +777,7 @@ col:
 
   presentation:
     desc: "`Presentation` field from the learner profile."
-    type: "string"
+    type: "longtext"
 
   progression:
     desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
@@ -809,7 +805,7 @@ col:
 
   registrationGuid:
     desc: "The GUID of the registration."
-    type: "string"
+    type: "string(40)"
 
   reportId:
     desc: "The database ID used to identify the tracking row."
@@ -817,11 +813,11 @@ col:
 
   reportGuid:
     desc: "The GUID of the tracking row."
-    type: "string"
+    type: "string(40)"
 
   roomGuid:
     desc: "Unique GUID of the room."
-    type: "string"
+    type: "string(40)"
     mandatory: "yes"
 
   roomLabel:
@@ -855,7 +851,7 @@ col:
 
   sessionGuid:
     desc: "The GUID of the session."
-    type: "string"
+    type: "string(40)"
     mandatory: >
       No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId`
 
@@ -867,7 +863,7 @@ col:
 
   sessionLocale:
     desc: "The locale of the current session."
-    type: "string"
+    type: "string(7)"
 
   sessionStartDate:
     desc: "The start date of the session."
@@ -939,11 +935,11 @@ col:
 
   trainingAudience:
     desc: "The target audience of the training course (metadata field 'Who should attend?')."
-    type: "string"
+    type: "longtext"
 
   trainingBenefits:
     desc: "The benefits of the training course (metadata field 'Learning outcomes')."
-    type: "string"
+    type: "longtext"
 
   trainingBOLink:
     desc: "The URL to the record page of the training course."
@@ -951,7 +947,7 @@ col:
 
   trainingChapters:
     desc: "The chapter hierarchy of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingContentAuthor:
     desc: "The author of the learning object."
@@ -966,12 +962,12 @@ col:
     type: "string"
 
   trainingContentFolder:
-    desc: "The name of the folder in which the learning object is timeGlobalplaced (inside the training course)."
+    desc: "The name of the folder in which the learning object is placed (inside the training course)."
     type: "string"
 
   trainingContentGuid:
     desc: "The GUID of the learning object."
-    type: "string"
+    type: "string(40)"
 
   trainingContentMandatory:
     desc: "The flag (Y or N) indicating if the learning object is mandatory in the context of the training course."
@@ -983,11 +979,11 @@ col:
 
   trainingContentRuntime:
     desc: "The runtime of the learning object (SCORM content, CrossKnowledge learning product,...)."
-    type: "string"
+    type: "string(50)"
 
   trainingContentSubtype:
     desc: "The subtype of the learning object (Business review, custom, session,...)."
-    type: "string"
+    type: "string(50)"
 
   trainingContentTitle:
     desc: "The title of the learning object."
@@ -995,7 +991,7 @@ col:
 
   trainingContentType:
     desc: "The type of the learning object (Reading document, interactive document,...)."
-    type: "string"
+    type: "string(50)"
 
   trainingCost:
     desc: "Metadata 'Price' of the training course."
@@ -1003,7 +999,7 @@ col:
 
   trainingDescription:
     desc: "The description of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingDuration:
     desc: "The duration of the training course."
@@ -1011,19 +1007,19 @@ col:
 
   trainingFolderDescription:
     desc: "The descriptions of the folders in the training course, separated by commas."
-    type: "string"
+    type: "longtext"
 
   trainingFurtherInformation:
     desc: "Further information on the training course (metadata field 'Further information')."
-    type: "string"
+    type: "longtext"
 
   trainingGoals:
     desc: "The goals of the training course (metadata field 'What you will learn')."
-    type: "string"
+    type: "longtext"
 
   trainingGuid:
     desc: "The GUID of the training course."
-    type: "string"
+    type: "string(40)"
     mandatory: >
       No, but at least one of the following fields must be specified: `trainingId` or `trainingGuid` or `trainingPathCode` (not all these fields might be available in each provider)
 
@@ -1035,11 +1031,11 @@ col:
 
   trainingLearningPath:
     desc: "The overview of the training course (metadata field 'Training course overview')."
-    type: "string"
+    type: "longtext"
 
   trainingLocale:
     desc: "The main locale of the training course."
-    type: "string"
+    type: "string(7)"
 
   trainingModality:
     desc: "The modality of the training course."
@@ -1049,11 +1045,11 @@ col:
 
   trainingOutcomes:
     desc: "Metadata 'Learning outcomes' of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingOverview:
     desc: "Metadata 'Training course overview' of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingPathCode:
     desc: "The reference number of the training course."
@@ -1074,7 +1070,7 @@ col:
   trainingSteps:
     desc: >
       This option is used to describe steps that will be added or updated. This option is only used for blended and blendedx modalities. This option is mandatory for blended modality, and mandatory for blendedx on course creation, but not for course update. Steps are separated by double pipe “||” and the separator used to separate step title and step duration is “|>”. A step is described by “StepTitle|>StepDuration” where StepTitle cannot be empty and duration is optionnal and it's a integer which represents step duration in days (eg : "Intro|>1||Basics|>2||Advanced concepts|>4||Conclusion").
-    type: "string"
+    type: "longtext"
 
   trainingStatus:
     desc: "The validation status of the training course. The values displayed in this column are C, P, A which respectively mean Under Construction, Published, Archive. These values can be configured via the `trainingStatusFormat` parameter."
@@ -1086,11 +1082,11 @@ col:
 
   trainingWelcomeText:
     desc: "The welcome text of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingWhatYouWillLearn:
     desc: "Metadata 'What you will learn' of the training course."
-    type: "string"
+    type: "longtext"
 
 param:
 
@@ -1136,7 +1132,7 @@ param:
 
   defaultLangCode:
     desc: "Default language code to be used if the column `language` is absent or empty."
-    type: "string"
+    type: "string(7)"
 
   defaultScoreMax:
     desc: "Default maximum score to be used when importing tracking."
@@ -1276,7 +1272,7 @@ param:
 
   sessionGuid:
     desc: "Only export data related to a training session that has the specified GUID."
-    type: "string"
+    type: "string(40)"
 
   sessionSearchField:
     desc: "This option is used to specify the columns that will be used as filters to find the training session."
@@ -1300,7 +1296,7 @@ param:
 
   threshold:
     desc: "Whether or not to export tracking data that has no launch date (the learner has never launched the content). When points will be exported, use the threshold to convert them (points*threshold). Useful for incentive tool. Default value 1 . All values are allowed, so be careful (0, negatives, etc)"
-    type: "string"
+    type: "float"
 
   timeFrames:
     desc: "Once a learner has completed a learning object or activity, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFramesScale.`"
@@ -1320,7 +1316,7 @@ param:
 
   timeZone:
     desc: "Time format in which the `timeGlobal` column should be exported, must be in TZ database format e.g.(America/Sao_Paulo). Full list available on <a href='https://en.wikipedia.org/wiki/List_of_tz_database_time_zones'>Wikipedia</a>"
-    type: "string"
+    type: "string(50)"
 
   traineeSearchField:
     desc: "This option is used to specify the columns that will be used as filters to find the learner."
@@ -1332,7 +1328,7 @@ param:
 
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
-    type: "string"
+    type: "string(40)"
 
   trainingIds:
     desc: "Only export data related to the training courses that have an ID included in the comma-separated list specified in this parameter."
