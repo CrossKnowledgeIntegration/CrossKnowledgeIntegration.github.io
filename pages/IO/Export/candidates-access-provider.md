@@ -27,15 +27,19 @@ parameters: [dateFormat, dateTimeFormat, ancestorsWithCurrent, timeFrames, timeF
             <candidateRefNumber/>
             <candidateGuid/>
             <candidateTimeZone/>
-            <candidateCustomFieldGuid/>
+            <candidateCustomFieldGuid label="Column label">8345C0A3-B8AB-7F65-0638-39B0E1244AA8</candidateCustomFieldGuid>
             <candidatePresentation/>
             <platformaccessdate/>
             <status/>
             <constantValue/>
         </columns>
         <parameters>
-            <groupIds>1,32</groupIds>
+            <entityIds>1,32</entityIds>
             <dateFormat>MM-DD-YYYY</dateFormat>
+            <connectionStatusFormat>
+				<success>S</success>
+				<failure>F</failure>
+			</connectionStatusFormat>
         </parameters>
     </platformCandidatesAccessProvider>
 </providers>

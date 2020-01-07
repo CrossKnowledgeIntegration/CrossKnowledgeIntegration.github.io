@@ -37,15 +37,15 @@ col:
     type: "enum(Present, Absent, Absent but excused, No information, Not applicable)"
 
   badge:
-    desc: "Localized label of the badge."
+    desc: "Label of the badge."
     type: "string"
 
   badgeCategory:
-    desc: "Localized badge category."
-    type: "string"
+    desc: "Badge category."
+    type: "enum(Gold, Silver, Bronze, One shot, Custom)"
 
   badgeCode:
-    desc: "unique ID/code for a badge."
+    desc: "Unique ID/code for a badge."
     type: "string"
 
   badgeDateTime:
@@ -54,7 +54,7 @@ col:
 
   candidateAccountActivated:
     desc: "The status of the learner's account (actived/disabled)."
-    type: "enum (Y, N, U)"
+    type: "enum(Y, N, U)"
 
   candidateAccountActivatedFrom:
     desc: "If the learner's account is only active during a limited period of time, the first date for which it is active."
@@ -69,8 +69,8 @@ col:
     type: "int"
 
   candidateCustomFieldGuid:
-    desc: "GUID for one of the learner's possible custom fields."
-    type: "string"
+    desc: "Data for one of the learner's possible custom fields (GUID of the custom field needs to be specified, please check the examples)."
+    type: "string(250)"
 
   candidateEmail:
     desc: "The learner's e-mail address."
@@ -79,10 +79,6 @@ col:
 
   candidateEntityAncestors:
     desc: "The learner's entity ancestors."
-    type: "string"
-
-  candidateEntity:
-    desc: "The name used in the database to reference the learner's entity."
     type: "string"
 
   candidateEntityId:
@@ -99,19 +95,19 @@ col:
 
   candidateFollowLinkedin:
     desc: "The learner's LinkedIn username."
-    type: "string"
+    type: "string(250)"
 
   candidateFollowTwitter:
     desc: "The learner's Twitter username."
-    type: "string"
+    type: "string(250)"
 
   candidateFollowWeb:
     desc: "The learner's web page."
-    type: "url"
+    type: "url(250)"
 
   candidateGuid:
     desc: "The learner's GUID."
-    type: "string"
+    type: "string(40)"
 
   candidateId:
     desc: "The database ID used to identify the learner."
@@ -123,7 +119,7 @@ col:
 
   candidateLocale:
     desc: "The chosen display locale for the learner, based on the available locales on the instance and their preferences."
-    type: "string"
+    type: "string(7)"
 
   candidateLocales:
     desc: "The ordered list of chosen locales for the learner."
@@ -144,7 +140,7 @@ col:
 
   candidatePresentation:
     desc: "The candidate's presentation text."
-    type: "string"
+    type: "longtext"
 
   candidateRefNumber:
     desc: "The learner's reference number."
@@ -157,7 +153,7 @@ col:
 
   candidateTimeZone:
     desc: "The candidate's timezone."
-    type: "string"
+    type: "string(50)"
 
   candidateValidity:
     desc: "The status of the learner's account (active/disabled)."
@@ -165,7 +161,7 @@ col:
 
   catalogVisibility:
     desc: "\"Y\" if the training course associated with the current context is visible in the public catalogue, \"N\" otherwise."
-    type: "enum (Y, N)"
+    type: "enum(Y, N)"
 
   completionTime:
     desc: "The date at which the content referenced by the tracking row has been last accessed"
@@ -177,11 +173,11 @@ col:
 
   contentGuid:
     desc: "The GUID of the learning object version."
-    type: "string"
+    type: "string(40)"
 
   contentLocale:
     desc: "The locale of the learning object version."
-    type: "string"
+    type: "string(7)"
 
   contentRefNumber:
     desc: "The reference number of the learning object version."
@@ -197,11 +193,11 @@ col:
 
   custom:
     desc: "Value for one of the learner's custom fields."
-    type: "string"
+    type: "string(250)"
 
   description:
-    desc: "The description of the training course. /!\ Other contexts maybe."
-    type: "string"
+    desc: "The description of the main object from the current row."
+    type: "longtext"
 
   enabledFrom:
     desc: "If the learner's account is only active during a limited period of time, the first date for which it is active."
@@ -213,11 +209,11 @@ col:
 
   entityGuid:
     desc: "GUID of the learner's entity."
-    type: "string"
+    type: "string(40)"
 
   entityId:
     desc: "Database ID of the learner's entity."
-    type: "string"
+    type: "int"
 
   entityName:
     desc: "Name of the learner's entity."
@@ -229,7 +225,7 @@ col:
 
   eventAllDay:
     desc: "'true' if the event lasts the whole day, false otherwise."
-    type: "enum (true, false)"
+    type: "enum(true, false)"
 
   eventClassRoomCapacity:
     desc: "The room capacity of the event."
@@ -237,11 +233,7 @@ col:
 
   eventClassRoomDescription:
     desc: "The room description of the event."
-    type: "string"
-
-  eventClassRoomEquipments:
-    desc: "The room equipments of the event."
-    type: "string"
+    type: "longtext"
 
   eventClassRoomTitle:
     desc: "The room title of the event."
@@ -249,11 +241,11 @@ col:
 
   eventClassRoomType:
     desc: "The room type of the event."
-    type: "enum (Standard, Virtual)"
+    type: "enum(Standard, Virtual)"
 
   eventDescription:
     desc: "The description of the event."
-    type: "string"
+    type: "longtext"
 
   eventDuration:
     desc: "The duration of the event."
@@ -273,7 +265,7 @@ col:
 
   eventFacilitatorGuid:
     desc: "The GUID of the facilitator of the event (back-office user)."
-    type: "string"
+    type: "string(40)"
 
   eventLocation:
     desc: "The location of the event."
@@ -289,7 +281,7 @@ col:
 
   eventRoomGuid:
     desc: "The guid of the room of the event."
-    type: "string"
+    type: "string(40)"
 
   eventID:
     desc: "The ID of the event."
@@ -305,7 +297,7 @@ col:
 
   eventStatus:
     desc: "The validation status of the event. Values can be C, P, CA, respectively for Confirmed, Pending, CAncelled."
-    type: "enum (C, P, CA)"
+    type: "enum(C, P, CA)"
 
   eventTeacher:
     desc: "The teacher of the event."
@@ -313,7 +305,7 @@ col:
 
   eventTimeZone:
     desc: "The timezone of the event."
-    type: "string"
+    type: "string(50)"
 
   eventTitle:
     desc: "The title of the event."
@@ -391,12 +383,12 @@ col:
 
   interventionGuid:
     desc: "Unique GUID of the intervention (only for update)."
-    type: "string"
+    type: "string(40)"
     mandatory: "yes"
 
   interventionStatus:
     desc: "Status for the intervention currently imported. Possible values are A (Active) or C (Cancelled)"
-    type: "enum (A, C)"
+    type: "enum(A, C)"
     mandatory: "yes"
 
   lastAccessDate:
@@ -445,7 +437,7 @@ col:
 
   learningObjectDisplayedType:
     desc: "The type (interactive content, audio, image, ...) of the learning object."
-    type: "string"
+    type: "string(50)"
 
   learningObjectDuration:
     desc: "The duration of the learning object (in minutes)."
@@ -457,7 +449,7 @@ col:
 
   learningObjectGuid:
     desc: "The GUID of the learning object."
-    type: "string"
+    type: "string(40)"
 
   learningObjectId:
     desc: "The ID used by the database to identify the learning object."
@@ -465,7 +457,7 @@ col:
 
   learningObjectIncludedInLO:
     desc: "Metadata field 'Included in this learning product' of learning object."
-    type: "string"
+    type: "longtext"
 
   learningObjectLastLaunchDate:
     desc: "The date at which the learning object has been launched for the last time."
@@ -473,11 +465,11 @@ col:
 
   learningObjectLearningPoints:
     desc: "Metadata field 'What you will learn' of learning object."
-    type: "string"
+    type: "longtext"
 
   learningObjectLevel:
     desc: "The level of the learning object."
-    type: "enum (0, 1, 2, 3)"
+    type: "enum(0, 1, 2, 3)"
 
   learningObjectLocales:
     desc: "The locales in which the learning object is available."
@@ -521,19 +513,19 @@ col:
 
   learningObjectSummary:
     desc: "The summary (description) of the learning object."
-    type: "string"
+    type: "longtext"
 
   learningObjectTags:
     desc: "The tags associated to the learning object."
-    type: "string"
+    type: "longtext"
 
   learningObjectTargetAudience:
     desc: "The target audience of the learning object."
-    type: "string"
+    type: "longtext"
 
   learningObjectThemes:
     desc: "The themes of the learning object."
-    type: "string"
+    type: "longtext"
 
   learningObjectThumbnailLarge:
     desc: "The URL to the large-sized thumbnail of the learning object."
@@ -557,7 +549,7 @@ col:
 
   learningObjectType:
     desc: "The runtime (SCORM, MP4, AICC, ...) of the learning object."
-    type: "string"
+    type: "string(50)"
 
   learningObjectVersionAssignements:
     desc: "The number of tracking rows associated with this learning object version."
@@ -597,7 +589,7 @@ col:
 
   learningObjectVersionDisplayedType:
     desc: "The type (interactive content, audio, image, ...) of the learning object version."
-    type: "string"
+    type: "string(50)"
 
   learningObjectVersionDuration:
     desc: "The duration of the learning object version (in minutes)."
@@ -609,7 +601,7 @@ col:
 
   learningObjectVersionGuid:
     desc: "The GUID used by the database to identify the learning object version."
-    type: "string"
+    type: "string(40)"
 
   learningObjectVersionId:
     desc: "The ID used by the database to identify the learning object version."
@@ -617,11 +609,11 @@ col:
 
   learningObjectVersionIncludedInLO:
     desc: "Metadata field 'Included in this learning product' of learning object version."
-    type: "string"
+    type: "longtext"
 
   learningObjectVersionIsMobile:
     desc: "Metadata field 'Launchable in the Learn application' of learning object version."
-    type: "enum (true, false)"
+    type: "enum(true, false)"
 
   learningObjectVersionLastLaunchDate:
     desc: "The date at which the learning object version was launched for the last time."
@@ -633,15 +625,15 @@ col:
 
   learningObjectVersionLevel:
     desc: "The level of the learning object version."
-    type: "enum (0, 1, 2, 3)"
+    type: "enum(0, 1, 2, 3)"
 
   learningObjectVersionLocale:
     desc: "The locale of the learning object version."
-    type: "string"
+    type: "string(7)"
 
   learningObjectVersionLoGuid:
     desc: "The GUID of the original learning object."
-    type: "string"
+    type: "string(40)"
 
   learningObjectVersionLoId:
     desc: "The ID used by the database to identify the original learning object."
@@ -657,23 +649,23 @@ col:
 
   learningObjectVersionStatus:
     desc: "The status of a Learning Object version"
-    type: "enum (Validated, Disabled, Under construction, Pending validation)"
+    type: "enum(Validated, Disabled, Under construction, Pending validation)"
 
   learningObjectVersionSummary:
     desc: "The summary (description) of the learning object version."
-    type: "string"
+    type: "longtext"
 
   learningObjectVersionTags:
     desc: "The tags associated with the learning object version."
-    type: "string"
+    type: "longtext"
 
   learningObjectVersionTargetAudience:
     desc: "The target audience of the learning object version."
-    type: "string"
+    type: "longtext"
 
   learningObjectVersionThemes:
     desc: "A comma separated list of the themes of the learning object version."
-    type: "string"
+    type: "longtext"
 
   learningObjectVersionThumbnailLarge:
     desc: "The URL to the large-sized thumbnail of the learning object version."
@@ -697,7 +689,7 @@ col:
 
   learningObjectVersionType:
     desc: "The runtime (SCORM, MP4, AICC, ...) of the learning object version."
-    type: "string"
+    type: "string(50)"
 
   learningObjectVersionVersion:
     desc: "The version number of the learning object version."
@@ -731,12 +723,12 @@ col:
   lovCodes:
     desc: >
       This option references the LO's refNumber and is used to specify wich LOs are included in the training course. It's possible to separate LOs by step with double pipe "||" and into the step with comma "," (ex: "REF1,REF2||REF3||REF4").
-    type: "string"
+    type: "longtext"
     mandatory: Column itself must be added in the XML configuration file, but can remain empty in the CSV file by setting &lt;mandatory&gt;no&lt;/mandatory&gt; inside the field's tag.
 
   lovGuid:
     desc: "The GUID used by the database to identify the learning object version."
-    type: "string"
+    type: "string(40)"
     mandatory: No, but at least one of the fields lovCode and lovGuid must be specified
 
   managerLogin:
@@ -753,15 +745,11 @@ col:
 
   modality:
     desc: "The modality of the associated training course."
-    type: "enum (learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
+    type: "enum(learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
 
   modificationDate:
     desc: "The date at which the object (training course, training session) was last modified."
     type: "datetime"
-
-  Name:
-    desc: "Description"
-    type: "string"
 
   nbLO:
     desc: "The total number of learning objects in the same session as the learning object referenced by the tracking row."
@@ -789,7 +777,7 @@ col:
 
   presentation:
     desc: "`Presentation` field from the learner profile."
-    type: "string"
+    type: "longtext"
 
   progression:
     desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
@@ -801,7 +789,7 @@ col:
 
   progressStatus:
     desc: "Activity's completion status (some statuses are only available depending on the activity type)"
-    type: "enum (Not started, Started, Completed, Pending feeback, Feedback given)"
+    type: "enum(Not started, Started, Completed, Pending feeback, Feedback given)"
 
   registeredLearners:
     desc: "The number of learners that have enrolled to the training session."
@@ -817,7 +805,7 @@ col:
 
   registrationGuid:
     desc: "The GUID of the registration."
-    type: "string"
+    type: "string(40)"
 
   reportId:
     desc: "The database ID used to identify the tracking row."
@@ -825,11 +813,11 @@ col:
 
   reportGuid:
     desc: "The GUID of the tracking row."
-    type: "string"
+    type: "string(40)"
 
   roomGuid:
     desc: "Unique GUID of the room."
-    type: "string"
+    type: "string(40)"
     mandatory: "yes"
 
   roomLabel:
@@ -855,7 +843,7 @@ col:
 
   sessionAction:
     desc: "Flag to define wether the current data row should update the related session ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
-    type: "enum (M, A)"
+    type: "enum(M, A)"
 
   sessionEndDate:
     desc: "The end date of the session."
@@ -863,7 +851,7 @@ col:
 
   sessionGuid:
     desc: "The GUID of the session."
-    type: "string"
+    type: "string(40)"
     mandatory: >
       No, but at least one of the following fields must be specified: `sessionGuid` or `sessionTitle` or `sessionId`
 
@@ -875,7 +863,7 @@ col:
 
   sessionLocale:
     desc: "The locale of the current session."
-    type: "string"
+    type: "string(7)"
 
   sessionStartDate:
     desc: "The start date of the session."
@@ -893,9 +881,9 @@ col:
 
   status:
     desc: "<b>For the providers related to tracking: </b>The progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'.
-    <br />Type: enum (completed, incomplete, not started)
+    <br />Type: enum(completed, incomplete, not started)
     <br /><b>For the provider 'Platform Candidates Access': </b>The status of the of connection attempt (0 = failed, 1 = successful).
-    <br />Type: enum (0, 1)"
+    <br />Type: enum(0, 1)"
     type: "enum"
 
   submissionDate:
@@ -943,15 +931,15 @@ col:
 
   trainingAction:
     desc: "Flag to define wether the current data row should update the related training course ('M') or delete it ('A'). When unset, the default behaviour is to updated it."
-    type: "enum (M, A)"
+    type: "enum(M, A)"
 
   trainingAudience:
     desc: "The target audience of the training course (metadata field 'Who should attend?')."
-    type: "string"
+    type: "longtext"
 
   trainingBenefits:
     desc: "The benefits of the training course (metadata field 'Learning outcomes')."
-    type: "string"
+    type: "longtext"
 
   trainingBOLink:
     desc: "The URL to the record page of the training course."
@@ -959,7 +947,7 @@ col:
 
   trainingChapters:
     desc: "The chapter hierarchy of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingContentAuthor:
     desc: "The author of the learning object."
@@ -974,16 +962,16 @@ col:
     type: "string"
 
   trainingContentFolder:
-    desc: "The name of the folder in which the learning object is timeGlobalplaced (inside the training course)."
+    desc: "The name of the folder in which the learning object is placed (inside the training course)."
     type: "string"
 
   trainingContentGuid:
     desc: "The GUID of the learning object."
-    type: "string"
+    type: "string(40)"
 
   trainingContentMandatory:
     desc: "The flag (Y or N) indicating if the learning object is mandatory in the context of the training course."
-    type: "enum (Y, N)"
+    type: "enum(Y, N)"
 
   trainingContentOrder:
     desc: "The sort order of the learning object in the training course."
@@ -991,11 +979,11 @@ col:
 
   trainingContentRuntime:
     desc: "The runtime of the learning object (SCORM content, CrossKnowledge learning product,...)."
-    type: "string"
+    type: "string(50)"
 
   trainingContentSubtype:
     desc: "The subtype of the learning object (Business review, custom, session,...)."
-    type: "string"
+    type: "string(50)"
 
   trainingContentTitle:
     desc: "The title of the learning object."
@@ -1003,7 +991,7 @@ col:
 
   trainingContentType:
     desc: "The type of the learning object (Reading document, interactive document,...)."
-    type: "string"
+    type: "string(50)"
 
   trainingCost:
     desc: "Metadata 'Price' of the training course."
@@ -1011,7 +999,7 @@ col:
 
   trainingDescription:
     desc: "The description of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingDuration:
     desc: "The duration of the training course."
@@ -1019,19 +1007,19 @@ col:
 
   trainingFolderDescription:
     desc: "The descriptions of the folders in the training course, separated by commas."
-    type: "string"
+    type: "longtext"
 
   trainingFurtherInformation:
     desc: "Further information on the training course (metadata field 'Further information')."
-    type: "string"
+    type: "longtext"
 
   trainingGoals:
     desc: "The goals of the training course (metadata field 'What you will learn')."
-    type: "string"
+    type: "longtext"
 
   trainingGuid:
     desc: "The GUID of the training course."
-    type: "string"
+    type: "string(40)"
     mandatory: >
       No, but at least one of the following fields must be specified: `trainingId` or `trainingGuid` or `trainingPathCode` (not all these fields might be available in each provider)
 
@@ -1043,25 +1031,25 @@ col:
 
   trainingLearningPath:
     desc: "The overview of the training course (metadata field 'Training course overview')."
-    type: "string"
+    type: "longtext"
 
   trainingLocale:
     desc: "The main locale of the training course."
-    type: "string"
+    type: "string(7)"
 
   trainingModality:
     desc: "The modality of the training course."
-    type: "enum (learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
+    type: "enum(learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
     mandatory: >
       Yes when using `createOrUpdateTrainingCourseAction`.
 
   trainingOutcomes:
     desc: "Metadata 'Learning outcomes' of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingOverview:
     desc: "Metadata 'Training course overview' of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingPathCode:
     desc: "The reference number of the training course."
@@ -1082,11 +1070,11 @@ col:
   trainingSteps:
     desc: >
       This option is used to describe steps that will be added or updated. This option is only used for blended and blendedx modalities. This option is mandatory for blended modality, and mandatory for blendedx on course creation, but not for course update. Steps are separated by double pipe “||” and the separator used to separate step title and step duration is “|>”. A step is described by “StepTitle|>StepDuration” where StepTitle cannot be empty and duration is optionnal and it's a integer which represents step duration in days (eg : "Intro|>1||Basics|>2||Advanced concepts|>4||Conclusion").
-    type: "string"
+    type: "longtext"
 
   trainingStatus:
     desc: "The validation status of the training course. The values displayed in this column are C, P, A which respectively mean Under Construction, Published, Archive. These values can be configured via the `trainingStatusFormat` parameter."
-    type: "enum (C, P, A)"
+    type: "enum(C, P, A)"
 
   trainingTitle:
     desc: "The title of the training course."
@@ -1094,11 +1082,11 @@ col:
 
   trainingWelcomeText:
     desc: "The welcome text of the training course."
-    type: "string"
+    type: "longtext"
 
   trainingWhatYouWillLearn:
     desc: "Metadata 'What you will learn' of the training course."
-    type: "string"
+    type: "longtext"
 
 param:
 
@@ -1119,8 +1107,8 @@ param:
     type: "enum(present, absent, absent but excused, no information, event not started, not applicable)"
 
   badgeCategory:
-    desc: "Restrict on certain badge 'colors'. Can be `gold`, `silver` or `bronze`. One value is allowed, case must be respected because of XML validator"
-    type: "string"
+    desc: "Restrict on certain badge 'colors'. Only one value is allowed."
+    type: "enum(gold, silver, bronze)"
 
   catalogVisibility:
     desc: "Only export training courses that have the specified catalog visibility."
@@ -1128,7 +1116,7 @@ param:
 
   connectionStatusFormat:
     desc: "The format in which to display the connection status."
-    type: "custom"
+    type: "connectionStatusFormat"
 
   dateFormat:
     desc: "Format for dates in the exported data. When not specified, the default date format is `YYYY-MM-DD`."
@@ -1144,7 +1132,7 @@ param:
 
   defaultLangCode:
     desc: "Default language code to be used if the column `language` is absent or empty."
-    type: "string"
+    type: "string(7)"
 
   defaultScoreMax:
     desc: "Default maximum score to be used when importing tracking."
@@ -1168,7 +1156,7 @@ param:
 
   durationFormat:
     desc: "Format for durations in the exported data (ex: learning resource duration)."
-    type: "enum (hh:mm:ss, minutes, seconds)"
+    type: "enum(hh:mm:ss, minutes, seconds)"
 
   enableAllLearners:
     desc: "If set to `yes`, this will automatically force activated all the learners account updated by this import. This default value can be overriden by using the `candidateValidity` column for each learner."
@@ -1180,7 +1168,7 @@ param:
 
   eventClassRoomTypeFilter:
     desc: "Export with filter Virtual or Standard."
-    type: "enum (Standard, Virtual)"
+    type: "enum(Standard, Virtual)"
 
   eventDurationAllDayFilter:
     desc: "Export all day between a start day and a end day."
@@ -1192,7 +1180,7 @@ param:
 
   eventStatusFilter:
     desc: "Export only events with a chosen status (C - Confirmed, P - Pending, CA - Cancelled)"
-    type: "enum (C, P, CA)"
+    type: "enum(C, P, CA)"
 
   excludeDeactivatedContents:
     desc: "Excludes learning objects that have `Deactivated` status"
@@ -1224,11 +1212,11 @@ param:
 
   lastNFullMonths:
     desc: "Similar to the 'timeFrames*' options. Filter to only export data created or updated less than N full months ago.<br /><i>Overrides 'timeFrameScale' and 'lastNMonths' options.</i>"
-    type: "integer"
+    type: "int"
 
   lastNMonths:
     desc: "Similar to the 'timeFrames*' options. Filter to only export data created or updated less than N months ago.<br /><i>Overrides 'timeFrameScale' option.</i>"
-    type: "integer"
+    type: "int"
 
   locationIds:
     desc: "Filter on the database ID of one or several location (column eventLocationID). Can contain several values separated by commas."
@@ -1240,11 +1228,11 @@ param:
 
   maxLength:
     desc: "If not empty, this option will crop each value to the specified max length (each cell, not each line)."
-    type: "integer"
+    type: "int"
 
   modality:
     desc: "Only export data related to a training course that belongs to the specified modality."
-    type: "modality"
+    type: "enum('', learning_channel, kc, blended, campus, distanciel, mentored_action_learning, portal, serious_game, content_test, guided)"
 
   onlyFromImportedTraining:
     desc: "Only export tracking data related to trainings that were imported."
@@ -1284,7 +1272,7 @@ param:
 
   sessionGuid:
     desc: "Only export data related to a training session that has the specified GUID."
-    type: "string"
+    type: "string(40)"
 
   sessionSearchField:
     desc: "This option is used to specify the columns that will be used as filters to find the training session."
@@ -1308,7 +1296,7 @@ param:
 
   threshold:
     desc: "Whether or not to export tracking data that has no launch date (the learner has never launched the content). When points will be exported, use the threshold to convert them (points*threshold). Useful for incentive tool. Default value 1 . All values are allowed, so be careful (0, negatives, etc)"
-    type: "string"
+    type: "float"
 
   timeFrames:
     desc: "Once a learner has completed a learning object or activity, a completion date will be saved in the associated tracking row. This parameter is used to the provider to only export tracking data where the completion date is in a certain time span. Must be used with `timeFramesScale.`"
@@ -1328,7 +1316,7 @@ param:
 
   timeZone:
     desc: "Time format in which the `timeGlobal` column should be exported, must be in TZ database format e.g.(America/Sao_Paulo). Full list available on <a href='https://en.wikipedia.org/wiki/List_of_tz_database_time_zones'>Wikipedia</a>"
-    type: "string"
+    type: "string(50)"
 
   traineeSearchField:
     desc: "This option is used to specify the columns that will be used as filters to find the learner."
@@ -1340,7 +1328,7 @@ param:
 
   trainingGuid:
     desc: "Only export data related to a training course that has the specified GUID."
-    type: "string"
+    type: "string(40)"
 
   trainingIds:
     desc: "Only export data related to the training courses that have an ID included in the comma-separated list specified in this parameter."
@@ -1378,6 +1366,9 @@ datatype:
   candidateValidity:
     url: /data-candidatevalidity.html
 
+  connectionStatusFormat:
+    url: /data-connectionstatusformat.html
+
   registerFlag:
     url: /data-registerflag.html
 
@@ -1387,11 +1378,14 @@ datatype:
   sessionSearchField:
     url: /data-sessionsearchfield.html
 
-  timeGlobalFormat:
-    url: /data-timeglobalformat.html
+  statusFormat:
+    url: /data-statusformat.html
 
   templates:
     url: /data-templates.html
+
+  timeGlobalFormat:
+    url: /data-timeglobalformat.html
 
   timeFrameScale:
     url: /data-timeframescalemode.html
