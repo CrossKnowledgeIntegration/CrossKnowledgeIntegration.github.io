@@ -17,7 +17,7 @@ columns: [activityDuration, activityID, activityName, activityPoints, candidateC
     trainingPathCode, trainingPublisher, trainingTitle, catalogVisibility, constantValue]
 parameters: [dateFormat, dateTimeFormat, entityIds, onlyFromImportedRegistrations, onlyFromImportedSessions, 
     onlyFromImportedTraining, preferredLocales, publishers, sessionGuid, trainingGuid, trainingPathCode, facilitatorGuids, 
-    foFacilitatorIds, locationIds, roomGuids, attendanceStatus, eventStarted, activityNames]
+    foFacilitatorIds, locationIds, roomGuids, attendanceStatus, eventStarted, activityNames, timeFrames, timeFramesScale]
 ---
 
 ### Example
