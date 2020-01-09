@@ -119,7 +119,7 @@ col:
 
   candidateLocale:
     desc: "The chosen display locale for the learner, based on the available locales on the instance and their preferences."
-    type: "string(7)"
+    type: "string(6)"
 
   candidateLocales:
     desc: "The ordered list of chosen locales for the learner."
@@ -177,7 +177,7 @@ col:
 
   contentLocale:
     desc: "The locale of the learning object version."
-    type: "string(7)"
+    type: "string(6)"
 
   contentRefNumber:
     desc: "The reference number of the learning object version."
@@ -629,7 +629,7 @@ col:
 
   learningObjectVersionLocale:
     desc: "The locale of the learning object version."
-    type: "string(7)"
+    type: "string(6)"
 
   learningObjectVersionLoGuid:
     desc: "The GUID of the original learning object."
@@ -863,7 +863,7 @@ col:
 
   sessionLocale:
     desc: "The locale of the current session."
-    type: "string(7)"
+    type: "string(6)"
 
   sessionStartDate:
     desc: "The start date of the session."
@@ -1035,7 +1035,7 @@ col:
 
   trainingLocale:
     desc: "The main locale of the training course."
-    type: "string(7)"
+    type: "string(6)"
 
   trainingModality:
     desc: "The modality of the training course."
@@ -1132,7 +1132,7 @@ param:
 
   defaultLangCode:
     desc: "Default language code to be used if the column `language` is absent or empty."
-    type: "string(7)"
+    type: "string(6)"
 
   defaultScoreMax:
     desc: "Default maximum score to be used when importing tracking."
