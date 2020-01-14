@@ -1359,7 +1359,9 @@ param:
     type: "string"
 
   withoutLaunchTime:
-    desc: "Whether or not to export tracking data that has no launch date (the learner has never launched the content). By default, the provider will only export tracking data where the learner has launched the content at least once."
+    desc: >
+      Whether or not to export tracking data that has no launch date (the learner has never launched the content). By default, the provider will only export tracking data where the learner has launched the content at least once.
+      <br/><i class="fa fa-warning"></i> Please note that this option should not be used together with the `timeFrames` options, as the `timeFrames` options are based on the learners activity, so using both options together will prevent from retrieving the data without activity.
     type: "yesNoElement"
 
 datatype:

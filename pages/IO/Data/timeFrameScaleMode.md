@@ -22,6 +22,9 @@ Here is the list of all possible values for `timeFramesScale`:
 * `less_than_n_full_years`
 
 
+{% include important.html content="As this parameter is based on the learner's activity, it should not be used together with the `withoutLaunchTime` option. Using both at the same time will prevent from retrieving the data without activity (as they will be excluded by the `timeFrames` activity filter)." %}
+
+
 {% include callout.html content="**Example** when used for [Tracking provider](/tracking-provider.html)<br/><br/>
 1. Hugo watched C1 in T1 on January 2<sup>nd</sup> 2015, spent 50 sec and has status = incomplete.<br/>
 2. Hugo watched C1 in T1 on February 25<sup>th</sup> 2015, spent 300 sec and has status = completed.<br/>
