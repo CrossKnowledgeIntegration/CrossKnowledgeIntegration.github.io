@@ -328,7 +328,7 @@ col:
     type: "datetime"
 
   firstCompletionDate:
-    desc: "The date and time at which the content referenced by the training has been completed for the first time."
+    desc: "The date and time at which the content referenced by the training has been completed for the first time. If this field is not present in the import files, but the data imported is considered completed, the value of this field will be automatically set to today."
     type: "datetime"
 
   firstLaunchDate:

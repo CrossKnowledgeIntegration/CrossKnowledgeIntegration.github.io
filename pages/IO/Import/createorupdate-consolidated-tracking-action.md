@@ -10,8 +10,10 @@ folder: Import
 dynamic_content: true
 show_mandatory_column: true
 important_note: >
-    Unlike the other import providers, the settings for this provider need to be split in two blocks: <code class="highlighter-rouge">options</code> and <code class="highlighter-rouge">parameters</code>. 
-    Please see the example below for more details.
+    This provider behaves as a "oneshot", or a "data create and replace": when you import one tracking row, it will replace the existing data. If you import the same file 10 times, it will not cumulate anything. 
+    <br/>Also, you will need to import ALL the data. If you want to update the time spent of an existing tracking row, you need to put ALL the available columns in the CSV, otherwise you will update the time spent on your tracking, but you will reset the progress and access dates.
+    <br/><br/>Unlike the other import providers, the settings for this provider need to be split in two blocks: <code class="highlighter-rouge">options</code> and <code class="highlighter-rouge">parameters</code>. 
+    <br/>Please see the example below for more details.
 columns: [candidateLogin, candidateRefNumber, candidateEmail, lovCode, lovGuid, sessionGuid, trainingPathCode, trainingId, 
     sessionTitle, sessionId, firstAccessDate, lastAccessDate, firstCompletionDate, progression, trackingStatus, timeSpent, 
     score, scoreMax, ignoredColumn]
