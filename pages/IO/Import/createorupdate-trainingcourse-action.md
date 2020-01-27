@@ -33,56 +33,24 @@ parameters: [fullAccess]
 			<fullAccess>yes</fullAccess>
 		</options>
 		<fields>
-			<trainingAction/>
-			<trainingTitle>
-				<mandatory>no</mandatory>
-			</trainingTitle>
+			<trainingAction/><!-- Training Action and PathCode Mandatory -->
 			<trainingPathCode/>
-			<trainingLocale>
-				<mandatory>no</mandatory>
-			</trainingLocale>
-			<trainingModality>
-				<mandatory>no</mandatory>
-			</trainingModality>
-			<lovCodes>
-				<mandatory>no</mandatory>
-			</lovCodes>
-			<trainingDescription>
-				<mandatory>no</mandatory>
-			</trainingDescription>
-			<trainingCost>
-				<mandatory>no</mandatory>
-			</trainingCost>
-			<trainingDuration>
-				<mandatory>no</mandatory>
-			</trainingDuration>
-			<trainingWhatYouWillLearn>
-				<mandatory>no</mandatory>
-			</trainingWhatYouWillLearn>
-			<trainingOverview>
-				<mandatory>no</mandatory>
-			</trainingOverview>
-			<trainingOutcomes>
-				<mandatory>no</mandatory>
-			</trainingOutcomes>
-			<trainingAudience>
-				<mandatory>no</mandatory>
-			</trainingAudience>
-			<trainingFurtherInformation>
-				<mandatory>no</mandatory>
-			</trainingFurtherInformation>
-			<trainingWelcomeText>
-				<mandatory>no</mandatory>
-			</trainingWelcomeText>
-			<trainingScoreSuccessThreshold>
-				<mandatory>no</mandatory>
-			</trainingScoreSuccessThreshold>
-			<trainingScoresVisibleByLearners>
-				<mandatory>no</mandatory>
-			</trainingScoresVisibleByLearners>
-			<trainingSteps>
-				<mandatory>no</mandatory>
-			</trainingSteps>
+			<trainingLocale/>
+			<trainingTitle/>
+			<trainingModality/>
+			<lovCodes/>
+			<trainingDescription/>
+			<trainingCost/>
+			<trainingDuration/>			
+			<trainingWhatYouWillLearn/>
+			<trainingOverview/>
+			<trainingOutcomes/>
+			<trainingAudience/>
+			<trainingFurtherInformation/>
+			<trainingWelcomeText/>
+			<trainingScoreSuccessThreshold/>
+			<trainingScoresVisibleByLearners/>
+			<trainingSteps/>
 		</fields>
 	</createOrUpdateTrainingCourseAction>
 </actions>>
