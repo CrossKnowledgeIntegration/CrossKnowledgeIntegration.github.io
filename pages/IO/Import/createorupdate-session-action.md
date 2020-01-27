@@ -21,24 +21,24 @@ parameters: [sessionSearchField, fullAccess]
 	<createOrUpdateSessionAction>
 		<options>
 			<sessionSearchField>
-				<sessionTitle/>
+				<sessionTitle/><!-- Use Title, Id, or Guid as Search Field-->
+				<sessionId/>
+				<sessionGuid/>
 			</sessionSearchField>
 			<fullAccess>yes</fullAccess>
 		</options>
 		<fields>
 			<sessionAction/>
-			<trainingPathCode/>
+			<trainingPathCode/><!-- Use Training Title, ID, and/or PathCode -->
+			<trainingId/>
 			<trainingTitle/>
-			<sessionTitle/>
+			<sessionTitle/><!-- Use Session Title, Guid, and/or ID -->
+			<sessionGuid/>
+			<sessionID/>
 			<sessionStatus/>
-			<sessionGuid>
-				<mandatory>no</mandatory>
-			</sessionGuid>
 			<sessionStartDate/>
 			<sessionEndDate/>
-			<teacherLogin>
-				<mandatory>no</mandatory>
-			</teacherLogin>
+			<teacherLogin/>
 		</fields>
 	</createOrUpdateSessionAction>
 </actions>
