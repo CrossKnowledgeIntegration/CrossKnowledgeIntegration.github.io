@@ -28,13 +28,23 @@ parameters: [defaultEntityId, defaultLangCode, traineeSearchField, fullAccess, e
 			<defaultLangCode>en-GB</defaultLangCode>
 		</options>
 		<fields>
-			<candidateRefNumber/>
-			<candidateName/>
-			<candidateFirstname/>
+			<candidateRefNumber/><!-- Use at least the candidate RefNumber, Login, Email -->
 			<candidateLogin/>
 			<candidateEmail/>
+			<candidateName/>
+			<candidateFirstname/>
 			<candidateValidity/>
-			<custom>
+			<candidateTimeZone/>
+			<enabledFrom/>
+			<enabledUntil/>
+			<entityGuid/>
+			<entityId/>
+			<entityName/>
+			<candidateLanguages/>
+			<presentation/>
+			<managerLogin/><!-- Manager Login or Refnumber enables My Team -->
+			<managerRefNumber/>
+			<custom> <!--custom example format -->
 				<guid>FF09BDE8-1CB4-4DDB-519C-9BC9AB6B65B2</guid>
 				<mandatory>yes</mandatory>
 			</custom>
@@ -42,15 +52,6 @@ parameters: [defaultEntityId, defaultLangCode, traineeSearchField, fullAccess, e
 				<guid>75ACD042-50C9-3F8E-C854-2988590BC501</guid>
 				<mandatory>yes</mandatory>
 			</custom>
-			<entityGuid>
-				<mandatory>no</mandatory>
-			</entityGuid>
-			<candidateLanguages>
-				<mandatory>no</mandatory>
-			</candidateLanguages>
-			<managerLogin>
-				<mandatory>no</mandatory>
-			</managerLogin>
 		</fields>
 	</createOrUpdateLearnerAction>
 </actions>
