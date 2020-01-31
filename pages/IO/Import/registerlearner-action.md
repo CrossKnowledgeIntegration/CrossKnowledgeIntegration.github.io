@@ -32,12 +32,16 @@ parameters: [traineeSearchField, trainingSearchField, sessionSearchField, dontUp
 			</sessionSearchField>
 		</options>
 		<fields>
-			<candidateRefNumber/>
-			<trainingPathCode/>
-			<sessionTitle/>
+			<candidateRefNumber/><!-- Must have Candidate Ref Number, Email or Login -->
+			<candidateEmail/>
+			<candidateLogin/>
+			<trainingPathCode/><!-- Must have Training PathCode or Id --> 
+			<trainingId/>
+                	<sessionTitle/><!-- Must have Session Title or Id --> 
+			<seesionId/>
 			<sessionStartDate/>
 			<sessionEndDate/>
-			<registerFlag>
+			<registerFlag><!-- Must have registration Flag -->
 				<keepSession>Y</keepSession>
 			</registerFlag>
 			<registrationGuid/>
