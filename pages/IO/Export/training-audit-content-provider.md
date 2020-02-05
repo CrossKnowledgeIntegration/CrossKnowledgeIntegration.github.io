@@ -11,7 +11,7 @@ dynamic_content: true
 important_note: This provider also allows to use all the columns from the provider <a href="training-audit-metadata-provider.html">'Training Audit Metadata'</a>
 columns: [trainingContentGuid, trainingContentCode, trainingContentTitle, trainingContentType, trainingContentRuntime,
     trainingContentAuthor, trainingContentCatalog, trainingContentSubtype, trainingContentOrder, trainingContentFolder,
-    trainingContentMandatory]
+    trainingContentMandatory, trainingContentId]
 parameters: [trainingIds, templates, stripHTML, maxLength]
 ---
 
@@ -41,6 +41,7 @@ parameters: [trainingIds, templates, stripHTML, maxLength]
             <trainingBOLink/>
             <trainingChapters/>
             <catalogVisibility/>
+            <trainingContentId/>
             <trainingContentGuid/>
             <trainingContentCode/>
             <trainingContentTitle/>

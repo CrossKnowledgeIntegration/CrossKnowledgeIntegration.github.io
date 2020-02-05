@@ -950,7 +950,7 @@ col:
     type: "longtext"
 
   trainingContentAuthor:
-    desc: "The author of the learning object."
+    desc: "The author of the learning resource."
     type: "string"
 
   trainingContentCatalog:
@@ -958,7 +958,7 @@ col:
     type: "string"
 
   trainingContentCode:
-    desc: "The reference number of the learning object."
+    desc: "The reference number of the learning resource."
     type: "string"
 
   trainingContentFolder:
@@ -968,6 +968,10 @@ col:
   trainingContentGuid:
     desc: "The GUID of the learning object."
     type: "string(40)"
+
+  trainingContentId:
+    desc: "The ID of the learning resource."
+    type: "int"
 
   trainingContentMandatory:
     desc: "The flag (Y or N) indicating if the learning object is mandatory in the context of the training course."
@@ -986,7 +990,7 @@ col:
     type: "string(50)"
 
   trainingContentTitle:
-    desc: "The title of the learning object."
+    desc: "The title of the learning resource."
     type: "string"
 
   trainingContentType:
