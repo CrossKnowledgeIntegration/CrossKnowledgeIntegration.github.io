@@ -3,7 +3,7 @@ title: My Learning prerequisites
 keywords: pre-requisites, prerequisites, requirements, mylearning
 last_updated: 9 April, 2018
 sidebar: home_sidebar
-permalink: MyLearning-prerequisites.html
+permalink: MyLearning-prerequisites
 folder: prerequisites
 ---
 

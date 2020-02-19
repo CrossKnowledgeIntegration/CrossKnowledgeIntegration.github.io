@@ -3,10 +3,8 @@ entries:
   levels: one
   folders:
   - title: About
-    output: web
     folderitems:
-    - title: About 
-    url: /index.html
+    url: /
     output: web
 
   - title: Our solutions
@@ -19,7 +17,7 @@ entries:
       url: /TeamShift-prerequisites
       output: web
     - title: Mohive Prerequisites
-      url: /mohive-prerequisites
+      url: /Mohive-prerequisites
       output: web
     - title: MyLearning Prerequisites
       url: /MyLearning-prerequisites
@@ -382,7 +380,3 @@ entries:
     - title: Blog 
       external_url: http://crossknowledge.github.io/
       output: web
-
-  - title: Support
-    url: /index.html
-    output: web

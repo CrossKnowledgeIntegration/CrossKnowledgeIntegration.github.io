@@ -3,7 +3,7 @@ title: TeamSHIFT Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements, teamshift
 last_updated: 8 May, 2018
 sidebar: home_sidebar
-permalink: TeamShift-prerequisites.html
+permalink: TeamShift-prerequisites
 folder: prerequisites
 ---
 
