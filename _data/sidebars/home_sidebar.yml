@@ -228,12 +228,7 @@ entries:
           output: web
         - title: Login Box
           url: /loginbox.html
-          output: web
-
-      - title: Tools
-        url: /api_tools.html
-        output: web
-    
+          output: web    
       - title: Data Export Module
         output: web
         subfolderitems:
