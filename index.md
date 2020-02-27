@@ -13,7 +13,7 @@ This site's purpose is to present the Integration @ Crossknowledge services, too
 
 * [CKLS Prerequisites](/CKLS-prerequisites)
 * [TeamSHIFT Prerequisites](/TeamShift-prerequisites)
-* [Mohive Prerequisites](/mohive-prerequisites)
+* [Mohive Prerequisites](/Mohive-prerequisites)
 * [Contents Information](/content-information)
 * [SSO Smartlink](/sso-smartlink.html)
 * [SSO SAML 2.0](/saml.html)
