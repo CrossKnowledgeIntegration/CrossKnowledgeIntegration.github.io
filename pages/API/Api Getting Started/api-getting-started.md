@@ -109,7 +109,7 @@ The web-services included in our Learner API enable third party application to g
 
 {% include callout.html content="<span class='fa-stack fa-lg'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-lightbulb-o fa-stack-1x fa-inverse'></i></span>&nbsp;Thoses web-services can be used to enable the learner to access to their learning resources from their mobile devices." type="success" %}
 
-Below is and exhaustive list of the web-services ordered by [CrossKnowledge Database Object](/glossary.html):
+Below is and exhaustive list of the web-services ordered by data object:
 
 <ul id="profileTabs" class="nav nav-tabs">
 	<li class="active" ><a href="#learner" data-toggle="tab">Learner</a></li>
