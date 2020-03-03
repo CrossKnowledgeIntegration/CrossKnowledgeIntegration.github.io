@@ -47,6 +47,10 @@ layout: default
         {% include important.html content=page.important_note %}
     {% endif %}
 
+    {% if page.note %}
+        {% include note.html content=page.note %}
+    {% endif %}
+
     {% if page.dynamic_content %}
         {% if page.columns %}
             {% include dynamic_content.html columns=page.columns title='Available columns' collection=site.data.IO_items.col %}
