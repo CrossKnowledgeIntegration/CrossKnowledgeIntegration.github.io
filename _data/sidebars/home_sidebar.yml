@@ -317,7 +317,7 @@ entries:
         - title: Create or Update Training Course
           url: /createorupdate-trainingcourse-action.html
           output: web
-        - title: Create or Update Register Learner
+        - title: Register Learner
           url: /registerlearner-action.html
           output: web
           

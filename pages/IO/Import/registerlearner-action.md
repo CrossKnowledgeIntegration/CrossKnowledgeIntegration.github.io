@@ -1,6 +1,6 @@
 ---
-title: Create Or Update Register Learner Action
-keywords: register, learner, import, data, createOrUpdateLearnerAction
+title: Register Learner Action
+keywords: register, learner, import, data, registerLearnerAction
 last_updated: October 2019
 tags:
 summary: "Register a learner to a session with respect to the data row from the import file."
@@ -11,7 +11,8 @@ dynamic_content: true
 show_mandatory_column: true
 columns: [candidateLogin, candidateRefNumber, candidateEmail, trainingPathCode, trainingId, sessionTitle, sessionId, 
     sessionStartDate, sessionEndDate, registrationGuid, registerFlag, ignoredColumn, registrationDate]
-parameters: [traineeSearchField, trainingSearchField, sessionSearchField, dontUpdateExistingSessions, fullAccess]
+parameters: [traineeSearchField, trainingSearchField, sessionSearchField, dontUpdateExistingSessions, fullAccess, 
+    reactivateRegisteredLearners]
 ---
 
 ### Examples

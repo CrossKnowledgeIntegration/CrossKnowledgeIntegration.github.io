@@ -1262,6 +1262,10 @@ param:
     desc: "Only export tracking data on content issued by the given publishers GUID. Multiple publishers may be specified in a comma-separated list."
     type: "string"
 
+  reactivateRegisteredLearners:
+    desc: "By default (value unspecified or set to 'yes'), the action RegisterLearner will automatically reactivate the accounts of all the learners affected by the import. This option needs to be set to 'no' to keep the learners activation status untouched."
+    type: "yesNoElement"
+
   reportStatus:
     desc: "Export tracking data that have the specified report statuses (several values can be given)."
     type: "reportStatus"
