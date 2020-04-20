@@ -1287,7 +1287,7 @@ param:
     type: "sessionSearchField"
 
   sessionTitle:
-    desc: "Only export data related to a training session that has a title that contains the given string."
+    desc: "Only export data related to a training session that has a title that exactly matches the given string (except for the trainingSessionMetadataProvider and the sessionAuditMetadataProvider where the session title only needs to contain the given string)"
     type: "string"
 
   statusFormat:
