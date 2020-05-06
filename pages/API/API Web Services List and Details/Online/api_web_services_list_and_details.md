@@ -439,6 +439,7 @@ Cache-Control: no-cache
 <td markdown="span">kale1.</td>
 
 </tr>
+
 <tr>
 <td markdown="span">deviceName</td>
 <td markdown="span">string</td>
@@ -448,6 +449,18 @@ Cache-Control: no-cache
 <td markdown="span">The name of the device
 </td>
 <td markdown="span">iPhone X</td>
+
+</tr>
+
+<tr>
+<td markdown="span">deviceOs</td>
+<td markdown="span">string</td>
+
+<td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
+
+<td markdown="span">The device operation system of the learner.
+</td>
+<td markdown="span">The values can be: "ios" or "android"</td>
 
 </tr>
 
@@ -475,7 +488,7 @@ Host: yourdomain.crossknowledge.com
 Content-Type: application/x-www-form-urlencoded
 Cache-Control: no-cache
 
-login=john.doe&password=iamjohndoethevegan!&deviceid=kale1
+login=john.doe&password=iamjohndoethevegan!&deviceid=kale1&deviceOs=ios
 </code>
 </pre>
 
@@ -598,6 +611,11 @@ EasyquizzServerSID<br>
 </tr>
 <tr>
 <td markdown="span">"Missing mandatory parameter: deviceid"</td>
+<td markdown="span">**400**
+</td>
+</tr>
+<tr>
+<td markdown="span">"Invalid parameter: deviceOs"</td>
 <td markdown="span">**400**
 </td>
 </tr>
