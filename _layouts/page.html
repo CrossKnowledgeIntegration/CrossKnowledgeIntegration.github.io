@@ -47,6 +47,10 @@ layout: default
         {% include important.html content=page.important_note %}
     {% endif %}
 
+    {% if page.tip %}
+        {% include tip.html content=page.tip %}
+    {% endif %}
+
     {% if page.note %}
         {% include note.html content=page.note %}
     {% endif %}

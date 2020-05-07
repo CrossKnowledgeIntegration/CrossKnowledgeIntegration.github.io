@@ -242,7 +242,7 @@ entries:
           url: /consolidated-tracking-provider.html
           output: web
         - title: Tracking Log
-          url: /training-log-provider.html
+          url: /tracking-log-provider.html
           output: web
         - title: Activity
           url: /activity-provider.html

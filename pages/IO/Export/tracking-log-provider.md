@@ -3,9 +3,22 @@ title: Tracking Log
 keywords: 
 last_updated: 24 August, 2017
 tags: 
-summary: "This provider generates a data report containing the dailty tracking logs data. "
+summary: >
+    This provider generates a data report containing the dailty tracking logs data. 
+tip: >
+    A tracking log represents the daily details of a tracking (a date, a progression, and some time spent). <br/>
+    For example, if a learner launched a resource yesterday, spent 20 minutes on it, but didn't not complete it; launched the resource again today, spent 10 minutes, and completed it, you will have:<br/>
+    <ul>
+        <li>one tracking row with first launch date = yesterday, last access date = today, time spent = 30 minutes, progression = completed</li>
+        <li>two tracking logs: <br/>
+            <ul>
+                <li style="list-style-type: decimal;">one with log date = yesterday, time spent = 20 minutes, progression = incomplete</li>
+                <li style="list-style-type: decimal;">the second with log date = today, time spent = 10 minutes, progression = completed</li>
+            </ul>
+        </li>
+    </ul>
 sidebar: home_sidebar
-permalink: training-log-provider.html
+permalink: tracking-log-provider.html
 folder: Export
 dynamic_content: true
 note: >
