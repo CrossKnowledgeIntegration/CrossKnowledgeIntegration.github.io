@@ -880,10 +880,11 @@ col:
     type: "date"
 
   status:
-    desc: "<b>For the providers related to tracking: </b>The progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'.
-    <br />Type: enum(completed, incomplete, not started)
-    <br /><b>For the provider 'Platform Candidates Access': </b>The status of the of connection attempt (0 = failed, 1 = successful).
-    <br />Type: enum(0, 1)"
+    desc: >
+      <ul class="fieldDescription"><li><b>For the providers related to tracking: </b>the progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'.
+      <br />Type: enum(completed, incomplete, not started)</li>
+      <li><b>For the provider 'Platform Candidates Access': </b>the status of the of connection attempt (0 = failed, 1 = successful).
+      <br />Type: enum(0, 1)</li></ul>
     type: "enum"
 
   submissionDate:
@@ -904,9 +905,11 @@ col:
     type: "datetime"
 
   timeGlobal:
-    desc: "<ul><li>If the current context is a Tracking: the total time the learner spent on the content.</li>\
-      <li>If the current context is a Tracking Log: the time the learner spent on the content on the day related to the current log. </li>\
-      <li>If the options timeFrames and timeFramesScale are specified in the provider, then the timeGlobal value is filter to only the time spent during the chosen period.</li></ul>"
+    desc: >
+      <ul class="fieldDescription"><li><b>If the current context is a Registration:</b> the total time the learner spent on the registration.</li>
+      <li><b>If the current context is a Tracking:</b> the total time the learner spent on the content.</li>
+      <li><b>If the current context is a Tracking Log:</b> the time the learner spent on the content on the day related to the current log. </li></ul>
+      <i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, then the timeGlobal value is filter to only the time spent during the chosen period.
     type: "timeGlobalFormat"
 
   timeSpentCBT:

@@ -1200,3 +1200,7 @@ h4.panel-title {
     padding-top: 0px;
     margin-top: 0px;
 }
+
+.fieldDescription {
+    padding-left: 20px;
+}
