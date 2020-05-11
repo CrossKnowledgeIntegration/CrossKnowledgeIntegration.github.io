@@ -921,7 +921,12 @@ col:
     type: "timeGlobalFormat"
 
   timeSpent:
-    desc: "The total time the learner spent on the content."
+    desc: >
+      <ul class="fieldDescription"><li><b>If the current context is a Registration:</b> the total time the learner spent on the registration.
+      <br/>timeSpent = timeGlobal + timeSpentCBT + timeSpentDigital
+      <br/><i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, then the timeSpent value is filter to only the time spent during the chosen period.
+      </li>
+      <li><b>If the current context is an Activity:</b> the time the learner spent on the activity. </li></ul>
     type: "timeGlobalFormat"
 
   title:
