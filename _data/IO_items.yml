@@ -909,22 +909,26 @@ col:
       <ul class="fieldDescription"><li><b>If the current context is a Registration:</b> the total time the learner spent on the registration.</li>
       <li><b>If the current context is a Tracking:</b> the total time the learner spent on the content.</li>
       <li><b>If the current context is a Tracking Log:</b> the time the learner spent on the content on the day related to the current log. </li></ul>
-      <i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, then the timeGlobal value is filter to only the time spent during the chosen period.
+      <i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, then this value is filtered to only the time spent during the chosen period.
     type: "timeGlobalFormat"
 
   timeSpentCBT:
-    desc: "The total time spent in classroom events."
+    desc: >
+      The total time spent on classroom events.
+      <br/><i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, this value is filtered to only the time spent during the chosen period.
     type: "timeGlobalFormat"
 
   timeSpentDigital:
-    desc: "The total time spent on digital activities."
+    desc: >
+      The total time spent on Blendedx activities, excluding learning resource activities.
+      <br/><i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, then this value is filtered to only the time spent during the chosen period.
     type: "timeGlobalFormat"
 
   timeSpent:
     desc: >
       <ul class="fieldDescription"><li><b>If the current context is a Registration:</b> the total time the learner spent on the registration.
       <br/>timeSpent = timeGlobal + timeSpentCBT + timeSpentDigital
-      <br/><i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, then the timeSpent value is filter to only the time spent during the chosen period.
+      <br/><i class="fa fa-info-circle"></i> If the options timeFrames and timeFramesScale are specified in the provider, then this value is filtered to only the time spent during the chosen period.
       </li>
       <li><b>If the current context is an Activity:</b> the time the learner spent on the activity. </li></ul>
     type: "timeGlobalFormat"
