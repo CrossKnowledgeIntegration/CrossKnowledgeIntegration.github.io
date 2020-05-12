@@ -882,7 +882,7 @@ col:
   status:
     desc: >
       <ul class="fieldDescription"><li><b>For the providers related to tracking: </b>the progress status of the content referenced by the tracking row. The returned values can be overriden thanks to option 'statusFormat'.
-      <br />Type: enum(completed, incomplete, not started)</li>
+      <br />Type: enum(completed, incomplete, not attempted)</li>
       <li><b>For the provider 'Platform Candidates Access': </b>the status of the of connection attempt (0 = failed, 1 = successful).
       <br />Type: enum(0, 1)</li></ul>
     type: "enum"
