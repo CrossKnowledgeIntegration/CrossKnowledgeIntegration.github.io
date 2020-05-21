@@ -49,8 +49,8 @@ parameters: [defaultScoreMax, dateTimeFormat, timeZone, defaultTime]
 			<trainingId/>
 		</fields>
         <parameters>
-            <timeZone>America/Sao_Paulo</timeZone><!-- needed for Importing time for Access Dates and Completion Date -->
             <dateTimeFormat>YYYY-MM-DD HH:II:SS</dateTimeFormat>
+            <timeZone>America/Sao_Paulo</timeZone><!-- needed for Importing time for Access Dates and Completion Date -->
             <defaultTime>00:00:00</defaultTime>
         </parameters>
 	</createOrUpdateConsolidatedTrackingAction>
