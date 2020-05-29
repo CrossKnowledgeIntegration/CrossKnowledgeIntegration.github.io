@@ -109,6 +109,7 @@ Option | Description | Type | Mandatory | Default value
 	<remoteResourceDownloader>
 		<protocol>sFTP</protocol>
 		<host>10.145.23.15</host>
+		<port>22</port>
 		<login>user</login>
 		<password>p4ssword</password>
 		<sourceFilesPath>foo/bar/*.csv</sourceFilesPath>
