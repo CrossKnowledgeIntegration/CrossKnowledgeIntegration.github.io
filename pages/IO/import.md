@@ -99,7 +99,7 @@ Option | Description | Type | Mandatory | Default value
 `login` | Login used to connect to the host via the chosen protocol. | string | Yes |
 `password` | Password used to connect to the host via the chosen protocol with the chosen login. | string | Yes |
 `sourceFilesPath` | Path to the files to download from the host. Wildcards characters such as '*' are supported. | string | Yes |
-`destinationFolderPaht` | Path to the folder to which the files will be downloaded. The base path is the instance's data folder. | string | Yes |
+`destinationFolderPath` | Path to the folder to which the files will be downloaded. The base path is the instance's data folder. | string | Yes |
 `removeSources` | Whether or not to remove the files from the host once the transfer is complete. | yesNoElement | No | Yes |
 
 #### Example
