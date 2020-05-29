@@ -17,10 +17,10 @@ The XML configuration file defines the structure of the data import files.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <import-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <import>
-  	<preProcess>
+  <preProcess>
 	  ... <!-- list of preProcesses and their options -->
-  	</preProcess>
+  </preProcess>
+  <import>
     <providers>
       ... <!-- list of providers and their options -->
     </providers>
