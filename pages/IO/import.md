@@ -114,7 +114,7 @@ Option | Description | Type | Mandatory | Default value
 		<password>p4ssword</password>
 		<sourceFilesPath>foo/bar/*.csv</sourceFilesPath>
 		<destinationFolderPath>imports/</destinationFolderPath>
-		<removeSouces>no</removeSouces>
+		<removeSources>no</removeSources>
 	</remoteResourceDownloader>
 </preProcess>
 
