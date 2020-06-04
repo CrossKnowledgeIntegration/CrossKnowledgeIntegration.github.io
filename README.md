@@ -1,4 +1,4 @@
-# Integration @ Crossknowledge knowledge base
+# Integration @ CrossKnowledge knowledge base
 
 You can access this site here:
 

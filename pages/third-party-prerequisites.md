@@ -33,7 +33,7 @@ Any new content creation from a third party provider should not override those w
 
 Beware of Flash Player versions, newest contents are often developed on recent technologies which are not fully compatible with "older" user workstations.
 
-Here is the list of file types the Crossknowledge LMS forbids for the creation of learning objects : htaccess, php* (php, php1, php4, php564...), phps, phtm, .phtml, pl, py, cgi, exe, sh.
+Here is the list of file types the CrossKnowledge LMS forbids for the creation of learning objects : htaccess, php* (php, php1, php4, php564...), phps, phtm, .phtml, pl, py, cgi, exe, sh.
 
 ### File extensions not allowed in your contents 
 
@@ -91,20 +91,20 @@ Any content delivery should be delivered with an appendix document containing th
 - Learning goals for the content
 - Picture + resolution 640 x 360 px
 
-Each delivery will be tested on a dedicated test platform before being uploaded on the production platform. In terms of tracking, the content will have to sent back the following information to Crossknowledge LMS:
+Each delivery will be tested on a dedicated test platform before being uploaded on the production platform. In terms of tracking, the content will have to sent back the following information to CrossKnowledge LMS:
 
 - Score
 - Time spent
 - Status (incomplete/completed)
 - Location (bookmarking of the learner back of the slide on which he stopped)
 
-For multilingual content, one package per language will be issued. The Crossknowledge "Training On Demand" solution is managing localization and content versioning.
+For multilingual content, one package per language will be issued. The CrossKnowledge "Training On Demand" solution is managing localization and content versioning.
 
 ### Scorm 1.2 and Scorm 2004
 
 In Scorm 1.2, progress does not exist, so the score field is often diverted from its original design to save the progress of the learner within the content. You will have something like this while advancing through slides (13%, 22%, 75%...).
 
-When creating a Scorm 1.2 content, you will have the choice to save a quizz score or progress in the score field. This should be defined with your content provider as soon as possible. In the Crossknowledge LMS, the visual progress bar moves relative to the status of learner regarding the content.
+When creating a Scorm 1.2 content, you will have the choice to save a quizz score or progress in the score field. This should be defined with your content provider as soon as possible. In the CrossKnowledge LMS, the visual progress bar moves relative to the status of learner regarding the content.
 
 - 0% => Not attempted
 - 50% => Incomplete
@@ -121,7 +121,7 @@ The content duration must not exceed half an hour.
 
 As **we do not support MULTI SCO**, if the course is longer, it should be divided into several zip packages (mono-SCO).
 
-As the contents will be imported in a Crossknowledge learning path , this is not an issue.
+As the contents will be imported in a CrossKnowledge learning path , this is not an issue.
 
 CrossKnowledge recommends to develop training contents or modules in SCORM 1.2, this standard is supported by the majority of elearning content creation tools and all the LMS.
 
@@ -129,7 +129,7 @@ CrossKnowledge recommends to ask the content provider to call the function LMS.C
 
 CrossKnowledge recommends to use JavaScript function onbeforeunload and unonload to terminate and LMS.Finish("") the communication with our Scorm API.
 
-Finally on screen resolutions, Crossknowledge recommends resolutions contained less than 858x575 px with a full screen button in the content.
+Finally on screen resolutions, CrossKnowledge recommends resolutions contained less than 858x575 px with a full screen button in the content.
 
 ### Content mass upload
 

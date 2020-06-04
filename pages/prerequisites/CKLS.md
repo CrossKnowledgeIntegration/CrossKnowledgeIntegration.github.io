@@ -12,95 +12,21 @@ folder: prerequisites
 
 CrossKnowledge LMS is a web-based application needing the following environment to run properly:
 
-<table>
-    <tbody>
-        <tr>
-            <td>Sound card</td>
-            <td>Activated (headphones are required for most content)</td>
-        </tr>
-        <tr>
-            <td>RAM</td>
-            <td>2 GB (4GB preferred, depending on the OS)</td>
-        </tr>
-        <tr>
-            <td>Screen resolution</td>
-            <td>1024*768</td>
-        </tr>
-        <tr>
-            <td>Windows operating system</td>
-            <td>Windows 7, 8, 10 (Desktop mode only, Tablet mode is not supported for now)</td>
-        </tr>
-        <tr>
-            <td>Apple operating system</td>
-            <td>Mac OSX (10.4)</td>
-        </tr>
-        <tr>
-            <td>Internet Explorer</td>
-            <td>11, latest version</td>
-        </tr>
-        <tr>
-            <td>Microsoft Edge</td>
-            <td>latest version</td>
-        </tr>
-        <tr>
-            <td>Firefox</td>
-            <td>latest version</td>
-        </tr>
-        <tr>
-            <td>Chrome</td>
-            <td>latest version</td>
-        </tr>
-        <tr>
-            <td>Safari</td>
-            <td>latest version</td>
-        </tr>
-        <tr>
-            <td>Opera</td>
-            <td>latest version</td>
-        </tr>
-        <tr>
-            <td>Email clients</td>
-            <td>Standard email readers are supported to deliver CK standard emails. Email content is HTML.</td>
-        </tr>
-        <tr>
-            <td>HTTPS</td>
-            <td>
-            SSL Protocols :<br>
-            - Protocol-TLSv1.1 until September 2019 (will then be sunset)<br>
-            - Protocol-TLSv1.2<br>
-            SSL Ciphers:<br>
-            - ECDHE-ECDSA-AES128-GCM-SHA256<br>
-            - ECDHE-RSA-AES128-GCM-SHA256<br>
-            - ECDHE-ECDSA-AES128-SHA256<br>
-            - ECDHE-RSA-AES128-SHA256<br>
-            - ECDHE-ECDSA-AES128-SHA<br>
-            - ECDHE-RSA-AES128-SHA<br>
-            - ECDHE-ECDSA-AES256-GCM-SHA384<br>
-            - ECDHE-RSA-AES256-GCM-SHA384<br>
-            - ECDHE-ECDSA-AES256-SHA384<br>
-            - ECDHE-RSA-AES256-SHA384<br>
-            - ECDHE-RSA-AES256-SHA<br>
-            - ECDHE-ECDSA-AES256-SHA<br>
-            - AES128-GCM-SHA256<br>
-            - AES128-SHA256<br>
-            - AES128-SHA<br>
-            - AES256-GCM-SHA384<br>
-            - AES256-SHA256<br>
-            - AES256-SHA<br>
-            </td>
-        </tr>
-        <tr>
-            <td>Popup blocker for your URL</td>
-            <td>Disabled</td>
-        </tr>
-    </tbody>
-</table>
+Sound card|Activated (headphones are required for most content)
+RAM|2 GB (4GB preferred, depending on the OS)
+Screen resolution|1024*768
+Operating system|Microsoft Windows 7 or 8 (Desktop mode only) or 10, Apple macOS (10.4+)
+Web browser|Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version), Opera (latest version)
+Email clients|Standard email readers are supported to deliver CK standard emails. Email content is HTML.
+HTTPS|SSL Protocol: TLSv1.2<br>SSL Ciphers:<br>- ECDHE-ECDSA-AES128-GCM-SHA256<br>- ECDHE-RSA-AES128-GCM-SHA256<br>- ECDHE-ECDSA-AES128-SHA256<br>- ECDHE-RSA-AES128-SHA256<br>- ECDHE-ECDSA-AES128-SHA<br>- ECDHE-RSA-AES128-SHA<br>- ECDHE-ECDSA-AES256-GCM-SHA384<br>- ECDHE-RSA-AES256-GCM-SHA384<br>- ECDHE-ECDSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA<br>- ECDHE-ECDSA-AES256-SHA<br>- AES128-GCM-SHA256<br>- AES128-SHA256<br>- AES128-SHA<br>- AES256-GCM-SHA384<br>- AES256-SHA256<br>- AES256-SHA<br>
+Popup blocker|Disabled
+Cookies|Enabled
+Javascript|Enabled
 
 We systematically test the latest versions of Chrome, Firefox and Internet Explorer browsers to ensure the best experience for our users. Older versions of these browsers are not systematically tested, but run smoothly in most cases. If, however, there is a problem specific to a particular version of one of these browsers, please contact us.
 
 These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
 In addition to those, specific requirements apply to:
-- Facilitator in Front-office interface: workstation prerequisites above are applicable, except Internet Explorer which requires IE11 or above
 - Blendedˣ Embedded Web Resource Activity and Embedded BI tool in Analyze workspace: these features are used to integrate a 3rd party content from the web. CrossKnowledge can not guaranty the compatibility of the integrated content
 
 In order to ensure a good user experience for Blendedˣ Embedded Content Activity, please ensure that SCORM contents are built to be responsive. For example, no Flash should be included in the SCORM content.
@@ -122,7 +48,7 @@ As the contents are played on our LMS, you need the LMS requirements listed abov
     <tbody>
         <tr>
             <td width="30%">Adobe Flash Player (CrossKnowledge Sessions)</td>
-            <td width="70%">9.0.124 or higher</td>
+            <td width="70%">latest version</td>
         </tr>
         <tr>
             <td width="30%">PDF plugin</td>
@@ -255,7 +181,7 @@ web interfaces (ports 80 and 443) : Could be hitting any of the eu-west-1 IP ran
 
 ## Email servers requirements
 
-@crossknowledge.com domain must be whitelisted as a trused sender. 
+@crossknowledge.com domain must be whitelisted as a trusted sender. 
 
 ### Supported email configuration scenario :
 
@@ -343,4 +269,4 @@ from IE8 to IE10, Firefox, Chrome<br/>
 e.g : http://customername.customerdomain.com with automatic rediction to https://customername.eu.crossknowledge.com
 
 ### Unsupported formats
-* `https://customername.customerdomain.com` - Crossknowledge only support HTTPS protocol with its own urls.
+* `https://customername.customerdomain.com` - CrossKnowledge only supports HTTPS protocol with its own urls.

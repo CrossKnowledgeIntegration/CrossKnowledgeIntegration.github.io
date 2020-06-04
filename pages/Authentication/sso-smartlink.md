@@ -73,7 +73,7 @@ Others parameters are available when asking the learner to complete his data, se
 ### Identity search field
 
 
-`identity_field` : This mandatory field allows to specify which learner data, into your SSO link, will be used to identify a learner in the Crossknowledge Learning Suite (CKLS).
+`identity_field` : This mandatory field allows to specify which learner data, into your SSO link, will be used to identify a learner in the CrossKnowledge Learning Suite (CKLS).
 
 The fields below can be used as a value for this parameter (key/value format) :
 

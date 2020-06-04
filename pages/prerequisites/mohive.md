@@ -1,5 +1,5 @@
 ---
-title: Mohive Prerequisites
+title: Mohive Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
 last_updated: 9 November, 2017
 sidebar: home_sidebar
@@ -21,8 +21,8 @@ Screen resolution | 1280x800 or higher recommended
 Sound card | Recommended
 Operating system | Microsoft Windows XP, Vista, Seven, 8 (Desktop mode only, Tablet mode is not supported), 8.1, 10, Apple macOS (10.4+)
 Browser | Internet Explorer 8 or higher (with latest minor release), Mozilla Firefox (latest version), Google Chrome (latest version), Apple Safari (latest version)
-Adobe Flash | 11.1 or higher, with latest minor release
-Popup blocker | Disabled for Mohive
+Adobe Flash | latest version
+Popup blocker | Disabled
 Cookies | enabled
 
 **Adobe will stop updating and distributing the Adobe Flash Player, used by the Mohive authoring platform at the end of 2020.

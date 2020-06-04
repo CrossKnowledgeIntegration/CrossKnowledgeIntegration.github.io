@@ -12,41 +12,17 @@ folder: prerequisites
 
 The first requirement and mandatory one, is having the possibility to access Amazon Cloud URLs and IPs adresses.
 
-TeamSHIFT is a new CrossKnowledge solution which requires the following environment on the customer side to run properly:
+TeamSHIFT is a CrossKnowledge solution which requires the following environment on the customer side to run properly:
 
 <table>
     <tbody>
-		  <tr>
-            <td>Windows operating system</td>
-            <td>Windows 7, 8, 10 (all W10 versions)</td>
+        <tr>
+            <td>Operating system</td>
+            <td>Microsoft Windows 7 or 8 (Desktop mode only) or 10, Apple macOS (10.4+)</td>
         </tr>
         <tr>
-            <td>Apple operating system</td>
-            <td>Mac OSX (10.4) and newer</td>
-        </tr>
-        <tr>
-            <td>Internet Explorer</td>
-            <td>11 and later versions</td>
-        </tr>
-        <tr>
-            <td>Microsoft Edge</td>
-            <td>Current version and Current-1 version</td>
-        </tr>
-        <tr>
-            <td>Firefox</td>
-            <td>Current version and Current-1 version</td>
-        </tr>
-        <tr>
-            <td>Chrome</td>
-            <td>Current version and Current-1 version</td>
-        </tr>
-        <tr>
-            <td>Safari</td>
-            <td>iOS (10 and up) using Safari</td>
-        </tr>
-        <tr>
-            <td>Opera and others browsers</td>
-            <td>Not supported</td>
+            <td>Web browser</td>
+            <td>Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version), Opera (latest version)</td>
         </tr>
         <tr>
             <td>Email clients</td>
@@ -62,19 +38,15 @@ TeamSHIFT is a new CrossKnowledge solution which requires the following environm
         </tr>
         <tr>
             <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). TLSv1.1 protocol is supported until September 2019. TLSv1.2 protocol is recommended.</td>
+            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). Only TLSv1.2 protocol is supported.</td>
         </tr>
         <tr>
-            <td>Popup blocker for the solution</td>
-            <td>Has to be disabled</td>
-        </tr>
-		        <tr>
-            <td width="30%">Adobe Flash Player</td>
-            <td width="70%">Not required</td>
+            <td>Popup blocker</td>
+            <td>Disabled</td>
         </tr>
         <tr>
             <td width="30%">PDF Reader</td>
-            <td width="70%">Adobe Reader, SUMO PDF, Firefox, Edge or Chrome browsers</td>
+            <td width="70%">Adobe Acrobat Reader DC (latest version)</td>
         </tr>
     </tbody>
 </table>
@@ -96,7 +68,7 @@ http(s)://*.crossknowledge.com, http(s)://*.crossknowledge-player.com
 ```
 
 If wildcards (*) are not allowed, authorise at least the following URLs:<br/>
-#### General CKLS & Team Shift cloudfront URLs:
+#### General CKLS & TeamShift cloudfront URLs:
 
 ```txt
 https://ckls-assets.crossknowledge.com/
@@ -145,7 +117,7 @@ Part of our content is hosted on Amazon Cloud for a better experience around the
 216.137.32.0/19
 ```
 
-### CKLS & Team Shift portal IPs addresses
+### CKLS & TeamShift portal IPs addresses
 
 ##### CKLS urls format
 Europe https://*.eu.crossknowledge.com
