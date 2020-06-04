@@ -15,15 +15,15 @@ These technical requirements may be modified according to technical developments
 
 ### Author web application requirements
 
+Screen resolution | 1280x800 or higher recommended
+Sound card | Recommended (speakers/headphones are required for most content)
 Processor | Intel® Pentium IV or better
 RAM | 2 GB (4GB prefered, depending on the OS)
-Screen resolution | 1280x800 or higher recommended
-Sound card | Recommended
 Operating system | Microsoft Windows XP, Vista, Seven, 8 (Desktop mode only, Tablet mode is not supported), 8.1, 10, Apple macOS (10.4+)
-Browser | Internet Explorer 8 or higher (with latest minor release), Mozilla Firefox (latest version), Google Chrome (latest version), Apple Safari (latest version)
-Adobe Flash | latest version
+Web browser | Internet Explorer 8 or higher (with latest minor release), Mozilla Firefox (latest version), Google Chrome (latest version), Apple Safari (latest version)
+Adobe Flash | Latest version
 Popup blocker | Disabled
-Cookies | enabled
+Cookies | Enabled
 
 **Adobe will stop updating and distributing the Adobe Flash Player, used by the Mohive authoring platform at the end of 2020.
 This will not affect content created in Mohive in Multi-devices mode.
@@ -56,7 +56,7 @@ iPhone Smartphones Devices | Any iPhone from version 5s onwards, with latest iOS
 Android Smartphones Devices | Any Android Phone from version 4.2 onwards, with Chrome as a browser
 Popup blocker | Disabled for Mohive
 Cookies | enabled
-Javascript | enabled
+JavaScript | enabled
 
 ### Legacy Desktop Mode (Flash Runtime) for Mohive contents (15.1+)
 
@@ -70,7 +70,7 @@ Browser | Internet Explorer 6SP2 or higher (with latest minor release), Firefox 
 Macromedia Flash | Flash player 9+ minimum, Flash Player 11+ is recommended for optimum video playback (with latest minor release)
 Popup blocker | Disabled for Mohive
 Cookies | enabled
-Javascript | enabled
+JavaScript | enabled
 
 **Adobe will stop updating and distributing the Adobe Flash Player, used by Legacy Desktop mode for Mohive contents at the end of 2020.**
 

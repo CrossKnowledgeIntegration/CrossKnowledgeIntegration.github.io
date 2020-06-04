@@ -12,16 +12,16 @@ folder: prerequisites
 
 CrossKnowledge LMS is a web-based application needing the following environment to run properly:
 
-Sound card|Activated (headphones are required for most content)
-RAM|2 GB (4GB preferred, depending on the OS)
 Screen resolution|1024*768
+Sound card|Recommended (speakers/headphones are required for most content)
+RAM|2 GB (4GB preferred, depending on the OS)
 Operating system|Microsoft Windows 7 or 8 (Desktop mode only) or 10, Apple macOS (10.4+)
 Web browser|Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version), Opera (latest version)
 Email clients|Standard email readers are supported to deliver CK standard emails. Email content is HTML.
-HTTPS|SSL Protocol: TLSv1.2<br>SSL Ciphers:<br>- ECDHE-ECDSA-AES128-GCM-SHA256<br>- ECDHE-RSA-AES128-GCM-SHA256<br>- ECDHE-ECDSA-AES128-SHA256<br>- ECDHE-RSA-AES128-SHA256<br>- ECDHE-ECDSA-AES128-SHA<br>- ECDHE-RSA-AES128-SHA<br>- ECDHE-ECDSA-AES256-GCM-SHA384<br>- ECDHE-RSA-AES256-GCM-SHA384<br>- ECDHE-ECDSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA<br>- ECDHE-ECDSA-AES256-SHA<br>- AES128-GCM-SHA256<br>- AES128-SHA256<br>- AES128-SHA<br>- AES256-GCM-SHA384<br>- AES256-SHA256<br>- AES256-SHA<br>
 Popup blocker|Disabled
 Cookies|Enabled
-Javascript|Enabled
+JavaScript|Enabled
+HTTPS|SSL Protocol: TLSv1.2<br>SSL Ciphers:<br>- ECDHE-ECDSA-AES128-GCM-SHA256<br>- ECDHE-RSA-AES128-GCM-SHA256<br>- ECDHE-ECDSA-AES128-SHA256<br>- ECDHE-RSA-AES128-SHA256<br>- ECDHE-ECDSA-AES128-SHA<br>- ECDHE-RSA-AES128-SHA<br>- ECDHE-ECDSA-AES256-GCM-SHA384<br>- ECDHE-RSA-AES256-GCM-SHA384<br>- ECDHE-ECDSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA<br>- ECDHE-ECDSA-AES256-SHA<br>- AES128-GCM-SHA256<br>- AES128-SHA256<br>- AES128-SHA<br>- AES256-GCM-SHA384<br>- AES256-SHA256<br>- AES256-SHA<br>
 
 We systematically test the latest versions of Chrome, Firefox and Internet Explorer browsers to ensure the best experience for our users. Older versions of these browsers are not systematically tested, but run smoothly in most cases. If, however, there is a problem specific to a particular version of one of these browsers, please contact us.
 
@@ -52,7 +52,7 @@ As the contents are played on our LMS, you need the LMS requirements listed abov
         </tr>
         <tr>
             <td width="30%">PDF plugin</td>
-            <td width="70%">Adobe Acrobat Reader (any version)</td>
+            <td width="70%">Adobe Acrobat Reader DC (latest version)</td>
         </tr>
     </tbody>
 </table>

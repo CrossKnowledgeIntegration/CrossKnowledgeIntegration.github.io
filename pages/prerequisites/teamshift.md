@@ -16,37 +16,37 @@ TeamSHIFT is a CrossKnowledge solution which requires the following environment 
 
 <table>
     <tbody>
+		<tr>
+            <td>Screen resolution</td>
+            <td>Supporting resolutions bigger than 320x568px (iPhone 5 in portrait mode)</td>
+        </tr>
+		<tr>
+            <td>Sound card</td>
+            <td>Recommended (speakers/headphones are required for most content)</td>
+        </tr>
         <tr>
             <td>Operating system</td>
             <td>Microsoft Windows 7 or 8 (Desktop mode only) or 10, Apple macOS (10.4+)</td>
         </tr>
         <tr>
             <td>Web browser</td>
-            <td>Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version), Opera (latest version)</td>
+            <td>Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version)</td>
         </tr>
         <tr>
             <td>Email clients</td>
             <td>Standard email readers are supported to deliver CK standard emails. Email content is HTML.</td>
-        </tr>
-		<tr>
-            <td>Sound card</td>
-            <td>Sound card Activated (speakers/headphones are required for most content)</td>
-        </tr>
-		<tr>
-            <td>Screen resolution</td>
-            <td>Supporting resolutions bigger than 320x568px (iPhone 5 in portrait mode)</td>
-        </tr>
-        <tr>
-            <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). Only TLSv1.2 protocol is supported.</td>
         </tr>
         <tr>
             <td>Popup blocker</td>
             <td>Disabled</td>
         </tr>
         <tr>
-            <td width="30%">PDF Reader</td>
-            <td width="70%">Adobe Acrobat Reader DC (latest version)</td>
+            <td>PDF Reader</td>
+            <td>Adobe Acrobat Reader DC (latest version)</td>
+        </tr>
+        <tr>
+            <td>HTTPS</td>
+            <td>Only "Medium and High" SSL ciphers are allowed (HIGH:MEDIUM:!ADH). Only TLSv1.2 SSL protocol is supported.</td>
         </tr>
     </tbody>
 </table>

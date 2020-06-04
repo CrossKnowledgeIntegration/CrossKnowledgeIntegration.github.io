@@ -13,13 +13,13 @@ entries:
     - title: CKLS Prerequisites
       url: /CKLS-prerequisites
       output: web
-    - title: Team Shift Prerequisites
+    - title: TeamSHIFT Prerequisites
       url: /TeamShift-prerequisites
       output: web
     - title: Mohive Prerequisites
       url: /Mohive-prerequisites
       output: web
-    - title: MyLearning Prerequisites
+    - title: My Learning Prerequisites
       url: /MyLearning-prerequisites
       output: web
     - title: CrossKnowledge contents
