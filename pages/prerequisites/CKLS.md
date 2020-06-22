@@ -199,7 +199,7 @@ REPLYTO:john.doe@client.com
 </pre>
 </td></tr>
 <tr>
-<td>All emails are sent by Amazon SES service using a FROM adress that belongs to the client's domain (or crossknowledge.com domain)
+<td>All emails are sent by Amazon SES service using a FROM address that belongs to the client's domain (or crossknowledge.com domain)
 </td>
 <td>
 <p>This setup requires some extra IT configuration tasks for both CrossKnowledge and client's IT Teams&nbsp;: DKIM entries to be added in client's DNS zone&nbsp;: client.com. <br>
