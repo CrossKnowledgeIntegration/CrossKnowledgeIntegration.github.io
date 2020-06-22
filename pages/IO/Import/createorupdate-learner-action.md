@@ -1,4 +1,3 @@
-
 ---
 title: Create Or Update Learner Action
 keywords: tracking, consolidated, import, data, createOrUpdateLearnerAction
