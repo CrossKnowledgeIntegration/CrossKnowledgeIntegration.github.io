@@ -3,10 +3,8 @@ entries:
   levels: one
   folders:
   - title: About
-    output: web
     folderitems:
-    - title: About 
-    url: /index.html
+    url: /
     output: web
 
   - title: Our solutions
@@ -15,13 +13,13 @@ entries:
     - title: CKLS Prerequisites
       url: /CKLS-prerequisites
       output: web
-    - title: Team Shift Prerequisites
+    - title: TeamSHIFT Prerequisites
       url: /TeamShift-prerequisites
       output: web
     - title: Mohive Prerequisites
-      url: /mohive-prerequisites
+      url: /Mohive-prerequisites
       output: web
-    - title: MyLearning Prerequisites
+    - title: My Learning Prerequisites
       url: /MyLearning-prerequisites
       output: web
     - title: CrossKnowledge contents
@@ -230,12 +228,7 @@ entries:
           output: web
         - title: Login Box
           url: /loginbox.html
-          output: web
-
-      - title: Tools
-        url: /api_tools.html
-        output: web
-    
+          output: web    
       - title: Data Export Module
         output: web
         subfolderitems:
@@ -249,7 +242,10 @@ entries:
           url: /consolidated-tracking-provider.html
           output: web
         - title: Tracking Log
-          url: /training-log-provider.html
+          url: /tracking-log-provider.html
+          output: web
+        - title: Activity
+          url: /activity-provider.html
           output: web
         - title: Training Audit Content
           url: /training-audit-content-provider.html
@@ -321,7 +317,7 @@ entries:
         - title: Create or Update Training Course
           url: /createorupdate-trainingcourse-action.html
           output: web
-        - title: Create or Update Register Learner
+        - title: Register Learner
           url: /registerlearner-action.html
           output: web
           
@@ -379,7 +375,3 @@ entries:
     - title: Blog 
       external_url: http://crossknowledge.github.io/
       output: web
-
-  - title: Support
-    url: /index.html
-    output: web

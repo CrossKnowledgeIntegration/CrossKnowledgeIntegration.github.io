@@ -1,13 +1,25 @@
 ---
-title: HTML Embed Activity
+title: HTML Embed
 keywords: ...
-last_updated: April 13, 2018
+last_updated: April 4, 2019
 tags:
 sidebar: home_sidebar
 permalink: html_embed.html
 folder: Services
 ---
 
-## List of existing services supported by HTML Embed activity
+## List of existing services supported by HTML Embed activity or analytics tool (tested)
 
-XXXXX
+* Youtube
+* TED
+* Slideshare
+* Dailymotion
+* Prezi
+* Typeform
+* Vimeo
+* Uptale
+* Office 365
+* Public PPTX
+* Microsoft Power BI
+
+{% include note.html content="Google analytics dashboard pages cannot be embedded in an iFrame." %}

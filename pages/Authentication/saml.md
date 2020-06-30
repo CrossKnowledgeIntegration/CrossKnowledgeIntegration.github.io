@@ -46,7 +46,7 @@ Required informations | Description
 Federation metadata URL | Describes the SAML setup and endpoints (ie : https://FederationMetadata/2007-06/FederationMetadata.xml)
 Certificate | Used to encrypt data
 Encrypted SAML-token | A secure way to identify a session between both systems
-Claim type | What will be shared between those systems (ie : UPN, email adress, etc...)
+Claim type | What will be shared between those systems (ie : UPN, email address, etc...)
 NameID Policy | How the SAML assertion will answer for valid assertion challenges (Transient, Persistent, Unspecified or Email address)
 AudienceRestriction | Add the SP to the list of audience restriction
 

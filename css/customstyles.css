@@ -161,9 +161,6 @@ table > colgroup + thead > tr:first-child > td,
 table > thead:first-child > tr:first-child > td {
     border-top: 0;
 }
-table > tbody + tbody {
-    b
-}
 table > tbody > tr:nth-of-type(odd) {
     background-color: #f9f9f9;
 }
@@ -182,8 +179,12 @@ table th[class*="col-"] {
 
 
 table td:first-child {
-    width: 150px;
+    min-width: 200px;
     /*font-weight:bold;*/
+}
+
+table td:first-child code {
+    white-space: nowrap;
 }
 
 table.boldFirstColumn td:first-child {
@@ -194,6 +195,10 @@ table tr td {
     hyphens: auto;
 }
 
+.optionsTable td:nth-child(1) code, .optionsTable td:nth-child(5) code,
+    .optionsTable td:nth-child(1), .optionsTable td:nth-child(5) {
+    white-space: nowrap;
+}
 
 p.external a {
     text-align:right;
@@ -237,7 +242,7 @@ p.post-meta {font-size: 80%; color: #777;}
     color: #000000;
 }
 
-ul#results-container a: hover {
+ul#results-container a:hover {
     color: black;
 }
 
@@ -817,7 +822,6 @@ dd {margin-left:20px;}
 }
 
 .note code, .alert code, .warning code, div#toc code, h2 code, h3 code, h4 code {
-    color: inherit;
     padding: 0px;
 }
 
@@ -1049,6 +1053,14 @@ table th code {
     color: white;
 }
 
+body .post-content code.highlighter-rouge.language-plaintext {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    background-color: transparent;
+}
+
 ol li ul li ol li {
     list-style: decimal;
 }
@@ -1187,4 +1199,8 @@ div.box.box1 {
 h4.panel-title {
     padding-top: 0px;
     margin-top: 0px;
+}
+
+.fieldDescription {
+    padding-left: 20px;
 }

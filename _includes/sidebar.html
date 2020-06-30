@@ -28,6 +28,9 @@
             {% for folder in entry.folders %}
             {% if folder.output contains "web" %}     
             <li class="nav-item">
+                {% if folder.folderitems.size == nil and folder.url.size > 0 %}
+                    <a class="nav-link" href="{{folder.url}}">{{ folder.title }}</a>
+                {% else %}
                 <a class="nav-link" data-toggle="collapse" href="#item-{{forloop.index}}">{{ folder.title }}</a>
                 <div id="item-{{forloop.index}}" class="collapse">
                     {% for folderitem in folder.folderitems %}
@@ -43,7 +46,6 @@
                         {% endif %}
                         {% endif %}
 
-
                         {% for subfolders in folderitem.subfolders %}
                         {% if subfolders.output contains "web" %}
                         <li class="nav-item subfolders has-children">
@@ -57,6 +59,8 @@
                                     <li class="nav-item"><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
                                     {% elsif page.url == subfolderitem.url %}
                                     <li class="nav-item active"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
+                                    {% elsif subfolderitem.url contains page.url %}
+                                    <li class="nav-item parents-active"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
                                     {% else %}
                                     <li class="nav-item"><a href="{{subfolderitem.url | remove: "/"}}">{{subfolderitem.title}}</a></li>
                                     {% endif %}
@@ -67,14 +71,10 @@
                         </li>
                         {% endif %}
                         {% endfor %}
-
                     </ul>
-
-
-
-
                     {% endfor %}
                 </div>
+                {% endif %}
             </li>
             {% endif %}
             {% endfor %}
@@ -89,6 +89,7 @@
 
 
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
-<script>$("li.active").parents('li').toggleClass("active");
-$("li.active").parents('div').toggleClass("show");
+<script>
+    $("li.active, li.parents-active").parents('li').toggleClass("active");
+    $("li.active, li.parents-active").parents('div').toggleClass("show");
 </script>

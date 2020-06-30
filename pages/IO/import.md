@@ -8,6 +8,8 @@ permalink: import.html
 folder: IO
 ---
 
+{% include datatypes_notice.html %}
+
 ## Structure of the configuration file
 
 The XML configuration file defines the structure of the data import files.
@@ -15,10 +17,10 @@ The XML configuration file defines the structure of the data import files.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <import-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <import>
-  	<preProcess>
+  <preProcess>
 	  ... <!-- list of preProcesses and their options -->
-  	</preProcess>
+  </preProcess>
+  <import>
     <providers>
       ... <!-- list of providers and their options -->
     </providers>
@@ -36,7 +38,7 @@ The XML configuration file defines the structure of the data import files.
   <import>
     ... <!-- the description of a second import file -->
   </import>
-<import-config>
+</import-config>
 
 ```
 
@@ -54,7 +56,7 @@ Option | Description | Type | Mandatory | Default value
 --- | --- | --- | --- | ---
 `inputFolderPath` | Path to the folder containing the encrypted files. The base path is the instance's data folder. | string | No 
 `outputFolderPath` | Path to the folder that will contain the decrypted files.The base path is the instance's data folder. | string | Yes
-`signature` | Whether or not and how the encrypted file is signed. | signedType | Yes | `signed`
+`signature` | Whether or not and how the encrypted file is signed. | enum(signed, not_signed, clearsigned) | Yes | `signed`
 `removeSources` | Whether or not to remove the original encrypted files after a successful decryption. | yesNoElement | No | Yes
 
 #### Example
@@ -97,7 +99,7 @@ Option | Description | Type | Mandatory | Default value
 `login` | Login used to connect to the host via the chosen protocol. | string | Yes |
 `password` | Password used to connect to the host via the chosen protocol with the chosen login. | string | Yes |
 `sourceFilesPath` | Path to the files to download from the host. Wildcards characters such as '*' are supported. | string | Yes |
-`destinationFolderPaht` | Path to the folder to which the files will be downloaded. The base path is the instance's data folder. | string | Yes |
+`destinationFolderPath` | Path to the folder to which the files will be downloaded. The base path is the instance's data folder. | string | Yes |
 `removeSources` | Whether or not to remove the files from the host once the transfer is complete. | yesNoElement | No | Yes |
 
 #### Example
@@ -107,11 +109,12 @@ Option | Description | Type | Mandatory | Default value
 	<remoteResourceDownloader>
 		<protocol>sFTP</protocol>
 		<host>10.145.23.15</host>
+		<port>22</port>
 		<login>user</login>
 		<password>p4ssword</password>
 		<sourceFilesPath>foo/bar/*.csv</sourceFilesPath>
 		<destinationFolderPath>imports/</destinationFolderPath>
-		<removeSouces>no</removeSouces>
+		<removeSources>no</removeSources>
 	</remoteResourceDownloader>
 </preProcess>
 

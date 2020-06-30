@@ -1,9 +1,9 @@
 ---
-title: Team Shift Technical Prerequisites
+title: TeamSHIFT Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements, teamshift
 last_updated: 8 May, 2018
 sidebar: home_sidebar
-permalink: TeamShift-prerequisites.html
+permalink: TeamShift-prerequisites
 folder: prerequisites
 ---
 
@@ -12,69 +12,41 @@ folder: prerequisites
 
 The first requirement and mandatory one, is having the possibility to access Amazon Cloud URLs and IPs adresses.
 
-Team Shift is a new CrossKnowledge solution which requires the following environment on the customer side to run properly:
+TeamSHIFT is a CrossKnowledge solution which requires the following environment on the customer side to run properly:
 
 <table>
     <tbody>
-		  <tr>
-            <td>Windows operating system</td>
-            <td>Windows 7, 8, 10 (all W10 versions)</td>
-        </tr>
-        <tr>
-            <td>Apple operating system</td>
-            <td>Mac OSX (10.4) and newer</td>
-        </tr>
-        <tr>
-            <td>Internet Explorer</td>
-            <td>11 and later versions</td>
-        </tr>
-        <tr>
-            <td>Microsoft Edge</td>
-            <td>Current version and Current-1 version</td>
-        </tr>
-        <tr>
-            <td>Firefox</td>
-            <td>Current version and Current-1 version</td>
-        </tr>
-        <tr>
-            <td>Chrome</td>
-            <td>Current version and Current-1 version</td>
-        </tr>
-        <tr>
-            <td>Safari</td>
-            <td>iOS (10 and up) using Safari</td>
-        </tr>
-        <tr>
-            <td>Opera and others browsers</td>
-            <td>Not supported</td>
-        </tr>
-        <tr>
-            <td>Email clients</td>
-            <td>Outlook 2010, 2013 or 365, Lotus Notes: 8.5 or newer, Gmail or Google Inbox</td>
-        </tr>
-		<tr>
-            <td>Sound card</td>
-            <td>Sound card Activated (speakers/headphones are required for most content)</td>
-        </tr>
 		<tr>
             <td>Screen resolution</td>
             <td>Supporting resolutions bigger than 320x568px (iPhone 5 in portrait mode)</td>
         </tr>
+		<tr>
+            <td>Sound card</td>
+            <td>Recommended (speakers/headphones are required for most content)</td>
+        </tr>
+        <tr>
+            <td>Operating system</td>
+            <td>Microsoft Windows 7 or 8 (Desktop mode only) or 10, Apple macOS (10.4+)</td>
+        </tr>
+        <tr>
+            <td>Web browser</td>
+            <td>Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version)</td>
+        </tr>
+        <tr>
+            <td>Email clients</td>
+            <td>Standard email readers are supported to deliver CK standard emails. Email content is HTML.</td>
+        </tr>
+        <tr>
+            <td>Popup blocker</td>
+            <td>Disabled</td>
+        </tr>
+        <tr>
+            <td>PDF Reader</td>
+            <td>Adobe Acrobat Reader DC (latest version)</td>
+        </tr>
         <tr>
             <td>HTTPS</td>
-            <td>Only "Medium and High" ciphers are allowed (HIGH:MEDIUM:!ADH). TLSv1.x protocols are supported.</td>
-        </tr>
-        <tr>
-            <td>Popup blocker for the solution</td>
-            <td>Has to be disabled</td>
-        </tr>
-		        <tr>
-            <td width="30%">Adobe Flash Player</td>
-            <td width="70%">Not required</td>
-        </tr>
-        <tr>
-            <td width="30%">PDF Reader</td>
-            <td width="70%">Adobe Reader, SUMO PDF, Firefox, Edge or Chrome browsers</td>
+            <td>Only "Medium and High" SSL ciphers are allowed (HIGH:MEDIUM:!ADH). Only TLSv1.2 SSL protocol is supported.</td>
         </tr>
     </tbody>
 </table>
@@ -96,7 +68,7 @@ http(s)://*.crossknowledge.com, http(s)://*.crossknowledge-player.com
 ```
 
 If wildcards (*) are not allowed, authorise at least the following URLs:<br/>
-#### General CKLS & Team Shift cloudfront URLs:
+#### General CKLS & TeamShift cloudfront URLs:
 
 ```txt
 https://ckls-assets.crossknowledge.com/
@@ -145,7 +117,7 @@ Part of our content is hosted on Amazon Cloud for a better experience around the
 216.137.32.0/19
 ```
 
-### CKLS & Team Shift portal IPs addresses
+### CKLS & TeamShift portal IPs addresses
 
 ##### CKLS urls format
 Europe https://*.eu.crossknowledge.com
@@ -171,11 +143,11 @@ From a Linux or Mac OS system:
 $ dig TXT amazonses.com +short| grep 'v=spf1'
 ```
 From a Windows system
-``txt
+```txt
 C:>nslookup -type=TXT amazonses.com | find "v=spf1"
 ```
 
-#### Hostnames of SMTP relay used for sending 	
+#### Hostnames of SMTP relays and custom "MAIL FROM" domains used for sending 	
 
 ```txt
 email-smtp.us-east-1.amazonaws.com

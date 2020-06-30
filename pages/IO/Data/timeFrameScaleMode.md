@@ -14,6 +14,16 @@ folder: Data
 * `lastActivity` will report the total time the learner has spent learning if the last access date is within the specified time frame.
 
 
+Here is the list of all possible values for `timeFramesScale`:
+* `less_than_n_days`
+* `less_than_n_months`
+* `less_than_n_full_months`
+* `less_than_n_years`
+* `less_than_n_full_years`
+
+
+{% include important.html content="As this parameter is based on the learner's activity, it should not be used together with the `withoutLaunchTime` option. Using both at the same time will prevent from retrieving the data without activity (as they will be excluded by the `timeFrames` activity filter)." %}
+
 
 {% include callout.html content="**Example** when used for [Tracking provider](/tracking-provider.html)<br/><br/>
 1. Hugo watched C1 in T1 on January 2<sup>nd</sup> 2015, spent 50 sec and has status = incomplete.<br/>
@@ -21,6 +31,7 @@ folder: Data
 3. Hugo watched C1 in T1 on April 5<sup>th</sup> 2015, spent 50 sec and has status = completed.<br/><br/>
 
 The tracking report has been generated on 28<sup>th</sup> May. `timeFramesScale` was set to `n_full_months`<br/><br/>
+
 **Scenario 1:** `timeFrames` = 1. Reporting time frame is 1<sup>st</sup> to 28<sup>th</sup> May.<br/>
 Whether `lastActivity` or `timeSpent` mode is used, no data row in the report will included, because Hugo did not access the content during the reported time frame.<br/><br/>
 **Scenario 2:** `timeFrames` = 2. Reporting time frame is 1<sup>st</sup> April to 28<sup>th</sup> May.<br/>

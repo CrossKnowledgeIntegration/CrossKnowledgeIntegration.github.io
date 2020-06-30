@@ -3,68 +3,41 @@ title: Tracking Log
 keywords: 
 last_updated: 24 August, 2017
 tags: 
-summary: ""
+summary: >
+    This provider generates a data report containing the dailty tracking logs data. 
+tip: >
+    A tracking log represents the daily details of a tracking (a date, a progression, and some time spent). <br/>
+    For example, if a learner launched a resource yesterday, spent 20 minutes on it, but didn't not complete it; launched the resource again today, spent 10 minutes, and completed it, you will have:<br/>
+    <ul>
+        <li>one tracking row with first launch date = yesterday, last access date = today, time spent = 30 minutes, progression = completed</li>
+        <li>two tracking logs: <br/>
+            <ul>
+                <li style="list-style-type: decimal;">one with log date = yesterday, time spent = 20 minutes, progression = incomplete</li>
+                <li style="list-style-type: decimal;">the second with log date = today, time spent = 10 minutes, progression = completed</li>
+            </ul>
+        </li>
+    </ul>
 sidebar: home_sidebar
-permalink: training-log-provider.html
+permalink: tracking-log-provider.html
 folder: Export
+dynamic_content: true
+note: >
+    When using this provider, the <code class="highlighter-rouge">deltaMode</code> option will export all tracking logs for the full days of the delta period. <br/>
+    For example, if you run the task 5 times in a row today (and there was no learner activity in the meantime), the 5 generated files will be identical (because the delta period = today, we export all tracking logs from today each time). 
+columns: [reportId, reportGuid, candidateId, candidateGuid, candidateName, candidateFirstname, candidateLogin, 
+    candidateEmail, candidateRefNumber, candidateCustomFieldGuid, candidateTimeZone, candidateSmartgroups,
+    candidateEntityAncestors, candidateEntityName, trainingId, trainingGuid, trainingTitle, 
+    trainingPathCode, sessionId, sessionGuid, sessionTitle, sessionStartDate, sessionEndDate, registrationGuid, 
+    learningObjectGuid, contentGuid, contentTitle, contentRefNumber, contentLocale, learningObjectPublisher, learningObjectRealCompletionTime,
+    trainingContentFolder, trainingContentMandatory, firstLaunchDate, completionTime, firstCompletionDate, progression, 
+    score, status, timeGlobal, constantValue, logDate, templatedValue]
+parameters: [dateFormat, dateTimeFormat, entityIds, modality, onlyFromImportedRegistrations, 
+    onlyFromImportedSessions, onlyFromImportedTraining, preferredLocales, publishers, reportStatus, statusFormat, 
+    timeFrames, timeFramesScale, timeFrameScaleMode, timeGlobalFormat, trainingGuid, trainingPathCode, trainingStatus, 
+    trainingPublishers, trainingStatusFormat, trainingModalityFormat, sessionTitle, sessionGuid, withoutLaunchTime, 
+    deltaMode, ancestorsWithCurrent, learnersSmartGroups, catalogVisibility, templates, onlyHrisSelectedItems, stripHTML, 
+    maxLength]
 ---
-
-
-### Available columns
-
-Name | Description
----|---
-`candidateId` | {{site.data.IO_items.col.candidateId.desc}}
-`candidateGuid` | {{site.data.IO_items.col.candidateGuid.desc}}
-`candidateRefNumber` | {{site.data.IO_items.col.candidateRefNumber.desc}}
-`candidateName` | {{site.data.IO_items.col.candidateName.desc}}
-`candidateFirstname` | {{site.data.IO_items.col.candidateFirstname.desc}}
-`candidateLogin` | {{site.data.IO_items.col.candidateLogin.desc}}
-`candidateEmail` | {{site.data.IO_items.col.candidateEmail.desc}}
-`candidateGroupAncestors` | {{site.data.IO_items.col.candidateGroupAncestors.desc}}
-`candidateGroupName` | {{site.data.IO_items.col.candidateGroupName.desc}}
-`candidateCustomFieldGuid` | {{site.data.IO_items.col.candidateCustomFieldGuid.desc}}
-`candidatePresentation` | {{site.data.IO_items.col.candidatePresentation.desc}}
-`candidateTimeZone` | {{site.data.IO_items.col.candidateTimeZone.desc}}
-`contentGuid` | {{site.data.IO_items.col.contentGuid.desc}}
-`learningObjectGuid` | {{site.data.IO_items.col.learningObjectGuid.desc}}
-`contentRefNumber` | {{site.data.IO_items.col.contentRefNumber.desc}}
-`contentTitle` | {{site.data.IO_items.col.contentTitle.desc}}
-`contentLocale` | {{site.data.IO_items.col.contentLocale.desc}}
-`learningObjectPublisher` | {{site.data.IO_items.col.learningObjectPublisher.desc}}
-`registrationGuid` | {{site.data.IO_items.col.registrationGuid.desc}}
-`sessionId` | {{site.data.IO_items.col.sessionId.desc}}
-`sessionTitle` | {{site.data.IO_items.col.sessionTitle.desc}}
-`sessionGuid` | {{site.data.IO_items.col.sessionGuid.desc}}
-`sessionStartDate` | {{site.data.IO_items.col.sessionStartDate.desc}}
-`sessionEndDate` | {{site.data.IO_items.col.sessionEndDate.desc}}
-`trainingId` | {{site.data.IO_items.col.trainingId.desc}}
-`trainingGuid` | {{site.data.IO_items.col.trainingGuid.desc}}
-`trainingPathCode` | {{site.data.IO_items.col.trainingPathCode.desc}}
-`trainingTitle` | {{site.data.IO_items.col.trainingTitle.desc}}
-`trainingContentFolder` | {{site.data.IO_items.col.trainingContentFolder.desc}}
-`trainingContentMandatory` | {{site.data.IO_items.col.trainingContentMandatory.desc}}
-`firstLaunchDate` | {{site.data.IO_items.col.firstLaunchDate.desc}}
-`completionTime` | {{site.data.IO_items.col.completionTime.desc}}
-`firstCompletionDate` | {{site.data.IO_items.col.firstCompletionDate.desc}}
-`progression` | {{site.data.IO_items.col.progression.desc}}
-`score` | {{site.data.IO_items.col.score.desc}}
-`status` | {{site.data.IO_items.col.status.desc}}
-`timeGlobal` | {{site.data.IO_items.col.timeGlobal.desc}}
-`constantValue` | {{site.data.IO_items.col.constantValue.desc}}
-`logDate` | {{site.data.IO_items.col.logDate.desc}}
-`trainingModality` | {{site.data.IO_items.col.trainingModality.desc}}
-`trainingPublisher` | {{site.data.IO_items.col.trainingPublisher.desc}}
-
-### Filters and parameters
-
-Name | Description
----|---
-`groupIds` | {{site.data.IO_items.param.groupIds.desc}}
-`entityIds` | {{site.data.IO_items.param.entityIds.desc}}
-`publishers` | {{site.data.IO_items.param.publishers.desc}}
-`timeFrames` | {{site.data.IO_items.param.timeFrames.desc}}
-`timeFramesScale` | {{site.data.IO_items.param.timeFramesScale.desc}}
 
 ### Examples
 ```xml
@@ -78,8 +51,6 @@ Name | Description
             <candidateFirstname/>
             <candidateLogin/>
             <candidateEmail/>
-            <candidateGroupAncestors/>
-            <candidateGroupName/>
             <candidateCustomFieldGuid/>
             <candidatePresentation/>
             <candidateTimeZone/>

@@ -60,7 +60,7 @@ For setting up a new resource owner to the third-party client, the following inf
 
 Required informations | Description
 --- | ---
-`Attribute to login` | This is the path to the element of the json returned by the resource endpoint which will be used to match an existing learner. Basically, if you choose to match an email adress in the CKLS Field used for authentication, it will be the path to email adresse of the user in the json.
+`Attribute to login` | This is the path to the element of the json returned by the resource endpoint which will be used to match an existing learner. Basically, if you choose to match an email address in the CKLS Field used for authentication, it will be the path to email adresse of the user in the json.
 `Authorization endpoint URL` |the url of the Authorisation Server (eg : https://www.facebook.com/dialog/oauth)
 `Scope (comma-separated list)` | the scope we want to reach, basically it is a group of data defined by the resource endpoint we want to get, which will require authorisation by the user at first connection on the authorisation server ( eg : email)
 `Token endpoint URL` | the url of the Authorization Server which will deliver the token with the code returned by the Authorization endpoint ( eg : https://graph.facebook.com/oauth/access_token)
