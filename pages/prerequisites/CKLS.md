@@ -1,7 +1,7 @@
 ---
 title: CKLS Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
-last_updated: 16 March, 2019
+last_updated: 30 June, 2020
 sidebar: home_sidebar
 permalink: CKLS-prerequisites
 folder: prerequisites
@@ -15,8 +15,8 @@ CrossKnowledge LMS is a web-based application needing the following environment 
 Screen resolution|1024*768
 Sound card|Recommended (speakers/headphones are required for most content)
 RAM|2 GB (4GB preferred, depending on the OS)
-Operating system|Microsoft Windows 7 or 8 (Desktop mode only) or 10, Apple macOS (10.4+)
-Web browser|Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version), Opera (latest version)
+Operating system|Microsoft Windows 8.1 (Desktop mode only) or 10, Apple macOS (10.13+)
+Web browser|Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version)
 Email clients|Standard email readers are supported to deliver CK standard emails. Email content is HTML.
 Popup blocker|Disabled
 Cookies|Enabled
@@ -65,7 +65,7 @@ The following media extensions should be authorised.<br/>
 `.FLV, .mp3, .mp4, .srt, .woff, .vtt, .xhtml`
 
 ### Domain white-listing
-The following domain names should be whitelisted.
+The following domain names should be whitelisted by customers and their partners.
 ```txt
 https://*.crossknowledge.com, https://*.crossknowledge-player.com
 ```
@@ -256,9 +256,9 @@ smtp01.crossknowledge.com
 ## Sharepoint pre-requisites
 
 ### Sharepoint 2010
-from IE7 to IE9, Firefox, Chrome
+Internet Explorer 11, Mozilla Firefox, Google Chrome
 ### Sharepoint 2013 
-from IE8 to IE10, Firefox, Chrome<br/>
+Internet Explorer 11, Mozilla Firefox, Google Chrome<br/>
 
 {% include note.html content="This plugin is not supported on the latest version of Office 365 (SharePoint 2016)." %}
 
