@@ -11,7 +11,7 @@ CK Connect is web-based application, which is available on CKLS, CKLS Mobile and
 
 If you are willing to access it via CKLS or CKLS mobile, your workstation must follow these pre-requisites : [CKLS pre-requisites](/CKLS-prerequisites)
 
-If you are willing to access CK Connect via the MyLearning app, your device must follow these pre-requisites : [MyLearning app pre-requisites](/MyLearning-prerequisites)
+If you are willing to access CK Connect via the My Learning app, your device must follow these pre-requisites : [My Learning app pre-requisites](/MyLearning-prerequisites)
 
 CKLS configuration required to be able to access CK Connect:
 * CK Connect is activated on the platform
