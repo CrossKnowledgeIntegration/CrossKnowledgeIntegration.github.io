@@ -15,10 +15,13 @@
 <link rel="stylesheet" href="{{ "css/cknew.css" }}">
 <link rel="stylesheet" href="{{ "css/prism.css" }}">
 
-<!-- OneTrust Cookies Consent Notice start -->
-<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="769aa308-51f7-4d80-b03f-2269a7d50b93"></script>
-<script type="text/javascript">function OptanonWrapper() { }</script>
-<!-- OneTrust Cookies Consent Notice end -->
+{% if jekyll.environment != "development" %}
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="769aa308-51f7-4d80-b03f-2269a7d50b93"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <!-- OneTrust Cookies Consent Notice end -->
+{% endif %}
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>

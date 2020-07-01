@@ -1,7 +1,7 @@
 ---
 title: Mohive Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
-last_updated: 9 November, 2017
+last_updated: 30 June, 2020
 sidebar: home_sidebar
 permalink: Mohive-prerequisites
 folder: prerequisites
@@ -19,8 +19,8 @@ Screen resolution | 1280x800 or higher recommended
 Sound card | Recommended (speakers/headphones are required for most content)
 Processor | Intel® Pentium IV or better
 RAM | 2 GB (4GB prefered, depending on the OS)
-Operating system | Microsoft Windows XP, Vista, Seven, 8 (Desktop mode only, Tablet mode is not supported), 8.1, 10, Apple macOS (10.4+)
-Web browser | Internet Explorer 8 or higher (with latest minor release), Mozilla Firefox (latest version), Google Chrome (latest version), Apple Safari (latest version)
+Operating system | Microsoft Windows 8.1 (Desktop mode only) or 10, Apple macOS (10.13+)
+Web browser | Internet Explorer 11 (latest version), Mozilla Firefox (latest version), Google Chrome (latest version), Apple Safari (latest version)
 Adobe Flash | Latest version
 Popup blocker | Disabled
 Cookies | Enabled

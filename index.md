@@ -12,6 +12,8 @@ This site's purpose is to present the Integration @ CrossKnowledge services, too
 ## Documentation
 
 * [CKLS Prerequisites](/CKLS-prerequisites)
+* [MyLearning Prerequisites](/MyLearning-prerequisites)
+* [CK Connect Prerequisites](/CKConnect-prerequisites)
 * [TeamSHIFT Prerequisites](/TeamShift-prerequisites)
 * [Mohive Prerequisites](/Mohive-prerequisites)
 * [Contents Information](/content-information)

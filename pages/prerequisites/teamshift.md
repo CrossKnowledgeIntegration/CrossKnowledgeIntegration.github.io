@@ -1,7 +1,7 @@
 ---
 title: TeamSHIFT Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements, teamshift
-last_updated: 8 May, 2018
+last_updated: 30 June, 2020
 sidebar: home_sidebar
 permalink: TeamShift-prerequisites
 folder: prerequisites
@@ -26,7 +26,7 @@ TeamSHIFT is a CrossKnowledge solution which requires the following environment 
         </tr>
         <tr>
             <td>Operating system</td>
-            <td>Microsoft Windows 7 or 8 (Desktop mode only) or 10, Apple macOS (10.4+)</td>
+            <td>Microsoft Windows 8.1 (Desktop mode only) or 10, Apple macOS (10.13+)</td>
         </tr>
         <tr>
             <td>Web browser</td>
