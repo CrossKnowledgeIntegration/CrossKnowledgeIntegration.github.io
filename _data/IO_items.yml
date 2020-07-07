@@ -780,11 +780,16 @@ col:
     type: "longtext"
 
   progression:
-    desc: "The progress of the learner on the current content referenced by the tracking row (ie. 80%)."
+    desc: >
+      <ul class="fieldDescription"><li><b>For Tracking and Tracking logs: </b>the progress of the learner on the current content referenced by the tracking row.</li>
+      <li><b>For Blendedx registrations: </b>the raw progress of the learner in the current session, based on the total points for all activities (= doesn't take into account the threshold).</li>
+      <li><b>For registrations in legacy modalities: </b>the raw progress of the learner in the current session, based on all the resources, both optional and mandatory.</li></ul>
     type: "float"
 
   progressionMandatory:
-    desc: "The total progress of the learner (on the mandatory learning objects) in the current session."
+    desc: >
+      <ul class="fieldDescription"><li><b>For Blendedx: </b>the progress of the learner in the session (based on the session threshold if defined).</li>
+      <li><b>For legacy modalities: </b>the total progress of the learner (only on the mandatory learning objects) in the session.</li></ul>
     type: "float"
 
   progressStatus:
