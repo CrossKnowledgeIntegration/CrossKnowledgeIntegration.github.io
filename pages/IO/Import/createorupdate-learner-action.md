@@ -66,3 +66,5 @@ Message | Error level | Explanation
 `The login: […] already exists. The user name will be: […]` | WARNING | A row from the import file tries to update a learner and assign them a login already taken.
 `Date format is not valid` | ERROR | Custom date format option "dateFormat" is invalid or could not be parsed.
 `enabledUntil is inferior to enabledFrom or vice versa` | ERROR | Attempting to assign a row where the field "enabled from" is set after the field "enabled to".
+`Entity with name [...] not found.` | ERROR | Attempting to assign a row where the field "entityName" does not match any existing entity.
+`Entity with name [...] is duplicated.` | ERROR | Attempting to assign a row where the field "entityName" is not unique and matches more than one existing entity.
