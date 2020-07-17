@@ -7,10 +7,10 @@ summary: "Export the learners connection history"
 sidebar: home_sidebar
 permalink: candidates-access-provider.html
 folder: Export
-dynamic_content: true
+export_content: true
 columns: [candidateId, candidateLogin, candidateName, candidateFirstname, candidateEmail, candidateRefNumber, candidateGuid, 
-    candidateTimeZone, candidateEntityName, candidateEntityAncestors, candidateCustomFieldGuid, status, platformAccessDate]
-parameters: [dateFormat, dateTimeFormat, ancestorsWithCurrent, timeFrames, timeFramesScale, failedConnections, 
+    candidateTimeZone, candidateEntityName, candidateEntityAncestors, candidateCustomFieldGuid, connectionStatus, platformAccessDate]
+parameters: [dateFormat, dateTimeFormat, ancestorsWithCurrent, sessionTimeFrames, sessionTimeFramesScale, failedConnections, 
     connectionStatusFormat, entityIds, learnersSmartGroups, templates, stripHTML, maxLength]
 ---
 

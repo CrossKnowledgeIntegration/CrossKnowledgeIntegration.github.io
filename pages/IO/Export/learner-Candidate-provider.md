@@ -7,14 +7,14 @@ summary: "Export learners"
 sidebar: home_sidebar
 permalink: candidates-provider.html
 folder: Export
-dynamic_content: true
+export_content: true
 columns: [candidateId, candidateLogin, candidateName, candidateFirstname, candidateEmail, candidateRefNumber, candidateGuid, 
     managerLogin, candidateCustomFieldGuid, candidateTimeZone, 
     candidatePresentation, candidateFollowWeb, candidateFollowTwitter, candidateFollowLinkedin, candidateLocale, 
     candidateLocales, candidateAccountActivated, candidateAccountActivatedFrom, candidateAccountActivatedUntil, 
-    lastPlatformAccessDate, creationDate, candidatePoints, candidateBadges, constantValue, candidateEntityName, 
+    lastPlatformAccessDate, learnerCreationDate, candidatePoints, candidateBadges, constantValue, candidateEntityName, 
     candidateEntityId, candidateSmartgroups, candidateEntityAncestors]
-parameters: [ancestorsWithCurrent, timeFrames, timeFramesScale, entityIds, learnersSmartGroups, templates, stripHTML, 
+parameters: [ancestorsWithCurrent, sessionTimeFrames, sessionTimeFramesScale, entityIds, learnersSmartGroups, templates, stripHTML, 
     maxLength, dateFormat, dateTimeFormat]
 ---
 
