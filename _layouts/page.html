@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
 <div class="post-header">
    <h1 class="post-title-main">{{ page.title }}</h1>
 </div>
@@ -55,12 +58,32 @@ layout: default
         {% include note.html content=page.note %}
     {% endif %}
 
+    {% if page.description %}
+        <div class="export-description">{{page.description}}</div>
+    {% endif %}
+
     {% if page.dynamic_content %}
         {% if page.columns %}
             {% include dynamic_content.html columns=page.columns title='Available columns' collection=site.data.IO_items.col %}
         {% endif %}
         {% if page.parameters %}
             {% include dynamic_content.html columns=page.parameters title='Filters and parameters' collection=site.data.IO_items.param %}
+        {% endif %}
+    {% endif %}
+
+    <!--Initializes DataTable Javascript library for export table-->
+    <script>
+        $(document).ready( function () {
+            $('#export_table').DataTable();
+        } );
+    </script>
+
+    {% if page.export_content %}
+        {% if page.columns %}
+            {% include export_content.html columns=page.columns title='Available fields' collection=site.data.export_items.col %}
+        {% endif %}
+        {% if page.parameters %}
+            {% include export_content.html columns=page.parameters title='Filters and parameters' collection=site.data.export_items.param %}
         {% endif %}
     {% endif %}
 
