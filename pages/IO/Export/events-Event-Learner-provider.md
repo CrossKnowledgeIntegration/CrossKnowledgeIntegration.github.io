@@ -7,7 +7,7 @@ summary: "This provider exports data related to learners in classroom events."
 sidebar: home_sidebar
 permalink: event-learner-metadata-provider.html
 folder: Export
-dynamic_content: true
+export_content: true
 columns: [candidateId, candidateGuid, candidateRefNumber, candidateName, candidateFirstname, candidateLogin, candidateEmail, 
     candidateEntityAncestors, candidateEntityId, eventTitle, eventDescription, eventStartDate, eventEndDate, eventDuration, 
     eventAllDay, eventVirtualRoomLink, eventTeacher, eventStatus, eventClassRoomTitle, eventClassRoomDescription, 

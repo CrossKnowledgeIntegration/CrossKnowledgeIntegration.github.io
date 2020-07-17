@@ -7,7 +7,7 @@ summary: "This provider exports data related to Blendedx training courses classr
 sidebar: home_sidebar
 permalink: event-training-metadata-provider.html
 folder: Export
-dynamic_content: true
+export_content: true
 columns: [trainingId, trainingPathCode, trainingTitle, trainingDescription, trainingDuration, trainingLocale, 
     catalogVisibility, trainingStatus, eventTitle, eventDescription, eventStartDate, eventEndDate, eventDuration, 
     eventAllDay, eventVirtualRoomLink, eventTeacher, eventStatus, eventClassRoomTitle, eventClassRoomDescription, 

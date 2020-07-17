@@ -7,7 +7,7 @@ summary: "This provider exports data related to Blendedx sessions classroom even
 sidebar: home_sidebar
 permalink: event-session-metadata-provider.html
 folder: Export
-dynamic_content: true
+export_content: true
 columns: [sessionId, sessionGuid, sessionTitle, sessionStartDate, sessionEndDate, eventTitle, eventDescription, 
     eventStartDate, eventEndDate, eventDuration, eventAllDay, eventVirtualRoomLink, eventTeacher, eventStatus, 
     eventClassRoomTitle, eventClassRoomDescription, eventClassRoomCapacity, eventClassRoomEquipments, eventClassRoomType]
