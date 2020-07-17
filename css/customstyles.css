@@ -602,7 +602,7 @@ a[data-toggle] {
     font-size:120%;
     color: #808080;
     margin:20px 0px 20px 0px;
-    border-left: 5px solid #ED1951;
+    border-left: 5px solid #7814a0;
     padding-left: 10px;
 
 }
@@ -610,14 +610,28 @@ a[data-toggle] {
 .summary:before {
     content: "Summary: ";
     font-weight: bold;
+    color: #7814a0;
 }
 
+.export-description {
+    font-size:100%;
+    color: #202020;
+    margin:20px 0px 0px 0px;
+    padding-left: 10px;
+}
+
+.export-description:before {
+    content: "🔎 Description";
+    font-size: 130%;
+    color: #1a5983;
+    font-stretch: semi-condensed;
+}
 
 a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-h3 {color: #ED1951; font-weight:normal; font-size:130%;}
+h3 {color: #1a5983; font-weight:normal; font-size:130%;}
 h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
 
 .alert, .callout {
