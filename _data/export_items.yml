@@ -438,8 +438,8 @@ col:
   eventTeacher:
     system: "eventTeacher"
     name: "Event learner facilitator name"
-    desc: "Text / String"
-    type: "The learner facilitator will be responsible for helping the learners during the event. And this role allows him to update the attendance list. "
+    desc: "The learner facilitator will be responsible for helping the learners during the event. And this role allows him to update the attendance list."
+    type: "Text / String"
 
   eventTimeZone:
     system: "eventTimeZone"
@@ -1820,7 +1820,8 @@ param:
     system: "templates"
     name: "Customized data "
     desc: "It allows to customize a value for a column. It also allows to combine the values of different columns into one."
-    type: "templates (click here (data-templates.html#full-example))"
+    type: "templates"
+    ##click here (data-templates.html#full-example)
 
   threshold:
     system: "threshold"
@@ -1833,28 +1834,28 @@ param:
     name: "Time frame - Number"
     desc: "The Time frame filter will export all the data related to the specified period of time (e.g: All the session from the last 3 months).
               In this field you choose the number of days/months/years you want (e.g: 3)"
-    type: "timeFrameScale (click here)"
+    type: "timeFrameScale"
 
   contentTimeFrames:
     system: "timeFrames"
     name: "Time frame - Number"
     desc: "The Time frame filter will export all the data related to the specified period of time (e.g: All the content from the last 3 months).
               In this field you choose the number of days/months/years you want (e.g: 3)"
-    type: "timeFrameScale (click here)"
+    type: "timeFrameScale"
 
   sessionTimeFramesScale:
     system: "timeFramesScale"
     name: "Time frame - Scale"
     desc: "The Time frame filter will export all the data related to the specified period of time (e.g: All the session from the last 3 months).
               In this field you choose if you want to filter by days, months or years (e.g: full months)."
-    type: "timeFrameScale (click here)"
+    type: "timeFrameScale"
 
   contentTimeFramesScale:
     system: "timeFramesScale"
     name: "Time frame - Scale"
     desc: "The Time frame filter will export all the data related to the specified period of time (e.g: All the content from the last 3 months).
               In this field you choose if you want to filter by days, months or years (e.g: full months)."
-    type: "timeFrameScale (click here)"
+    type: "timeFrameScale"
 
   sessionTimeFrameScaleMode:
     system: "timeFrameScaleMode"
@@ -1862,7 +1863,7 @@ param:
     desc: 'The Time frame filter will export all the data related to the specified period of time (e.g: All the session from the last 3 months).
 
               Available for some exports: For the column ""TimeGlobal"", you can choose if you want all the time the learner spent on the session (LastActivity mode) or only the time he spent during the period filtered (TimeSpent mode).'
-    type: "timeFrameScale (click here)"
+    type: "timeFrameScale"
 
   contentTimeFrameScaleMode:
     system: "timeFrameScaleMode"
@@ -1870,13 +1871,13 @@ param:
     desc: 'The Time frame filter will export all the data related to the specified period of time (e.g: All the content from the last 3 months).
 
               Available for some exports: For the column ""TimeGlobal"", you can choose if you want all the time the learner spent on the content (LastActivity mode) or only the time he spent during the period filtered (TimeSpent mode).'
-    type: "timeFrameScale (click here)"
+    type: "timeFrameScale"
 
   sessionTimeGlobalFormat:
     system: "timeGlobalFormat"
     name: "Session time spent within search period format"
     desc: 'The time format which the "Session time spent within search period" column should be exported.'
-    type: "The accepted formats can be found [here] (http://data-timeglobalformat.html)"
+    type: 'The accepted formats can be found <a href="data-timeglobalformat.html">here</a>'
 
   contentTimeGlobalFormat:
     system: "timeGlobalFormat"
