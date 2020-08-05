@@ -3,7 +3,7 @@ title: Event - Learner Events
 keywords:
 last_updated: September, 2019
 tags: 
-summary: "The learner event export will allow you to identify which events a learner is registered. It contains basic learner and event data."
+summary: "The learner event export will allow you to identify in which events a learner is registered. It contains basic learner and event data."
 sidebar: home_sidebar
 permalink: event-learner-metadata-provider.html
 folder: Export
