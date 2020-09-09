@@ -2088,7 +2088,7 @@ API-KEY<br>
 <td markdown="span">array</td>
 <td markdown="span"><i style="cursor: pointer" data-toggle="tooltip" data-original-title="Not required" class="fa fa-times"></i></td>
 <td markdown="span">the learner custom fields (only string and integer custom field type allowed).</td>
-<td markdown="span">"customFields": ["f114870d-ed13-4e03-bc77-c34841a7a52b":"France", "d941cf5f-00a8-4e8d-804e-f913e6aad471":"IT"]</td>
+<td markdown="span">"customFields": {"f114870d-ed13-4e03-bc77-c34841a7a52b":"France", "d941cf5f-00a8-4e8d-804e-f913e6aad471":"IT"}</td>
 </tr>
 
 <tr>
