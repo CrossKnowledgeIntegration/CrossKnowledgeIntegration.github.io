@@ -30,7 +30,7 @@ TeamSHIFT is a CrossKnowledge solution which requires the following environment 
         </tr>
         <tr>
             <td>Web browser</td>
-            <td>Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version)</td>
+            <td>Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version), <i>Internet Explorer 11 (latest version)</i> <b>¹</b></td>
         </tr>
         <tr>
             <td>Email clients</td>
@@ -51,6 +51,9 @@ TeamSHIFT is a CrossKnowledge solution which requires the following environment 
     </tbody>
 </table>
 
+**¹** *Please note that [Microsoft started to lower the support](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666) on this web browser. The usage of Microsoft Edge is highly recommended instead.*
+
+<br>
 We systematically test the latest versions of Chrome, Firefox and Internet Explorer browsers to ensure the best experience for our users. Older versions of these browsers are not systematically tested, but run smoothly in most cases according the prerequisites defined previously. 
 
 ### Mobile device compatibility

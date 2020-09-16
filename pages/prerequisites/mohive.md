@@ -20,15 +20,18 @@ Sound card | Recommended (speakers/headphones are required for most content)
 Processor | Intel® Pentium IV or better
 RAM | 2 GB (4GB prefered, depending on the OS)
 Operating system | Microsoft Windows 8.1 (Desktop mode only) or 10, Apple macOS (10.13+)
-Web browser | Internet Explorer 11 (latest version), Mozilla Firefox (latest version), Google Chrome (latest version), Apple Safari (latest version)
+Web browser | Mozilla Firefox (latest version), Google Chrome (latest version), Apple Safari (latest version), *Internet Explorer 11 (latest version)* **¹**
 Adobe Flash | Latest version
 Popup blocker | Disabled
 Cookies | Enabled
 
-**Adobe will stop updating and distributing the Adobe Flash Player, used by the Mohive authoring platform at the end of 2020.
-This will not affect content created in Mohive in Multi-devices mode.
-The author workstation will still be operational if you download the desktop application, automatically proposed by Mohive, even if the browser doesn’t work with flash anymore.
-The Mohive desktop application is not compatible with Apple devices.**
+**¹** *Please note that [Microsoft started to lower the support](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666) on this web browser. The usage of other mentionned web browsers is highly recommended instead.*
+
+**Adobe will [stop updating and distributing](https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update.html) the Adobe Flash Player at the end of 2020.**
+
+**As a consequence, the author workstation will still be operational only if you download the desktop application, automatically proposed by Mohive. Please note that the Mohive desktop application is not compatible with Apple devices.**
+
+**This will not affect content created in Mohive in Multi-devices mode.**
 
 ### Author desktop application requirements
 

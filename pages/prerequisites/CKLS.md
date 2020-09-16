@@ -16,13 +16,16 @@ Screen resolution|1024*768
 Sound card|Recommended (speakers/headphones are required for most content)
 RAM|2 GB (4GB preferred, depending on the OS)
 Operating system|Microsoft Windows 8.1 (Desktop mode only) or 10, Apple macOS (10.13+)
-Web browser|Microsoft Internet Explorer 11 (latest version), Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version)
+Web browser|Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version), *Internet Explorer 11 (latest version)* **¹**
 Email clients|Standard email readers are supported to deliver CK standard emails. Email content is HTML.
 Popup blocker|Disabled
 Cookies|Enabled
 JavaScript|Enabled
 HTTPS|SSL Protocol: TLSv1.2<br>SSL Ciphers:<br>- ECDHE-ECDSA-AES128-GCM-SHA256<br>- ECDHE-RSA-AES128-GCM-SHA256<br>- ECDHE-ECDSA-AES128-SHA256<br>- ECDHE-RSA-AES128-SHA256<br>- ECDHE-ECDSA-AES128-SHA<br>- ECDHE-RSA-AES128-SHA<br>- ECDHE-ECDSA-AES256-GCM-SHA384<br>- ECDHE-RSA-AES256-GCM-SHA384<br>- ECDHE-ECDSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA384<br>- ECDHE-RSA-AES256-SHA<br>- ECDHE-ECDSA-AES256-SHA<br>- AES128-GCM-SHA256<br>- AES128-SHA256<br>- AES128-SHA<br>- AES256-GCM-SHA384<br>- AES256-SHA256<br>- AES256-SHA<br>
 
+**¹** *Please note that [Microsoft started to lower the support](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666) on this web browser. The usage of Microsoft Edge is highly recommended instead.*
+
+<br>
 We systematically test the latest versions of Chrome, Firefox and Internet Explorer browsers to ensure the best experience for our users. Older versions of these browsers are not systematically tested, but run smoothly in most cases. If, however, there is a problem specific to a particular version of one of these browsers, please contact us.
 
 These technical requirements may be modified according to technical developments of CrossKnowledge solutions.
@@ -47,12 +50,12 @@ As the contents are played on our LMS, you need the LMS requirements listed abov
 <table width="100%">
     <tbody>
         <tr>
-            <td width="30%">Adobe Flash Player (CrossKnowledge Sessions)</td>
-            <td width="70%">latest version</td>
+            <td width="45%">PDF plugin</td>
+            <td width="55%">Adobe Acrobat Reader DC (latest version)</td>
         </tr>
         <tr>
-            <td width="30%">PDF plugin</td>
-            <td width="70%">Adobe Acrobat Reader DC (latest version)</td>
+            <td width="45%">Adobe Flash Player (<a href="https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update.html" target="_blank"><b>until December 2020</b></a>, CrossKnowledge Sessions)</td>
+            <td width="55%">latest version</td>
         </tr>
     </tbody>
 </table>
