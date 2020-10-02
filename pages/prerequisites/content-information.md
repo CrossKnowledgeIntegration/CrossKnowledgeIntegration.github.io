@@ -22,7 +22,7 @@ The Team Sessions | 140 MB | 119 MB | 162 MB | from 30 to 45 mn | 2000kB/s (peak
 
 ### Mobile for CrossKnowledge contents
 
-The following content compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the LMS.
+The following content compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the Learning Suite.
 
 Compatibility with Android tablets is made but not officially supported.
 

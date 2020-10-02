@@ -29,9 +29,9 @@ Cookies | Enabled
 
 **Adobe will [stop updating and distributing](https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update.html) the Adobe Flash Player at the end of 2020.**
 
-**As a consequence, the author workstation will still be operational only if you download the desktop application, automatically proposed by Mohive. Please note that the Mohive desktop application is not compatible with Apple devices.**
+**To continue using Mohive, please download the desktop application proposed on Mohive login page.**
 
-**This will not affect content created in Mohive in Multi-devices mode.**
+**This will not affect content created by Mohive authoring solution.**
 
 ### Author desktop application requirements
 

@@ -10,7 +10,7 @@ folder: prerequisites
 
 ## Workstation requirements
 
-CrossKnowledge LMS is a web-based application needing the following environment to run properly:
+CrossKnowledge Learning Suite is a web-based application needing the following environment to run properly:
 
 Screen resolution|1024*768
 Sound card|Recommended (speakers/headphones are required for most content)
@@ -37,15 +37,15 @@ In order to ensure a good user experience for Blendedˣ Embedded Content Activit
 
 ### Tablet compatibility
 
-CrossKnowledge LMS is compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the LMS.
+CrossKnowledge Learning Suite is compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the Learning Suite.
 
-CrossKnowledge LMS is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the LMS. 
+CrossKnowledge Learning Suite is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the Learning Suite. 
 
 Please note that SCORM connectors are not optimized for mobile usage
 
 ### CrossKnowledge content additional requirements
 
-As the contents are played on our LMS, you need the LMS requirements listed above, and the following ones:
+As the contents are played on our Learning Suite, you need the Learning Suite requirements listed above, and the following ones:
  	
 <table width="100%">
     <tbody>
