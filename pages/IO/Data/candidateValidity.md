@@ -14,6 +14,7 @@ folder: Data
     <candidateValidity>
         <enabledValue>Y</enabledValue>
         <disabledValue>N</disabledValue>
+        <enabledUntilValue>U</enabledUntilValue>
     </candidateValidity>
 </columnsMapping>
 ```
