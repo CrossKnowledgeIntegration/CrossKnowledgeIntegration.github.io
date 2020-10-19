@@ -41,7 +41,7 @@ CrossKnowledge Learning Suite is compatible with iPad (2, 3, 4 and mini) - addit
 
 CrossKnowledge Learning Suite is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the Learning Suite. 
 
-Please note that SCORM connectors are not optimized for mobile usage
+Please note that SCORM and AICC connectors are not optimized for mobile usage
 
 ### CrossKnowledge content additional requirements
 
