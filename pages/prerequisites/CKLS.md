@@ -269,8 +269,6 @@ Internet Explorer 11, Mozilla Firefox, Google Chrome<br/>
 ### Supported formats
 
 * `https://customername.(eu,lms,na,sa).crossknowledge.com`, with `http://customername.(eu,lms,na,sa).crossknowledge.com` being redirected to HTTPS (default setting).
-* `http://customername.customerdomain.com` being redirected to HTTPS CrossKnowledge urls, as soon as customer domain has a valid DNS entry pointing to crossknowledge load balancer.
-e.g : http://customername.customerdomain.com with automatic rediction to https://customername.eu.crossknowledge.com
 
 ### Unsupported formats
 * `https://customername.customerdomain.com` - CrossKnowledge only supports HTTPS protocol with its own urls.
