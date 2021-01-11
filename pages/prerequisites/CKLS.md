@@ -41,7 +41,7 @@ CrossKnowledge Learning Suite is compatible with iPad (2, 3, 4 and mini) - addit
 
 CrossKnowledge Learning Suite is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the Learning Suite. 
 
-Please note that SCORM connectors are not optimized for mobile usage
+Please note that SCORM and AICC connectors are not optimized for mobile usage
 
 ### CrossKnowledge content additional requirements
 
@@ -269,8 +269,6 @@ Internet Explorer 11, Mozilla Firefox, Google Chrome<br/>
 ### Supported formats
 
 * `https://customername.(eu,lms,na,sa).crossknowledge.com`, with `http://customername.(eu,lms,na,sa).crossknowledge.com` being redirected to HTTPS (default setting).
-* `http://customername.customerdomain.com` being redirected to HTTPS CrossKnowledge urls, as soon as customer domain has a valid DNS entry pointing to crossknowledge load balancer.
-e.g : http://customername.customerdomain.com with automatic rediction to https://customername.eu.crossknowledge.com
 
 ### Unsupported formats
 * `https://customername.customerdomain.com` - CrossKnowledge only supports HTTPS protocol with its own urls.
