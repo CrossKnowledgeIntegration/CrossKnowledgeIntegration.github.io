@@ -1204,7 +1204,7 @@ param:
     type: "enum(C, P, CA)"
 
   excludeDeactivatedContents:
-    desc: "Excludes learning objects that have `Deactivated` status"
+    desc: "Excludes learning object versions that have `Disabled` status"
     type: "yesNoElement"
 
   exportAllSessions:
