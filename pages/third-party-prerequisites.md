@@ -91,14 +91,14 @@ Any content delivery should be delivered with an appendix document containing th
 - Learning goals for the content
 - Picture + resolution 640 x 360 px
 
-Each delivery will be tested on a dedicated test platform before being uploaded on the production platform. In terms of tracking, the content will have to sent back the following information to CrossKnowledge LMS:
+In terms of tracking, the content will have to sent back the following information to CrossKnowledge LMS:
 
 - Score
 - Time spent
 - Status (incomplete/completed)
 - Location (bookmarking of the learner back of the slide on which he stopped)
 
-For multilingual content, one package per language will be issued. The CrossKnowledge "Training On Demand" solution is managing localization and content versioning.
+For multilingual content, one package per language will be issued. The CrossKnowledge "Training On Demand" solution is managing localization and content versioning. We recommend not to use the "Embedded in Blendedx" feature for third party content.
 
 ### Scorm 1.2 and Scorm 2004
 
