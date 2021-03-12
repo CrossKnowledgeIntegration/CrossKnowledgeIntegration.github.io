@@ -1215,6 +1215,10 @@ param:
     desc: "Whether to include failed connections."
     type: "yesNoElement"
 
+  onlyWithClassroomActivity:
+    desc: "Only export tracking data related to trainings that have a classroom activity."
+    type: "yesNoElement"    
+
   facilitatorGuids:
     desc: "Filter on the GUID of back-office facilitators. Can contain several values separated by commas."
     type: "string"
