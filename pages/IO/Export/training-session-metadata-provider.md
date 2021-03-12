@@ -1,7 +1,7 @@
 ---
 title: Training Session Metadata
 keywords:
-last_updated: September, 2019
+last_updated: March, 2021
 tags: 
 summary: "Export the metadata of training sessions."
 sidebar: home_sidebar
@@ -41,7 +41,7 @@ parameters: [modality, trainingPathCode, sessionTitle, trainingTitle, sessionGui
         <parameters>
             <exportAllSessions>Y</exportAllSessions>
             <dateFormat>MM-DD-YYYY</dateFormat>
+            <onlyWithClassroomActivity>Y</onlyWithClassroomActivity>
         </parameters>
     </trainingSessionMetadataProvider>
 </providers>
-```
