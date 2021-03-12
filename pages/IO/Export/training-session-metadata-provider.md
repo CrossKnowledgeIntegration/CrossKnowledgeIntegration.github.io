@@ -13,7 +13,7 @@ columns: [modality, title, description, creationDate, pathModificationDate, modi
     startDate, endDate, trainingStatus, hasClassroomActivity] 
 parameters: [modality, trainingPathCode, sessionTitle, trainingTitle, sessionGuid, trainingGuid, dateFormat, dateTimeFormat, 
     lastNMonths, lastNFullMonths, trainingStatus, deltaMode, onlyFromImportedTraining, trainingStatusFormat, exportAllSessions, 
-    timeFrames, timeFramesScale, templates, stripHTML, maxLength, onlyHrisSelectedItems]
+    timeFrames, timeFramesScale, templates, stripHTML, maxLength, onlyHrisSelectedItems, onlyWithClassroomActivity]
 ---
 
 ### Example
