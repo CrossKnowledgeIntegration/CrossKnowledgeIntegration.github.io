@@ -45,3 +45,4 @@ parameters: [modality, trainingPathCode, sessionTitle, trainingTitle, sessionGui
         </parameters>
     </trainingSessionMetadataProvider>
 </providers>
+```
