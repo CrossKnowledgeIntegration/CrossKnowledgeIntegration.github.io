@@ -743,6 +743,10 @@ col:
     desc: "The maximum number of learners that can enroll to the training session."
     type: "int"
 
+  hasClassroomActivity:
+    desc: "Return if the training session has a classroom activity."
+    type: "enum(Y, N)"    
+
   modality:
     desc: "The modality of the associated training course."
     type: "enum(learning_channel, kc, distanciel, blended, campus, mentored_action_learning, portal, serious_game, public_course, vodeclic, learning_feed, content_test)"
@@ -1210,6 +1214,10 @@ param:
   exportAllSessions:
     desc: "Whether to include failed connections."
     type: "yesNoElement"
+
+  onlyWithClassroomActivity:
+    desc: "Only export tracking data related to trainings that have a classroom activity."
+    type: "yesNoElement"    
 
   facilitatorGuids:
     desc: "Filter on the GUID of back-office facilitators. Can contain several values separated by commas."
