@@ -75,12 +75,17 @@ https://*.crossknowledge.com, https://*.crossknowledge-player.com
 
 If wildcards (*) are not allowed, authorise at least the following URLs:<br/>
 
-#### General CKLS cloudfront URLs:
+#### General CKLS CDN URLs:
 
 ```txt
-https://ckls-assets.crossknowledge.com/
-https://ckls-api.crossknowledge.com/
+https://ckls-cdn.crossknowledge.com/
+https://ckls-cdn.crossknowledge-china.com/
+https://ckls-assets.eu.crossknowledge.com/
+https://ckls-assets.na.crossknowledge.com/
+https://ckls-assets.sa.crossknowledge.com/
+https://ckls-assets.asia.crossknowledge.com/
 https://ckls-cdn-eu.crossknowledge.com/
+https://ckls-api.crossknowledge.com/
 ```
 
 #### External medias (cloudfront URL)
