@@ -406,13 +406,24 @@ col:
   learningObjectAuthorFirstName:
     desc: "The first name of the author of the learning object."
     type: "string"
+    deleted: true
 
   learningObjectAuthorId:
     desc: "The ID used by the database to identify the author of the learning object."
     type: "int"
+    deleted: true
 
   learningObjectAuthorLastName:
     desc: "The last name of the author of the learning object."
+    type: "string"
+    deleted: true
+
+  learningObjectAuthorsFullNames:
+    desc: "The full name (first name + last name) of the author(s) of the learning object. Values separated by commas."
+    type: "string"
+
+  learningObjectAuthorsIds:
+    desc: "The internal GUID used to identify the author(s) of the learning object. Values separated by commas."
     type: "string"
 
   learningObjectAverageCompletionTime:
@@ -558,13 +569,24 @@ col:
   learningObjectVersionAuthorFirstName:
     desc: "The first name of the author of the learning object version."
     type: "string"
+    deleted: true
 
   learningObjectVersionAuthorId:
     desc: "The ID used by the database to identify the author of the learning object version."
     type: "int"
+    deleted: true
 
   learningObjectVersionAuthorLastName:
     desc: "The last name of the author of the learning object version."
+    type: "string"
+    deleted: true
+
+  learningObjectVersionAuthorsFullNames:
+    desc: "The full name (first name + last name) of the author(s) of the learning object version. Values separated by commas."
+    type: "string"
+
+  learningObjectVersionAuthorsIds:
+    desc: "The internal GUID used to identify the author(s) of the learning object version. Values separated by commas."
     type: "string"
 
   learningObjectVersionAverageCompletionTime:

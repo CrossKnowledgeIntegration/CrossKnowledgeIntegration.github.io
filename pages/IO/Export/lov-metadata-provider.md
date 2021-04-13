@@ -10,7 +10,8 @@ folder: Export
 dynamic_content: true
 columns: [learningObjectVersionLoId, learningObjectVersionLoGuid, learningObjectVersionId, learningObjectVersionGuid, 
     learningObjectVersionCode, learningObjectVersionTitle, learningObjectVersionSummary, learningObjectVersionPublisher, 
-    learningObjectVersionType, learningObjectVersionDisplayedType, learningObjectVersionVersion, learningObjectVersionAuthorId, 
+    learningObjectVersionType, learningObjectVersionDisplayedType, learningObjectVersionVersion, learningObjectVersionAuthorId,
+    learningObjectVersionAuthorsIds, learningObjectVersionAuthorsFullNames, 
     learningObjectVersionAuthorFirstName, learningObjectVersionAuthorLastName, learningObjectVersionDuration, 
     learningObjectVersionIncludedInLO, learningObjectVersionLearningPoints, learningObjectVersionLevel, 
     learningObjectVersionLocale, learningObjectVersionTags, learningObjectVersionTargetAudience, learningObjectVersionThemes, 
