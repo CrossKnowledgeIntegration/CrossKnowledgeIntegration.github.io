@@ -70,65 +70,44 @@ The following media extensions should be authorised.<br/>
 ### Domain white-listing
 The following domain names should be whitelisted by customers and their partners.
 ```txt
-https://*.crossknowledge.com, https://*.crossknowledge-player.com
+https://*.crossknowledge.com, https://*.crossknowledge-player.com https://*.crossknowledge-china.com
 ```
 
-If wildcards (*) are not allowed, authorise at least the following URLs:<br/>
-
-#### General CKLS CDN URLs:
+If wildcards (*) are not allowed, authorise the following sub-domains:<br/>
 
 ```txt
-https://ckls-cdn.crossknowledge.com/
-https://ckls-cdn.crossknowledge-china.com/
-https://ckls-assets.eu.crossknowledge.com/
-https://ckls-assets.na.crossknowledge.com/
-https://ckls-assets.sa.crossknowledge.com/
-https://ckls-assets.asia.crossknowledge.com/
-https://ckls-cdn-eu.crossknowledge.com/
-https://ckls-api.crossknowledge.com/
-```
-
-#### External medias (cloudfront URL)
-```txt
-https://d3d8qnlcu0b7xk.cloudfront.net
-https://media-cdn2.crossknowledge.com
-```
-
-#### CK-Player URLs (for CrossKnowledge content delivery)
-
-##### For users based in Europe
-```txt
-https://cdn.crossknowledge.com/*
-https://d12yhdsdwe7din.cloudfront.net/* and http(s)://mohivecontents-eu.crossknowledge.com
-```
-
-##### For users based in the US:
-```txt
-https://d2niiguqm1v5wm.cloudfront.net/* and http(s)://ckcontents-na.crossknowledge.com
-https://dmi776hgmgo8n.cloudfront.net/* and http(s)://mohivecontents-na.crossknowledge.com
-```
-
-##### For users based in Asia:
-```txt
+https://ace-static.crossknowledge.com
+https://cdn-cklm-prod.crossknowledge.com
+https://cdn.crossknowledge.com
+https://ckcg.crossknowledge.com
+https://ckconnect-static.crossknowledge.com
+https://ckconnect.crossknowledge.com
 https://ckcontents-jp.crossknowledge.com
-https://mohivecontents-jp.crossknowledge.com
+https://ckcontents-na.crossknowledge.com
+https://ckls-api.crossknowledge.com
+https://ckls-assets.asia.crossknowledge.com (Only for CKLS hosted in Japan)
+https://ckls-assets.eu.crossknowledge.com (Only for CKLS hosted in Europe)
+https://ckls-assets.na.crossknowledge.com (Only for CKLS hosted in USA)
+https://ckls-assets.sa.crossknowledge.com (Only for CKLS hosted in Brazil)
+https://ckls-cdn-eu.crossknowledge.com
+https://ckls-cdn-eu.crossknowledge.com (Only for CKLS hosted in Europe)
+https://ckls-cdn-jp.crossknowledge.com (Only for CKLS hosted in Japan)
+https://ckls-cdn-na.crossknowledge.com (Only for CKLS hosted in USA)
+https://ckls-cdn-sa.crossknowledge.com (Only for CKLS hosted in Brazil)
+https://ckls-cdn.crossknowledge-china.com
+https://ckls-cdn.crossknowledge.com
+https://cours.crossknowledge-player.com
 https://crossknowledge-player.digitallearning.cn
-```
-
-#### CKLM (XKA, Digital Literacy, Leaders...)
-```txt
-https://d12pbbvc3h54xm.cloudfront.net/*
-https://cklm-prod.s3.amazonaws.com/*
-https://cdn-cklm-prod.crossknowledge.com/*
-https://ckcg.crossknowledge.com/*
-```
-
-#### CUSTOMER CONTENT CDN
-```txt
-https://ckls-cdn-eu.crossknowledge.com/*
-https://ckls-cdn-na.crossknowledge.com/*
-https://ckls-cdn-sa.crossknowledge.com/*
-https://ckls-cdn-jp.crossknowledge.com/*
+https://d12pbbvc3h54xm.cloudfront.net
+https://d12yhdsdwe7din.cloudfront.net
+https://d2niiguqm1v5wm.cloudfront.net 
+https://d3d8qnlcu0b7xk.cloudfront.net
+https://dmi776hgmgo8n.cloudfront.net
+https://media-cdn2.crossknowledge.com
+https://mohivecontents-eu.crossknowledge.com
+https://mohivecontents-jp.crossknowledge.com
+https://mohivecontents-na.crossknowledge.com
+https://spa.crossknowledge.com
 ```
 
 ### AWS CloudFront IP Ranges
