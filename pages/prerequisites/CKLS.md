@@ -133,6 +133,7 @@ sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 web interfaces (ports 80 and 443) Could be hitting any IPs within the ranges 78.153.226.128/27 and 78.153.234.128/26
 sftp server : sftp.crossknowledge.com (78.153.226.149)
 sftp server : sftp.eu.crossknowledge.com (78.153.234.131)
+sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 ```
 <br/>
 
