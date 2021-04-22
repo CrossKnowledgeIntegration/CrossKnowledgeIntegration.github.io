@@ -133,7 +133,6 @@ sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 web interfaces (ports 80 and 443) Could be hitting any IPs within the ranges 78.153.226.128/27 and 78.153.234.128/26
 sftp server : sftp.crossknowledge.com (78.153.226.149)
 sftp server : sftp.eu.crossknowledge.com (78.153.234.131)
-sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 ```
 <br/>
 
@@ -253,7 +252,7 @@ Internet Explorer 11, Mozilla Firefox, Google Chrome<br/>
 ## URL of CKLS platform
 ### Supported formats
 
-* `https://customername.(eu,lms,na,sa).crossknowledge.com`, with `http://customername.(eu,lms,na,sa).crossknowledge.com` being redirected to HTTPS (default setting).
+* `https://customername.(eu,lms,na,sa,asia).crossknowledge.com`, with `http://customername.(eu,lms,na,sa,asia).crossknowledge.com` being redirected to HTTPS (default setting).
 
 ### Unsupported formats
-* `https://customername.customerdomain.com` - CrossKnowledge only supports HTTPS protocol with its own urls.
+* `https://customername.customerdomain.com` - CrossKnowledge only supports HTTPS protocol with its own domains.
