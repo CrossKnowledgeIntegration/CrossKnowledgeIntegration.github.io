@@ -9,7 +9,7 @@ permalink: consolidated-gamification-badges-provider.html
 folder: Export
 dynamic_content: true
 columns: [candidateId, candidateGuid, candidateName, candidateFirstname, candidateRefNumber, candidateLogin, candidateEmail, 
-    candidateEntityName, candidateCustomFieldGuid, badgeCode, badge, badgeCategory, badgeDateTime, locale, constantValue]
+    candidateEntityName, candidateCustomFieldGuid, badgeCode, badge, badgeCategory, badgeDateTime, gamificationLocale, constantValue]
 parameters: [dateTimeFormat, entityIds, preferredLocales, badgeCategory, deltaMode, learnersSmartGroups, templates, 
     stripHTML, maxLength]
 ---
@@ -32,7 +32,7 @@ parameters: [dateTimeFormat, entityIds, preferredLocales, badgeCategory, deltaMo
             <badge/>
             <badgeCategory/>
             <badgeDateTime/>
-            <locale/>
+            <gamificationLocale/>
             <constantValue/>
         </columns>
         <parameters>
