@@ -359,6 +359,10 @@ col:
     desc: "Date time when this action occured."
     type: "datetime"
 
+  gamificationLocale:
+    desc: "Code of the current locale."
+    type: "string"
+
   gamificationPoints:
     desc: "The number of points acquired for this action."
     type: "int"
