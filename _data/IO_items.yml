@@ -1366,7 +1366,7 @@ param:
     type: "timeFrameScale"
 
   timeFrameScaleMode:
-    desc: "This parameter is used in addition to `timeFrames` and `timeFramesScale` to determine how the total time spent is estimated. Possible values are `lastActivity` or `timeSpent`"
+    desc: "This parameter is used in addition to `timeFrames` and `timeFramesScale` to determine how the total time spent is estimated. Possible values are `lastActivity`, `lastActivityCumulative`  or `timeSpent`"
     type: "timeFrameScale"
 
   timeGlobalFormat:

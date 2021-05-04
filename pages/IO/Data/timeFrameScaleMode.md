@@ -12,6 +12,7 @@ folder: Data
 
 * `timeSpent` will only report on time the learner has spent learning within the specified time frame.
 * `lastActivity` will report the total time the learner has spent learning if the last access date is within the specified time frame.
+* `lastActivityCumulative` will report the total (sum) time spent by a learner for timeSpentCBT, timeSpentDigital & timespent, ignoring the restriction with the timeFrame.
 
 
 Here is the list of all possible values for `timeFramesScale`:
