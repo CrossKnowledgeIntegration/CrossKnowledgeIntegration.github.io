@@ -10,11 +10,11 @@ folder: prerequisites
 
 ## Compatibility
 
-My Learning application is compatible with the devices:
-* Apple iOS: any device with iOS 11 and above<br>
-From February 1st 2021, My Learning will be supported on any device with iOS 12 and above.
-* Android: any device with Android Nougat 7.0 and above<br>
-From February 1st 2021, My Learning will be supported on any device using Android Oreo 8.0 and above.
+My Learning application is supported on:
+* Apple iOS:<br>
+Any device with iOS 12 and above.
+* Android:<br>
+Any device using Android Oreo 8.0 and above.
 
 Latest mobile application version available on both stores is the only supported version.
 
