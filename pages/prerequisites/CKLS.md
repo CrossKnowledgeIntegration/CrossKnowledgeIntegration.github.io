@@ -172,6 +172,10 @@ https://s3.amazonaws.com/learnositymediaprocessed
 ### AWS CloudFront IP Ranges
 Part of the content is hosted on Amazon Cloud for a better experience around the globe.
 
+### CloudFlare IP Ranges
+CKLS Assets and LR are served by CloudFlare. 
+You can find CLoudFlare IP ranges here: https://www.cloudflare.com/fr-fr/ips/
+
 ```txt
 CLoudFront IPs could be from any of the IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "CLOUDFRONT"
 ```
