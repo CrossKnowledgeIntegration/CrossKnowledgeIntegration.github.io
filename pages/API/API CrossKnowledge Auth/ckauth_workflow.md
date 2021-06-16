@@ -101,7 +101,7 @@ h3{
 	<p>To obtain an authentication token and an access token to the CrossKnowedge Learner API, your application must use the following CKAuth. web-services:
 	
 	<ul>
-		<li>Get Authorization Token :<br/>
+		<li>Get Authorization Token:<br/>
 	
 			<div id="offline_learner_credentials_get" class="panel panel-default">
 
@@ -113,7 +113,7 @@ h3{
 			</div>
 		</li>
 	
-	<li>Get Authentication Token : <br/>
+	<li>Get Authentication Token: <br/>
 
 		<div id="offline_learner_credentials_get" class="panel panel-default">
 
@@ -124,13 +124,13 @@ h3{
 		</div>
 		</div>
 	</li>
-	<li>Get Access Token :<br/>
+	<li>Get Access Token:<br/>
 	
 		<div id="online_learner_mobile_authentication_get" class="panel panel-default">
 
 		<div class="panel-heading">
 
-		<div class="panel-title"><span class="label label-success method">POST</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;<a href="api_web_services_list_and_details.html#learner_mobile_login" target="_blank">API/Learner/Login/</a>&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
+		<div class="panel-title"><span class="label label-success method">POST</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;<a href="api_web_services_list_and_details.html#learner_mobile_login_post" target="_blank">API/Learner/mobileLogin/</a>&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
 		</div>
 		</div>
 	</li>
@@ -142,7 +142,7 @@ h3{
 
 <div class="panel panel-default">
 <div class="panel-heading">
-<div id="learner_authentication_post" class="panel-title"><span class="label label-success method">POST</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/Learner/Login&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
+<div id="learner_authentication_post" class="panel-title"><span class="label label-success method">POST</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/Learner/mobileLogin&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
 </div>
 <div class="panel-body">
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/v1/REST/Learner/mobileLogin.json</i></p>
