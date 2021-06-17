@@ -134,6 +134,10 @@ col:
     desc: "The learner's name (family name/surname)."
     type: "string"
 
+  candidatePassword:
+    desc: "The learner's password (a random password will be generated if a new account is created and no password is provided)."
+    type: "string"
+
   candidatePoints:
     desc: "Total amont of points acquired by the learner."
     type: "int"

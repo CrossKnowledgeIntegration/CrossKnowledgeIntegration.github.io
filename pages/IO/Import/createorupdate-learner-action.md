@@ -11,7 +11,7 @@ dynamic_content: true
 show_mandatory_column: true
 columns: [candidateName, candidateFirstname, candidateLogin, managerLogin, managerRefNumber, candidateEmail, entityGuid, 
     entityId, candidateRefNumber, custom, presentation, candidateValidity, candidateLanguages, candidateTimeZone, 
-    entityName, ignoredColumn, enabledFrom, enabledUntil]
+    entityName, ignoredColumn, enabledFrom, enabledUntil, candidatePassword]
 parameters: [defaultEntityId, defaultLangCode, traineeSearchField, fullAccess, enableAllLearners, disableImportFlag]
 ---
 
