@@ -67,6 +67,13 @@ As the contents are played on our Learning Suite, you need the Learning Suite re
 The following media extensions should be authorised.<br/>
 `.FLV, .mp3, .mp4, .srt, .woff, .vtt, .xhtml`
 
+### SFTP access
+Customer should provide his public key to use a SFTP account.
+SSH keys should follow the following rules:
+- Use 4096 bits;
+- Use strong password;
+- Should be renewed once a year on customer request.
+
 ### Domain white-listing
 The following domain names should be whitelisted by customers and their partners.
 ```txt
