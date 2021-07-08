@@ -68,10 +68,10 @@ The following media extensions should be authorised.<br/>
 `.FLV, .mp3, .mp4, .srt, .woff, .vtt, .xhtml`
 
 ### SFTP access
-Customer should provide his public key to use a SFTP account.
+Customers should provide CrossKnowledge with a valid public key for access to be granted on CrossKnowledge SFTP servers.
+
 SSH keys should follow the following rules:
 - Use 4096 bits;
-- Use strong password;
 - Should be renewed once a year on customer request.
 
 ### Domain white-listing
