@@ -237,9 +237,10 @@ web interfaces (ports 80 and 443) : Could be hitting any of the eu-west-1 IP ran
 ```
 
 ### CK Flow (Nifi) IP addresses
-
+```txt
 Production  : 18.197.1.205/32 ; 18.196.218.103/32 ; 35.157.172.172/32
 Non production : 54.77.181.243/32 ; 63.35.39.89/32 ; 63.32.16.200/32
+```
 
 ## Email servers requirements
 
