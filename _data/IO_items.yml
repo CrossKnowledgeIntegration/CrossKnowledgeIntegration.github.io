@@ -160,7 +160,7 @@ col:
     type: "string(50)"
 
   candidateValidity:
-    desc: "The status of the learner's account (active/disabled)."
+    desc: "The status of the learner's account (active/disabled). This parameter takes priority over `enabledFrom` and `enabledUntil`, but can be overriden by `enableAllLearners`"
     type: "candidateValidity"
 
   catalogVisibility:
@@ -1214,7 +1214,7 @@ param:
     type: "enum(hh:mm:ss, minutes, seconds)"
 
   enableAllLearners:
-    desc: "If set to `yes`, this will automatically force activated all the learners account updated by this import. This default value can be overriden by using the `candidateValidity` column for each learner."
+    desc: "If set to `yes`, this will automatically force activated all the learners account updated by this import, and takes priority over `candidateValidity`."
     type: "yesNoElement"
 
   entityIds:
