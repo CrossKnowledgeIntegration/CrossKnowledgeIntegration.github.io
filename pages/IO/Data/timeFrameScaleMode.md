@@ -25,7 +25,7 @@ Here is the list of all possible values for `timeFramesScale`:
 
 {% include important.html content="As this parameter is based on the learner's activity, it should not be used together with the `withoutLaunchTime` option. Using both at the same time will prevent from retrieving the data without activity (as they will be excluded by the `timeFrames` activity filter)." %}
 
-{% include warning.html content="The `timeFrameScaleMode` parameters `less_than_n_full_months` and `less_than_n_full_years` work differently.<br/>
+{% include warning.html content="The `timeFrameScaleMode` parameters `less_than_n_full_months` and `less_than_n_full_years` work differently.<br/><br/>
 For a `timeFrames` with a value N:<br/>
 - `less_than_n_full_months` will return data for N full months + the current month.<br/>
 - `less_than_n_full_years` will return data for N last years, including the current year.<br/>
