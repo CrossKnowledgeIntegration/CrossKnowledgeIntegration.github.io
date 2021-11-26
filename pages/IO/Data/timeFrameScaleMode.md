@@ -25,6 +25,14 @@ Here is the list of all possible values for `timeFramesScale`:
 
 {% include important.html content="As this parameter is based on the learner's activity, it should not be used together with the `withoutLaunchTime` option. Using both at the same time will prevent from retrieving the data without activity (as they will be excluded by the `timeFrames` activity filter)." %}
 
+{% include warning.html content="The `timeFrameScaleMode` parameters `less_than_n_full_months` and `less_than_n_full_years` work differently.<br/>
+For a `timeFrames` with a value N:<br/>
+* `less_than_n_full_months` will return data for N full months + the current month. 
+* `less_than_n_full_years` will return data for N last years, including the current year.
+<br/>
+For exemple, if `timeFrames` = 3, and the extract happens on February 24th 2021:<br/>
+* `less_than_n_full_months` will return all data for  November 2020, December 2020, January 2021, and data only from February 2021, 1st to 24th
+* `less_than_n_full_years` will return all data for 2019, 2020, and for 2021, only data from January 1st to February 24th." %}
 
 {% include callout.html content="**Example** when used for [Tracking provider](/tracking-provider.html)<br/><br/>
 1. Hugo watched C1 in T1 on January 2<sup>nd</sup> 2021, spent 50 sec and has status = incomplete.<br/>
@@ -51,4 +59,6 @@ If `timeSpent` mode is used, the data will show `Hugo; T1; C1; 350 sec; 100%; Co
 	<timeFrameScaleMode>timeSpent</timeFrameScaleMode>
 </parameters>
 ```
+
+
 
