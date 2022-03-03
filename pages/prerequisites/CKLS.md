@@ -113,6 +113,8 @@ https://mohivecontents-eu.crossknowledge.com
 https://mohivecontents-jp.crossknowledge.com
 https://mohivecontents-na.crossknowledge.com
 https://spa.crossknowledge.com
+https://api.crossknowledge.com
+https://api.crossknowledge-china.com
 https://app-cdn.crossknowledge.com
 
 Learnosity specific URLs
