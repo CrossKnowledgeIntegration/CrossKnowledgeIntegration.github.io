@@ -328,7 +328,8 @@ Microsoft Edge (latest version), Mozilla Firefox (latest version), Google Chrome
 ## URL of CKLS platform
 ### Supported formats
 
-* `https://customername.(eu,lms,na,sa,asia).crossknowledge.com`, with `http://customername.(eu,lms,na,sa,asia).crossknowledge.com` being redirected to HTTPS (default setting).
+* https://customername.(eu,lms,na,sa,asia).crossknowledge.com, with http://customername.(eu,lms,na,sa,asia).crossknowledge.com being redirected to HTTPS (default setting).
 
-### Unsupported formats
-* `https://customername.customerdomain.com` - CrossKnowledge only supports HTTPS protocol with its own domains.
+* CrossKnowledge only supports HTTPS protocol with its own domains.
+
+* Customers can manage their own URL (https://customername.customerdomain.com) using 301 or 302 HTTP redirects to the instance CrossKnowledge domain (https://customername.(eu,lms,na,sa,asia).crossknowledge.com).
