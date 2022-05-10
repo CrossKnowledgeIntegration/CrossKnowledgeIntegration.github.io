@@ -20,7 +20,7 @@ Latest mobile application version available on both stores is the only supported
 
 ## Authentication
 
-Authentication is made with email and activation code.
+Authentication uses email and activation code.
 
 *\* Authentication with SAML certificates is not supported by the application.*
 
