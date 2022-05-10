@@ -18,6 +18,12 @@ Any device using Android Oreo 8.0 and above.
 
 Latest mobile application version available on both stores is the only supported version.
 
+## Authentication
+
+Authentication is made with email and activation code.
+
+*\* Authentication with SAML certificates is not supported by the application.*
+
 ## Content
 
 In order to see all CrossKnowledge content on your mobile device, you need to have the cloud option activated. This option will make sure that our CrossKnowledge content are hosted on our cloud solutions.
