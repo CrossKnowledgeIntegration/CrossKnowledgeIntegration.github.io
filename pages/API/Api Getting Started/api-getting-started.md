@@ -88,9 +88,9 @@ The CrossKnowledge API includes :
                      </span>
                  </div>
                  <div class="panel-body">
-                     <h4 id="ckhub">Data Exchange Interfaces</h4>
+                     <h4>Data Exchange Interfaces</h4>
                      <p>Integrate systems using flat files data exchange.</p>
-                     <a href="#ckhub" class="btn btn-primary">Learn More</a>
+                     <button type="button" class="btn btn-primary">Learn More</button>
                  </div>
              </div>
          </div>
