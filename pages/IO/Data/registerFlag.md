@@ -7,7 +7,7 @@ permalink: /data-registerflag.html
 folder: Data
 ---
 
-{{site.data.IO_items.columns.registerFlag.desc}}
+{{site.data.IO_items.col.registerFlag.desc}}
 
 The default behaviour (when this column is not specified in the import data) is to register the learner to the session.
 
