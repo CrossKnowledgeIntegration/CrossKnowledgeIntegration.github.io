@@ -37,8 +37,9 @@ CrossKnowledge creates their SP metadata and share that with the client’s IT.
 The client’s IT imports that metadata adding it as a valid Service Provider description to the Identity Provider service.
 Once setup on the IdP side, the IdP exports and shared their metadata to CrossKnowledge, which adds the IdP metadata to its SP, completing the handshake between those systems.
 
-For setting up an AD FS 2.0 IdP service, please follow this [link](https://developers.crossknowledge.com/adfs.html).
-
+For setting up  
+ - via Azure IdP service, please follow this [link](https://docs.microsoft.com/en-gb/azure/active-directory/saas-apps/crossknowledge-learning-suite-tutorial).
+ - via OKTA IdP service, please follow this [link](https://saml-doc.okta.com/SAML_Docs/How-to-Configure-SAML-2.0-for-CrossKnowledge-Learning-Suite.html).
 For other systems, please consult their own SAML IdP setup documentation.
 
 Required informations | Description
