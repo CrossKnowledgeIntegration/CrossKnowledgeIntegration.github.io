@@ -19,12 +19,6 @@ entries:
     - title: CK Connect Prerequisites
       url: /CKConnect-prerequisites
       output: web
-    - title: TeamSHIFT Prerequisites
-      url: /TeamShift-prerequisites
-      output: web
-    - title: Mohive Prerequisites
-      url: /Mohive-prerequisites
-      output: web
     - title: CrossKnowledge contents
       url: /content-information
       output: web
