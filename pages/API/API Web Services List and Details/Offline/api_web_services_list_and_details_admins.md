@@ -3721,9 +3721,9 @@ Cache-Control: no-cache
 
 </div>
 <!--GET API/ADMIN/v1/REST/Tracking/{tracking_guid}/-->
-<div id="offline_tracking_get" class="panel panel-default">
+<div id="offline_tracking_get" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Tracking/{tracking_guid}/
 &nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
@@ -3731,7 +3731,12 @@ Cache-Control: no-cache
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#tag/Trackings-public">https://docs.crossknowledge.com/api/public/#tag/Trackings-public</a></p>
 <p markdown="span">This web-service allows to read the metadatas of a given tracking.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Tracking/{tracking_guid}/</i></p>
@@ -3987,9 +3992,9 @@ Cache-Control: no-cache
 </div>
 
 <!--GET API/ADMIN/v1/REST/Training/-->
-<div id="offline_training_list" class="panel panel-default">
+<div id="offline_training_list" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Training/
 &nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
@@ -3997,7 +4002,12 @@ Cache-Control: no-cache
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/getTrainingCourseV1">https://docs.crossknowledge.com/api/public/#operation/getTrainingCourseV1</a></p>
 <p markdown="span" >This web-service allows to get the list of existings trainings within the CrossKnowledge Learning Suite database.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Training/</i></p>
@@ -4722,9 +4732,9 @@ Cache-Control: no-cache
 
 
 <!-- POST API/ADMIN/v1/REST/Training/-->
-<div id="offline_training_post" class="panel panel-default">
+<div id="offline_training_post" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-success method">POST</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Training/
 &nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
@@ -4732,7 +4742,12 @@ Cache-Control: no-cache
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/postTrainingCourseV1">https://docs.crossknowledge.com/api/public/#operation/postTrainingCourseV1</a></p>
 <p markdown="span">This web-service allows to create a new training.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Training/</i></p>
@@ -5399,9 +5414,9 @@ type=learningChannel&title=Tofu+Fighter!&status=P&cost=300%24&language=en-GB&dur
 
 
 <!--PUT API/ADMIN/v1/REST/Training/{training_guid}/-->
-<div id="offline_training_put" class="panel panel-default">
+<div id="offline_training_put" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-warning method">PUT</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Training/{training_guid}/
 &nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
@@ -5409,7 +5424,12 @@ type=learningChannel&title=Tofu+Fighter!&status=P&cost=300%24&language=en-GB&dur
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/putTrainingCourseV1">https://docs.crossknowledge.com/api/public/#operation/putTrainingCourseV1</a></p>
 <p markdown="span">This web-service allows to update an existing training course.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Training/{training_guid}/</i></p>
@@ -6078,9 +6098,9 @@ translations%5Ben-US%5D%5Btitle%5D=Plant+based+fighter!
 
 
 <!--GET API/ADMIN/v1/REST/Training/{training_guid}/Session/-->
-<div id="offline_session_list_get" class="panel panel-default">
+<div id="offline_session_list_get" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Training/{training_guid}/Session/
 &nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
@@ -6088,7 +6108,12 @@ translations%5Ben-US%5D%5Btitle%5D=Plant+based+fighter!
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/getTrainingSessionV1">https://docs.crossknowledge.com/api/public/#operation/getTrainingSessionV1</a></p>
 <p markdown="span">This web-service allows to read the sessions of a given training course existing within the CrossKnowledge Learning Suite database.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Training/{training_guid}/Session/</i></p>
@@ -6316,9 +6341,9 @@ Cache-Control: no-cache
 </div>
 
 <!--POST API/ADMIN/v1/REST/Training/{training_guid}/Session/-->
-<div id="offline_session_post" class="panel panel-default">
+<div id="offline_session_post" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-success method">POST</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Training/{training_guid}/Session/
 &nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
@@ -6326,7 +6351,12 @@ Cache-Control: no-cache
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/postTrainingSessionV1">https://docs.crossknowledge.com/api/public/#operation/postTrainingSessionV1</a></p>
 <p markdown="span">This web-service allows to create a new training session to a given training course.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Training/{training_guid}/Session/</i></p>
@@ -6673,9 +6703,9 @@ title=Tofu+Fighter!&start=2017-09-27&end=2018-09-27
 
 
 <!--GET API/ADMIN/v1/REST/Training/{training_guid}/Content/-->
-<div id="offline_training_contents_get" class="panel panel-default">
+<div id="offline_training_contents_get" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Training/{training_guid}/Content/
 &nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
@@ -6683,7 +6713,12 @@ title=Tofu+Fighter!&start=2017-09-27&end=2018-09-27
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/getTrainingCourseContentV1">https://docs.crossknowledge.com/api/public/#operation/getTrainingCourseContentV1</a></p>
 <p markdown="span" >This web-service allows to get the learning objects associated to a given training course.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Training/{training_guid}/Content/</i></p>
@@ -7155,16 +7190,21 @@ Cache-Control: no-cache
 
 
 <!--PUT API/ADMIN/v1/REST/Session/{session_guid}/-->
-<div id="offline_session_put" class="panel panel-default">
+<div id="offline_session_put" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-warning method">PUT</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Session/{session_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
 </div>
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/putSessionV1">https://docs.crossknowledge.com/api/public/#operation/putSessionV1</a></p>
 <p markdown="span">This web-service allows to update a given training session information.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Session/{session_guid}/</i></p>
@@ -7519,16 +7559,21 @@ title=Tofu+Fighter!&start=2017-09-27&end=2018-10-31
 
 
 <!--POST API/ADMIN/v1/REST/Session/{session_guid}/Register/{learner_guid}/-->
-<div id="offline_training_session_register_learner_post" class="panel panel-default">
+<div id="offline_training_session_register_learner_post" class="panel panel-default pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-success method">POST</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Session/{session_guid}/Register/{learner_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
 </div>
 
 <div class="panel-body">
 
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/postSessionRegistrationV1">https://docs.crossknowledge.com/api/public/#operation/postSessionRegistrationV1</a></p>
 <p markdown="span">This web-service allows to register a learner to a give training session.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Session/{session_guid}/Register/{learner_guid}/</i></p>
@@ -8061,16 +8106,21 @@ Cache-Control: no-cache
 
 
 <!--GET API/ADMIN/v1/REST/Registration/{registration_guid}/-->
-<div id="offline_registration_get" class="panel panel-default">
+<div id="offline_registration_get" class="panel panel-default  pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading  pt-5">
 
 <div class="panel-title"><span class="label label-info method">GET</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Registration/{registration_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
 </div>
 
 <div class="panel-body">
 
+<div class="alert alert-danger " role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
+
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/getRegistration">https://docs.crossknowledge.com/api/public/#operation/getRegistration</a></p>
 <p markdown="span">This web-service allows to get a given registration information</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Registration/{registration_guid}/</i></p>
@@ -8382,16 +8432,21 @@ Cache-Control: no-cache
 
 
 <!--DELETE API/ADMIN/v1/REST/Registration/{registration_guid}/-->
-<div id="offline_registration_delete" class="panel panel-default">
+<div id="offline_registration_delete" class="panel panel-default  pt-5">
 
-<div class="panel-heading">
+<div class="panel-heading pt-5">
 
 <div class="panel-title"><span class="label label-danger method">DELETE</span>&nbsp;<i style="cursor: pointer" data-toggle="tooltip" data-original-title="HTTPS" class="fa fa-lock"></i>&nbsp;API/ADMIN/v1/REST/Registration/{registration_guid}/&nbsp;<span class="label label-warning" style="color: #77777a; background-color: #fff">version 1.0</span></div>
 </div>
 
-<div class="panel-body">
+<div class="panel-body ">
+
+<div class="alert alert-danger" role="alert">
+    <i class="fa fa-info-circle"></i> <b>Deprecated</b>
+</div>
 
 <p style="font-size: 15px"><strong>Description :</strong></p>
+<p>For new implementations, please refer to: <a href="https://docs.crossknowledge.com/api/public/#operation/deleteRegistration">https://docs.crossknowledge.com/api/public/#operation/deleteRegistration</a></p>
 <p markdown="span">This web-service allows to delete a given registration object.</p>
 
 <p style="font-size: 15px"><strong>Endpoint :</strong> <i>API/ADMIN/v1/REST/Registration/{registration_guid}/</i></p>
@@ -8411,7 +8466,7 @@ API-KEY<br>
 </pre>
 {{site.data.alerts.end}}
 
-{% include callout.html content="<span class='fa-stack fa-lg'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-key fa-stack-1x fa-inverse'></i></span>&nbsp;Get your [CrossKnowledge Learning Suite API key now](http://page.crossknowledge.com/contact-EN.html)." type="info" %}
+{% include callout.html content="<span class='fa-stack fa-lg'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-key fa-stack-1x fa-inverse'></i></span>&nbsp;**Get** your [CrossKnowledge Learning Suite API key now](http://page.crossknowledge.com/contact-EN.html)." type="info" %}
 
 <table>
 <colgroup>
