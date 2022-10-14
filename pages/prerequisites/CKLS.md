@@ -37,14 +37,14 @@ In order to ensure a good user experience for Blendedˣ Embedded Content Activit
 
 CrossKnowledge Learning Suite is compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the Learning Suite.
 
-CrossKnowledge Learning Suite is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the Learning Suite. 
+CrossKnowledge Learning Suite is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the Learning Suite.
 
 Please note that SCORM and AICC connectors are not optimized for mobile usage
 
 ### CrossKnowledge content additional requirements
 
 As the contents are played on our Learning Suite, you need the Learning Suite requirements listed above, and the following ones:
- 	
+
 <table width="100%">
     <tbody>
         <tr>
@@ -83,12 +83,9 @@ If wildcards (*) are not allowed, authorise the following sub-domains:<br/>
 ```txt
 https://ace-static.crossknowledge.com
 https://cdn-cklm-prod.crossknowledge.com
-https://cdn.crossknowledge.com
 https://ckcg.crossknowledge.com
 https://ckconnect-static.crossknowledge.com
 https://ckconnect.crossknowledge.com
-https://ckcontents-jp.crossknowledge.com
-https://ckcontents-na.crossknowledge.com
 https://ckls-api.crossknowledge.com
 https://ckls-assets.asia.crossknowledge.com (Only for CKLS hosted in Japan)
 https://ckls-assets.eu.crossknowledge.com (Only for CKLS hosted in Europe)
@@ -101,17 +98,9 @@ https://ckls-cdn-na.crossknowledge.com (Only for CKLS hosted in USA)
 https://ckls-cdn-sa.crossknowledge.com (Only for CKLS hosted in Brazil)
 https://ckls-cdn.crossknowledge-china.com
 https://ckls-cdn.crossknowledge.com
-https://cours.crossknowledge-player.com
-https://crossknowledge-player.digitallearning.cn
 https://d12pbbvc3h54xm.cloudfront.net
-https://d12yhdsdwe7din.cloudfront.net
-https://d2niiguqm1v5wm.cloudfront.net 
 https://d3d8qnlcu0b7xk.cloudfront.net
-https://dmi776hgmgo8n.cloudfront.net
 https://media-cdn2.crossknowledge.com
-https://mohivecontents-eu.crossknowledge.com
-https://mohivecontents-jp.crossknowledge.com
-https://mohivecontents-na.crossknowledge.com
 https://spa.crossknowledge.com
 https://api.crossknowledge.com
 https://api.crossknowledge-china.com
@@ -185,12 +174,12 @@ CLoudFront IPs could be from any of the IP ranges listed in https://ip-ranges.am
 <br/>
 
 ### CloudFlare IP Ranges
-CKLS Assets and LR are served by CloudFlare. 
+CKLS Assets and LR are served by CloudFlare.
 Please follow this link to find [CloudFlare IP ranges](https://www.cloudflare.com/fr-fr/ips/)
 
 ### CKLS portal IP addresses
 
-#### Europe CKLS created since September 2017 https://*.eu.crossknowledge.com: 
+#### Europe CKLS created since September 2017 https://*.eu.crossknowledge.com:
 ```txt
 web interfaces (ports 80 and 443) : Could be hitting any of the eu-central-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
 sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
@@ -244,7 +233,7 @@ Non production : 54.77.181.243/32 ; 63.35.39.89/32 ; 63.32.16.200/32
 
 ## Email servers requirements
 
-@crossknowledge.com domain must be whitelisted as a trusted sender. 
+@crossknowledge.com domain must be whitelisted as a trusted sender.
 
 ### Supported email configuration scenario :
 
@@ -290,7 +279,7 @@ At the time of this writing, these are the IP ranges used by AWS SES:
 ```txt
 199.255.192.0/22 199.127.232.0/22 54.240.0.0/18 69.169.224.0/20
 ```
-However these ranges may change, so to get an up to date list, please run the following command: 
+However these ranges may change, so to get an up to date list, please run the following command:
 From a Linux or Mac OS system:
 ```txt
 $ dig TXT amazonses.com +short| grep 'v=spf1'
@@ -321,7 +310,7 @@ smtp01.crossknowledge.com
 
 ### Sharepoint 2010
 Microsoft Edge (latest version), Mozilla Firefox (latest version), Google Chrome (latest version)
-### Sharepoint 2013 
+### Sharepoint 2013
 Microsoft Edge (latest version), Mozilla Firefox (latest version), Google Chrome (latest version)<br/>
 
 {% include note.html content="This plugin is not supported on the latest version of Office 365 (SharePoint 2016)." %}
