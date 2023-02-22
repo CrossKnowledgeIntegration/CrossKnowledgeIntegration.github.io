@@ -75,7 +75,7 @@ SSH keys should follow the following rules:
 ### Domain white-listing
 The following domain names should be whitelisted by customers and their partners.
 ```txt
-https://*.crossknowledge.com, https://*.crossknowledge-player.com, https://*.crossknowledge-china.com, https://*.learnosity.com​, https://s3.amazonaws.com/assets.learnosity.com, https://s3.amazonaws.com/learnositymediaprocessed ​
+https://*.crossknowledge.com, https://*.crossknowledge-china.com, https://*.learnosity.com​, https://s3.amazonaws.com/assets.learnosity.com, https://s3.amazonaws.com/learnositymediaprocessed ​
 ```
 
 If wildcards (*) are not allowed, authorise the following sub-domains:<br/>
@@ -91,11 +91,6 @@ https://ckls-assets.asia.crossknowledge.com (Only for CKLS hosted in Japan)
 https://ckls-assets.eu.crossknowledge.com (Only for CKLS hosted in Europe)
 https://ckls-assets.na.crossknowledge.com (Only for CKLS hosted in USA)
 https://ckls-assets.sa.crossknowledge.com (Only for CKLS hosted in Brazil)
-https://ckls-cdn-eu.crossknowledge.com
-https://ckls-cdn-eu.crossknowledge.com (Only for CKLS hosted in Europe)
-https://ckls-cdn-jp.crossknowledge.com (Only for CKLS hosted in Japan)
-https://ckls-cdn-na.crossknowledge.com (Only for CKLS hosted in USA)
-https://ckls-cdn-sa.crossknowledge.com (Only for CKLS hosted in Brazil)
 https://ckls-cdn.crossknowledge-china.com
 https://ckls-cdn.crossknowledge.com
 https://d12pbbvc3h54xm.cloudfront.net
@@ -165,23 +160,14 @@ https://s3.amazonaws.com/assets.learnosity.com
 https://s3.amazonaws.com/learnositymediaprocessed
 ```
 
-### AWS CloudFront IP Ranges
-Part of the content is hosted on Amazon Cloud for a better experience around the globe.
-
-```txt
-CLoudFront IPs could be from any of the IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "CLOUDFRONT"
-```
-<br/>
-
 ### CloudFlare IP Ranges
-CKLS Assets and LR are served by CloudFlare.
+All requests to CKLS URL are going through CloudFlare Network.
 Please follow this link to find [CloudFlare IP ranges](https://www.cloudflare.com/fr-fr/ips/)
 
 ### CKLS portal IP addresses
 
 #### Europe CKLS created since September 2017 https://*.eu.crossknowledge.com:
 ```txt
-web interfaces (ports 80 and 443) : Could be hitting any of the eu-central-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
 sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 ```
 
@@ -197,7 +183,6 @@ sftp server : sftp.eu.crossknowledge.com (78.153.234.131)
 
 #### USA https://*.na.crossknowledge.com:
 ```txt
-web interfaces (ports 80 and 443) : Could be hitting any of the us-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
 sftp server : sftp.na.crossknowledge.com (54.221.219.193)
 ```
 
@@ -205,7 +190,6 @@ sftp server : sftp.na.crossknowledge.com (54.221.219.193)
 
 #### South America: https://*.sa.crossknowledge.com
 ```txt
-web interfaces (ports 80 and 443) : Could be hitting any of the sa-east-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
 sftp server : sftp.sa.crossknowledge.com (54.232.80.112)
 ```
 
@@ -213,7 +197,6 @@ sftp server : sftp.sa.crossknowledge.com (54.232.80.112)
 
 #### Asia: https://*.asia.crossknowledge.com
 ```txt
-web interfaces (ports 80 and 443) : Could be hitting any of the ap-northeast-1 IP ranges listed in https://ip-ranges.amazonaws.com/ip-ranges.json Where  "service" = "EC2"
 sftp server : sftp.asia.crossknowledge.com (54.65.104.30)
 ```
 
