@@ -9,6 +9,12 @@ permalink: registerlearner-action.html
 folder: Import
 dynamic_content: true
 show_mandatory_column: true
+important_note: >
+    In the case where you are creating registrations (= not updating existing ones), but you haven't specified the column 
+    <code class="highlighter-rouge">sessionTitle</code> in your configuration and your import data, then the task will automatically 
+    update the title of the session linked to each new registration to "Session for %learner_fullname%". The only way to avoid this is 
+    to make sure to specify the `sessionTitle` values for all new registrations, even if it only means copying the name 
+    of the existing session for each line of your data file.
 columns: [candidateLogin, candidateRefNumber, candidateEmail, trainingPathCode, trainingId, sessionTitle, sessionId, 
     sessionStartDate, sessionEndDate, registrationGuid, registerFlag, ignoredColumn, registrationDate]
 parameters: [traineeSearchField, trainingSearchField, sessionSearchField, dontUpdateExistingSessions, fullAccess, 
