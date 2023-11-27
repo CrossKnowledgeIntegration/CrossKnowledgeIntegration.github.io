@@ -14,8 +14,8 @@ CrossKnowledge Learning Suite is a web-based application needing the following e
 
 Screen resolution|1024*768
 Sound card|Recommended (speakers/headphones are required for most content)
-RAM|2 GB (4GB preferred, depending on the OS)
-Operating system|Microsoft Windows 8.1 (Desktop mode only) or 10, Apple macOS (10.13+)
+RAM|4GB+
+Operating system|Microsoft Windows 10+, latest macOS version of Apple
 Web browser|Microsoft Edge (latest version), Apple Safari (latest version), Google Chrome (latest version), Mozilla Firefox (latest version)
 Email clients|Standard email readers are supported to deliver CK standard emails. Email content is HTML.
 Popup blocker|Disabled
@@ -30,30 +30,26 @@ These technical requirements may be modified according to technical developments
 In addition to those, specific requirements apply to:
 - Blendedˣ Embedded Web Resource Activity and Embedded BI tool in Analyze workspace: these features are used to integrate a 3rd party content from the web. CrossKnowledge can not guaranty the compatibility of the integrated content
 
-In order to ensure a good user experience for Blendedˣ Embedded Content Activity, please ensure that SCORM contents are built to be responsive. For example, no Flash should be included in the SCORM content.
+In order to ensure a good user experience for Blendedˣ Embedded Content Activity, please ensure that SCORM content are built to be responsive.
 
 
 ### Tablet compatibility
 
-CrossKnowledge Learning Suite is compatible with iPad (2, 3, 4 and mini) - additional requirements may be needed for the content hosted on the Learning Suite.
+CrossKnowledge Learning Suite is compatible with iPad (lastest version) - additional requirements may be needed for the content hosted on the Learning Suite.
 
 CrossKnowledge Learning Suite is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the Learning Suite.
 
-Please note that SCORM and AICC connectors are not optimized for mobile usage
+Please note that SCORM and AICC connectors are not optimized for mobile usage.
 
 ### CrossKnowledge content additional requirements
 
-As the contents are played on our Learning Suite, you need the Learning Suite requirements listed above, and the following ones:
+As the content are played on our Learning Suite, you need the Learning Suite requirements listed above, and the following ones:
 
 <table width="100%">
     <tbody>
         <tr>
             <td width="45%">PDF plugin</td>
             <td width="55%">Adobe Acrobat Reader DC (latest version)</td>
-        </tr>
-        <tr>
-            <td width="45%">Adobe Flash Player (<a href="https://blog.adobe.com/en/publish/2017/07/25/adobe-flash-update.html" target="_blank"><b>until December 2020</b></a>, CrossKnowledge Sessions)</td>
-            <td width="55%">latest version</td>
         </tr>
     </tbody>
 </table>
@@ -63,7 +59,7 @@ As the contents are played on our Learning Suite, you need the Learning Suite re
 
 ### Media extensions
 The following media extensions should be authorised.<br/>
-`.FLV, .mp3, .mp4, .srt, .woff, .vtt, .xhtml`
+`.mp3, .mp4, .srt, .woff, .vtt, .xhtml`
 
 ### SFTP access
 Customers should provide CrossKnowledge with a valid public key for access to be granted on CrossKnowledge SFTP servers.
