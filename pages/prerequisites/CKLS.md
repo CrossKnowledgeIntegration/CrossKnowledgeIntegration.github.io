@@ -35,7 +35,7 @@ In order to ensure a good user experience for Blendedˣ Embedded Content Activit
 
 ### Tablet compatibility
 
-CrossKnowledge Learning Suite is compatible with iPad (lastest version) - additional requirements may be needed for the content hosted on the Learning Suite.
+CrossKnowledge Learning Suite is compatible with iPad (latest version) - additional requirements may be needed for the content hosted on the Learning Suite.
 
 CrossKnowledge Learning Suite is compatible with Android tablets (Chrome browser) - additional requirements may be needed for the content hosted on the Learning Suite.
 
@@ -157,7 +157,7 @@ https://s3.amazonaws.com/learnositymediaprocessed
 ```
 
 ### CloudFlare IP Ranges
-All requests to CKLS URL are going through CloudFlare Network.
+All requests to CKLS URLs are going through CloudFlare Network.
 Please follow this link to find [CloudFlare IP ranges](https://www.cloudflare.com/fr-fr/ips/)
 
 ### CKLS portal IP addresses
