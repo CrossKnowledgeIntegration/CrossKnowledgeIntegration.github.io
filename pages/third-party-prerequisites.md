@@ -109,7 +109,7 @@ When creating a Scorm 1.2 content, you will have the choice to save a quizz scor
 - 0% => Not attempted
 - 50% => Incomplete
 - 100% => Completed
-If you want to convert the score to a progress in order to have a precise progress bar for the learner (13%, 22%, 75% as CrossKnowledge contents), CrossKnowledge has developed a feature to permit it in Training on Demand.
+If you want to convert the score to a progress in order to have a precise progress bar for the learner (13%, 22%, 75% as CrossKnowledge content), CrossKnowledge has developed a feature to permit it in Training on Demand.
 
 In Scorm 2004, the progress notion is introduced in addition to the score one. A content created on this format will be able to sent back score and progress through the cmi.progress_measure field for the LMS hosting it.
 

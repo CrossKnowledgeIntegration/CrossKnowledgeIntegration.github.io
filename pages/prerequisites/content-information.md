@@ -1,5 +1,5 @@
 ---
-title: CrossKnowledge contents information
+title: CrossKnowledge content information
 keywords: pre-requisites, prerequisites, requirements, content
 last_updated: 9 November, 2017
 sidebar: home_sidebar
@@ -18,7 +18,7 @@ Business Reviews | 248 KB | 83 KB | 2424 KB | N/A | N/A
 Videocasts | 11 MB | 3 MB | 36 MB | 5mn | 400kB/s (peak)
 Sessions | 14 MB | 1 289 KB | 84 MB | from 30 to 45 mn | 500kB/s (peak ), 40kB/s (average)
 
-### Mobile for CrossKnowledge contents
+### Mobile for CrossKnowledge content
 
 The following content compatible with iPad (latest version) - additional requirements may be needed for the content hosted on the Learning Suite.
 
