@@ -217,7 +217,9 @@ Non production : 54.77.181.243/32 ; 63.35.39.89/32 ; 63.32.16.200/32
 ## Requirements for use
 ### Unique email
 Starting 2024, all users (administrators and learners), will need to have a unique email address to access upcoming features such as Program Builder.
+
 Ensuring that each user has a unique email is a standard requirement for Software as a Service (SaaS) platforms, including CKLS.
+
 This update is crucial for maintaining the security, integrity, and personalized experience.
 
 ## Email servers requirements
