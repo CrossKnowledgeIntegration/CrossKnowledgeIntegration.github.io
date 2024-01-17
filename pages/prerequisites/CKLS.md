@@ -1,7 +1,7 @@
 ---
 title: CKLS Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
-last_updated: 07 April, 2021
+last_updated: 17 January, 2024
 sidebar: home_sidebar
 permalink: CKLS-prerequisites
 folder: prerequisites
@@ -91,10 +91,12 @@ https://ckls-assets.asia.crossknowledge.com (Only for CKLS hosted in Japan)
 https://ckls-assets.eu.crossknowledge.com (Only for CKLS hosted in Europe)
 https://ckls-assets.na.crossknowledge.com (Only for CKLS hosted in USA)
 https://ckls-assets.sa.crossknowledge.com (Only for CKLS hosted in Brazil)
+https://ckls-assets.ckls.crossknowledge-china.com (Only for China dedicated CKLS)
 https://ckls-cdn.crossknowledge-china.com
 https://ckls-cdn.crossknowledge.com
 https://d12pbbvc3h54xm.cloudfront.net
 https://d3d8qnlcu0b7xk.cloudfront.net
+https://media.crossknowledge.com
 https://media-cdn2.crossknowledge.com
 https://spa.crossknowledge.com
 https://api.crossknowledge.com
@@ -166,19 +168,11 @@ Please follow this link to find [CloudFlare IP ranges](https://www.cloudflare.co
 
 ### CKLS portal IP addresses
 
-#### Europe CKLS created since September 2017 https://*.eu.crossknowledge.com:
+#### Europe CKLS https://*.eu.crossknowledge.com:
 ```txt
 sftp server : sftp-aws.eu.crossknowledge.com (52.58.183.197)
 ```
 
-<br/>
-
-#### Europe CKLS created before September 2017 https://*.eu.crossknowledge.com or https://*.lms.crossknowledge.com:
-```txt
-web interfaces (ports 80 and 443) Could be hitting any IPs within the ranges 78.153.226.128/27 and 78.153.234.128/26
-sftp server : sftp.crossknowledge.com (78.153.226.149)
-sftp server : sftp.eu.crossknowledge.com (78.153.234.131)
-```
 <br/>
 
 #### USA https://*.na.crossknowledge.com:
@@ -210,8 +204,7 @@ web interfaces (ports 80 and 443) : Could be hitting any of the eu-west-1 IP ran
 
 ### CK Flow (Nifi) IP addresses
 ```txt
-Production  : 18.197.1.205/32 ; 18.196.218.103/32 ; 35.157.172.172/32 ; 52.209.221.119/32 ; 54.78.53.27/32 ; 3.125.172.227 ; 3.65.7.102 ; 3.64.247.80
-Non production : 54.77.181.243/32 ; 63.35.39.89/32 ; 63.32.16.200/32
+Production : 3.125.172.227 ; 3.65.7.102 ; 3.64.247.80
 ```
 
 ## Requirements for use
@@ -265,11 +258,7 @@ Maximum message size (including attachments) is limited to 10 MB per message (af
 
 ### Mail servers' IP addresses and whitelist
 
-At the time of this writing, these are the IP ranges used by AWS SES:
-
-```txt
-199.255.192.0/22 199.127.232.0/22 54.240.0.0/18 69.169.224.0/20
-```
+Current IP ranges used by AWS SES:
 However these ranges may change, so to get an up to date list, please run the following command:
 From a Linux or Mac OS system:
 ```txt
@@ -279,14 +268,7 @@ From a Windows system
 ```txt
 C:>nslookup -type=TXT amazonses.com | find "v=spf1"
 ```
-Emails can also be sent from this spare IP :
-```
-174.129.245.244/32
-```
-and for CKLS instances created before September 2017 and still hosted by Jaguar Network, please add also:
-```
-85.31.192.42/32 85.31.193.42/32 174.129.245.244/32
-```
+
 ### Hostnames of SMTP relays and custom MAIL FROM domains used for sending 	
 
 ```txt
@@ -294,7 +276,6 @@ email-smtp.us-east-1.amazonaws.com
 sesmailna.crossknowledge.com
 email-smtp.eu-west-1.amazonaws.com
 sesmaileu.crossknowledge.com
-smtp01.crossknowledge.com
 ```
 
 ## Sharepoint pre-requisites
@@ -309,8 +290,10 @@ Microsoft Edge (latest version), Mozilla Firefox (latest version), Google Chrome
 ## URL of CKLS platform
 ### Supported formats
 
-* https://customername.(eu,lms,na,sa,asia).crossknowledge.com, with http://customername.(eu,lms,na,sa,asia).crossknowledge.com being redirected to HTTPS (default setting).
+* https://customername.(eu,lms,na,sa,asia).crossknowledge.com
+
+* https://customername.ckls.crossknowledge-china.com
 
 * CrossKnowledge only supports HTTPS protocol with its own domains.
 
-* Customers can manage their own URL (https://customername.customerdomain.com) using 301 or 302 HTTP redirects to the instance CrossKnowledge domain (https://customername.(eu,lms,na,sa,asia).crossknowledge.com).
+* Customers can manage their own URL (https://customername.customerdomain.com) using 301 or 302 HTTP redirects to the instance CrossKnowledge domain (https://customername.(eu,lms,na,sa,asia).crossknowledge.com or https://customername.ckls.crossknowledge-china.com)
