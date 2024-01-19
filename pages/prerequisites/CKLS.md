@@ -7,8 +7,8 @@ permalink: CKLS-prerequisites
 folder: prerequisites
 ---
 
-## Requirements for use
 <div class="alert alert-warning" role="alert">
+    <h2>Requirements for use</h2>
     <h3>Unique email</h3>
     Starting 2024, all users (administrators and learners), will need to have a unique email address to access upcoming features such as Program Builder.<br/>
     <br/>
