@@ -7,6 +7,16 @@ permalink: CKLS-prerequisites
 folder: prerequisites
 ---
 
+<div class="alert alert-warning" role="alert">
+    <h2>Requirements for use</h2>
+    <h3>Unique email</h3>
+    Starting 2024, all users (administrators and learners), will need to have a unique email address to access upcoming features such as Program Builder.<br/>
+    <br/>
+    Ensuring that each user has a unique email is a standard requirement for Software as a Service (SaaS) platforms, including CKLS.<br/>
+    <br/>
+    This update is crucial for maintaining the security, integrity, and personalized experience.
+</div>
+
 
 ## Workstation requirements
 
@@ -206,14 +216,6 @@ web interfaces (ports 80 and 443) : Could be hitting any of the eu-west-1 IP ran
 ```txt
 Production : 3.125.172.227 ; 3.65.7.102 ; 3.64.247.80
 ```
-
-## Requirements for use
-### Unique email
-Starting 2024, all users (administrators and learners), will need to have a unique email address to access upcoming features such as Program Builder.
-
-Ensuring that each user has a unique email is a standard requirement for Software as a Service (SaaS) platforms, including CKLS.
-
-This update is crucial for maintaining the security, integrity, and personalized experience.
 
 ## Email servers requirements
 
