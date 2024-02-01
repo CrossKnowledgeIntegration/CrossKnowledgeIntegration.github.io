@@ -8,7 +8,7 @@ permalink: html_embed.html
 folder: Services
 ---
 
-## List of existing services supported by HTML Embed activity or analytics tool (tested)
+## List of existing services supported by HTML Embed activity or analytics tool (tested with only public content)
 
 * Youtube
 * TED
