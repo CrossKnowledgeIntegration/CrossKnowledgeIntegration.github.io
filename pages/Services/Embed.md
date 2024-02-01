@@ -8,7 +8,7 @@ permalink: html_embed.html
 folder: Services
 ---
 
-## List of existing services supported by HTML Embed activity or analytics tool (tested with only public content)
+## List of existing services supported by HTML Embed activity or analytics tool*
 
 * Youtube
 * TED
@@ -23,3 +23,5 @@ folder: Services
 * Microsoft Power BI
 
 {% include note.html content="Google analytics dashboard pages cannot be embedded in an iFrame." %}
+
+*Only tested with public content
