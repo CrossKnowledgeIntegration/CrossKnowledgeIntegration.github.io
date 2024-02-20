@@ -1,7 +1,7 @@
 ---
 title: CKLS Technical Prerequisites
 keywords: pre-requisites, prerequisites, requirements
-last_updated: 07 April, 2021
+last_updated: 20 February, 2024
 sidebar: home_sidebar
 permalink: CKLS-prerequisites
 folder: prerequisites

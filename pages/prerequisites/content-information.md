@@ -1,7 +1,7 @@
 ---
 title: CrossKnowledge content information
 keywords: pre-requisites, prerequisites, requirements, content
-last_updated: 9 November, 2017
+last_updated: 20 February, 2024
 sidebar: home_sidebar
 permalink: content-information
 folder: prerequisites
@@ -40,6 +40,4 @@ Business reviews | iOS (latest version) & Android (latest version), For both, 2 
 
 ### CrossKnowledge Content additional Requirements
 
-95% of CrossKnowledge content will not require any more specific software, including videos and CrossKnowedge Session built with Mohive. Some third party content might require Flash Player. Please ask us for detailed information.
-
-Please note that content built with Flash will not be responsive.
+95% of CrossKnowledge content will not require any more specific software, including videos and CrossKnowedge Session built with Mohive.
