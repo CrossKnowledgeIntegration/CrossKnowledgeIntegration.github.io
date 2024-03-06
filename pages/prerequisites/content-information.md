@@ -31,12 +31,9 @@ Essentials | iOS (latest version) & Android (latest version), For both, 15 langu
 Action tips | iOS (latest version) & Android (latest version), For both, 16 languages, PDF format | iOS (latest version) & Android (latest version), For both, 16 languages, PDF format
 Business reviews | iOS (latest version) & Android (latest version), For both, 2 languages, PDF format | iOS (latest version) & Android (latest version), For both, 2 languages, PDF format
 
-### About New CrossKnowledge Sessions
+### About CrossKnowledge Sessions
 
-- Only deployable using CrossKnowledge Suite 14.1+
-- The basic pre-requisites of CrossKnowledge Suite 14.1+ have to be applied plus: 600 kbit / s bandwidth (equivalent to 3G)
-- Cloud Mode: HTML5
-- Microsoft Edge latest version (popup blockers must be disabled or else allow the browser to accept pop-ups from CrossKnowledge.com).
+Microsoft Edge latest version (popup blockers must be disabled or else allow the browser to accept pop-ups from CrossKnowledge.com).
 
 ### CrossKnowledge Content additional Requirements
 
