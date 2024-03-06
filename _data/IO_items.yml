@@ -1198,7 +1198,7 @@ param:
     type: "time"
 
   deltaMode:
-    desc: "Only export new data (with respect to the last export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`<export guid='foo'>`). This feature cannot be used alongside `timeFramesScale`."
+    desc: "Only export new data (with respect to the beginning of the previous export). In order for this parameter to work, the previous exports must have had a `guid` attribute (`&lt;export guid='foo'&gt;`). <br/>This feature cannot be used alongside `timeFramesScale`.<br/>When items are updated while the task is running, these updated items can be exported both during the current task and the next."
     type: "yesNoElement"
 
   disableImportFlag:
