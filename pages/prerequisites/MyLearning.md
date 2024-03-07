@@ -14,7 +14,7 @@ My Learning application is supported on:
 * Apple iOS:<br>
 Any device with iOS 12 and above.
 * Android:<br>
-Any device using Android 13 and above.
+Any device using Android 10 and above.
 
 Latest mobile application version available on both stores is the only supported version.
 
