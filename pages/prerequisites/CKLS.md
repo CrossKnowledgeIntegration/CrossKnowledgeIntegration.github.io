@@ -9,12 +9,8 @@ folder: prerequisites
 
 <div class="alert alert-warning" role="alert">
     <h2>Requirements for use</h2>
-    <h3>Unique email</h3>
-    Starting 2024, all users (administrators and learners), will need to have a unique email address to access upcoming features such as Program Builder.<br/>
-    <br/>
-    Ensuring that each user has a unique email is a standard requirement for Software as a Service (SaaS) platforms, including CKLS.<br/>
-    <br/>
-    This update is crucial for maintaining the security, integrity, and personalized experience.
+    <h3>Unique email address for Program Builder Early Adoption and new reporting services</h3>
+    Requirements for Program Builder Early Adoption and new reporting services:  all users (administrators and learners), will need to have <b>a unique email address</b> to access the Program Builder Early Adopter and New Reporting Service.
 </div>
 
 
