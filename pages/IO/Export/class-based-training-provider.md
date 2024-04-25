@@ -2,21 +2,21 @@
 title: Class Based Training
 keywords: export, CBT, class, based, training
 last_updated: September, 2019
-tags: 
+tags:
 summary: "This provider exports instructor-lead training data from the BlendedX."
 sidebar: home_sidebar
 permalink: class-based-training-provider.html
 folder: Export
 dynamic_content: true
-columns: [activityDuration, activityID, activityName, activityPoints, candidateCustomFieldGuid, candidateEmail, 
-    candidateEntityName, candidateFirstname, candidateGuid, candidateId, candidateLogin, candidateName, candidateRefNumber, 
-    eventAllDay, eventEndDate, eventEndTime, eventFacilitator, eventFacilitatorGuid, eventID, eventLocation, eventLocationID, 
-    eventRoom, eventRoomGuid, eventStartDate, eventStartTime, eventTimeZone, eventVirtualMeetingURL, foFacilitatorName, 
-    foFacilitatorFirstname, foFacilitatorEmail, pointsGained, registrationDate, registrationGuid, sessionEndDate, sessionGuid, 
-    sessionId, sessionStartDate, sessionTitle, status, timeSpent, trainingChapters, trainingDuration, trainingId, trainingGuid, 
+columns: [activityDuration, activityID, activityName, activityPoints, candidateCustomFieldGuid, candidateEmail,
+    candidateEntityName, candidateFirstname, candidateGuid, candidateId, candidateLogin, candidateName, candidateRefNumber,
+    eventAllDay, eventEndDate, eventEndTime, eventFacilitator, eventFacilitatorGuid, eventID, eventLocation, eventLocationID,
+    eventRoom, eventRoomGuid, eventStartDate, eventStartTime, eventTimeZone, eventVirtualMeetingURL, foFacilitatorName,
+    foFacilitatorFirstname, foFacilitatorEmail, pointsGained, registrationDate, registrationGuid, sessionEndDate, sessionGuid,
+    sessionId, sessionStartDate, sessionTitle, status, timeSpent, trainingChapters, trainingDuration, trainingId, trainingGuid,
     trainingPathCode, trainingPublisher, trainingTitle, catalogVisibility, constantValue]
-parameters: [dateFormat, dateTimeFormat, entityIds, onlyFromImportedRegistrations, onlyFromImportedSessions, 
-    onlyFromImportedTraining, preferredLocales, publishers, sessionGuid, trainingGuid, trainingPathCode, facilitatorGuids, 
+parameters: [dateFormat, dateTimeFormat, entityIds, onlyFromImportedRegistrations, onlyFromImportedSessions,
+    onlyFromImportedTraining, preferredLocales, publishers, sessionGuid, trainingGuid, trainingPathCode, facilitatorGuids,
     foFacilitatorIds, locationIds, roomGuids, attendanceStatus, eventStarted, activityNames, timeFrames, timeFramesScale]
 ---
 
@@ -24,8 +24,8 @@ parameters: [dateFormat, dateTimeFormat, entityIds, onlyFromImportedRegistration
 
 ```xml
 		<providers>
-			<instructorLedTrainingActivityProvider> 
-				<columns>		
+			<instructorLedTrainingActivityProvider>
+				<columns>
 					<activityID />
 					<activityDuration />
 					<activityPoints />
@@ -62,13 +62,13 @@ parameters: [dateFormat, dateTimeFormat, entityIds, onlyFromImportedRegistration
 					<trainingTitle />
 					<trainingPathCode />
 					<trainingGuid />
-					<catalogVisibilit  />
+					<catalogVisibility />
 					<trainingStatus />
 					<trainingModality />
 					<trainingPublisher />
 					<trainingChapters />
-					<trainingDuration />					
-				</columns>				
+					<trainingDuration />
+				</columns>
 				<parameters>
 					<dateTimeFormat></dateTimeFormat>
 					<timeGlobalFormat>paddedhh</timeGlobalFormat>
