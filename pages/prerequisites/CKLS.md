@@ -162,6 +162,14 @@ https://assets.learnosity.com
 https://shared.learnosity.com
 https://s3.amazonaws.com/assets.learnosity.com
 https://s3.amazonaws.com/learnositymediaprocessed
+
+Power BI specific URLs
+
+https://dc.services.visualstudio.com
+https://app.powerbi.com
+https://content.powerapps.com
+https://wabi-us-east2-d-primary-redirect.analysis.windows.net/
+https://pbivisuals.powerbi.com/
 ```
 
 ### CloudFlare IP Ranges
