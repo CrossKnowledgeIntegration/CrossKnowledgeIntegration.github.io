@@ -77,7 +77,7 @@ SSH keys should follow the following rules:
 ### Domain white-listing
 The following domain names should be whitelisted by customers and their partners.
 ```txt
-https://*.crossknowledge.com, https://*.crossknowledge-china.com, https://*.learnosity.com​, https://s3.amazonaws.com/assets.learnosity.com, https://s3.amazonaws.com/learnositymediaprocessed ​
+https://*.crossknowledge.com, https://*.crossknowledge-china.com, https://*.learnosity.com​, https://s3.amazonaws.com/assets.learnosity.com, https://s3.amazonaws.com/learnositymediaprocessed, https://*.powerbi.com, https://content.powerapps.com, https://wabi-us-east2-d-primary-redirect.analysis.windows.net
 ```
 
 If wildcards (*) are not allowed, authorise the following sub-domains:<br/>
@@ -168,8 +168,8 @@ Power BI specific URLs
 https://appsource.powerbi.com
 https://app.powerbi.com
 https://content.powerapps.com
-https://wabi-us-east2-d-primary-redirect.analysis.windows.net/
-https://pbivisuals.powerbi.com/
+https://wabi-us-east2-d-primary-redirect.analysis.windows.net
+https://pbivisuals.powerbi.com
 ```
 
 ### CloudFlare IP Ranges
