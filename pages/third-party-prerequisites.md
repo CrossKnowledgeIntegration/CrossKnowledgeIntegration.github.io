@@ -20,7 +20,7 @@ It also offers a set of best practices to minimize problems during integration p
 
 LMS | Learning Management System. Software to administrate and provide trainings and training contents. Also referred to as elearning platform.
 SCORM 1.2 and 2004 | Sharable Content Object Reference Model. This is the standard regarding content creation model. SCORM defines the structure of all interfaces: how the LMS launches the content, how information are sent back to the LMS, content description...
-AICC | Acronym for Aviation Industry CBT Committee. 
+AICC | Acronym for Aviation Industry CBT Committee.
 SCO | Shareable Content Object. SCO is the SCORM term for a unit activity. It's the most precise hierarchical level of content files in a Scorm package.
 
 ## Prerequisites and constraints
@@ -35,7 +35,7 @@ Beware of Flash Player versions, newest contents are often developed on recent t
 
 Here is the list of file types the CrossKnowledge LMS forbids for the creation of learning objects : htaccess, php* (php, php1, php4, php564...), phps, phtm, .phtml, pl, py, cgi, exe, sh.
 
-### File extensions not allowed in your contents 
+### File extensions not allowed in your contents
 
 For security reasons, any SCORM packages to be integrated in the platform must not contain files with following extensions :
 
@@ -117,9 +117,7 @@ Moreover, our LMS does not interprete with Scorm 2004 navigation and sequencing 
 
 ### Good practices
 
-The content duration must not exceed half an hour.
-
-As **we do not support MULTI SCO**, if the course is longer, it should be divided into several zip packages (mono-SCO).
+The content duration should not exceed half an hour. If the course is longer, it should be divided into several zip packages.
 
 As the contents will be imported in a CrossKnowledge learning path , this is not an issue.
 
