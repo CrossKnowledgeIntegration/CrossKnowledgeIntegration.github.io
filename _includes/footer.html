@@ -1,12 +1,12 @@
 <footer>
     <div class="row">
         <div class="col-lg-8 footer">
-            
+
             &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br />
                 <a href="https://www.crossknowledge.com/privacy-policy">CrossKnowledge Privacy Policy</a><br/>
                 {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br />
         <div class="col-lg-4 footer">
-            <p><img src="https://www.crossknowledge.com/wp-content/themes/crossknowledge/indexel/images/logo-crossknowledge.svg" alt="Company logo"/></p>
+            <svg class="icon icon-logo-ck" aria-hidden="true" focusable="false" style="height: 50px;"><use href="/images/logo_crossknowledge.svg#icon-logo-ck"></use></svg>
         </div>
     </div>
 </footer>
